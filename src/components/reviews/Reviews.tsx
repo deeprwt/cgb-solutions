@@ -6,15 +6,15 @@ import Image from "next/image";
 function Reviews() {
     return (
         <section className="container py-5">
-            <div className="row mb-6">
-                <h2 className="col-12 text-center mb-4">What people are saying about us</h2>
-                <p className="col-12 text-center mb-6">
+            <div className="row">
+                <h2 className="text-center mb-4">What people are saying about us</h2>
+                <p className="text-center mb-6">
                     Everything you need to accept card payments and grow your business
                     anywhere on the planet.
                 </p>
             </div>
             <div className="row justify-space-around">
-                <article className="col-12 col-md-4">
+                <article className="col-md-4">
                     <div className=" light-bg bo-rd p-5">
                         <span className="text-5xl mb-4">
                             <FaQuoteLeft />
@@ -32,7 +32,7 @@ function Reviews() {
                         </div>
                     </div>
                 </article>
-                <article className="col-12 col-md-4">
+                <article className="col-md-4">
                     <div className=" light-bg bo-rd p-5">
                         <span className="text-5xl mb-4">
                             <FaQuoteLeft />
@@ -50,7 +50,7 @@ function Reviews() {
                         </div>
                     </div>
                 </article>
-                <article className="col-12 col-md-4">
+                <article className="col-md-4">
                     <div className=" light-bg bo-rd p-5">
                         <span className="text-5xl mb-4">
                             <FaQuoteLeft />
