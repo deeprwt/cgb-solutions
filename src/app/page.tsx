@@ -11,6 +11,7 @@ import HeroBannerTwo from "@/components/hero-banner/hero-banner-two";
 import WhatsNew from "@/components/home-data/whats-new";
 import CeoData from "@/components/leadership/ceo";
 import PartnersLogos from "@/components/partners/partners-logo";
+import Reviews from "@/components/reviews/Reviews";
 import TabsData from "@/components/tabs/tabs";
 import TeamSectionOne from "@/components/team/team-section-one";
 import TextFeatureHome from "@/components/text-feature/text-feature-home";
@@ -40,7 +41,7 @@ export default function HomePage() {
           {/* whatsnew section end */}
 
           {/* about us content start  */}
-           <TextFeatureHome />
+          <TextFeatureHome />
           {/* about us content start  */}
 
           {/* tabs are for solutions start */}
@@ -91,6 +92,9 @@ export default function HomePage() {
           {/* <FaqSectionOne /> */}
           {/* faq section end */}
 
+          <Reviews />
+
+
           {/* blog item start */}
           <HomeTwoBlogs />
           {/* blog item end */}
@@ -101,7 +105,7 @@ export default function HomePage() {
         </main>
 
         {/* footer start */}
-        <FooterOne/>
+        <FooterOne />
         {/* footer end */}
       </div>
     </Wrapper>
