@@ -94,8 +94,12 @@ const ContactArea = () => {
         <div className="gmap_canvas h-100 w-100">
           <iframe
             className="gmap_iframe h-100 w-100"
-            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=dhaka collage&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80824.64108959114!2d77.57106061643262!3d12.940131448526687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16986c307911%3A0x9be62fff97b110aa!2sCGB%20Solutions%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1708347527779!5m2!1sen!2sin"
           ></iframe>
+          {/* <iframe
+            className="gmap_iframe h-100 w-100"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=dhaka collage&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe> */}
         </div>
       </div>
     </div>

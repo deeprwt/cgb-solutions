@@ -3,7 +3,7 @@ import Link from 'next/link';
 import FaqItem from '../faq/faq-item';
 import Image from 'next/image';
 
-import OracleImg from '@/assets/images/cgbhome/cgb-meta.jpg';
+import OracleImg from "@/assets/images/cgbhome/cgb-meta.jpg";
 import icon from "@/assets/images/icon/icon_09.svg";
 import img1 from "@/assets/images/cgbhome/services/1.jpg"
 import img2 from "@/assets/images/cgbhome/services/2.jpg"
@@ -52,7 +52,7 @@ const TabsData = () => {
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6 wow fadeInRight">
-                            <Image src={img1} layout='responsive' width={1707} height={1138} alt="About us" className="w-100"></Image>
+                            <Image src={img1} layout="responsive" width={1707} height={1138} alt="About us" className="w-100"></Image>
                             {/* <div className="media-list-item ms-auto pe-xxl-5 pe-4 ps-xxl-5 ps-4 pb-35 md-mt-60 d-flex align-items-end">
                             <ul className="style-none">
                                 <li>IT Consulting</li>
@@ -85,7 +85,7 @@ const TabsData = () => {
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6">
-                            <Image src={img3} layout='responsive' width={1707} height={1138} alt="About us" className="w-100"></Image>
+                            <Image src={img3} layout="responsive" width={1707} height={1138} alt="About us" className="w-100"></Image>
                         </div>
                     </div>
             </div>
@@ -111,7 +111,7 @@ const TabsData = () => {
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6">
-                            <Image src={img4} layout='responsive' width={1707} height={1138} alt="About us" className="w-100"></Image>
+                            <Image src={img4} layout="responsive" width={1707} height={1138} alt="About us" className="w-100"></Image>
                         </div>
                     </div>
             </div>
@@ -126,7 +126,7 @@ const TabsData = () => {
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                                 Unlock the power of low-code with CGB. Build applications effortlessly, 
-                                whether you're a pro or just starting out. Experience streamlined development and unleash your creativity. 
+                                whether you&apos;re a pro or just starting out. Experience streamlined development and unleash your creativity. 
                                 Welcome to a new era of simplicity and efficiency in software creation.
                             </p>
                             <div className="d-inline-flex flex-wrap align-items-center pb-4">
@@ -152,7 +152,7 @@ const TabsData = () => {
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                             Embark on a transformative journey with CGB, where Salesforce solutions meet innovation, 
-                            precision, and a commitment to your business's success. As a distinguished leader in the realm 
+                            precision, and a commitment to your business&apos;s success. As a distinguished leader in the realm 
                             of Salesforce services, we take pride in propelling organizations toward unprecedented growth, operational efficiency, and customer-centric excellence
                             </p>
                             <div className="d-inline-flex flex-wrap align-items-center pb-4">
@@ -163,7 +163,7 @@ const TabsData = () => {
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6">
-                            <Image src={img5} layout='responsive' width={1707} height={1138} alt="About us" className="w-100"></Image>
+                            <Image src={img5} layout="responsive" width={1707} height={1138} alt="About us" className="w-100"></Image>
                         </div>
                     </div>
             </div>
@@ -194,18 +194,7 @@ const TabsData = () => {
                     </div>
             </div>
           </div>
-          {/* <div className="tab-pane fade" id="nav-account" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionSeven">
-              <FaqItem id='seventeen' title='How does the free trial work?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionSeven' />
-              <FaqItem id='eighteen' title='How do you find different criteria in your process?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionSeven' />
-            </div>
-          </div> */}
         </div>
-
-        {/* <div className="text-center mt-60 lg-mt-50">
-          <h2 className="fs-1 mb-30">Don’t get your answer?</h2>
-          <Link href="/contact" className="btn-four">Contact Us</Link>
-        </div> */}
       </div>
     </div>
   );

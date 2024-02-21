@@ -19,7 +19,7 @@ const WhatsNew = () => {
                 <div className="row">
                     <div className="title-one">
                         {/* <div className="upper-title"></div> */}
-                        <h2>What's New</h2>
+                        <h2>What&apos;s New</h2>
                     </div>
                     <div className="col-md-3 mb-35 mt-35  wow fadeInUp" data-wow-delay="0.0s">
                         <Image src={Whatsnew} alt="what's new" className="w-100 h-100 shadowimg" />

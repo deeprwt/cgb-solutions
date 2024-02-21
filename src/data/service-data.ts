@@ -89,29 +89,29 @@ const service_data:IService[] = [
   {
     id:8,
     icon:icon_8,
-    title:'Agent Banking',
-    desc:'Stay updated, check your bank account to manage funds and track transactions securely.',
+    title:'Design',
+    desc:'Craft bespoke IT and staffing solutions tailored to your needs for unparalleled performance.',
     page:'home-3'
   },
   {
     id:9,
     icon:icon_9,
-    title:'Savings Account',
-    desc:'Securely save money, earn interest with a dedicated savings account.',
+    title:'Success Criteria',
+    desc:'Exceed benchmarks with our innovative strategies, ensuring your success in every endeavor.',
     page:'home-3'
   },
   {
     id:10,
     icon:icon_10,
-    title:'Low Interest',
-    desc:'Bank yields meager interest, limiting earnings on deposited funds and investments.',
+    title:'Adoption',
+    desc:'Seamlessly integrate our solutions into your workflow, guaranteeing swift and effortless implementation.',
     page:'home-3'
   },
   {
     id:11,
     icon:icon_11,
-    title:'Multiple Cards.',
-    desc:'Bank cards offer easy payments and cash withdrawals, enhancing financial accessibility.',
+    title:'Governance',
+    desc:'Establish stringent frameworks to optimize efficiency and ensure compliance, mitigating risks effectively.',
     page:'home-3'
   },
   // home 4
@@ -178,6 +178,13 @@ const service_data:IService[] = [
     title:'Our Vision',
     desc:'Elit esse cillum dolore eui fugiat nulla pariatur.',
     page:'home-5'
+  },
+  {
+    id:21,
+    icon:icon_11,
+    title:'Continuous Improvement',
+    desc:'Commit to ongoing refinement, evolving our offerings to stay ahead in a dynamic market landscape.',
+    page:'home-3'
   },
 ]
 

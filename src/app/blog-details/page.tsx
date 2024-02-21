@@ -10,6 +10,7 @@ import BlogDetailsArea from "@/components/blogs/blog-details/blog-details-area";
 import shape from "@/assets/images/shape/shape_35.svg";
 import blog_data from "@/data/blog-data";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
+import FooterOne from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
   title: "Blog Details Page",
@@ -31,7 +32,7 @@ const BlogDetailsPage = () => {
             page="Blog"
             bg_img={blog_bg}
             style_2={true}
-            shape={shape}
+            // shape={shape}
           />
           {/* breadcrumb end */}
 
@@ -44,12 +45,13 @@ const BlogDetailsPage = () => {
           {/* fancy banner three end */}
 
           {/* news letter start */}
-          <NewsletterBanner />
+          {/* <NewsletterBanner /> */}
           {/* news letter end */}
         </main>
 
         {/* footer start */}
-        <FooterThree style_2={true} />
+        {/* <FooterThree style_2={true} /> */}
+        <FooterOne />
         {/* footer end */}
       </div>
     </Wrapper>

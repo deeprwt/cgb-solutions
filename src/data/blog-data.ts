@@ -16,15 +16,18 @@ import blog_grid_4 from '@/assets/images/blog/blog_img_13.jpg';
 import blog_grid_5 from '@/assets/images/blog/blog_img_14.jpg';
 import blog_grid_6 from '@/assets/images/blog/blog_img_15.jpg';
 
+
+import mumbai from '@/assets/images/blog/card_img.jpg'
+
 const blog_data:IBlog[] = [
   {
     id:1,
-    img:blog_1,
-    date:'09 FEB 2023',
-    title:'Wise Spending Habits, 13 Tips for Maximizing Your Money.',
-    author:'Mark doe',
-    post_info:'Mark doe . 6 min . Finance',
-    category:'design',
+    img:mumbai,
+    date:'14 FEB 2024',
+    title:'From AI to Logistics: A Deep Dive into Oracle CloudWorld Tour - Mumbai',
+    author:'CGB Solutions',
+    post_info:'CGB Solutions . 6 min . Technolgy',
+    category:'IT',
     page:'home'
   },
   {

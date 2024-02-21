@@ -12,7 +12,7 @@ const BlogSidebar = () => {
           <i className="bi bi-search"></i>
         </button>
       </form>
-      <div className="blog-category mt-60 lg-mt-40">
+      {/* <div className="blog-category mt-60 lg-mt-40">
         <h3 className="sidebar-title">Category</h3>
         <ul className="style-none">
           <li>
@@ -41,7 +41,7 @@ const BlogSidebar = () => {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="blog-recent-news mt-60 lg-mt-40">
         <h3 className="sidebar-title">Recent News</h3>
         {recent_blogs.map((b,i) => (
@@ -62,7 +62,7 @@ const BlogSidebar = () => {
         ))}
       </div>
 
-      <div className="blog-keyword mt-60 lg-mt-40">
+      {/* <div className="blog-keyword mt-60 lg-mt-40">
         <h3 className="sidebar-title">Keywords</h3>
         <ul className="style-none d-flex flex-wrap">
           <li>
@@ -90,7 +90,7 @@ const BlogSidebar = () => {
             <Link href="#">Loan</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="contact-banner text-center mt-50 lg-mt-30">
         <h3 className="mb-20">
           Any Questions? <br />

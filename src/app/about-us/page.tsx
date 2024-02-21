@@ -17,6 +17,9 @@ import TeamSectionThree from "@/components/team/team-section-three";
 import HomeFourBlogs from "@/components/blogs/home-4-blogs";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import TextFeatureHome from "@/components/text-feature/text-feature-home";
+import TextFeatureAbout from "@/components/text-feature/text-feature-about";
+import BlockFeatureAbout from "@/components/block-feature/block-feature-about";
+import DottedMap from "@/components/map/maps";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -32,25 +35,31 @@ const AboutUsPage = () => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="We’r top rated company"
+            title="About Us"
             subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
             page="About Us"
             bg_img={about_bg}
-            shape={shape}
+            // shape={shape}
             style_2={true}
           />
           {/* breadcrumb end */}
 
           {/* text feature one area start */}
-          <TextFeatureOne style_2={true} />
+          <TextFeatureAbout />
           {/* text feature one area end */}
 
+          {/* text feature one area start */}
+          <TextFeatureAbout style_2={true} />
+          {/* text feature one area end */}
+
+          <BlockFeatureAbout style_2={true}  />
+
           {/* block feature one area start */}
-          <BlockFeatureOne style_2={true} />
+          {/* <BlockFeatureOne style_2={true} /> */}
           {/* block feature one area end */}
 
           {/* text feature one area start */}
-          <TextFeatureThree style_2={true} />
+          {/* <TextFeatureThree style_2={true} /> */}
           {/* text feature one area end */}
 
           {/* feedback one start */}
@@ -69,16 +78,22 @@ const AboutUsPage = () => {
           <TeamSectionThree />
           {/* team three end */}
 
+          {/* <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
+            <div className="container">
+              <DottedMap />
+            </div>
+          </div> */}
+
           {/* blogs start */}
-          <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" />
+          {/* <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" /> */}
           {/* blogs end */}
 
           {/* fancy banner three start */}
-          <FancyBannerThree />
+          {/* <FancyBannerThree /> */}
           {/* fancy banner three end */}
 
           {/* news letter start */}
-          <NewsletterBanner />
+          {/* <NewsletterBanner /> */}
           {/* news letter end */}
         </main>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import CounterUp from "../common/counter-up";
 
 // internal
 import icon from "@/assets/images/icon/icon_09.svg";
@@ -26,18 +27,36 @@ function CardItem({icon,title,desc}:{icon:StaticImageData;title:string;desc:stri
   )
 }
 
-function CounterBlock ({num,text,title,delay}:{num:number;text:string;title:string;delay:string}) {
+// counter block
+function CounterBlock({
+  num,
+  text,
+  title,
+  prev_text,
+  delay,
+  decimal = false,
+}: {
+  num: number;
+  text: string;
+  title: string;
+  delay?: string;
+  prev_text?: string;
+  decimal?: boolean;
+}) {
   return (
-    <div className="col-md-3 col-6">
-      <div className="counter-block-two text-center mt-35 mb-35 wow fadeInUp" 
-      data-wow-delay={`0.${delay}s`}>
-        <div className="main-count fw-500">
-          <span className="counter">{num}</span>{text}
-        </div>
-        <p className="m0 text-md">{title}</p>
+    <div
+      className="counter-block-two text-center mt-35 mb-35 wow fadeInUp"
+      data-wow-delay={`0.${delay}s`}
+    >
+      <div className="main-count fw-500 text-dark d-flex justify-content-center">
+        {prev_text && prev_text}
+        <span className="counter">
+          <CounterUp number={num} text={text} decimal={decimal} />
+        </span>
       </div>
+      <p className="m0 text-md">{title}</p>
     </div>
-  )
+  );
 }
 
 const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
@@ -83,15 +102,51 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
       )}
       {style_2 && (
           <div className="container">
-            <div className="counter-wrapper lg-mt-20">
+            {/* <div className="counter-wrapper lg-mt-20">
               <div className="row">
                 <CounterBlock num={160} text="+" title="Clients" delay="0" />
                 <CounterBlock num={750} text="+" title="Contractor Pool" delay="1" />
                 <CounterBlock num={160} text="+" title="Staffing Team" delay="2" />
                 <CounterBlock num={6} text="+" title="Global Delivery Center" delay="3" />
               </div>
+            </div> */}
+            <div className="counter-wrapper lg-mt-20 lg-mb-20">
+              <div className="row">
+                <div className="col-md-3 col-6">
+                  <CounterBlock num={160} text="+" title="Clients" />
+                </div>
+                <div className="col-md-3 col-6">
+                  <CounterBlock
+                    num={750}
+                    text="+"
+                    title="Contractor Pool"
+                    // prev_text="$"
+                    delay="1"
+                    // decimal={true}
+                  />
+                </div>
+                <div className="col-md-3 col-6">
+                  <CounterBlock
+                    num={160}
+                    text="+"
+                    title="Staffing Team"
+                    delay="2"
+                  />
+                </div>
+                <div className="col-md-3 col-6">
+                  <CounterBlock
+                    num={6}
+                    text="+"
+                    title="Global Delivery Center"
+                    // prev_text="$"
+                    delay="3"
+                    // decimal={true}
+                  />
+                </div>
+              </div>
             </div>
           </div>
+
       )}
     </>
   );

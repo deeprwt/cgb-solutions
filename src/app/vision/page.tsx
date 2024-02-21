@@ -10,12 +10,14 @@ import shape from "@/assets/images/shape/shape_27.svg";
 import ServiceDetailsArea from "@/components/services/service-details-area";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
+import Company from "@/components/services/company";
+
 
 export const metadata: Metadata = {
-  title: "Service Details Page",
+  title: "Vision",
 };
 
-const ServiceDetailsPage = () => {
+const Vision = () => {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -36,12 +38,22 @@ const ServiceDetailsPage = () => {
           {/* breadcrumb end */}
 
           {/* service details area start */}
-          <ServiceDetailsArea />
+          <Company 
+          active_data={false}
+          active_data1={true}
+          active_data2={false}
+          active_data3={false}
+          active_data4={false}
+          active_data5={false}
+          active_data6={false}
+          active_data7={false}
+           />
           {/* service details area end */}
 
         </main>
 
         {/* footer start */}
+        {/* <FooterThree style_2={true} /> */}
         <FooterOne />
         {/* footer end */}
       </div>
@@ -49,4 +61,4 @@ const ServiceDetailsPage = () => {
   );
 };
 
-export default ServiceDetailsPage;
+export default Vision;

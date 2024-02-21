@@ -23,10 +23,9 @@ const menu_data:IMenu[] = [
           {link:'/service-v1',title:'Oracle'},
           {link:'/service-v2',title:'Finacle'},
           {link:'/service-details',title:'Outsystems'},
-          {link:'/team-v1',title:'Mendix'},
+          {link:'/solutions/mendix',title:'Mendix'},
           {link:'/team-v2',title:'ServiceNow'},
-          {link:'/team-details',title:'Automation Anywhere'},
-          {link:'/team-details',title:'Finacle'}
+          {link:'/team-details',title:'Automation Anywhere'}
         ]
       },
       {
@@ -34,7 +33,8 @@ const menu_data:IMenu[] = [
         menus:[
           {link:'/service-v1',title:'Contract Staffing'},
           {link:'/service-v2',title:'Permanent Staffing'},
-          {link:'/service-details',title:'Hire-Train-Deploy'}
+          {link:'/service-details',title:'Hire-Train-Deploy'},
+          {link:'/service-details',title:'RPO'}
         ]
       },
       {
@@ -89,7 +89,7 @@ const menu_data:IMenu[] = [
     dropdown:true,
     dropdown_menus:[
           {link:'#',title:'Our Story'},
-          {link:'#',title:'Vision'},
+          {link:'/vision',title:'Vision'},
           {link:'#',title:'Mission'},
           {link:'#',title:'Awards'},
           {link:'#',title:'Recognition'},
@@ -105,7 +105,7 @@ const menu_data:IMenu[] = [
     dropdown:true,
     dropdown_menus:[
       {link:'/blog',title:'Blogs'},
-      {link:'/blog',title:'News & Media'},
+      {link:'/blog-grid',title:'News & Media'},
       // {link:'/blog-grid',title:'Blog Grid'},
       // {link:'/blog-details',title:'Blog Details'},
     ]

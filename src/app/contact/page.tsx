@@ -7,6 +7,7 @@ import ContactArea from "@/components/contact/contact-area";
 import FooterThree from "@/layout/footer/footer-three";
 import shape from "@/assets/images/shape/shape_33.svg";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
+import FooterOne from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
   title: "Contact Page",
@@ -25,7 +26,7 @@ const ContactPage = () => {
             title="Contact us for inquiries"
             subtitle="Get our all info and also can message us directly from here"
             page="Contact"
-            shape={shape}
+            // shape={shape}
           />
           {/* breadcrumb end */}
 
@@ -34,12 +35,12 @@ const ContactPage = () => {
           {/* contact area end */}
 
           {/* news letter start */}
-          <NewsletterBanner />
+          {/* <NewsletterBanner /> */}
           {/* news letter end */}
         </main>
 
         {/* footer start */}
-        <FooterThree style_2={true} />
+        <FooterOne />
         {/* footer end */}
       </div>
     </Wrapper>

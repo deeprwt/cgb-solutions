@@ -9,6 +9,7 @@ import shape from "@/assets/images/shape/shape_34.svg";
 import BlogListArea from "@/components/blogs/blog-list-area";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
+import FooterOne from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
   title: "Blog Page",
@@ -24,12 +25,12 @@ const BlogPage = () => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Explore our News"
+            title="Explore our Blogs"
             subtitle="Meet our experts, guiding you through financial intricacies with precision"
             page="Blog"
             bg_img={blog_bg}
             style_2={true}
-            shape={shape}
+            // shape={shape}
           />
           {/* breadcrumb end */}
 
@@ -42,12 +43,13 @@ const BlogPage = () => {
           {/* fancy banner three end */}
 
           {/* news letter start */}
-          <NewsletterBanner />
+          {/* <NewsletterBanner /> */}
           {/* news letter end */}
         </main>
 
         {/* footer start */}
-        <FooterThree style_2={true} />
+        {/* <FooterThree style_2={true} /> */}
+        <FooterOne />
         {/* footer end */}
       </div>
     </Wrapper>

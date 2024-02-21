@@ -8,7 +8,7 @@ type IProps = {
   title: string;
   subtitle: string;
   bg_img?: StaticImageData;
-  shape: StaticImageData;
+  // shape: StaticImageData;
   page: string;
   cls?: string;
   style_2?: boolean;
@@ -21,7 +21,7 @@ const BreadcrumbOne = ({
   page,
   cls='',
   style_2 = false,
-  shape
+  // shape
 }: IProps) => {
   return (
     <>
@@ -33,8 +33,9 @@ const BreadcrumbOne = ({
             {!style_2 && (
               <div className="row align-items-center">
                 <div className="col-lg-7">
-                  <h1 className={`hero-heading d-inline-block position-relative ${cls}`}>
-                    {title} <Image src={shape} alt="shape" />
+                  <h1 className={`hero-heading d-inline-block text-white position-relative ${cls}`}>
+                    {title} 
+                    {/* <Image src={shape} alt="shape" /> */}
                   </h1>
                 </div>
                 <div className="col-xl-4 col-lg-5 ms-auto">
@@ -54,8 +55,9 @@ const BreadcrumbOne = ({
             {style_2 && (
               <div className="row align-items-center">
                 <div className="col-lg-6">
-                  <h1 className={`hero-heading d-inline-block position-relative ${cls}`}>
-                    {title} <Image src={shape} alt="shape" />
+                  <h1 className={`hero-heading d-inline-block text-white position-relative ${cls}`}>
+                    {title} 
+                    {/* <Image src={shape} alt="shape" /> */}
                   </h1>
                 </div>
                 <div className="col-xl-4 col-lg-5 ms-auto">
