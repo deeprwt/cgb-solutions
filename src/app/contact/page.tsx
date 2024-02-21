@@ -1,5 +1,6 @@
+"use client"
 import React from "react";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
@@ -8,10 +9,12 @@ import FooterThree from "@/layout/footer/footer-three";
 import shape from "@/assets/images/shape/shape_33.svg";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
+import DottedMap from "@/components/map/maps";
+import DefaultMaps from "@/components/map/maps1";
 
-export const metadata: Metadata = {
-  title: "Contact Page",
-};
+// export const metadata: Metadata = {
+//   title: "Contact Page",
+// };
 
 const ContactPage = () => {
   return (
@@ -31,12 +34,11 @@ const ContactPage = () => {
           {/* breadcrumb end */}
 
           {/* contact area start */}
-          <ContactArea />
-          {/* contact area end */}
+           <ContactArea />
+          <div className="text-center ">
 
-          {/* news letter start */}
-          {/* <NewsletterBanner /> */}
-          {/* news letter end */}
+          <DefaultMaps/>
+          </div>
         </main>
 
         {/* footer start */}
