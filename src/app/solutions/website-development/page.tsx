@@ -12,7 +12,6 @@ import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterThree from "@/layout/footer/footer-three";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
-
 import about_bg from "@/assets/images/media/img_26.jpg";
 import TwoColData from "@/components/two-col/two-col-data";
 import MendixFeature from "@/components/solutions/mendix-feature";
@@ -41,9 +40,6 @@ export default function WebsiteDevlopment() {
           // shape={shape}
           style_2={true}
           />
-
-
-
           {/* starint */}
           <WebCom1 />
 
@@ -92,7 +88,6 @@ export default function WebsiteDevlopment() {
           {/* <HomeThreeBlogs /> */}
           {/* blog item end */}
         </main>
-
         {/* footer start */}
         <FooterOne />
         {/* footer end */}
