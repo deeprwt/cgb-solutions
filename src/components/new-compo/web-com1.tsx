@@ -44,11 +44,8 @@ const WebCom1 = () => {
             </div>
             <div className="col-lg-6 d-flex wow fadeInUp" data-wow-delay="0.1s">
                 <div>
-
-              <h1>Why Front End Development Is Our Core Expertise
-</h1>
+              <h1>Why Front End Development Is Our Core Expertise</h1>
 <p>Front end development is a discipline that demands adaptiveness, learning capabilities, and an analytical approach. As a leading front end development company, we understand this sentiment and are committed toward curating visually striking and user-centric front end designs for your business.
-
 </p>
 <Link href="/about-us" className="btn-four mt-15 me-4">
                     Inquire Now
