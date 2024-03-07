@@ -107,6 +107,7 @@ const blog_data: IBlog[] = [
   ],
 content2: "",
     page: "blog-list",
+    tag: "sustainability"
   },
 
 ];

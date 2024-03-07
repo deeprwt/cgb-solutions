@@ -13,12 +13,12 @@ const HomeTwoBlogs = () => {
             <h2>Latest Blogs.</h2>
           </div>
           <p className="text-lg mb-40 lg-mb-10">
-            Get the latest update, trips & tricks from our expert.
+          Unlock fresh perspectives and stay informed with our newest blog posts.
           </p>
 
           <div className="row gx-xxl-5">
             {blog_item.map((b, i) => (
-              <div key={i} className="col-md-6">
+              <div key={i} className="col-md-4">
                 <BlogItemTwo blog={b} />
               </div>
             ))}

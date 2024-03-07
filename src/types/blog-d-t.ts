@@ -18,4 +18,5 @@ export interface IBlog {
   content: PostContent[]; // Array of PostContent interface
   content2: string; // Change the type to string
   page: string;
+  tag?: string;
 }

@@ -16,7 +16,7 @@ const HomeThreeBlogs = () => {
             <h2 className="text-dark">Latest News.</h2>
           </div>
           <p className="text-lg mb-30 lg-mb-10">
-            Get the latest update, trips & tricks from our expert.
+          Unlock fresh perspectives and stay informed with our newest blog posts.
           </p>
 
           <div className="row gx-xl-5">
