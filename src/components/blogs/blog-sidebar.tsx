@@ -43,7 +43,7 @@ const BlogSidebar = () => {
         </ul>
       </div> */}
       <div className="blog-recent-news mt-60 lg-mt-40">
-        <h3 className="sidebar-title">Recent News</h3>
+        <h3 className="sidebar-title">Recent Blogs</h3>
         {recent_blogs.map((b,i) => (
         <article key={i} className="recent-news">
           <figure
