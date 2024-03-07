@@ -11,7 +11,7 @@ import icon from "@/assets/images/icon/icon_93.svg";
 import BlogDetailsForm from "@/components/forms/blog-details-form";
 import { IBlog } from "@/types/blog-d-t";
 
-const BlogDetailsArea = ({ blog }: { blog: IBlog }) => {
+const NewsDetailsArea = ({ blog }: { blog: IBlog }) => {
   const { date, title, post_info, img, content } = blog || {};
   return (
     <div className="blog-details position-relative mt-150 lg-mt-80 mb-150 lg-mb-80">
@@ -41,6 +41,11 @@ const BlogDetailsArea = ({ blog }: { blog: IBlog }) => {
                     </div>
                   ))}
                   {/* End of content rendering */}
+                  <p>
+                    Tempus imperdiet nulla malesuada pellentesque elit eget
+                    gravida cum. Sit amet ris nullam eget felis. Enim praesent
+                    elementum facilisis leo. Ultricies leo integer.
+                  </p>
                   <div className="quote-wrapper">
                     <div className="wrapper">
                       <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto">
@@ -55,7 +60,7 @@ const BlogDetailsArea = ({ blog }: { blog: IBlog }) => {
                         </div>
                       </div>
                       <h6>
-                        Sindhu BRJ <span>CEO CGB Solutions</span>
+                        James Bond. <span>Founder Agro</span>
                       </h6>
                     </div>
                   </div>
@@ -159,4 +164,4 @@ const BlogDetailsArea = ({ blog }: { blog: IBlog }) => {
   );
 };
 
-export default BlogDetailsArea;
+export default NewsDetailsArea;
