@@ -75,7 +75,7 @@ const ContactArea = () => {
                     </div>
                   </div>
                   <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
-                    <h2>Have inquiries? Reach out via message</h2>
+                    <h2>Have inquiries? Reach to out us via message...</h2>
                   </div>
                 </div>
               </div>
