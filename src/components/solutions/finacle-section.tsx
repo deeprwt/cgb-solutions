@@ -80,7 +80,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
           <div className="row align-items-center details-meta">
             <div className="title-one">
               <h3 className="text-center">
-                Financial IT Services and Solutions
+                Financial IT services and solutions
               </h3>
               <p className="text-lg text-center px-4 mb-35 md-mb-30">
                 ScienceSoft has been an end-to-end technology partner for
