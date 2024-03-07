@@ -59,21 +59,21 @@ const menu_data:IMenu[] = [
       }
     ]
   },
-  {
-    id:4,
-    link:'#',
-    title:'JCOE',
-    dropdown:true,
-    dropdown_menus:[
-          {link:'/coming-soon',title:'SAP'},
-          {link:'/coming-soon',title:'Salesforces'},
-          {link:'/coming-soon',title:'Oracle'},
-          {link:'/coming-soon',title:'Servicenow'},
-          {link:'/coming-soon',title:'Outsystems'},
-          {link:'/coming-soon',title:'Mendix'},
-          {link:'/coming-soon',title:'Low Code No Code'},
-    ]
-  },
+  // {
+  //   id:4,
+  //   link:'#',
+  //   title:'JCOE',
+  //   dropdown:true,
+  //   dropdown_menus:[
+  //         {link:'/coming-soon',title:'SAP'},
+  //         {link:'/coming-soon',title:'Salesforces'},
+  //         {link:'/coming-soon',title:'Oracle'},
+  //         {link:'/coming-soon',title:'Servicenow'},
+  //         {link:'/coming-soon',title:'Outsystems'},
+  //         {link:'/coming-soon',title:'Mendix'},
+  //         {link:'/coming-soon',title:'Low Code No Code'},
+  //   ]
+  // },
   {
     id:5,
     link:'#',
