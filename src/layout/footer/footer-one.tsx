@@ -135,7 +135,7 @@ const FooterOne = () => {
                   </li>
                 </ul> */}
                 <div className="copyright me-xl-4 lg-mt-10 order-lg-first">
-                  Copyright &#169;{new Date().getFullYear()} CGB Solutions
+                  Copyright &#169; 2013 - {new Date().getFullYear()} CGB Solutions.
                 </div>
               </div>
             </div>
