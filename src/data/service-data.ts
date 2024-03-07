@@ -399,7 +399,7 @@ const service_data:IService[] = [
     id:51,
     icon:icon_11,
     title:'Soft skills Training',
-    desc:'Revolutionizing sales methodologies, our training equips sales teams with innovative strategies and tools to thrive in competitive markets.',
+    desc:'Soft skills training is essential for honing interpersonal abilities like communication, emotional intelligence, and teamwork.',
     page:'corporatetraining'
   },
   {
