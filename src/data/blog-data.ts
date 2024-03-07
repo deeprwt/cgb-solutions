@@ -106,7 +106,7 @@ const blog_data: IBlog[] = [
     },
   ],
 content2: "",
-    page: "home",
+    page: "blog-pg",
   },
   {
     id: 2,
