@@ -29,7 +29,7 @@ const SocialMediaMarketingSection = () => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
         title="Social media marketing agency"
-        para="Our financial IT services encompass software development,
+        para="Our Financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."
         img={SocialMedia1}
@@ -42,7 +42,7 @@ const SocialMediaMarketingSection = () => {
       <ImgTextOne
         /* Main Heading   */
         title="One partner to meet all your Financial IT needs"
-        para="Our financial IT services encompass software development,
+        para="Our Financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."
         img={SocialMedia2}
@@ -68,7 +68,7 @@ const SocialMediaMarketingSection = () => {
       <ImgTextOne
         /* Main Heading   */
         title="One partner to meet all your Financial IT needs"
-        para="Our financial IT services encompass software development,
+        para="Our Financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."
         img={SocialMedia4}

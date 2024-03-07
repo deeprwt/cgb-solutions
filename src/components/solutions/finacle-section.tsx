@@ -143,12 +143,12 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       <ImgTextOne
         /* Main Heading   */
         title="One partner to meet all your Financial IT needs"
-        para="Our financial IT services encompass software development,
-        consulting, comprehensive IT support, QA, cybersecurity, and
-        data analytics."
+        para="Our Financial IT Services Encompass Software Development,
+        Consulting, Comprehensive IT Support, QA, Cybersecurity, and
+        Data analytics."
         img={Finacle1}
         subtitle="Financial software development"
-        subpara="Our financial IT services encompass software development, consulting, comprehensive IT support, QA, cybersecurity, and data analytics."
+        subpara="Our Financial IT Services Encompass Software Development, Consulting, Comprehensive IT Support, QA, Cybersecurity, and Cata analytics."
         filter_data="finacel-1"
       />
       {/*--------------------Img and orderList tag End------------------ */}
@@ -156,12 +156,12 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
         title="One partner to meet all your Financial IT needs"
-        para="Our financial IT services encompass software development,
+        para="Our Financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."
         img={Finacle2}
         subtitle="Financial IT solution consulting"
-        subpara="We design robust solutions tailored to your needs and deliver a detailed project plan for risk-free implementation."
+        subpara="We Design Robust Solutions Tailored to Your Needs and Deliver a Detailed Project Plan for Risk-Free Implementation."
         filter_data="finacel-2"
         style_2={true}
       />
@@ -170,7 +170,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag End------------------ */}
       <ImgTextOne
         title="One partner to meet all your Financial IT needs"
-        para="Our financial IT services encompass software development,
+        para="Our Financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."
         img={Finacle3}
@@ -187,7 +187,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
         title="One partner to meet all your Financial IT needs"
-        para="Our financial IT services encompass software development,
+        para="Our Financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."
         img={Finacle4}
@@ -201,7 +201,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
         title="One partner to meet all your Financial IT needs"
-        para="Our financial IT services encompass software development,
+        para="Our Financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."
         img={Finacle6}
@@ -215,7 +215,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
        {/*--------------------Img and orderList tag Staring------------------ */}
        <ImgTextOne
         title="One partner to meet all your Financial IT needs"
-        para="Our financial IT services encompass software development,
+        para="Our Financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."
         img={Finacle5}
