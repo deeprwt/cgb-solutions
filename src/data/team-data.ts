@@ -9,6 +9,15 @@ import team_6 from "@/assets/images/media/img_23.jpg";
 import team_7 from "@/assets/images/media/img_24.jpg";
 import team_8 from "@/assets/images/media/img_25.jpg";
 // team 3
+import Rahul  from "@/assets/images/media/6.jpg"
+import Moumita  from "@/assets/images/media/2.jpg"
+import Kushangi  from "@/assets/images/media/1.jpg"
+import Shobha  from "@/assets/images/media/3.jpg"
+import gif1 from "@/assets/images/media/gif.gif"
+import gif2 from "@/assets/images/media/gif2.gif"
+import gif3 from "@/assets/images/media/gif3.gif"
+import gif4 from "@/assets/images/media/gif4.gif"
+// import Rahul  from "@/assets/images/media/6.jpg"
 import team_9 from "@/assets/images/media/img_27.jpg";
 import team_10 from "@/assets/images/media/img_28.jpg";
 import team_11 from "@/assets/images/media/img_29.jpg";
@@ -26,6 +35,7 @@ const team_data: ITeam[] = [
     name: "John Smith",
     designation: "Manager",
     page: "home",
+    gif: gif1,
   },
   {
     id: 2,
@@ -33,6 +43,7 @@ const team_data: ITeam[] = [
     name: "Rylan Blackthorn",
     designation: "Marketing Expert",
     page: "home",
+    gif: gif1,
   },
   {
     id: 3,
@@ -40,6 +51,7 @@ const team_data: ITeam[] = [
     name: "Mark Smith",
     designation: "Analysis",
     page: "home",
+    gif: gif1,
   },
   {
     id: 4,
@@ -47,6 +59,7 @@ const team_data: ITeam[] = [
     name: "Maria Escolova",
     designation: "Senior Officer",
     page: "home",
+    gif: gif1,
   },
   // home 5
   {
@@ -55,6 +68,7 @@ const team_data: ITeam[] = [
     name: "Stormrider",
     designation: "Owner & Founder",
     page: "home-5",
+    gif: gif1,
   },
   {
     id: 6,
@@ -62,6 +76,7 @@ const team_data: ITeam[] = [
     name: "Frostfall",
     designation: "Project Manager",
     page: "home-5",
+    gif: gif1,
   },
   {
     id: 7,
@@ -69,6 +84,7 @@ const team_data: ITeam[] = [
     name: "Shadowbrook",
     designation: "Lead Product Design",
     page: "home-5",
+    gif: gif1,
   },
   {
     id: 8,
@@ -76,65 +92,74 @@ const team_data: ITeam[] = [
     name: "Emberstone",
     designation: "UI Design",
     page: "home-5",
+    gif: gif1,
   },
   // team three
   {
     id: 9,
-    img: team_9,
-    name: "Stormrider",
-    designation: "Owner & Founder",
+    img: Rahul,
+    name: "Rahul Sharma",
+    designation: "Finance Manager",
     page: "team-three",
+    gif: gif2,
   },
   {
     id: 10,
-    img: team_10,
-    name: "Frostfall",
-    designation: "Project Manager",
+    img: Moumita,
+    name: "Moumita Ganguly",
+    designation: "HR Manager",
     page: "team-three",
+    gif: gif3,
   },
   {
     id: 11,
-    img: team_11,
-    name: "Shadowbrook",
-    designation: "Lead Product Design",
+    img: Shobha,
+    name: "Shobha M",
+    designation: "Auditor",
     page: "team-three",
+    gif: gif1,
   },
   {
     id: 12,
-    img: team_12,
-    name: "Emberstone",
-    designation: "UI Design",
+    img: Kushangi,
+    name: "Kushangi Shrithika",
+    designation: "Marketing Specialist",
     page: "team-three",
+    gif: gif4,
   },
   // team page
-  {
-    id: 13,
-    img: team_13,
-    name: "Starfire",
-    designation: "Manager",
-    page: "team",
-  },
-  {
-    id: 14,
-    img: team_14,
-    name: "Thunderstrike",
-    designation: "Marketing Expert",
-    page: "team",
-  },
-  {
-    id: 15,
-    img: team_15,
-    name: "Silverstone",
-    designation: "Analysis",
-    page: "team",
-  },
-  {
-    id: 16,
-    img: team_16,
-    name: "Ravenshadow",
-    designation: "Senior Officer",
-    page: "team",
-  },
+  // {
+  //   id: 13,
+  //   img: team_13,
+  //   name: "Starfire",
+  //   designation: "Manager",
+  //   page: "team",
+  //   gif: gif1,
+  // },
+  // {
+  //   id: 14,
+  //   img: team_14,
+  //   name: "Thunderstrike",
+  //   designation: "Marketing Expert",
+  //   page: "team",
+  //   gif: gif1,
+  // },
+  // {
+  //   id: 15,
+  //   img: team_15,
+  //   name: "Silverstone",
+  //   designation: "Analysis",
+  //   page: "team",
+  //   gif: gif1,
+  // },
+  // {
+  //   id: 16,
+  //   img: team_16,
+  //   name: "Ravenshadow",
+  //   designation: "Senior Officer",
+  //   page: "team",
+  //   gif: gif1,
+  // },
 ];
 
 export default team_data;

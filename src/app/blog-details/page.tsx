@@ -32,7 +32,7 @@ const BlogDetailsPage = () => {
             page="Blog"
             bg_img={blog_bg}
             style_2={true}
-            // shape={shape}
+            // // shape={shape}
           />
           {/* breadcrumb end */}
 
@@ -48,7 +48,6 @@ const BlogDetailsPage = () => {
           {/* <NewsletterBanner /> */}
           {/* news letter end */}
         </main>
-
         {/* footer start */}
         {/* <FooterThree style_2={true} /> */}
         <FooterOne />
