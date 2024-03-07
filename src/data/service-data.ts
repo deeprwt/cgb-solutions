@@ -427,7 +427,7 @@ const service_data:IService[] = [
     id:55,
     icon:icon_11,
     title:'Technical Skills Training',
-    desc:'mparts skills for technical roles, such as IT and engineering.',
+    desc:'Technical skills training is vital for professionals, offering specialized knowledge and practical expertise in their fields. Through hands-on.',
     page:'corporatetraining'
   },
   {
@@ -658,42 +658,42 @@ const service_data:IService[] = [
   {
     id:88,
     icon:icon_11,
-    title:'Lending companies',
+    title:'Lending Companies',
     desc:'',
     page:'finacle'
   },
   {
     id:89,
     icon:icon_11,
-    title:'Insurance companies',
+    title:'Insurance Companies',
     desc:'',
     page:'finacle'
   },
   {
     id:90,
     icon:icon_11,
-    title:'Investment companies',
+    title:'Investment Companies',
     desc:'',
     page:'finacle'
   },
   {
     id:91,
     icon:icon_11,
-    title:'DeFi companies',
+    title:'DeFi Companies',
     desc:'',
     page:'finacle'
   },
   {
     id:92,
     icon:icon_11,
-    title:'Fintech startups',
+    title:'Fintech Startups',
     desc:'',
     page:'finacle'
   },
   {
     id:93,
     icon:icon_11,
-    title:'Financial software product companies',
+    title:'Financial Software Sroduct Companies',
     desc:'',
     page:'finacle'
   },
