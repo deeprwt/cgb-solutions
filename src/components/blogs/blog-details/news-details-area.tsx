@@ -10,6 +10,7 @@ import blog_3 from "@/assets/images/blog/blog_img_17.jpg";
 import icon from "@/assets/images/icon/icon_93.svg";
 import BlogDetailsForm from "@/components/forms/blog-details-form";
 import { IBlog } from "@/types/blog-d-t";
+import UseSocialShare from "@/components/socail-media/socialshare";
 
 const NewsDetailsArea = ({ blog }: { blog: IBlog }) => {
   const { date, title, post_info, img, content } = blog || {};
@@ -112,24 +113,7 @@ const NewsDetailsArea = ({ blog }: { blog: IBlog }) => {
                       <Link href="#">Banking</Link>
                     </li>
                   </ul>
-                  <ul className="d-flex share-icon align-items-center style-none pt-20">
-                    <li>Share:</li>
-                    <li>
-                      <Link href="#">
-                        <i className="bi bi-facebook"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="bi bi-twitter"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="bi bi-instagram"></i>
-                      </Link>
-                    </li>
-                  </ul>
+                  <UseSocialShare />
                 </div>
               </div>
             </article>
