@@ -41,7 +41,7 @@ const SocialMediaMarketingSection = () => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
         /* Main Heading   */
-        title="One Partner to Meet All Your Financial IT Needs"
+        title="One partner to meet all your Financial IT needs"
         para="Our financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."
@@ -67,7 +67,7 @@ const SocialMediaMarketingSection = () => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
         /* Main Heading   */
-        title="One Partner to Meet All Your Financial IT Needs"
+        title="One partner to meet all your Financial IT needs"
         para="Our financial IT services encompass software development,
         consulting, comprehensive IT support, QA, cybersecurity, and
         data analytics."

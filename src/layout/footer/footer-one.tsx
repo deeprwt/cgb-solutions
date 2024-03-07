@@ -44,11 +44,11 @@ const FooterOne = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                <Link href="/about-us">About us</Link>
+                <Link href="/about-us">About Us</Link>
                   
                 </li>
                 <li>
-                <Link href="/contact">Contact us</Link>
+                <Link href="/contact">Contact Us</Link>
                 </li>
                 <li>
                   <Link href="/blog">Blogs</Link>

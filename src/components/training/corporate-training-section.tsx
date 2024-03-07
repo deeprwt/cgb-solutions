@@ -175,7 +175,7 @@ talent, <br /> business and social impact</h3>
               <div className="col-xl-4 col-md-6 wow fadeInUp">
                 <CardItem2
                   icon={icon_4}
-                  title="Digital Learing Solutions"
+                  title="Digital Learning Solutions"
                   subtitle="To make sure we only deliver the best candidates, our digital tools include a large array of tests and assessments, customized based on your needs."
                 />
               </div>

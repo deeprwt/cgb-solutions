@@ -399,7 +399,7 @@ const service_data:IService[] = [
     id:51,
     icon:icon_11,
     title:'Soft skills Training',
-    desc:'Revolutionizing sales methodologies, our training equips sales teams with innovative strategies and tools to thrive in competitive markets.',
+    desc:'Soft skills training is essential for honing interpersonal abilities like communication, emotional intelligence, and teamwork.',
     page:'corporatetraining'
   },
   {
@@ -448,14 +448,14 @@ const service_data:IService[] = [
     id:58,
     icon:icon_11,
     title:'Great solutions',
-    desc:'The best e-learning solutions come with great challenges and we are here to provide you with the best. Phoeniixx gives you the best e-learning strategies which make your business different from the competition.',
+    desc:'The best e-learning solutions come with great challenges and we are here to provide you with the best. Phoenix  gives you the best e-learning strategies which make your business different from the competition.',
     page:'customisetraining'
   },
   {
     id:59,
     icon:icon_11,
     title:'Customized solutions',
-    desc:'Every business has its own set of rules, principles and parameters and needs different e-learning strategies to successfully run in the industry. With Phoeniixx, you can get a whole new customized e-learning solution for your business.',
+    desc:'Every business has its own set of rules, principles and parameters and needs different e-learning strategies to successfully run in the industry. With Phoenix , you can get a whole new customized e-learning solution for your business.',
     page:'customisetraining'
   },
   {
