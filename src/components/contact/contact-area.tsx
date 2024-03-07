@@ -33,6 +33,7 @@ const ContactArea = () => {
     <div className="contact-us-section pt-150 lg-pt-80">
       <div className="container">
         <div className="position-relative">
+{/*          
           <div className="row">
             <div className="col-12 m-auto">
               <div className="row">
@@ -59,7 +60,7 @@ const ContactArea = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="bg-wrapper light-bg mt-80 lg-mt-40">
             <div className="row">
