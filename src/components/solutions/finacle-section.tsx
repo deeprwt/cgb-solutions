@@ -155,10 +155,6 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
 
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
-        title="One Partner to Meet All Your Financial IT Needs"
-        para="Our financial IT services encompass software development,
-        consulting, comprehensive IT support, QA, cybersecurity, and
-        data analytics."
         img={Finacle2}
         subtitle="Financial IT solution consulting"
         subpara="We design robust solutions tailored to your needs and deliver a detailed project plan for risk-free implementation."
@@ -169,10 +165,6 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
 
       {/*--------------------Img and orderList tag End------------------ */}
       <ImgTextOne
-        title="One Partner to Meet All Your Financial IT Needs"
-        para="Our financial IT services encompass software development,
-        consulting, comprehensive IT support, QA, cybersecurity, and
-        data analytics."
         img={Finacle3}
         subtitle="Financial software product consulting"
         subpara="We assist in idea productization, CX strategy creation, and technical design to help you plan and launch a winning financial solution."
@@ -186,10 +178,6 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag End------------------ */}
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
-        title="One Partner to Meet All Your Financial IT Needs"
-        para="Our financial IT services encompass software development,
-        consulting, comprehensive IT support, QA, cybersecurity, and
-        data analytics."
         img={Finacle4}
         subtitle="Financial software modernization"
         subpara="We upgrade your existing software to help you get a modern solution at an optimal cost and with minimal disruption to business workflows."
@@ -200,10 +188,6 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
      
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
-        title="One Partner to Meet All Your Financial IT Needs"
-        para="Our financial IT services encompass software development,
-        consulting, comprehensive IT support, QA, cybersecurity, and
-        data analytics."
         img={Finacle6}
         subtitle=" Quality assurance of financial solutions"
         subpara="We offer versatile QA services to ensure top-notch quality
@@ -214,10 +198,6 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag End------------------ */}
        {/*--------------------Img and orderList tag Staring------------------ */}
        <ImgTextOne
-        title="One Partner to Meet All Your Financial IT Needs"
-        para="Our financial IT services encompass software development,
-        consulting, comprehensive IT support, QA, cybersecurity, and
-        data analytics."
         img={Finacle5}
         subtitle="Managed financial IT services"
         subpara=" We monitor, troubleshoot, and upgrade all components of your financial IT infrastructure and apps to keep them stable, cost-effective, and relevant to your needs. Our teams adapt to your time zones and business hours."
