@@ -128,7 +128,7 @@ export const ul_data: IUl[] = [
   },
   {
     id: 25,
-    ul: ["Financial software development."],
+    ul: ["Financial Software Development."],
     page: "finacel-1",
   },
   {
@@ -158,7 +158,7 @@ export const ul_data: IUl[] = [
   },
   {
     id: 32,
-    ul: ["Development project planning"],
+    ul: ["Development Project planning"],
     page: "finacel-2",
   },
   {
@@ -168,17 +168,17 @@ export const ul_data: IUl[] = [
   },
   {
     id: 34,
-    ul: ["Tech stack selection."],
+    ul: ["Tech Stack Selection."],
     page: "finacel-2",
   },
   {
     id: 35,
-    ul: ["Security and compliance consulting."],
+    ul: ["Security and Compliance Consulting."],
     page: "finacel-2",
   },
   {
     id: 36,
-    ul: ["Feasibility study, cost and ROI estimation."],
+    ul: ["Feasibility study, Cost and ROI Estimation."],
     page: "finacel-2",
   },
   {
@@ -193,7 +193,7 @@ export const ul_data: IUl[] = [
   },
   {
     id: 37,
-    ul: ["User journey maps and a usability testing report."],
+    ul: ["User Journey maps and a usability testing report."],
     page: "finacel-3",
   },
   {
@@ -349,27 +349,27 @@ export const ul_data: IUl[] = [
   },
   {
     id: 68,
-    ul: ["Provide clear and logical content on the screen."],
+    ul: ["Provide Clear and Logical Content on the screen."],
     page: "SMM-3",
   },
   {
     id: 69,
-    ul: ["Be creative and entertaining while giving out your ads. Nobody wants to visit a plain sight."],
+    ul: ["Be Creative and Entertaining While Giving Out Your Ads. Nobody Wants to Visit a Plain Sight."],
     page: "SMM-3",
   },
   {
     id: 70,
-    ul: ["Deliver engaging content to bring your business up locally with the help of social media marketing agencies in Bangalore."],
+    ul: ["Deliver Engaging Content to Bring Your Business Up Locally with the Help of Social Media Marketing Agencies in Bangalore."],
     page: "SMM-3",
   },
   {
     id: 71,
-    ul: ["Provide instant solutions in all social media platforms you intend for branding such as Facebook, Instagram, Twitter, and others."],
+    ul: ["Provide Instant Solutions Across All Social Media Platforms Intended for Branding, Including Facebook, Instagram, Twitter, and Others."],
     page: "SMM-4",
   },
   {
     id: 72,
-    ul: ["Keep track of upcoming genuine comments, queries, and complaints registered on social media channels."],
+    ul: ["Keep Track of Upcoming Genuine Comments, Queries, and Complaints Registered on Social Media Channels."],
     page: "SMM-4",
   },
   {
