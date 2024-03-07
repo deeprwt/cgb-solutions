@@ -1,6 +1,5 @@
-"use client"
 import React from "react";
-// import { Metadata } from "next";
+import { Metadata } from "next";
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
@@ -9,12 +8,10 @@ import FooterThree from "@/layout/footer/footer-three";
 import shape from "@/assets/images/shape/shape_33.svg";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
-import DottedMap from "@/components/map/maps";
-import DefaultMaps from "@/components/map/maps1";
 
-// export const metadata: Metadata = {
-//   title: "Contact Page",
-// };
+export const metadata: Metadata = {
+  title: "Contact Page",
+};
 
 const ContactPage = () => {
   return (
@@ -29,16 +26,17 @@ const ContactPage = () => {
             title="Contact us for inquiries"
             subtitle="Get our all info and also can message us directly from here"
             page="Contact"
-            // shape={shape}
+            // // shape={shape}
           />
           {/* breadcrumb end */}
 
           {/* contact area start */}
-           <ContactArea />
-          <div className="text-center ">
+          <ContactArea />
+          {/* contact area end */}
 
-          <DefaultMaps/>
-          </div>
+          {/* news letter start */}
+          {/* <NewsletterBanner /> */}
+          {/* news letter end */}
         </main>
 
         {/* footer start */}

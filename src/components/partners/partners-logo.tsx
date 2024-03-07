@@ -59,7 +59,7 @@ const slider_setting = {
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
     ],
@@ -74,13 +74,13 @@ const PartnerLogo = () => {
   return (
     <>
 
-        <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
-            <div className="container pt-80 lg-pt-40 px-4 pb-80 lg-pb-40 bo-rd light-bg ">
-            <div className="row align-items-center">
-              <div className="col-xl-3 col-lg-6 wow fadeInLeft">
+        <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40 service-details">
+            <div className="container px-4 py-4 bo-rd light-bg ">
+            <div className="row align-items-center details-meta">
+              <div className="col-5 col-sm-4 d-flex justify-content-center col-lg-3 wow fadeInLeft">
                 <div className="title-one">
-                  <div className="upper-title">100+ Trusted</div>
-                  <h2>Partners</h2>
+                  {/* <div className="upper-title ">Trusted Global Brands</div> */}
+                  <h3 className="m-0 text-center">Partners</h3>
                 </div>
                 {/* <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                 Experience the extraordinary with CGB Solutions. We innovate relentlessly, 
@@ -97,7 +97,7 @@ const PartnerLogo = () => {
                   </Link> */}
                 </div>
               </div>
-              <div className="col-xl-9 col-lg-6 wow fadeInRight">
+              <div className="col-7 col-sm-8 col-lg-9 wow fadeInRight">
                 <Slider {...slider_setting} className="partner-slider-one">
                     {slider_logos.map((logo, i) => (
                         <div key={i} className="item">
@@ -112,39 +112,6 @@ const PartnerLogo = () => {
 
             </div>
         </div>
-
-        {/* <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
-            <div className="container pt-80 lg-pt-40 bo-rd">
-                <div className="row px-2 justify-content-center">
-                    <div className="title-one mb-60">
-                        <div className="upper-title"> 100+</div>
-                        <h2>Trusted Partners</h2>
-                    </div>
-                    <div className="col-4 col-md-2 wow fadeInLeft">
-                            <Image src={img1} alt="Cgb Clint Logo" layout='responsive' width={348} height={68} style={{ height: "auto" }} />
-                    </div>
-                    <div className="col-4 col-md-2 wow fadeInLeft">
-                        <Image src={img2} alt="Cgb Clint Logo" layout='responsive' width={348} height={68} style={{ height: "auto" }} />
-                    </div>
-                    <div className="col-4 col-md-2 wow fadeInLeft">
-                        <Image src={img3} alt="Cgb Clint Logo" layout='responsive' width={348} height={68} style={{ height: "auto" }} />
-                    </div>
-                    <div className="col-4 col-md-2 wow fadeInLeft">
-                        <Image src={img4} alt="Cgb Clint Logo" layout='responsive' width={348} height={68} style={{ height: "auto" }} />
-                    </div>
-                    <div className="col-4 col-md-2 wow fadeInLeft">
-                        <Image src={img5} alt="Cgb Clint Logo" layout='responsive' width={348} height={68} style={{ height: "auto" }} />
-                    </div>
-                    <div className="col-4 col-md-2 wow fadeInLeft">
-                        <Image src={img6} alt="Cgb Clint Logo" layout='responsive' width={348} height={68} style={{ height: "auto" }} />
-                    </div>
-                    <div className="col-4 col-md-2 wow fadeInLeft">
-                        <Image src={img7} alt="Cgb Clint Logo" layout='responsive' width={348} height={68} style={{ height: "auto" }} />
-                    </div>
-                </div>
-
-            </div>
-        </div> */}
     </>
   );
 };

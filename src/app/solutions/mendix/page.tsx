@@ -18,6 +18,8 @@ import TwoColData from "@/components/two-col/two-col-data";
 import MendixFeature from "@/components/solutions/mendix-feature";
 import FaqSolutions from "@/components/faq/faq-solutions";
 import FooterOne from "@/layout/footer/footer-one";
+import screen from "@/assets/images/assets/screen_11.png";
+import SectionSol1 from "@/components/two-col/section-sol1";
 
 export const metadata: Metadata = {
   title: "Mendix",
@@ -32,26 +34,36 @@ export default function Mendix() {
         {/* header end */}
         <main>
           {/* hero banner start */}
-          <BreadcrumbOne 
-          title="Mendix"
-          subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
-          page="Mendix"
-          bg_img={about_bg}
-          // shape={shape}
-          style_2={true}
+          <BreadcrumbOne
+            title="Mendix"
+            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            page="Mendix"
+            bg_img={about_bg}
+            // // shape={shape}
+            style_2={true}
           />
           {/* hero banner end */}
 
           {/* Start */}
           <TwoColData />
           {/* end */}
-          
+
           {/* start */}
           <MendixFeature />
           {/* end */}
 
           {/* start */}
-          <FaqSolutions />
+
+          {/* end */}
+
+          <SectionSol1 />
+
+          {/* start */}
+          <FaqSolutions
+            title="Why use Mendix for businesses?"
+            img={screen}
+            page="mendixfaq"
+          />
           {/* end */}
 
           {/* block feature six start */}
@@ -63,23 +75,23 @@ export default function Mendix() {
           {/* text feature four end */}
 
           {/* text feature five start */}
-          <TextFeatureFive />
+          {/* <TextFeatureFive /> */}
           {/* text feature five end */}
 
           {/* block feature seven start */}
-          <BlockFeatureSeven />
+          {/* <BlockFeatureSeven /> */}
           {/* block feature seven end */}
 
           {/* feedback three start */}
-          <FeedbackThree />
+          {/* <FeedbackThree /> */}
           {/* feedback three end */}
 
           {/* fancy banner four start */}
-          <FancyBannerFour />
+          {/* <FancyBannerFour /> */}
           {/* fancy banner four end */}
 
           {/* blog item start */}
-          <HomeThreeBlogs />
+          {/* <HomeThreeBlogs /> */}
           {/* blog item end */}
         </main>
 

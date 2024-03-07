@@ -5,15 +5,15 @@ import Image from 'next/image';
 
 import OracleImg from "@/assets/images/cgbhome/cgb-meta.jpg";
 import icon from "@/assets/images/icon/icon_09.svg";
-import img1 from "@/assets/images/cgbhome/services/1.jpg"
+import img1 from "@/assets/images/cgbhome/services/oracle.jpg"
 import img2 from "@/assets/images/cgbhome/services/2.jpg"
-import img3 from "@/assets/images/cgbhome/services/3.jpg"
-import img4 from "@/assets/images/cgbhome/services/4.jpg"
-import img5 from "@/assets/images/cgbhome/services/5.jpg"
+import img3 from "@/assets/images/cgbhome/services/finacle.jpg"
+import img4 from "@/assets/images/cgbhome/services/servicenow.jpg"
+import img5 from "@/assets/images/cgbhome/services/mendix.jpg"
 import img6 from "@/assets/images/cgbhome/services/6.jpg"
-import img7 from "@/assets/images/cgbhome/services/7.jpg"
+import img7 from "@/assets/images/cgbhome/services/salesforce.jpg"
 import img8 from "@/assets/images/cgbhome/services/8.jpg"
-import img9 from "@/assets/images/cgbhome/services/9.jpg"
+import img9 from "@/assets/images/cgbhome/services/devops.jpg"
 import img10 from "@/assets/images/cgbhome/services/10.jpg"
 
 const TabsData = () => {
@@ -45,7 +45,7 @@ const TabsData = () => {
                             technology acquisitions and new releases of applications in align with Oracle product direction and technology roadmap.
                             </p>
                             <div className="d-inline-flex flex-wrap align-items-center pb-4">
-                            <Link href="/contact" className="btn-three icon-link mt-15">
+                            <Link href="/solutions/oracle" className="btn-three icon-link mt-15">
                                 <span>Read More</span>
                                 <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
                             </Link>
@@ -78,7 +78,7 @@ const TabsData = () => {
                                 institutions with the tools they need to thrive in the digital age
                             </p>
                             <div className="d-inline-flex flex-wrap align-items-center pb-4">
-                            <Link href="/contact" className="btn-three icon-link mt-15">
+                            <Link href="/solutions/finacle" className="btn-three icon-link mt-15">
                                 <span>Read More</span>
                                 <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
                             </Link>
@@ -104,7 +104,7 @@ const TabsData = () => {
                                 From initial implementation to process optimization and module integration, we guide you through every step.
                             </p>
                             <div className="d-inline-flex flex-wrap align-items-center pb-4">
-                            <Link href="/contact" className="btn-three icon-link mt-15">
+                            <Link href="/solutions/servicenow" className="btn-three icon-link mt-15">
                                 <span>Read More</span>
                                 <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
                             </Link>
@@ -130,14 +130,20 @@ const TabsData = () => {
                                 Welcome to a new era of simplicity and efficiency in software creation.
                             </p>
                             <div className="d-inline-flex flex-wrap align-items-center pb-4">
-                            <Link href="/contact" className="btn-three icon-link mt-15">
-                                <span>Read More</span>
+                            <Link href="/solutions/outsystems" className="btn-three icon-link mt-15">
+                                <span>Outsystems</span>
+                                <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
+                            </Link>
+                            </div>
+                            <div className="d-inline-flex flex-wrap align-items-center pb-4">
+                            <Link href="/solutions/mendix" className="btn-three icon-link mt-15">
+                                <span>Mendix</span>
                                 <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
                             </Link>
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6">
-                            <Image src={img9} layout='responsive' width={1707} height={1138} alt="About us" className="w-100"></Image>
+                            <Image src={img5} layout='responsive' width={1707} height={1138} alt="About us" className="w-100"></Image>
                         </div>
                     </div>
             </div>
@@ -163,7 +169,7 @@ const TabsData = () => {
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6">
-                            <Image src={img5} layout="responsive" width={1707} height={1138} alt="About us" className="w-100"></Image>
+                            <Image src={img7} layout="responsive" width={1707} height={1138} alt="About us" className="w-100"></Image>
                         </div>
                     </div>
             </div>
@@ -189,7 +195,7 @@ const TabsData = () => {
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6">
-                            <Image src={img7} layout='responsive' width={1707} height={1138} alt="About us" className="w-100"></Image>
+                            <Image src={img9} layout='responsive' width={1707} height={1138} alt="About us" className="w-100"></Image>
                         </div>
                     </div>
             </div>
