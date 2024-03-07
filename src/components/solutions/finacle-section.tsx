@@ -148,7 +148,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
         Data analytics."
         img={Finacle1}
         subtitle="Financial software development"
-        subpara="Our Financial IT Services Encompass Software Development, Consulting, Comprehensive IT Support, QA, Cybersecurity, and Cata analytics."
+        subpara="Our Financial IT Services Encompass Software Development, Consulting, Comprehensive IT Support, QA, Cybersecurity, and Data analytics."
         filter_data="finacel-1"
       />
       {/*--------------------Img and orderList tag End------------------ */}
@@ -167,7 +167,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       <ImgTextOne
         img={Finacle3}
         subtitle="Financial software product consulting"
-        subpara="We assist in idea productization, CX strategy creation, and technical design to help you plan and launch a winning financial solution."
+        subpara="We Assist in Idea Productization, CX Strategy Creation, and Technical Design to Help You Plan and Launch a Winning Financial Solution."
         filter_data="finacel-3"
         cls="d-none"
       />
@@ -180,7 +180,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       <ImgTextOne
         img={Finacle4}
         subtitle="Financial software modernization"
-        subpara="We upgrade your existing software to help you get a modern solution at an optimal cost and with minimal disruption to business workflows."
+        subpara="We Upgrade Your Existing Software to Help You Get a Modern Solution at an Optimal Cost and with Minimal Disruption to Business Workflows."
         filter_data="finacel-4"
         style_2={true}
       />
@@ -191,8 +191,8 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
 
         img={Finacle6}
         subtitle=" Quality assurance of financial solutions"
-        subpara="We offer versatile QA services to ensure top-notch quality
-        of financial IT systems."
+        subpara="We Offer Versatile QA Services to Ensure Top-Notch Quality
+        of Financial IT Systems."
         filter_data="finacel-7"
         cls="d-none"
       />
@@ -201,7 +201,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
        <ImgTextOne
         img={Finacle5}
         subtitle="Managed financial IT services"
-        subpara=" We monitor, troubleshoot, and upgrade all components of your financial IT infrastructure and apps to keep them stable, cost-effective, and relevant to your needs. Our teams adapt to your time zones and business hours."
+        subpara=" We Monitor, Troubleshoot, and Upgrade All Components of Your Financial IT Infrastructure and Apps to Keep Them Stable, Cost-Effective, and Relevant to Your Needs. Our Teams Adapt to Your Time Zones and Business Hours."
         filter_data="finacel-6"
         style_2={true}
       />
