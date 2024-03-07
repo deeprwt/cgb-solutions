@@ -10,6 +10,7 @@ import img_1 from "@/assets/images/solutions/webdevlopment/1.jpg";
 import icon from "@/assets/images/icon/icon_27.svg";
 import shape_1 from "@/assets/images/shape/shape_11.svg";
 import shape_2 from "@/assets/images/shape/shape_12.svg";
+
 import screen from "@/assets/images/assets/screen_11.png";
 import FaqItem from "@/components/faq/faq-item";
 import WebTechLogo from "../clint-logo/web-tech-logo";
@@ -49,6 +50,7 @@ const WebDevlopmentSection = ({ cls }: { cls?: string }) => {
           </div>
         </div>
       </div>
+
       {/* card starts from here  */}
       <div className="block-feature-six bg-two position-relative pt-150 lg-pt-60 pb-120 lg-pb-40">
         <div className="container">
@@ -137,12 +139,12 @@ const WebDevlopmentSection = ({ cls }: { cls?: string }) => {
         </div>
       </div>
       {/* accordian end */}
-
+      
       {/* technolgy logo slider start  */}
       <WebTechLogo />
       {/* technolgy logo slider end  */}
 
-      {/* accordian structure reasone to choose start  */}
+            {/* accordian structure reasone to choose start  */}
       <div
         className={`faq-section-one ${
           cls ? cls : "mt-150 mb-120 lg-mt-120 md-mt-80"
@@ -154,7 +156,9 @@ const WebDevlopmentSection = ({ cls }: { cls?: string }) => {
               <div className="title-one mb-40 lg-mb-20">
                 <h2>Benefits of Outsourcing </h2>
               </div>
-              <p className="text-lg mb-40 lg-mb-20">Web Development Services</p>
+              <p className="text-lg mb-40 lg-mb-20">
+              Web Development Services
+              </p>
               <div
                 className="accordion accordion-style-one mt-15 md-mt-50"
                 id="accordionOne"
@@ -173,6 +177,8 @@ const WebDevlopmentSection = ({ cls }: { cls?: string }) => {
         </div>
       </div>
       {/* accordian end */}
+
+      
     </>
   );
 };
