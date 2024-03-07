@@ -30,7 +30,7 @@ const FooterOne = () => {
               {/* map end  */}
               {/* <p className="text-white lh-sm mb-35">Top-rated <span className="opacity-50">business <br/> consultancy for your success</span></p> */}
               <p className="text-white lh-sm mb-35">Head office <br /> <span className="opacity-50">2nd Floor, No. 898/1-2, 80 Feet Main Road Koramagala, Bengaluru, Bengaluru Urban, Karnataka, 560034</span></p>
-              <p className="text-white lh-sm mb-35 d-flex flex-wrap"><Link href="#" className="d-flex align-items-center"><Image src={icon_1} alt="icon" className="lazy-img icon me-3"/>info@cgbindia.com | &nbsp;</Link> <span className="opacity-50"> <Link href="#" className="d-flex"> <Image src={icon_2} alt="icon" className="lazy-img icon me-3"/>+91 8287668958</Link> </span></p>
+              <p className="text-white lh-sm mb-35 d-flex flex-wrap"><Link href="mailto:info@cgbindia.com" className="d-flex align-items-center"><Image src={icon_1} alt="icon" className="lazy-img icon me-3"/>info@cgbindia.com | &nbsp;</Link> <span className="opacity-50"> <Link href="tel:+918287668958" className="d-flex"> <Image src={icon_2} alt="icon" className="lazy-img icon me-3"/>+91 8287668958</Link> </span></p>
               {/* social link */}
               <ul className="style-none d-flex align-items-center social-icon">
                 <FooterSocial />
