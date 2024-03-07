@@ -31,7 +31,7 @@ const HomeThreeBlogs = () => {
             <Link href="/blog"
               className="btn-eleven d-inline-flex align-items-center"
             >
-              <span className="text">See all blogs</span>
+              <span className="text">See all Blogs</span>
               <div className="icon tran3s rounded-circle d-flex align-items-center">
                 <Image
                   src={icon}
