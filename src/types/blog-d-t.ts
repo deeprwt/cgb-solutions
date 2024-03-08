@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
 
 interface PostContent {
-  heading: string;
-  paragraph: string;
+  heading?: string;
+  paragraph?: string;
 }
 
 export interface IBlog {

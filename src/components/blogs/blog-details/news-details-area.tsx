@@ -42,11 +42,6 @@ const NewsDetailsArea = ({ blog }: { blog: IBlog }) => {
                     </div>
                   ))}
                   {/* End of content rendering */}
-                  <p>
-                    Tempus imperdiet nulla malesuada pellentesque elit eget
-                    gravida cum. Sit amet ris nullam eget felis. Enim praesent
-                    elementum facilisis leo. Ultricies leo integer.
-                  </p>
                   <div className="quote-wrapper">
                     <div className="wrapper">
                       <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto">
@@ -103,7 +98,7 @@ const NewsDetailsArea = ({ blog }: { blog: IBlog }) => {
                 <div className="bottom-widget d-sm-flex align-items-center justify-content-between">
                   <ul className="d-flex align-items-center tags style-none pt-20">
                     <li>Tag:</li>
-                    <li>
+                    {/* <li>
                       <Link href="#">Finance</Link>
                     </li>
                     <li>
@@ -111,7 +106,7 @@ const NewsDetailsArea = ({ blog }: { blog: IBlog }) => {
                     </li>
                     <li>
                       <Link href="#">Banking</Link>
-                    </li>
+                    </li> */}
                   </ul>
                   <UseSocialShare />
                 </div>
