@@ -264,27 +264,27 @@ export const ul_data: IUl[] = [
   },
   {
     id: 51,
-    ul: ["Cloud management."],
+    ul: ["Cloud Management."],
     page: "finacel-6",
   },
   {
     id: 52,
-    ul: ["User training."],
+    ul: ["User Training."],
     page: "finacel-6",
   },
   {
     id: 53,
-    ul: ["Managed security."],
+    ul: ["Managed Security."],
     page: "finacel-6",
   },
   {
     id: 54,
-    ul: ["IT automation."],
+    ul: ["IT Automation."],
     page: "finacel-6",
   },
   {
     id: 55,
-    ul: ["Financial software audit and code review."],
+    ul: ["Financial Software Audit and Code Review."],
     page: "finacel-7",
   },
   {
@@ -294,62 +294,62 @@ export const ul_data: IUl[] = [
   },
   {
     id: 57,
-    ul: [" Continuous testing in parallel with development: system, integration, regression testing, and more.."],
+    ul: ["Continuous Testing in Parallel with Development: System, Integration, Regression Testing, and more.."],
     page: "finacel-7",
   },
   {
     id: 58,
-    ul: [" Test automation"],
+    ul: [" Test Automation"],
     page: "finacel-7",
   },
   {
     id: 59,
-    ul: ["Build an active business profile to engage viewers."],
+    ul: ["Build an Active Business Profile to Engage Viewers."],
     page: "SMM-1",
   },
   {
     id: 60,
-    ul: ["Create a trustworthy environment for your customers."],
+    ul: ["Create a Trustworthy Environment for Your Customers."],
     page: "SMM-1",
   },
   {
     id: 61,
-    ul: ["Sound professional and confident in your work."],
+    ul: ["Sound Professional and Confident in Your Work"],
     page: "SMM-1",
   },
   {
     id: 62,
-    ul: ["Know your potential customers and what they are seeking."],
+    ul: ["Know Your Potential Customers and What They Are Seeking."],
     page: "SMM-1",
   },
   {
     id: 63,
-    ul: ["Use the most used social media platforms such as Facebook, Twitter, Instagram, Pinterest, and many more.."],
+    ul: ["Utilize Popular Social Media Platforms Including Facebook, Twitter, Instagram, Pinterest, and More."],
     page: "SMM-2",
   },
   {
     id: 64,
-    ul: ["Make maximum use of the engagement concepts in social media to reach your potential viewers such as captions, hashtags, reply buttons, etc."],
+    ul: ["Make Maximum Use of the Engagement Concepts in Social Media to Reach Your Potential Viewers Such as Captions, Hashtags, Reply Buttons, Etc."],
     page: "SMM-2",
   },
   {
     id: 65,
-    ul: ["Utilize the idea of likes, comments, and share to understand the desired outcome."],
+    ul: ["Utilize the Idea of Likes, Comments, and Shares to Understand the Desired Outcome."],
     page: "SMM-2",
   },
   {
     id: 66,
-    ul: ["Use social media and other online channels to promote your website in your targeted global market.Be quick."],
+    ul: ["Use Social Media and Other Online Channels to Promote Your Website in Your Targeted Global Market. Be Quick."],
     page: "SMM-2",
   },
   {
     id: 67,
-    ul: ["Build your brand through social platform ads on Facebook, Instagram, and others."],
+    ul: ["Build Your Brand Through Social Platform Ads on Facebook, Instagram, and Others."],
     page: "SMM-3",
   },
   {
     id: 68,
-    ul: ["Provide Clear and Logical Content on the screen."],
+    ul: ["Provide Clear and Logical Content on the Screen."],
     page: "SMM-3",
   },
   {
