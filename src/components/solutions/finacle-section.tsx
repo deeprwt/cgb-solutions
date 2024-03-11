@@ -48,7 +48,6 @@ function CardItem2({
     </div>
   );
 }
-
 // card item
 function CardItem({
   icon,
@@ -185,7 +184,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
         style_2={true}
       />
       {/*--------------------Img and orderList tag End------------------ */}
-     
+      
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
 
@@ -206,8 +205,6 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
         style_2={true}
       />
       {/*--------------------Img and orderList tag End------------------ */}
-
-
       {/* card2 end */}
       {/* card2 starting */}
 
