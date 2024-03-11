@@ -148,12 +148,12 @@ export const ul_data: IUl[] = [
   },
   {
     id: 30,
-    ul: ["Functional design, architecture design, UX and UI design.."],
+    ul: ["Functional Design, Architecture Design, UX and UI Design.."],
     page: "finacel-2",
   },
   {
     id: 31,
-    ul: ["Consulting on cloud, AI and ML, big data, blockchain implementation."],
+    ul: ["Consulting on lCoud, AI and ML, Big Data, Blockchain Implementation."],
     page: "finacel-2",
   },
   {
@@ -163,7 +163,7 @@ export const ul_data: IUl[] = [
   },
   {
     id: 33,
-    ul: ["Expert advice on project cost optimization."],
+    ul: ["Expert Advice on Project cost Optimization."],
     page: "finacel-2",
   },
   {
@@ -183,12 +183,12 @@ export const ul_data: IUl[] = [
   },
   {
     id: 37,
-    ul: ["A clear financial product concept."],
+    ul: ["A Clear Financial Product Concept."],
     page: "finacel-3",
   },
   {
     id: 37,
-    ul: ["A unique selling proposition."],
+    ul: ["A Unique Selling Proposition."],
     page: "finacel-3",
   },
   {
