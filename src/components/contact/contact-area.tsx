@@ -6,6 +6,7 @@ import icon_2 from "@/assets/images/icon/icon_91.svg";
 import icon_3 from "@/assets/images/icon/icon_92.svg";
 import icon_4 from "@/assets/images/assets/ils_07.svg";
 import ContactForm from "../forms/contact-form";
+import LocationTabsData from "../tabs/location-taps";
 
 // address block item
 function AddressBlock({
@@ -34,7 +35,10 @@ const ContactArea = () => {
       <div className="container">
         <div className="position-relative">
           <div className="row">
-            <div className="col-12 m-auto">
+            {/* Location data import */}
+            <LocationTabsData/>
+            {/* Location data import */}
+            {/* <div className="col-12 m-auto pt-30">
               <div className="row">
                 <div className="col-md-6">
                   <AddressBlock
@@ -58,9 +62,9 @@ const ContactArea = () => {
                     title="Live Support"
                     subtitle='live chat service <br/><a href="#" className="webaddress">www.cgbindia.com</a>'
                   />
-                </div> */}
+                </div> 
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="bg-wrapper light-bg mt-80 lg-mt-40">
