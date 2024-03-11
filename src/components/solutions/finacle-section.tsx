@@ -142,7 +142,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
         /* Main Heading   */
-        title="One partner to meet all your Financial IT needs"
+        title="One Partner to Meet all Your Financial IT needs"
         para="Our Financial IT Services Encompass Software Development,
         Consulting, Comprehensive IT Support, QA, Cybersecurity, and
         Data analytics."
