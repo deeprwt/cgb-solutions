@@ -229,17 +229,17 @@ export const ul_data: IUl[] = [
   },
   {
     id: 44,
-    ul: ["Architecture, code, UX, and UI redesign."],
+    ul: ["Architecture, Code, UX, and UI redesign."],
     page: "finacel-4",
   },
   {
     id: 45,
-    ul: ["Legacy app containerization."],
+    ul: ["Legacy App Containerization."],
     page: "finacel-4",
   },
   {
     id: 46,
-    ul: ["Software evolution with new features."],
+    ul: ["Software Evolution with New Features."],
     page: "finacel-4",
   },
   {
