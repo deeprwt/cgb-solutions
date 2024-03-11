@@ -20,7 +20,6 @@ const BlogGridArea = () => {
               </div>
             ))}
           </div>
-
           <div className="pagination-one mt-20">
             <Pagination handlePageClick={handlePageClick} pageCount={pageCount} />
           </div>
