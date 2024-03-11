@@ -13,7 +13,6 @@ import shape from "@/assets/images/shape/shape_06.svg";
 const imageStyle = {
   height: "auto",
 };
-
 // props type
 type IProps = {
   title?: string;
@@ -37,7 +36,6 @@ const ImgTextOne = ({
   style_2 = false,
 }: IProps) => {
   // const filter_ul = ul_data.filter((s) => s.page === "graphic");
-
   return (
     <>
       {!style_2 && (

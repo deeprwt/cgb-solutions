@@ -7,17 +7,17 @@ export interface IUl {
 export const ul_data: IUl[] = [
   {
     id: 1,
-    ul: ["Logo is important when it comes to branding."],
+    ul: ["Logo is Important When it Comes to Branding."],
     page: "graphic-1",
   },
   {
     id: 2,
-    ul: ["The logo is what makes you widespread, so choose it wisely."],
+    ul: ["The Logo is What Makes You Widespread, So Choose it Wisely."],
     page: "graphic-1",
   },
   {
     id: 3,
-    ul: ["Logos should align with the company's requirements as it is the foundation of your brand's identity."],
+    ul: ["Logos Should Align with The Company's Requirements as it is The Foundation of Your Brand's Identity."],
     page: "graphic-1",
   },
   {
@@ -27,103 +27,103 @@ export const ul_data: IUl[] = [
   },
   {
     id: 5,
-    ul: ["It creates a separate path from the competition."],
+    ul: ["It Creates a Separate Path From the Competition."],
     page: "graphic-1",
   },
   {
     id: 6,
-    ul: ["Brand identity is the face of your brand created by graphic designers."],
+    ul: ["Brand Identity is The Face of Your Brand Created by Graphic Designers."],
     page: "graphic-2",
   },
   {
     id: 7,
-    ul: ["It's a both philosophical and emotional concept that our graphic designers bring to life."],
+    ul: ["It's a Both philosophical and Emotional Concept That Our Graphic Designers Bring to Life."],
     page: "graphic-2",
   },
   {
     id: 8,
-    ul: ["As brand identity represents the brand's emotion it has to be consistent."],
+    ul: ["As Brand Identity Represents The Brand's Emotion it has to be Consistent."],
     page: "graphic-2",
   },
   {
     id: 9,
-    ul: ["Also, it is an integral part of attracting the targeted customers to the website."],
+    ul: ["Also, it is an Integral Part of Attracting the Targeted Customers to the Website."],
     page: "graphic-2",
   },
   {
     id: 10,
-    ul: ["A creative brochure design gives an overall idea of your products and services. Whereas the pamphlet focuses more on non-commercial promotion to reach potential customers."],
+    ul: ["A Creative Brochure Design Gives an Overall Idea of Your Products and Services. Whereas the Pamphlet Focuses More on Non-Commercial Promotion to Reach Potential Customers."],
     page: "graphic-3",
   },
   {
     id: 11,
-    ul: ["Cgbsolutions exquisitely crafts brochures & pamphlets that help our clients gain the most out of them."],
+    ul: ["CGBSolutions Exquisitely Crafts Brochures & Pamphlets That Help Our Clients Gain the Most Out of Them."],
     page: "graphic-3",
   },
   {
     id: 12,
-    ul: ["A creative design on both brochure and pamphlet can lead to your company's ROI."],
+    ul: ["A Creative Design on Both Brochure and Pamphlet Can Lead to Your Company's ROI."],
     page: "graphic-3",
   },
   {
     id: 13,
-    ul: ["Our creative graphic designers in Bangalore are exceptionally skilled at creating stand-out designs that reach people easily."],
+    ul: ["Our Creative Graphic Designers in Bangalore Are Exceptionally Skilled at Creating Stand-Out Designs That Reach People Easily"],
     page: "graphic-3",
   },
   {
     id: 14,
-    ul: ["Cgbsolutions' primary goal is to understand the client's needs and their target audience's need to create a design."],
+    ul: ["CGBSolutions' Primary Goal Is to Understand the Client's Needs and Their Target Audience's Needs to Create a Design."],
     page: "graphic-4",
   },
   {
     id: 15,
-    ul: ["Using graphic design, we create high-quality visuals that increase viewer interaction on your website."],
+    ul: ["Using Graphic Design, We Create High-Quality Visuals That Increase Viewer Interaction on Your Website."],
     page: "graphic-4",
   },
 
     {
     id: 16,
-    ul: ["Cgbsolutions is best when using graphics to communicate with its customers. It has become vital in advertising strategy to attract more potential customers."],
+    ul: ["CGBSolutions Is at Its Best When Using Graphics to Communicate with Its Customers. It Has Become Vital in Advertising Strategy to Attract More Potential Customers."],
     page: "graphic-4",
   },
   {
     id: 17,
-    ul: ["Cgbsolutions ensure customized graphic design for all client's web designing requirements."],
+    ul: ["CGBSolutions Ensures Customized Graphic Design for All Clients' Web Designing Requirements."],
     page: "graphic-5",
   },
   {
     id: 18,
-    ul: ["We build a strong rapport with the client and keep work transparent."],
+    ul: ["We Build a Strong Rapport with the Client and Keep Work Transparent"],
     page: "graphic-5",
   },
   {
     id: 19,
-    ul: ["Your ideas, we showcase without compromising the integrity of the brand."],
+    ul: ["Your Ideas, We Showcase Without Compromising the Integrity of the Brand."],
     page: "graphic-5",
   },
   {
     id: 20,
-    ul: ["As the premier graphic design company in Bangalore, we assure 100% transparency with clients regarding work."],
+    ul: ["As the Premier Graphic Design Company in Bangalore, We Assure 100% Transparency with Clients Regarding Work."],
     page: "graphic-5",
   },
   {
     id: 21,
-    ul: ["At Cgbsolutions, the clients closely work with our technical team."],
+    ul: ["At CGBSolutions, the Clients Closely Work with Our Technical Team."],
     page: "graphic-6",
   },
   {
     id: 22,
-    ul: ["The technical team always works with technology-driven solutions that are required during each phase of a project."],
+    ul: ["The Technical Team Always Works with Technology-Driven Solutions That Are Required During Each Phase of a Project"],
     page: "graphic-6",
   },
   {
     id: 23,
-    ul: ["Guarantees the best result and puts in all the effort to achieve it."],
+    ul: ["Guarantees the Best Result and Puts in All the Effort to Achieve It."],
     page: "graphic-6",
   },
   {
     id: 24,
-    ul: ["We at Cgbsolutions, completely understand the significance of technology and implement the same at work."],
+    ul: ["We at Cgbsolutions Completely Understand the Significance of Technology and Implement the Same at Work"],
     page: "graphic-6",
   },
   {
