@@ -142,12 +142,12 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
         /* Main Heading   */
-        title="One partner to meet all your Financial IT needs"
+        title="One Partner to Meet all Your Financial IT needs"
         para="Our Financial IT Services Encompass Software Development,
         Consulting, Comprehensive IT Support, QA, Cybersecurity, and
         Data analytics."
         img={Finacle1}
-        subtitle="Financial software development"
+        subtitle="Financial Software Development"
         subpara="Our Financial IT Services Encompass Software Development, Consulting, Comprehensive IT Support, QA, Cybersecurity, and Data analytics."
         filter_data="finacel-1"
       />
@@ -156,7 +156,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne 
         img={Finacle2}
-        subtitle="Financial IT solution consulting"
+        subtitle="Financial IT Solution Consulting"
         subpara="We Design Robust Solutions Tailored to Your Needs and Deliver a Detailed Project Plan for Risk-Free Implementation."
         filter_data="finacel-2"
         style_2={true}
@@ -166,7 +166,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag End------------------ */}
       <ImgTextOne
         img={Finacle3}
-        subtitle="Financial software product consulting"
+        subtitle="Financial Software Product Consulting"
         subpara="We Assist in Idea Productization, CX Strategy Creation, and Technical Design to Help You Plan and Launch a Winning Financial Solution."
         filter_data="finacel-3"
         cls="d-none"
@@ -179,7 +179,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
         img={Finacle4}
-        subtitle="Financial software modernization"
+        subtitle="Financial Software Modernization"
         subpara="We Upgrade Your Existing Software to Help You Get a Modern Solution at an Optimal Cost and with Minimal Disruption to Business Workflows."
         filter_data="finacel-4"
         style_2={true}
@@ -190,7 +190,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       <ImgTextOne
 
         img={Finacle6}
-        subtitle=" Quality assurance of financial solutions"
+        subtitle=" Quality Assurance of Financial Solutions"
         subpara="We Offer Versatile QA Services to Ensure Top-Notch Quality
         of Financial IT Systems."
         filter_data="finacel-7"
@@ -200,7 +200,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
        {/*--------------------Img and orderList tag Staring------------------ */}
        <ImgTextOne
         img={Finacle5}
-        subtitle="Managed financial IT services"
+        subtitle="Managed Financial IT Services"
         subpara=" We Monitor, Troubleshoot, and Upgrade All Components of Your Financial IT Infrastructure and Apps to Keep Them Stable, Cost-Effective, and Relevant to Your Needs. Our Teams Adapt to Your Time Zones and Business Hours."
         filter_data="finacel-6"
         style_2={true}
