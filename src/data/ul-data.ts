@@ -374,12 +374,12 @@ export const ul_data: IUl[] = [
   },
   {
     id: 73,
-    ul: ["Give a positive response to the questioners and make them feel valued at the same time."],
+    ul: ["Give a Positive Response to The Questioners and Make Them Feel Valued at The Same Time."],
     page: "SMM-4",
   },
   {
     id: 73,
-    ul: ["Offer personal help to communicate with you through private messaging."],
+    ul: ["Offer Personal Help to Communicate with You Through Private Messaging."],
     page: "SMM-4",
   },
 ];
