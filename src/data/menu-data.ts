@@ -104,14 +104,26 @@ const menu_data:IMenu[] = [
   {
     id:7,
     link:'/blog',
-    title:'Blog',
+    title:'Insights',
     dropdown:true,
     dropdown_menus:[
       {link:'/blog',title:'Blogs'},
-      {link:'/news-media',title:'News & Media'},
+      // {link:'/news-media',title:'News & Media'},
       // {link:'/blog-grid',title:'Blog Grid'},
       // {link:'/blog-details',title:'Blog Details'},
     ]
+  },
+  {
+    id:8,
+    link:'/news-media',
+    title:'News & Media',
+    // dropdown:true,
+    // dropdown_menus:[
+      // {link:'/blog',title:'Blogs'},
+      // {link:'/news-media',title:'News & Media'},
+      // {link:'/blog-grid',title:'Blog Grid'},
+      // {link:'/blog-details',title:'Blog Details'},
+    // ]
   }
   // {
   //   id:8,

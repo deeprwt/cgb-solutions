@@ -38,7 +38,7 @@ const FooterOne = () => {
               {/* social link */}
             </div>
             <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
-              <h5 className="footer-title">Links</h5>
+              <h5 className="footer-title">About</h5>
               <ul className="footer-nav-link style-none">
                 <li>
                   <Link href="/">Home</Link>
@@ -52,6 +52,9 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link href="/blog">Blogs</Link>
+                </li>
+                <li>
+                  <Link href="#">Internship Program</Link>
                 </li>
               </ul>
             </div>
