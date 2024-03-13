@@ -24,7 +24,7 @@ function AddressBlock({
   subtitle: string;
 }) {
   return (
-    <div className="address-block-one text-center mb-40 wow fadeInUp">
+    <div className="address-block-one text-center mb-40">
       <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto">
         <Image src={icon} alt="icon" className="lazy-img" />
       </div>
@@ -82,7 +82,7 @@ const LocationTabsData = () => {
               >
                 United Arab Emirates
               </button>
-              <button
+              {/* <button
                 className="nav-link"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-servicenow"
@@ -114,10 +114,11 @@ const LocationTabsData = () => {
                 tabIndex={-1}
               >
                 Europe
-              </button>
+              </button> */}
             </div>
           </nav>
           <div className="tab-content mt-20 lg-mt-40">
+            {/* tab 1start form her  */}
             <div
               className="tab-pane fade show active"
               id="nav-oracle"
@@ -155,6 +156,9 @@ const LocationTabsData = () => {
                 </div>
               </div>
             </div>
+            {/* tab 1end form her  */}
+
+            {/* tab 2start form her  */}
             <div
               className="tab-pane fade"
               id="nav-finacle"
@@ -164,7 +168,7 @@ const LocationTabsData = () => {
               <div className="accordion accordion-style-one" id="accordionTwo">
                 <div className="row justify-content-center">
                   {/*----------------------------------------Adding address IND div staring--------------------------------*/}
-                  <div className="col-md-4 pt-30 wow fadeInUp">
+                  <div className="col-md-4 pt-30">
                     <AddressBlock
                       icon={icon_1}
                       title="Dubai"
@@ -176,6 +180,9 @@ const LocationTabsData = () => {
                 </div>
               </div>
             </div>
+            {/* tab 2end form her  */}
+
+            {/* tab 3start form her  */}
             <div
               className="tab-pane fade"
               id="nav-servicenow"
@@ -186,18 +193,23 @@ const LocationTabsData = () => {
                 className="accordion accordion-style-one"
                 id="accordionThree"
               >
-                <div className="row align-items-center">
-                  {/*----------------------------------------Adding address form here --------------------------------*/}
-
-                  <div className="col-xl-6 col-lg-6">
-                    <div className="title-one pt-4">
-                      {/* <div className="upper-title">Services</div> */}
-                      <h2>ServiceNow</h2>
-                    </div>
+                <div className="row justify-content-center">
+                  {/*----------------------------------------Adding address IND div staring--------------------------------*/}
+                  <div className="col-md-4 pt-30">
+                    <AddressBlock
+                      icon={icon_1}
+                      title="Dubai"
+                      subtitle="ultan Business Centre,Oud Mehta, Dubai,UAE.PO BOX- 554617"
+                    />
                   </div>
+
+                  {/*-------------------------------------------Adding address IND div End-------------------------- */}
                 </div>
               </div>
             </div>
+            {/* tab 3end form her  */}
+
+            {/* tab 4start form her  */}
             <div
               className="tab-pane fade"
               id="nav-lowcode"
@@ -217,6 +229,9 @@ const LocationTabsData = () => {
                 </div>
               </div>
             </div>
+            {/* tab 4end form her  */}
+
+            {/* tab 5start form her  */}
             <div
               className="tab-pane fade"
               id="nav-salesforce"
@@ -236,7 +251,8 @@ const LocationTabsData = () => {
                 </div>
               </div>
             </div>
-            <div
+            {/* tab 5end form her  */}
+            {/* <div
               className="tab-pane fade"
               id="nav-devops"
               role="tabpanel"
@@ -246,7 +262,7 @@ const LocationTabsData = () => {
                 <div className="row align-items-center">
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
