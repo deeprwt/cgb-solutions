@@ -10,8 +10,7 @@ import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import team_bg from "@/assets/images/media/img_32.jpg";
 import FooterOne from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/Header";
-import TeamDetailsArea from "@/components/team/team-details-area";
-import InternshipProgramSection from "@/components/internship/internship-section";
+
 
 export const metadata: Metadata = {
   title: "Internship",
@@ -33,15 +32,6 @@ const Internship = () => {
             // // shape={shape}
             bg_img={team_bg}
           />
-          {/* breadcrumb end */}
-          <InternshipProgramSection/>
-
-          {/* <TeamDetailsArea /> */}
-          
-
-          {/* team v2 area start */}
-          {/* <TeamTwoArea /> */}
-          {/* team v2 area end */}
 
         </main>
 

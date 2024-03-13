@@ -1,9 +1,13 @@
-'use client'
-import React from 'react';
+"use client";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import ErrorMsg from '../common/error-msg';
+import ErrorMsg from "../common/error-msg";
+
+   {/*------------------------------ importing --- ToastContainere  ------------------- */}
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 type FormData = {
   name: string;
@@ -18,64 +22,91 @@ const schema = yup.object().shape({
 });
 
 const ContactForm = () => {
-  const {register,handleSubmit,reset,formState: { errors }} = useForm<FormData>({
+   {/*------------------------------ fuctions ToastContainere  ------------------- */}
+
+  // const notify = () => toast.success("Form submitted successfully!");
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
   const onSubmit = handleSubmit((data) => {
-    alert(JSON.stringify(data))
-    reset()
+    alert(JSON.stringify(data));
+    reset();
   });
   return (
-    <form id="contact-form" onSubmit={onSubmit}>
-      <div className="messages"></div>
-      <div className="row controls">
-        <div className="col-12">
-          <div className="input-group-meta form-group mb-30">
-            <label htmlFor="">Name*</label>
-            <input
-              type="text"
-              placeholder="Your Name*"
-              {...register("name")} id='name'
-              name='name'
-            />
-            <div className="help-block with-errors">
-             <ErrorMsg msg={errors.name?.message!} />
+    <>
+      <form id="contact-form" onSubmit={onSubmit}>
+        <div className="messages"></div>
+        <div className="row controls">
+          <div className="col-12">
+            <div className="input-group-meta form-group mb-30">
+              <label htmlFor="">Name*</label>
+              <input
+                type="text"
+                placeholder="Your Name*"
+                {...register("name")}
+                id="name"
+                name="name"
+              />
+              <div className="help-block with-errors">
+                <ErrorMsg msg={errors.name?.message!} />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col-12">
-          <div className="input-group-meta form-group mb-40">
-            <label htmlFor="">Email*</label>
-            <input
-              type="email"
-              placeholder="Email Address*"
-              {...register("email")} id='email'
-              name="email"
-            />
-            <div className="help-block with-errors">
-             <ErrorMsg msg={errors.email?.message!} />
+          <div className="col-12">
+            <div className="input-group-meta form-group mb-40">
+              <label htmlFor="">Email*</label>
+              <input
+                type="email"
+                placeholder="Email Address*"
+                {...register("email")}
+                id="email"
+                name="email"
+              />
+              <div className="help-block with-errors">
+                <ErrorMsg msg={errors.email?.message!} />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col-12">
-          <div className="input-group-meta form-group mb-35">
-            <textarea
-              placeholder="Your message*"
-              {...register("message")} id='message'
-              name="message"
-            ></textarea>
-            <div className="help-block with-errors">
-             <ErrorMsg msg={errors.message?.message!} />
+          <div className="col-12">
+            <div className="input-group-meta form-group mb-35">
+              <textarea
+                placeholder="Your message*"
+                {...register("message")}
+                id="message"
+                name="message"
+              ></textarea>
+              <div className="help-block with-errors">
+                <ErrorMsg msg={errors.message?.message!} />
+              </div>
             </div>
           </div>
+          <div className="col-12">
+            <button type="submit" className="btn-four tran3s w-100 d-block">
+              Send Message
+            </button>
+          </div>
         </div>
-        <div className="col-12">
-          <button type='submit' className="btn-four tran3s w-100 d-block">
-            Send Message
-          </button>
-        </div>
-      </div>
-    </form>
+      </form>
+   {/*------------------------------ToastContainere ------------------- */}
+      {/* <ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+transition: Bounce
+/> */}
+    </>
   );
 };
 
