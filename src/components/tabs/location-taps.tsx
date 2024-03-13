@@ -244,13 +244,6 @@ const LocationTabsData = () => {
             >
               <div className="accordion accordion-style-one" id="accordionSix">
                 <div className="row align-items-center">
-                  {/*----------------------------------------Adding address form here --------------------------------*/}
-                  <div className="col-xl-6 col-lg-6">
-                    <div className="title-one pt-4">
-                      {/* <div className="upper-title">Services</div> */}
-                      <h2>DevOps</h2>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
