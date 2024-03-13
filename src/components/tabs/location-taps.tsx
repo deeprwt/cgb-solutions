@@ -24,7 +24,7 @@ function AddressBlock({
   subtitle: string;
 }) {
   return (
-    <div className="address-block-one text-center mb-40 wow fadeInUp">
+    <div className="address-block-one text-center mb-40">
       <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto">
         <Image src={icon} alt="icon" className="lazy-img" />
       </div>
