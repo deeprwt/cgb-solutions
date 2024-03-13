@@ -82,7 +82,7 @@ const LocationTabsData = () => {
               >
                 United Arab Emirates
               </button>
-              {/* <button
+              <button
                 className="nav-link"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-servicenow"
@@ -114,7 +114,7 @@ const LocationTabsData = () => {
                 tabIndex={-1}
               >
                 Europe
-              </button> */}
+              </button>
             </div>
           </nav>
           <div className="tab-content mt-20 lg-mt-40">
