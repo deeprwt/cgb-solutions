@@ -13,6 +13,8 @@ import Rahul  from "@/assets/images/media/6.jpg"
 import Moumita  from "@/assets/images/media/2.jpg"
 import Kushangi  from "@/assets/images/media/1.jpg"
 import Shobha  from "@/assets/images/media/3.jpg"
+import Anurag from "@/assets/images/media/7.png"
+import Rawan from "@/assets/images/media/8.png"
 import gif1 from "@/assets/images/media/gif.gif"
 import gif2 from "@/assets/images/media/gif2.gif"
 import gif3 from "@/assets/images/media/gif3.gif"
@@ -80,18 +82,18 @@ const team_data: ITeam[] = [
   },
   {
     id: 7,
-    img: team_7,
-    name: "Shadowbrook",
-    designation: "Lead Product Design",
-    page: "home-5",
+    img: Anurag,
+    name: "Anurag Gupta",
+    designation: "Marketing Head",
+    page: "team-three",
     gif: gif1,
   },
   {
     id: 8,
-    img: team_8,
-    name: "Emberstone",
-    designation: "UI Design",
-    page: "home-5",
+    img: Rawan,
+    name: "Rawan Abu Hamdam",
+    designation: "Business Head",
+    page: "team-three",
     gif: gif1,
   },
   // team three
@@ -115,7 +117,7 @@ const team_data: ITeam[] = [
     id: 11,
     img: Shobha,
     name: "Shobha M",
-    designation: "Auditor",
+    designation: "Account Manager",
     page: "team-three",
     gif: gif1,
   },

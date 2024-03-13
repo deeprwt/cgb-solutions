@@ -21,62 +21,7 @@ const InternshipComponent = () => {
     .slice(4, 6);
   return (
     <>
-      <div className="block-feature-twelve position-relative pt-10 lg-pt-80 pb-180 lg-pb-80">
-        <div className="container">
-          {/* ---------------------------------Section staring-------------------------------*/}
-          <div className="row">
-            <div className="col-lg-11">
-              <div className="title-one mb-40 lg-mb-20">
-                <h2 className="color-deep">
-                  {/* write here something you want to write */}
-                </h2>
-              </div>
-            </div>
-          </div>
-          {/* ---------------------------------Section End-------------------------------*/}
 
-          <div className="row gx-xl-5">
-            {/* ---------------------------------Section staring-------------------------------*/}
-
-            {/* <div className="col-lg-5 d-flex mt-40 md-mt-20">
-              <div className="p-2 vstack tran3s w-100 rounded-4">
-                <Image
-                  src="/img.webp"
-                  width={1000}
-                  height={415}
-                  alt="icon"
-                  className="rounded-4 w-100"
-                />
-              </div>
-            </div> */}
-            {/* ---------------------------------Section staring-------------------------------*/}
-            <div className="col-lg-12 d-flex mt-40 md-mt-20 bg-white rounded-2">
-              <div className="">
-                <div className="row">
-                  <div className="col-lg-12">
-                    {/* <h2 className="color-deep fw-bold mt-8 mb-15">
-                    Find your team
-                    </h2> */}
-                     
-                    <div className="service-details">
-                    <div className="bg-black">
-                         <h1>hi</h1>
-                         </div>
-                      <div className="details-meta ">
-                         <h1>New Developer </h1>
-                      </div>
-                      <p>new shi</p>
-                      <div><button type="button" className="btn btn-primary">Learn More</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* ---------------------------------Section staring-------------------------------*/}
-        </div>
-        <Image src={shape} alt="shape" className="lazy-img shapes shape_01" />
-      </div>
     </>
   );
 };

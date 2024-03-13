@@ -3,30 +3,6 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import CounterUp from "../common/counter-up";
 
-// internal
-import icon from "@/assets/images/icon/icon_09.svg";
-import icon_2 from "@/assets/images/icon/icon_10.svg";
-import icon_3 from "@/assets/images/icon/icon_11.svg";
-import shape from "@/assets/images/shape/shape_05.svg";
-import ab from "@/assets/images/cgbhome/about.png"
-
-// card item
-function CardItem({icon,title,desc}:{icon:StaticImageData;title:string;desc:string}) {
-  return (
-    <div className="card-style-three d-flex pt-75 lg-pt-40 pb-45 lg-pb-20">
-      <Image
-        src={icon}
-        alt="icon"
-        className="lazy-img icon"
-      />
-      <div className="ps-4">
-        <h4 className="fw-bold mb-20">{title}</h4>
-        <p> {desc} </p>
-      </div>
-    </div>
-  )
-}
-
 // counter block
 function CounterBlock({
   num,
@@ -102,14 +78,6 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
       )}
       {style_2 && (
           <div className="container">
-            {/* <div className="counter-wrapper lg-mt-20">
-              <div className="row">
-                <CounterBlock num={160} text="+" title="Clients" delay="0" />
-                <CounterBlock num={750} text="+" title="Contractor Pool" delay="1" />
-                <CounterBlock num={160} text="+" title="Staffing Team" delay="2" />
-                <CounterBlock num={6} text="+" title="Global Delivery Center" delay="3" />
-              </div>
-            </div> */}
             <div className="counter-wrapper lg-mt-20 lg-mb-20">
               <div className="row">
                 <div className="col-md-3 col-6">
@@ -127,7 +95,7 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                 </div>
                 <div className="col-md-3 col-6">
                   <CounterBlock
-                    num={160}
+                    num={250}
                     text="+"
                     title="Staffing Team"
                     delay="2"

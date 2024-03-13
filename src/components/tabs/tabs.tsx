@@ -21,7 +21,7 @@ const TabsData = () => {
     <div className="faq-section-three light-bg border-top pt-120 lg-pt-80 pb-150 lg-pb-80 mt-150 lg-mt-100">
       <div className="container">
         <nav>
-          <div className="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+          <div className="nav nav-tabs justify-content-center flex-column flex-md-row" id="nav-tab" role="tablist">
             <button className="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-oracle" type="button" role="tab" aria-selected="true" tabIndex={-1}>Oracle</button>
             <button className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-finacle" type="button" role="tab" aria-selected="false" tabIndex={-1}>Finacle</button>
             <button className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-servicenow" type="button" role="tab" aria-selected="false" tabIndex={-1}>ServiceNow</button>
@@ -53,13 +53,7 @@ const TabsData = () => {
                         </div>
                         <div className="col-xl-6 col-lg-6 wow fadeInRight">
                             <Image src={img1} layout="responsive" width={1707} height={1138} alt="About us" className="w-100"></Image>
-                            {/* <div className="media-list-item ms-auto pe-xxl-5 pe-4 ps-xxl-5 ps-4 pb-35 md-mt-60 d-flex align-items-end">
-                            <ul className="style-none">
-                                <li>IT Consulting</li>
-                                <li>Staffing Solutions for diverse industries</li>
-                                <li>Digital Solutions improve efficiency.</li>
-                            </ul>
-                            </div> */}
+    
                         </div>
                     </div>
                 </div>
