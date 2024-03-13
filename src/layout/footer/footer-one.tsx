@@ -54,7 +54,7 @@ const FooterOne = () => {
                   <Link href="/blog">Blogs</Link>
                 </li>
                 <li>
-                  <Link href="#">Internship Program</Link>
+                  <Link href="/internship">Internship Program</Link>
                 </li>
               </ul>
             </div>
