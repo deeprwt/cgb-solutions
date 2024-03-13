@@ -35,7 +35,6 @@ const InternshipProgramSection = () => {
             </div>
           </div>
           {/* ---------------------------------Section End-------------------------------*/}
-
           <div className="row gx-xl-5">
             {/* ---------------------------------Section staring-------------------------------*/}
 
@@ -61,10 +60,10 @@ const InternshipProgramSection = () => {
                     <div className="service-details">
                          {/* impornting  */}
                          {/* <InternshipComponent/> */}
-                         <div className="details-meta ">
+                         {/* <div className="details-meta ">
                          <h1>New Developer </h1>
                       </div>
-                      <p>new shi</p>
+                      <p>new shi</p> */}
                       <div><button type="button" className="btn btn-primary">Learn More</button></div>
                       {/* <div className="details-meta ">
                          <h1>New developer </h1>
