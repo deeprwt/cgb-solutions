@@ -60,7 +60,12 @@ const InternshipProgramSection = () => {
                     </h2> */}
                     <div className="service-details">
                          {/* impornting  */}
-                         <InternshipComponent/>
+                         {/* <InternshipComponent/> */}
+                         <div className="details-meta ">
+                         <h1>New Developer </h1>
+                      </div>
+                      <p>new shi</p>
+                      <div><button type="button" className="btn btn-primary">Learn More</button></div>
                       {/* <div className="details-meta ">
                          <h1>New developer </h1>
                       </div>

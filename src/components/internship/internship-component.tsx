@@ -57,11 +57,11 @@ const InternshipComponent = () => {
                     {/* <h2 className="color-deep fw-bold mt-8 mb-15">
                     Find your team
                     </h2> */}
-                     
-                    <div className="service-details">
-                    <div className="bg-black">
+                     <div className="">
                          <h1>hi</h1>
                          </div>
+                    <div className="service-details">
+                        
                       <div className="details-meta ">
                          <h1>New Developer </h1>
                       </div>
