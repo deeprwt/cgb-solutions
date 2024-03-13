@@ -91,7 +91,8 @@
         line-height: initial;
         color: $text-dark;
         padding: 20px 0;
-        margin: 0 30px;
+        // margin: 0 30px;
+        margin: 0 24px;
         position: relative;
         @include transition(0.2s);
     }

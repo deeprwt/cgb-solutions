@@ -31,7 +31,7 @@ function AddressBlock({
 
 const ContactArea = () => {
   return (
-    <div className="contact-us-section pt-150 lg-pt-80">
+    <div className="contact-us-section pt-80 lg-pt-80">
       <div className="container">
         <div className="position-relative">
           <div className="row">
