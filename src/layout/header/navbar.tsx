@@ -129,8 +129,8 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
           </li>
           <li className="d-flex align-items-center p0 mt-15">
             <Image src={icon_2} alt="icon" className="lazy-img icon me-2" />
-            <Link href="tel:+757 699-4478" className="fw-500 text-white">
-              +757 699-4478
+            <Link href="tel:8287668958" className="fw-500 text-white">
+              8287668958
             </Link>
           </li>
         </ul>
