@@ -7,25 +7,25 @@ import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
 import icon_3 from "@/assets/images/icon/icon_81.svg";
 
+
 // image style
 const imgStyle = {
   height: "auto",
 };
-
 // card item
 function CardItem({
   icon,
   title,
   subtitle,
 }: {
-  icon: StaticImageData;
+  icon: string;
   title: string;
   subtitle: string;
 }) {
   return (
     <div className="card-style-sixteen text-center arrow mt-40 md-mt-20">
       <div className="icon m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
-        <Image src={icon} alt="icon" className="lazy-img" />
+        <Image src={icon} alt="icon"  className="lazy-img" />
       </div>
       <h4 className="fw-bold mt-35 md-mt-30 mb-15">{title}</h4>
       <p className="m0 fs-5 lh-base pe-xl-3 ps-xl-3">{subtitle}</p>
@@ -67,7 +67,7 @@ const HowWeDo = () => {
             </div>
             <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
               <CardItem
-                icon={icon_1}
+                icon={icon_3}
                 title="Coaches"
                 subtitle=" Empower your team with guidance and expertise."
               />
