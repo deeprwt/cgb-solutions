@@ -44,7 +44,7 @@ const OracleSection = ({ cls }: { cls?: string }) => {
     <>
       <div className="text-feature-five service-details position-relative mt-150 lg-mt-80 pb-50">
         <div className="container">
-          <div className="bg-wrapper">
+          <div className="bg-wrapper rounded-2">
             <div className="row">
               <div className="col-lg-7 ms-auto d-flex flex-column order-lg-last">
                 <div className="text-wrapper details-meta pt-50 pb-60 lg-pb-40 ps-3 ps-xxl-5 pe-3 pe-xxl-5">
@@ -72,7 +72,7 @@ const OracleSection = ({ cls }: { cls?: string }) => {
               </div>
               <div className="col-lg-5 d-flex order-lg-first">
                 <div
-                  className="media-wrapper w-100 d-flex align-items-center justify-content-center position-relative"
+                  className="media-wrapper w-100 d-flex align-items-center justify-content-center position-relative rounded-start"
                   style={backImg}
                 >
                   {/* <Image
@@ -86,7 +86,6 @@ const OracleSection = ({ cls }: { cls?: string }) => {
           </div>
         </div>
       </div>
-
       {/* starts from here  */}
       <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
         <div className="container">
@@ -236,13 +235,13 @@ const OracleSection = ({ cls }: { cls?: string }) => {
         </div>
       </div>
 
-      <div className="text-feature-seven mt-60 lg-mt-60 service-details">
+      {/* <div className="text-feature-seven mt-60 lg-mt-60 service-details">
         <div className="container">
           <div className="border-bottom mt-40 pb-50 sm-pb-30 details-meta">
             <div className="row">
               {/* <div className="title-one lg-mb-10 wow fadeInUp">
                     <h3>Benefits of Oracle NetSuite</h3>
-                </div> */}
+                </div> 
               <p className="text-xl text-dark mb-30 lg-mb-10">
                 Even better, these benefits are not exclusive to a singular
                 industry. Oracle NetSuite offers a wide range of benefits across
@@ -300,7 +299,7 @@ const OracleSection = ({ cls }: { cls?: string }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -22,6 +22,7 @@ import icon_15 from '@/assets/images/icon/icon_95.svg';
 import icon_16 from '@/assets/images/icon/icon_95.svg';
 import icon_17 from '@/assets/images/icon/icon_10.svg';
 import icon_18 from '@/assets/images/icon/icon_11.svg';
+import icon_20 from '@/assets/images/icon/icon_20.png';
 
 
 // data type
@@ -717,6 +718,42 @@ const service_data:IService[] = [
     title:'Excellent communicator to carry your message',
     desc:'What knowledge is if we are not adapting ourselves to our fast-forwarding lives? Yes, nobody has time to know what your company offers. However, they invest time in viewing creative graphic designs and aesthetic images. Graphic designs are not only a feast for sore eyes on your website but, also help establish communication with your customer.',
     page:'graphic'
+  },
+  // Solution Snapshot------------------
+  {
+    id:96,
+    icon:icon_20,
+    title:'',
+    desc:'Oracle E- Business Suite Capability Oracle Fusion Applications Mobility Solutions and Services  ',
+    page:'SolutionSnapshot'
+  },
+  {
+    id:96,
+    icon:icon_20,
+    title:'',
+    desc:'Application Testing Services',
+    page:'SolutionSnapshot'
+  },
+  {
+    id:96,
+    icon:icon_20,
+    title:'',
+    desc:'Application Lifecycle Management  ',
+    page:'SolutionSnapshot'
+  },
+  {
+    id:96,
+    icon:icon_20,
+    title:'',
+    desc:'Oracle Technology Services ',
+    page:'SolutionSnapshot'
+  },
+  {
+    id:96,
+    icon:icon_20,
+    title:'',
+    desc:'R12 Upgrade Service Line ',
+    page:'SolutionSnapshot'
   },
 ]
 

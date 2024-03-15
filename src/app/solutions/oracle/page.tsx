@@ -21,6 +21,7 @@ import FooterOne from "@/layout/footer/footer-one";
 import SectionSol1 from "@/components/two-col/section-sol1";
 import OracleSection from "@/components/solutions/oracle-section";
 import screen from "@/assets/images/assets/screen_11.png";
+import ComponentsDiv from "@/components/solutions/components";
 
 export const metadata: Metadata = {
   title: "Oracle",
@@ -47,12 +48,15 @@ export default function Oracle() {
 
           <OracleSection />
 
+
+          <ComponentsDiv/>
           {/* start */}
           <FaqSolutions
             title="Why use Oracle for businesses?"
             img={screen}
             page="oraclefaq"
           />
+
           {/* end */}
           {/* block feature six start */}
           {/* <BlockFeatureSix /> */}
