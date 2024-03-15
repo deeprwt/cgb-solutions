@@ -20,14 +20,14 @@ import ils_icon from '@/assets/images/assets/ils_03.svg';
 
 // props type
 type IProps = {
-active_data : boolean;
-active_data1 : boolean;
-active_data2 : boolean;
-active_data3 : boolean;
-active_data4 : boolean;
-active_data5 : boolean;
-active_data6 : boolean;
-active_data7 : boolean;
+active_data? : boolean;
+active_data1? : boolean;
+active_data2? : boolean;
+active_data3? : boolean;
+active_data4? : boolean;
+active_data5? : boolean;
+active_data6? : boolean;
+active_data7? : boolean;
 }
 
 // ServiceNav
@@ -59,9 +59,10 @@ const SideBar = ({
   return (
 
                 <ul className="style-none">
-                  <ServiceNav icon={icon_1} link="/our-story" title='Our Story' active={active_data}/>
-                  <ServiceNav icon={icon_2} link="/vision" title='Vision' active={active_data1}/>
-                  <ServiceNav icon={icon_3} link="/mission" title='Mission' active={active_data2}/>
+                  <ServiceNav icon={icon_1} link="/our-company" title='Our Company' active={active_data}/>
+                  {/* <ServiceNav icon={icon_1} link="/our-story" title='Our Story' active={active_data}/> */}
+                  {/* <ServiceNav icon={icon_2} link="/vision" title='Vision' active={active_data1}/> */}
+                  {/* <ServiceNav icon={icon_3} link="/mission" title='Mission' active={active_data2}/> */}
                   {/* <ServiceNav icon={icon_4} link="/awards" title='Awards'active={active_data3}/> */}
                   {/* <ServiceNav icon={icon_5} link="/recognition" title='Recognition'active={active_data4}/> */}
                   <ServiceNav icon={icon_6} link="/our-culture" title='Our Culture'active={active_data5}/>

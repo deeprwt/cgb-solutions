@@ -91,9 +91,10 @@ const menu_data:IMenu[] = [
     title:'Company ',
     dropdown:true,
     dropdown_menus:[
-          {link:'/our-story',title:'Our Story'},
-          {link:'/vision',title:'Vision'},
-          {link:'/mission',title:'Mission'},
+          {link:'/our-company',title:'Our Company'},
+          // {link:'/our-story',title:'Our Story'},
+          // {link:'/vision',title:'Vision'},
+          // {link:'/mission',title:'Mission'},
           // {link:'/awards',title:'Awards'},
           // {link:'/recognition',title:'Recognition'},
           {link:'/our-culture',title:'Our Culture'},

@@ -29,7 +29,7 @@ const MissionSection = ()=> {
     <div className="service-details mt-150 lg-mt-80 mb-100 lg-mb-80">
       <div className="container">
         <div className="row">
-          <div className="col-xxl-9 col-lg-9 order-lg-last">
+          <div className="col-xxl-9 col-lg-9">
             <div className="details-meta ps-xxl-5 ps-xl-3">
               {/* <div className="upper-title"></div> */}
               <h2>Our Mission</h2>
@@ -41,7 +41,7 @@ const MissionSection = ()=> {
               </div> */}
             </div>
           </div>
-          <div className="col-xxl-3 col-lg-3 order-lg-first">
+          <div className="col-xxl-3 col-lg-3">
             <aside className="md-mt-40">
               <div className="service-nav-item">
                  <SideBar 

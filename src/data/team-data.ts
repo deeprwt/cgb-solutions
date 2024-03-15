@@ -118,7 +118,7 @@ const team_data: ITeam[] = [
     img: Shobha,
     name: "Shobha M",
     designation: "Account Manager",
-    page: "team-three",
+    page: "team",
     gif: gif1,
   },
   {
@@ -126,7 +126,7 @@ const team_data: ITeam[] = [
     img: Kushangi,
     name: "Kushangi Shrithika",
     designation: "Social Media Specialist",
-    page: "team-three",
+    page: "team",
     gif: gif4,
   },
   // team page
