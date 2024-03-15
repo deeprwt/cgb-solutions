@@ -235,12 +235,12 @@ const OracleSection = ({ cls }: { cls?: string }) => {
         </div>
       </div>
 
-      {/* <div className="text-feature-seven mt-60 lg-mt-60 service-details">
+       <div className="text-feature-seven mt-60 lg-mt-60 service-details">
         <div className="container">
           <div className="border-bottom mt-40 pb-50 sm-pb-30 details-meta">
             <div className="row">
-              {/* <div className="title-one lg-mb-10 wow fadeInUp">
-                    <h3>Benefits of Oracle NetSuite</h3>
+               <div className="title-one lg-mb-10 wow fadeInUp">
+                    {/* <h3>Benefits of Oracle NetSuite</h3> */}
                 </div> 
               <p className="text-xl text-dark mb-30 lg-mb-10">
                 Even better, these benefits are not exclusive to a singular
@@ -299,7 +299,7 @@ const OracleSection = ({ cls }: { cls?: string }) => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div> 
     </>
   );
 };

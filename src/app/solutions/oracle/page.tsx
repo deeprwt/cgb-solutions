@@ -49,7 +49,7 @@ export default function Oracle() {
           <OracleSection />
 
 
-          <ComponentsDiv/>
+          {/* <ComponentsDiv/> */}
           {/* start */}
           <FaqSolutions
             title="Why use Oracle for businesses?"
