@@ -13,7 +13,6 @@ const HeaderTwo = () => {
   const { sticky } = useSticky();
      // Access the current page URL
   const pathrouter = usePathname();
-
   return (
     <>
       <header

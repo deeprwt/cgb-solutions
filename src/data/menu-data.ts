@@ -74,17 +74,17 @@ const menu_data:IMenu[] = [
   //         {link:'/coming-soon',title:'Low Code No Code'},
   //   ]
   // },
-  {
-    id:5,
-    link:'#',
-    title:'Training ',
-    dropdown:true,
-    dropdown_menus:[
-          {link:'/training/corporate-training',title:'Corporate Training'},
-          {link:'/training/customise-training',title:'Customise Training'},
-          // {link:'/coming-soon',title:'Online Courses'},
-    ]
-  },
+  // {
+  //   id:5,
+  //   link:'#',
+  //   title:'Training ',
+  //   dropdown:true,
+  //   dropdown_menus:[
+  //         {link:'/training/corporate-training',title:'Corporate Training'},
+  //         {link:'/training/customise-training',title:'Customise Training'},
+  //         {link:'/coming-soon',title:'Online Courses'},
+  //   ]
+  // },
   {
     id:6,
     link:'#',
@@ -109,7 +109,7 @@ const menu_data:IMenu[] = [
     dropdown:true,
     dropdown_menus:[
       {link:'/blog',title:'Blogs'},
-      // {link:'/news-media',title:'News & Media'},
+      {link:'/article',title:'Articles'},
       // {link:'/blog-grid',title:'Blog Grid'},
       // {link:'/blog-details',title:'Blog Details'},
     ]
@@ -126,11 +126,6 @@ const menu_data:IMenu[] = [
       // {link:'/blog-details',title:'Blog Details'},
     // ]
   }
-  // {
-  //   id:8,
-  //   link:'/contact',
-  //   title:'Contact'
-  // }
 ]
 
 export default menu_data;

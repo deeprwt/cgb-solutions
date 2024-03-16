@@ -91,7 +91,8 @@
     .post-data  {
         padding-top: 30px;
         .blog-title {
-            width: 70%;
+            // width: 70%;
+            width: 80%;
             h4 {
                 font-size: 32px;
                 line-height: 1.281em;  
@@ -102,8 +103,8 @@
         }
         .round-btn {
             font-size: 25px;
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
             border: 1px solid $heading;
             background: #fff;
             color: $heading;

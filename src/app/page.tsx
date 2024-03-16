@@ -64,7 +64,7 @@ export default function HomePage() {
           {/* clints logo start  */}
 
           {/* Ceo Profile logo start  */}
-          <CeoData />
+          {/* <CeoData /> */}
           {/* CEO Profile logo end  */}
 
           {/* partner logos start  */}

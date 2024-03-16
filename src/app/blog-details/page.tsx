@@ -13,7 +13,7 @@ import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page",
+  title: "Blog Details Page1",
 };
 
 const BlogDetailsPage = () => {
