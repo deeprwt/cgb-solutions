@@ -172,7 +172,7 @@ const LocationTabsData = () => {
                     <AddressBlock
                       icon={icon_1}
                       title="Dubai"
-                      subtitle="ultan Business Centre,Oud Mehta, Dubai,UAE.PO BOX- 554617"
+                      subtitle="Sultan Business Centre,Oud Mehta, Dubai,UAE.PO BOX- 554617"
                     />
                   </div>
 
