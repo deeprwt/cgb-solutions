@@ -4,10 +4,13 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import ErrorMsg from "../common/error-msg";
+import { db } from "@/database/firebase"; // Import Firestore instance
+import { notifySuccess, notifyError } from "@/utils/toast"; // Import notification functions
 
-   {/*------------------------------ importing --- ToastContainere  ------------------- */}
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+// ... existing imports
+
+import { addDoc, collection } from "firebase/firestore"; // Import Firestore functions
+
 
 type FormData = {
   name: string;
@@ -22,9 +25,6 @@ const schema = yup.object().shape({
 });
 
 const ContactForm = () => {
-   {/*------------------------------ fuctions ToastContainere  ------------------- */}
-
-  // const notify = () => toast.success("Form submitted successfully!");
   const {
     register,
     handleSubmit,
@@ -33,13 +33,27 @@ const ContactForm = () => {
   } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
-  const onSubmit = handleSubmit((data) => {
-    alert(JSON.stringify(data));
-    reset();
-  });
+  // const onSubmit = handleSubmit((data) => {
+  //   alert(JSON.stringify(data));
+  //   reset();
+  // });
+
+  const onSubmit = async (data: FormData) => {
+    try {
+      // Add data to Firestore collection
+      const contactRef = collection(db, "contacts");
+      await addDoc(contactRef, data);
+      notifySuccess("Message sent successfully!"); // Use notifySuccess
+      reset(); // Clear the form
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      notifyError("Error sending message, please try again."); // Use notifyError
+    }
+  };
+
   return (
     <>
-      <form id="contact-form" onSubmit={onSubmit}>
+      <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
         <div className="messages"></div>
         <div className="row controls">
           <div className="col-12">
@@ -92,20 +106,6 @@ const ContactForm = () => {
           </div>
         </div>
       </form>
-   {/*------------------------------ToastContainere ------------------- */}
-      {/* <ToastContainer
-position="top-center"
-autoClose={5000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="light"
-transition: Bounce
-/> */}
     </>
   );
 };
