@@ -38,13 +38,18 @@ const ContactForm = () => {
   //   reset();
   // });
 
+  // Define form submission handler
   const onSubmit = async (data: FormData) => {
     try {
-      // Add data to Firestore collection
-      const contactRef = collection(db, "contacts");
-      await addDoc(contactRef, data);
-      notifySuccess("Message sent successfully!"); // Use notifySuccess
-      reset(); // Clear the form
+      // Add data to Firestore collection (conditionally executed only in the client-side)
+      if (typeof window !== "undefined") {
+        // Check if window is defined (browser environment)
+        const { db } = await import("@/database/firebase");
+        const contactRef = collection(db, "contacts");
+        await addDoc(contactRef, data);
+        notifySuccess("Message sent successfully!"); // Use notifySuccess
+        reset(); // Clear the form
+      }
     } catch (error) {
       console.error("Error adding document: ", error);
       notifyError("Error sending message, please try again."); // Use notifyError
