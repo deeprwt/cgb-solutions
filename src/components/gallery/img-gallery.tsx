@@ -15,7 +15,7 @@ const imgStyle = {
 
 const ImgGallery = () => {
   const portfolio_items = portfolio_data.filter(
-    (p) => p.portfolio === "portfolio-v2-page"
+    (p) => p.portfolio === "portfolio-one"
   );
   // images
   const images = portfolio_items.map((p) => p.img.src);
@@ -41,7 +41,7 @@ const ImgGallery = () => {
                 <Masonry gutter="40px">
                   {portfolio_items.map((item, i) => (
                     <div key={i} className="portfolio-item">
-                      <div className="portfolio-block-one mb-60 lg-mb-40">
+                      <div className="portfolio-block-one mb-40 lg-mb-40">
                         <div className="img-holder round-border">
                           <Image
                             src={item.img}

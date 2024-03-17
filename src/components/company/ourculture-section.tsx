@@ -61,14 +61,14 @@ const OurCultureSection = () => {
                   excellence.
                 </p>
 
-                <div className="img-meta mb-60 lg-mb-40">
+                {/* <div className="img-meta mb-60 lg-mb-40">
                   <Image
                     src={service_img}
                     alt="service_img"
                     className="lazy-img w-100 rounded-4"
                     style={imgStyle}
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xxl-3 col-lg-3">

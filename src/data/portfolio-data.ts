@@ -16,17 +16,21 @@ import port_14 from '@/assets/images/gallery/img_15.jpg';
 import port_15 from '@/assets/images/gallery/img_16.jpg';
 import { IPortfolio } from '@/types/portfolio-d-t';
 
+// offices images 
+import img_1 from "@/assets/images/gallery/gifting-momita.jpeg"
+import img_2 from "@/assets/images/gallery/bengaluru-womens-group.jpeg"
+
 const portfolio_data:IPortfolio[] = [
   {
     id:1,
-    img:port_1,
+    img:img_1,
     tags:['PRINT','DESIGN'],
     title:'Tax Preparation.',
     portfolio:'portfolio-one'
   },
   {
     id:2,
-    img:port_2,
+    img:img_2,
     tags:['Mobile','UI/UX'],
     title:'Investment Planning',
     portfolio:'portfolio-one'
@@ -36,14 +40,14 @@ const portfolio_data:IPortfolio[] = [
     img:port_3,
     tags:['Branding','UI/UX'],
     title:'Case Studies & Branding',
-    portfolio:'portfolio-one'
+    portfolio:'portfolio-one1'
   },
   {
     id:4,
     img:port_4,
     tags:['BANNER','WEB DESIGN'],
     title:'Online Banking',
-    portfolio:'portfolio-one'
+    portfolio:'portfolio-one1'
   },
   // portfolio two
   {
