@@ -17,6 +17,7 @@ import PartnersLogos from "@/components/partners/partners-logo";
 import TabsData from "@/components/tabs/tabs";
 import TeamSectionOne from "@/components/team/team-section-one";
 import TextFeatureHome from "@/components/text-feature/text-feature-home";
+import TextFeatureNine from "@/components/text-feature/text-feature-nine";
 import TextFeatureOne from "@/components/text-feature/text-feature-one";
 import FooterOne from "@/layout/footer/footer-one";
 import Header from "@/layout/header/Header";
@@ -45,6 +46,8 @@ export default function HomePage() {
           {/* about us content start  */}
           <TextFeatureHome />
           {/* about us content start  */}
+
+          <TextFeatureNine />
 
           {/* tabs are for solutions start */}
           <TabsData />

@@ -18,7 +18,7 @@ import img10 from "@/assets/images/cgbhome/services/10.jpg"
 
 const TabsData = () => {
   return (
-    <div className="faq-section-three light-bg border-top pt-120 lg-pt-80 pb-150 lg-pb-80 mt-150 lg-mt-100">
+    <div className="faq-section-three light-bg border-top pt-120 lg-pt-80 pb-150 lg-pb-80">
       <div className="container">
         <nav>
           <div className="nav nav-tabs justify-content-center flex-column flex-md-row" id="nav-tab" role="tablist">
