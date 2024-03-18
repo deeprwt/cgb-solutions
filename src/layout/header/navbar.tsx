@@ -17,7 +17,13 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
       <li className="d-block d-lg-none">
         <div className="logo">
           <Link href="/" className="d-block">
-            <Image className="" width="165" height="60" src={logo_white ? logo_2 : logo} alt="logo" />
+            <Image
+              className=""
+              width="165"
+              height="60"
+              src={logo_white ? logo_2 : logo}
+              alt="logo"
+            />
           </Link>
         </div>
       </li>
@@ -26,7 +32,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
           key={menu.id}
           className={`nav-item ${menu.dropdown ? "dropdown" : ""} ${
             menu.mega_menu ? "dropdown mega-dropdown-sm" : ""
-          }`}
+          } ${menu.sub_dropdown ? "dropdown" : ""}`}
         >
           {menu.dropdown && (
             <>
@@ -101,6 +107,50 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
               </ul>
             </>
           )}
+          {/* add new 2sub menu component start  */}
+          {/* {menu.sub_dropdown && (
+            <>
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                {menu.title}
+              </a>
+              <ul className="dropdown-menu">
+                {menu.dropdown_submenus?.map((dm, i) => (
+                  <li key={i}>
+                    <Link
+                      href={dm.link}
+                      className={`dropdown-item ${
+                        pathname === dm.link ? "active" : ""
+                      }`}
+                    >
+                      <span>{dm.title}</span>
+                    </Link>
+                    <ul className="dropdown-menu">
+                      {dm.sub_menus?.map((subMenu, j) => (
+                        <li key={j}>
+                          <Link
+                            href={subMenu.link}
+                            className={`dropdown-item ${
+                              pathname === subMenu.link ? "active" : ""
+                            }`}
+                          >
+                            <span>{subMenu.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )} */}
+          {/* add new 2sub menu component end  */}
           {!menu.dropdown && !menu.mega_menu && (
             <Link className="nav-link" href={menu.link} role="button">
               {menu.title}

@@ -67,7 +67,7 @@ const HowWeDo = () => {
             </div>
             <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
               <CardItem
-                icon={icon_3}
+                icon={icon_1}
                 title="Coaches"
                 subtitle=" Empower your team with guidance and expertise."
               />
