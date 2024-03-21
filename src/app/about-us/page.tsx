@@ -20,6 +20,7 @@ import TextFeatureHome from "@/components/text-feature/text-feature-home";
 import TextFeatureAbout from "@/components/text-feature/text-feature-about";
 import BlockFeatureAbout from "@/components/block-feature/block-feature-about";
 import DottedMap from "@/components/map/maps";
+import HowWeDo from "@/components/home-data/how-we-do";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -61,6 +62,10 @@ const AboutUsPage = () => {
           {/* text feature one area start */}
           {/* <TextFeatureThree style_2={true} /> */}
           {/* text feature one area end */}
+
+          <BlockFeatureAbout style_2={true} />
+
+          <HowWeDo />
 
           {/* feedback one start */}
           <FeedbackOne cls="top-border pt-80 pb-80" />

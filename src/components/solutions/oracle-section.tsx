@@ -10,6 +10,8 @@ import shape_2 from "@/assets/images/shape/shape_12.svg";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
 import icon_3 from "@/assets/images/icon/icon_64.svg";
+import mendix1 from "@/assets/images/solutions/mendix-studio-pro-image-1.jpg";
+import mendix3 from "@/assets/images/solutions/mendix-studio-web-image.jpg";
 
 import bg_image from "@/assets/images/solutions/mendix.jpg";
 
@@ -42,6 +44,45 @@ const OracleSection = ({ cls }: { cls?: string }) => {
   const service_items = service_data.filter((s) => s.page === "oracle");
   return (
     <>
+      {/* first section starts from here  */}
+      <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
+        <div className="container">
+          <div className="row align-items-center details-meta">
+            <div className="title-one">
+              {/* <div className="upper-title text-center">Oracle Capability</div> */}
+              <h2 className="text-center">Oracle Capability</h2>
+              <p className="text-lg  px-4 mb-35 md-mb-30">
+                <b>CGBSolutions</b> maintains an experienced and dedicated Oracle Enterprise
+                Application Practice to provide high quality, yet cost
+                effective, accelerated solutions to our growing customer base
+                across multiple geographies and industries. <br />
+                Our services provide you with strategic differentiation and
+                operational superiority. <br />
+                Leverage our experience and methodologies to maximize return on
+                investments for your oracle applications.
+              </p>
+            </div>
+            <div className="col-xl-6 col-lg-6 wow fadeInRight">
+              <Image
+                src={mendix1}
+                layout="responsive"
+                alt="About us"
+                className="w-100 h-auto"
+              ></Image>
+            </div>
+            <div className="col-xl-6 col-lg-6 wow fadeInLeft">
+            {/* <h3 className="fw-bold text-center mt-20 mb-15">Studio (Web)</h3> */}
+              <Image
+                src={mendix3}
+                layout="responsive"
+                alt="About us"
+                className="w-100 h-auto"
+              ></Image>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* first section Ends from here  */}
       <div className="text-feature-five service-details position-relative mt-150 lg-mt-80 pb-50">
         <div className="container">
           <div className="bg-wrapper rounded-2">
@@ -235,13 +276,13 @@ const OracleSection = ({ cls }: { cls?: string }) => {
         </div>
       </div>
 
-       <div className="text-feature-seven mt-60 lg-mt-60 service-details">
+      <div className="text-feature-seven mt-60 lg-mt-60 service-details">
         <div className="container">
           <div className="border-bottom mt-40 pb-50 sm-pb-30 details-meta">
             <div className="row">
-               <div className="title-one lg-mb-10 wow fadeInUp">
-                    {/* <h3>Benefits of Oracle NetSuite</h3> */}
-                </div> 
+              <div className="title-one lg-mb-10 wow fadeInUp">
+                {/* <h3>Benefits of Oracle NetSuite</h3> */}
+              </div>
               <p className="text-xl text-dark mb-30 lg-mb-10">
                 Even better, these benefits are not exclusive to a singular
                 industry. Oracle NetSuite offers a wide range of benefits across
@@ -299,7 +340,7 @@ const OracleSection = ({ cls }: { cls?: string }) => {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </>
   );
 };

@@ -6,11 +6,11 @@ import BlogItemTwo from "./blog-item/blog-item-two";
 const HomeTwoBlogs = () => {
   const blog_item = blog_data.filter((b) => b.page === "blog-list");
   return (
-    <div className="blog-section-one position-relative lg-mt-80 pt-120 lg-pt-80">
+    <div className="blog-section-one service-details position-relative lg-mt-80 pt-120 lg-pt-80">
       <div className="container">
         <div className="position-relative">
-          <div className="title-one mb-20 lg-mb-10">
-            <h2>Latest Blogs.</h2>
+          <div className="title-one details-meta mb-20 lg-mb-10">
+            <h3>Latest Blogs.</h3>
           </div>
           <p className="text-lg mb-40 lg-mb-10">
           Unlock fresh perspectives and stay informed with our newest blog posts.

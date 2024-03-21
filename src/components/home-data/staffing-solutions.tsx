@@ -35,12 +35,12 @@ const slider_setting = {
 const StaffingSolutions = () => {
   const service_items = staffing_data.filter((s) => s.page === "staffing-1").slice(0,4);
   return (
-    <div className="block-feature-eleven overflow-hidden position-relative mt-80 lg-mt-100 pb-80 lg-pb-100 md-pb-80">
+    <div className="block-feature-eleven service-details overflow-hidden position-relative mt-80 lg-mt-100 pb-80 lg-pb-100 md-pb-80">
       <div className="container">
         <div className="row gx-lg-5 align-items-center">
           <div className="col-lg-5 wow fadeInLeft">
-            <div className="title-one">
-              <h2 className="">Staffing Solutions</h2>
+            <div className="title-one details-meta">
+              <h3 className="">Staffing Solutions</h3>
             </div>
             <p className="text-lg text-dark mt-30 md-mt-20 mb-45 md-mb-30">
             We offer a combination of these services tailored to the specific needs of our clients, aiming to streamline their staffing processes and optimize workforce management

@@ -56,12 +56,6 @@ export default function HomePage() {
           <StaffingSolutions />
 
 
-          <BlockFeatureAbout style_2={true} />
-
-          {/* how we do page section start  */}
-          <HowWeDo />
-          {/* how we do page section end  */}
-
           {/* clints logo start  */}
           <ClintLogo />
           {/* clints logo start  */}

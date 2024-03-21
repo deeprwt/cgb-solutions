@@ -39,13 +39,13 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <>
       {!style_2 && (
-        <div className="text-feature-one mt-150 lg-mt-100">
+        <div className="text-feature-one service-details mt-150 lg-mt-100">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-5 col-lg-6 wow fadeInLeft">
-                <div className="title-one">
+                <div className="title-one details-meta">
                   <div className="upper-title">About us</div>
-                  <h2>Where Technology meets Excellence</h2>
+                  <h3>Where Technology meets Excellence</h3>
                 </div>
                 <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                 Experience the extraordinary with CGB Solutions. We innovate relentlessly, 

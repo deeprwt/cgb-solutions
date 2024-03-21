@@ -11,18 +11,20 @@ import screen from "@/assets/images/assets/Industries.png";
 const imgStyle = {
   height: "auto",
 };
+
+
 const TextFeatureNine = () => {
   return (
-    <div className="text-feature-nine position-relative mt-180 lg-mt-80">
+    <div className="text-feature-nine service-details position-relative mt-180 lg-mt-80">
       <div className="container">
         <div className="position-relative">
           <div className="row">
-            <div className="col-lg-6 wow fadeInLeft">
+            <div className="col-lg-6 wow fadeInLeft details-meta">
               <div className="pt-110 lg-pt-80 pb-300 xl-pb-200 md-pb-50 pe-xxl-5">
-                <div className="title-two mb-30">
-                  <h2 className="text-white">
-                    Industries <br /> <span>We Serve</span>
-                  </h2>
+                <div className="title-one mb-30">
+                  <h3 className="text-white">
+                    Industries <br /> <span style={{color:'#4beddb'}}>We Serve</span>
+                  </h3>
                 </div>
                 <p className="text-lg text-white opacity-75 mb-50 lg-mb-30">
                   Cgbsolution aims at delivering a comprehensive suite of tools that
@@ -99,12 +101,12 @@ const TextFeatureNine = () => {
         className="lazy-img shapes shape_03"
         style={imgStyle}
       />
-      <Image
+      {/* <Image
         src={screen}
         alt="screen"
         className="lazy-img shapes shape_04"
         style={imgStyle}
-      />
+      /> */}
     </div>
   );
 };
