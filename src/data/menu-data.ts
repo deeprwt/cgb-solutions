@@ -55,24 +55,45 @@ const menu_data: IMenu[] = [
   //     }
   //   ]
   // },
+  // {
+  //   id: 3,
+  //   link: "#",
+  //   title: "Services",
+  //   dropdown: true,
+  //   dropdown_menus: [
+  //     { link: "/solutions/oracle", title: "Oracle" },
+  //     { link: "/solutions/finacle", title: "Finacle Core Banking" },
+  //     { link: "/solutions/servicenow", title: "Service Now" },
+  //     { link: "/solutions/servicenow", title: "Infrastructure Management" },
+  //     { link: "/solutions/automation-anywhere", title: "Automation Anywhere" },
+  //     {link:'/solutions/automation-anywhere',title:'Low Code No Code'},
+  //     { link: "/solutions/outsystems", title: "Outsystems" },
+  //     { link: "/solutions/mendix", title: "Mendix" },
+  //     { link: "/contract-staffing", title: "Contract Staffing" },
+  //     { link: "/solutions/digital-marketing", title: "Digital Services" },
+  //   ],
+  // },
   {
-    id:3,
-    link:'#',
-    title:'Services',
-    dropdown:true,
-    dropdown_menus:[
-                   {link:'/solutions/oracle',title:'Oracle'},
-          {link:'/solutions/finacle',title:'Finacle Core Banking'},
-          {link:'/solutions/servicenow',title:'Service Now'},
-          {link:'/solutions/servicenow',title:'Infrastructure Management'},
-          {link:'/solutions/automation-anywhere',title:'Automation Anywhere'},
-          // {link:'/solutions/automation-anywhere',title:'Low Code No Code'},
-          {link:'/solutions/outsystems',title:'Outsystems'},
-          {link:'/solutions/mendix',title:'Mendix'},
-                    {link:'/contract-staffing',title:'Contract Staffing'},
-                              {link:'/solutions/digital-marketing',title:'Digital Services'},
-
-    ]
+    id: 3,
+    link: "#",
+    title: "Services",
+    sub_dropdown: true,
+    dropdown_submenus: [
+      { link: "/solutions/oracle", title: "Oracle" },
+      { link: "/solutions/finacle", title: "Finacle Core Banking" },
+      { link: "/solutions/servicenow", title: "Service Now" },
+      { link: "/solutions/servicenow", title: "Infrastructure Management" },
+      { link: "/solutions/automation-anywhere", title: "Automation Anywhere" },
+      {link:'/solutions/automation-anywhere',title:'Low Code No Code',
+     sub_menus: [
+      { link: "/solutions/outsystems", title: "Outsystems" },
+      { link: "/solutions/mendix", title: "Mendix" },
+      { link: "/solutions/mendix", title: "Unqork" },
+     ],
+    },
+      { link: "/contract-staffing", title: "Contract Staffing" },
+      { link: "/solutions/digital-marketing", title: "Digital Services" },
+    ],
   },
   // {
   //   id: 3,
@@ -87,13 +108,12 @@ const menu_data: IMenu[] = [
   //     { link: "/solutions/automation-anywhere", title: "Automation Anywhere" },
   //     { link: "/solutions/automation-anywhere", title: "Low Code No Code" },
 
-
   //     { link: "/contract-staffing", title: "Contract Staffing" },
   //     { link: "/solutions/digital-marketing", title: "Digital Services" },
   //   ],
   //   sub_dropdown: true,
   //   dropdown_submenus: [
-  //     { 
+  //     {
   //       link: '/solutions/mendix',
   //       title: 'Low Code No Code 2',
   //       sub_menus: [
@@ -154,8 +174,6 @@ const menu_data: IMenu[] = [
     dropdown_menus: [
       { link: "/blog", title: "Blogs" },
       { link: "/article", title: "Articles" },
-      // {link:'/blog-grid',title:'Blog Grid'},
-      // {link:'/blog-details',title:'Blog Details'},
     ],
   },
   {

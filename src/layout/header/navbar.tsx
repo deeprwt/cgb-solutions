@@ -108,7 +108,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
             </>
           )}
           {/* add new 2sub menu component start  */}
-          {/* {menu.sub_dropdown && (
+          {menu.sub_dropdown && (
             <>
               <a
                 className="nav-link dropdown-toggle"
@@ -122,36 +122,58 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
               </a>
               <ul className="dropdown-menu">
                 {menu.dropdown_submenus?.map((dm, i) => (
-                  <li key={i}>
-                    <Link
-                      href={dm.link}
-                      className={`dropdown-item ${
-                        pathname === dm.link ? "active" : ""
-                      }`}
-                    >
-                      <span>{dm.title}</span>
-                    </Link>
-                    <ul className="dropdown-menu">
-                      {dm.sub_menus?.map((subMenu, j) => (
-                        <li key={j}>
-                          <Link
-                            href={subMenu.link}
-                            className={`dropdown-item ${
-                              pathname === subMenu.link ? "active" : ""
-                            }`}
-                          >
-                            <span>{subMenu.title}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                  <li key={i} className={`${dm.sub_menus ? "dropdown" : ""}`}>
+                    {dm.sub_menus ? (
+                      <>
+                        <a
+                          className="nav-link dropdown-toggle"
+                          style={{
+                            color: "#2B2B2B",
+                            fontWeight: "400",
+                            margin: "0px",
+                            padding: "8px 16px",
+                          }}
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside"
+                          aria-expanded="false"
+                        >
+                          {dm.title}
+                        </a>
+                        <ul className="dropdown-menu">
+                          {dm.sub_menus.map((aa, j) => (
+                            <li key={j}>
+                              <Link
+                                href={aa.link}
+                                style={{padding:"0px 15px"}}
+                                className={`dropdown-item ${
+                                  pathname === aa.link ? "active" : ""
+                                }`}
+                              >
+                                <span>{aa.title}</span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    ) : (
+                      <Link
+                        href={dm.link}
+                        className={`dropdown-item ${
+                          pathname === dm.link ? "active" : ""
+                        }`}
+                      >
+                        <span>{dm.title}</span>
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
             </>
-          )} */}
+          )}
           {/* add new 2sub menu component end  */}
-          {!menu.dropdown && !menu.mega_menu && (
+          {!menu.dropdown && !menu.mega_menu && !menu.sub_dropdown && (
             <Link className="nav-link" href={menu.link} role="button">
               {menu.title}
             </Link>
