@@ -10,10 +10,14 @@ import shape_2 from "@/assets/images/shape/shape_12.svg";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
 import icon_3 from "@/assets/images/icon/icon_64.svg";
-import mendix1 from "@/assets/images/solutions/mendix-studio-pro-image-1.jpg";
-import mendix3 from "@/assets/images/solutions/mendix-studio-web-image.jpg";
+import img1 from "@/assets/images/solutions/oracle/oracle1.png";
+import img2 from "@/assets/images/solutions/oracle/oracle2.png";
 
 import bg_image from "@/assets/images/solutions/mendix.jpg";
+import portfolio1 from "@/assets/images/solutions/oracle/portfolio1.png";
+import portfolio2 from "@/assets/images/solutions/oracle/portfolio2.png";
+import portfolio3 from "@/assets/images/solutions/oracle/portfolio3.png";
+import TextFeatureTwo from "../text-feature/text-feature-two";
 
 const backImg = {
   backgroundImage: `url('${bg_image.src}')`,
@@ -26,13 +30,40 @@ function CardItem({
   subtitle,
 }: {
   icon: StaticImageData;
-  title: string;
+  title?: string;
+  subtitle: string;
+}) {
+  return (
+    <div className="card-style-sixteen text-center mt-40 md-mt-20">
+      <div className="m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
+        <Image
+          src={icon}
+          alt="icon"
+          width={300}
+          height={300}
+          className="lazy-img rounded-circle"
+        />
+      </div>
+      <h4 className="fw-bold mt-35 md-mt-30 mb-15">{title}</h4>
+      <p className="m0 fs-5 lh-base">{subtitle}</p>
+    </div>
+  );
+}
+
+// card item
+function CardItem2({
+  icon,
+  title,
+  subtitle,
+}: {
+  icon: StaticImageData;
+  title?: string;
   subtitle: string;
 }) {
   return (
     <div className="card-style-sixteen text-center mt-40 md-mt-20">
       <div className="icon m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
-        <Image src={icon} alt="icon" className="lazy-img" />
+        <Image src={icon} alt="icon" className="lazy-img rounded-circle" />
       </div>
       <h4 className="fw-bold mt-35 md-mt-30 mb-15">{title}</h4>
       <p className="m0 fs-5 lh-base">{subtitle}</p>
@@ -52,28 +83,28 @@ const OracleSection = ({ cls }: { cls?: string }) => {
               {/* <div className="upper-title text-center">Oracle Capability</div> */}
               <h2 className="text-center">Oracle Capability</h2>
               <p className="text-lg  px-4 mb-35 md-mb-30">
-                <b>CGBSolutions</b> maintains an experienced and dedicated Oracle Enterprise
-                Application Practice to provide high quality, yet cost
-                effective, accelerated solutions to our growing customer base
-                across multiple geographies and industries. <br />
+                <b>CGBSolutions</b> maintains an experienced and dedicated
+                Oracle Enterprise Application Practice to provide high quality,
+                yet cost effective, accelerated solutions to our growing
+                customer base across multiple geographies and industries. <br />
                 Our services provide you with strategic differentiation and
                 operational superiority. <br />
                 Leverage our experience and methodologies to maximize return on
                 investments for your oracle applications.
               </p>
             </div>
-            <div className="col-xl-6 col-lg-6 wow fadeInRight">
+            <div className="col-xl-6 col-lg-6 wow fadeInLeft">
               <Image
-                src={mendix1}
+                src={img1}
                 layout="responsive"
                 alt="About us"
                 className="w-100 h-auto"
               ></Image>
             </div>
-            <div className="col-xl-6 col-lg-6 wow fadeInLeft">
-            {/* <h3 className="fw-bold text-center mt-20 mb-15">Studio (Web)</h3> */}
+            <div className="col-xl-6 col-lg-6 wow fadeInRight">
+              {/* <h3 className="fw-bold text-center mt-20 mb-15">Studio (Web)</h3> */}
               <Image
-                src={mendix3}
+                src={img2}
                 layout="responsive"
                 alt="About us"
                 className="w-100 h-auto"
@@ -83,82 +114,26 @@ const OracleSection = ({ cls }: { cls?: string }) => {
         </div>
       </div>
       {/* first section Ends from here  */}
-      <div className="text-feature-five service-details position-relative mt-150 lg-mt-80 pb-50">
-        <div className="container">
-          <div className="bg-wrapper rounded-2">
-            <div className="row">
-              <div className="col-lg-7 ms-auto d-flex flex-column order-lg-last">
-                <div className="text-wrapper details-meta pt-50 pb-60 lg-pb-40 ps-3 ps-xxl-5 pe-3 pe-xxl-5">
-                  <div className="title-one">
-                    <h3 className="text-dark">What is Oracle NetSuite</h3>
-                  </div>
-                  <p className="text-lg text-dark mt-25 mb-35 lg-mb-30">
-                    Oracle NetSuite is a leading cloud-based Enterprise Resource
-                    Planning (ERP) software that combines financial management,
-                    customer relationship management (CRM), inventory and order
-                    management, e-commerce, and more into a single, integrated
-                    platform. It provides businesses with real-time visibility
-                    into their operations, enabling better decision-making,
-                    improved efficiency, and enhanced collaboration.
-                  </p>
-                  {/* <Link href="/about-us"
-                    className="btn-eleven d-inline-flex align-items-center mt-40"
-                  >
-                    <span className="text">More about us</span>
-                    <div className="icon tran3s rounded-circle d-flex align-items-center">
-                      <Image src={icon_1} alt="icon" className="lazy-img" />
-                    </div>
-                  </Link> */}
-                </div>
-              </div>
-              <div className="col-lg-5 d-flex order-lg-first">
-                <div
-                  className="media-wrapper w-100 d-flex align-items-center justify-content-center position-relative rounded-start"
-                  style={backImg}
-                >
-                  {/* <Image
-                    src={screen}
-                    alt="screen"
-                    className="lazy-img shapes screen_01"
-                  /> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* starts from here  */}
-      <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
-        <div className="container">
-          <div className="row align-items-center details-meta">
-            <div className="title-one">
-              <div className="upper-title text-center">
-                Unlock Your Business Potential
-              </div>
-              <h2 className="text-center">Oracle NetSuite ERP</h2>
-              <p className="text-lg text-center px-4 mb-35 md-mb-30">
-                Welcome to the world of Oracle NetSuite, a comprehensive
-                cloud-based ERP solution designed to streamline your business
-                operations and drive growth. With its robust features and
-                powerful functionalities, NetSuite empowers businesses across
-                various industries to achieve efficiency, agility, and
-                scalability.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Ends from here  */}
-
       {/* card starts from here  */}
       <div className="block-feature-six service-details bg-two position-relative pt-80 lg-pt-60 pb-80 lg-pb-40">
         <div className="container details-meta">
           <div className="row gx-lg-5">
             <div className="col-lg-12">
-              <div className="row">
+              <div className="row justify-content-center">
                 <div className="title-one">
                   {/* <div className="upper-title">Core aspects of</div> */}
-                  <h2 className="mb-80">Challenges that NetSuite Solves</h2>
+                  <h2 className="mb-80 text-center">Solution Snapshot</h2>
+                  <p className="text-lg  px-4 mb-35 md-mb-30">
+                    CGB offers a comprehensive range of services built around
+                    Oracle global business units, technology acquisitions and
+                    new releases of applications in align with Oracle product
+                    direction and technology roadmap.
+                  </p>
+                  <p className="text-lg  px-4 mb-35 md-mb-30">
+                    These services focus on implementing lean, agile and mature
+                    business processes, deploying scalable business networks,
+                    helping customers with real time information and insight.
+                  </p>
                 </div>
                 {service_items.map((item, i) => (
                   <div
@@ -167,17 +142,19 @@ const OracleSection = ({ cls }: { cls?: string }) => {
                     data-wow-delay={`0.${i}s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center align-self-center">
+                      <div className="d-flex align-items-center align-self-center">
                         <Image
                           src={item.icon}
                           alt="icon"
                           className="lazy-img"
                         />
                       </div>
-                      <h4 className="fw-bold mt-30 mb-20 text-center">
+                      {/* <h4 className="fw-bold mt-30 mb-20 text-center">
                         {item.title}
-                      </h4>
-                      <p className="text-center">{item.desc}</p>
+                      </h4> */}
+                      <p className="fw-semibold text-center mb-0 mt-30">
+                        {item.desc}
+                      </p>
                       {/* <Link href="/service-details" className="stretched-link"></Link> */}
                     </div>
                   </div>
@@ -191,22 +168,26 @@ const OracleSection = ({ cls }: { cls?: string }) => {
       </div>
       {/* card end */}
 
-      <div className="text-feature-seven mt-170 lg-mt-80 service-details">
+      <div className="text-feature-seven mt-80 lg-mt-80 service-details">
         <div className="container">
           <div className="border-bottom mt-40 pb-50 sm-pb-30 details-meta">
             <div className="row">
               <div className="title-one lg-mb-10 wow fadeInUp">
-                <h2>Benefits of Oracle NetSuite</h2>
+                <h2>Service Portfolio</h2>
               </div>
               <p className="text-xl text-dark mb-30 lg-mb-10">
-                There are a plethora of benefits that Oracle NetSuite ERP can
-                offer, including:
+                Discover Our Range of Expert Services Tailored to Meet Your
+                Needs
               </p>
               <div className="col-lg-4 d-flex wow fadeInUp">
                 <CardItem
-                  icon={icon_1}
-                  title="Streamline Financial Processes"
-                  subtitle="Automate and streamline your financial operations to enhance efficiency and productivity."
+                  icon={portfolio1}
+                  title="Advisory Services"
+                  subtitle="Health Checks around existing
+                  environment.
+                  License Reselling
+                  Training & Documentation  Upgrade Assessment to New Releases
+                  "
                 />
               </div>
               <div
@@ -214,9 +195,13 @@ const OracleSection = ({ cls }: { cls?: string }) => {
                 data-wow-delay="0.1s"
               >
                 <CardItem
-                  icon={icon_2}
-                  title="Enhance Inventory Visibility"
-                  subtitle="Gain real-time visibility into inventory levels, minimizing costs and ensuring timely order fulfillment."
+                  icon={portfolio2}
+                  title="Core Services"
+                  subtitle="Implementations  Rollouts – Global and Local
+                  Upgrades
+                  Application Management Support  Legacy Migration and Modernization
+                  Business Process Re-Engineering
+                  "
                 />
               </div>
               <div
@@ -224,123 +209,21 @@ const OracleSection = ({ cls }: { cls?: string }) => {
                 data-wow-delay="0.2s"
               >
                 <CardItem
-                  icon={icon_3}
-                  title="Seamless Order Management"
-                  subtitle="Streamline and error-proof your order management and procurement processes for flawless operations."
+                  icon={portfolio3}
+                  title="Extended Services"
+                  subtitle="Master data Management  Custom Enhancements  Testing Services
+                  Infrastructure Management Support  Integration Services
+                  Data Centre Hosting Services
+                  "
                 />
               </div>
-              <div
-                className="col-lg-6 d-flex wow fadeInUp"
-                data-wow-delay="0.3s"
-              >
-                <CardItem
-                  icon={icon_2}
-                  title="Optimize the Supply Chain"
-                  subtitle="Improve the flow of goods across the entire value chain, from suppliers to customers, for enhanced control and efficiency."
-                />
-              </div>
-              <div
-                className="col-lg-6 d-flex wow fadeInUp"
-                data-wow-delay="0.4s"
-              >
-                <CardItem
-                  icon={icon_3}
-                  title="Improve Warehouse Efficiency"
-                  subtitle="Enhance warehouse operations by optimizing the putaway process and reducing errors in picking."
-                />
-              </div>
-              {/* <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.5s">
-              <CardItem
-                icon={icon_1}
-                title="Artificial Intelligence"
-                subtitle="Leverage smart applications; seamlessly integrate AI and cognitive services to elevate the effectiveness of your solutions."
-              />
-            </div>
-            <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.6s">
-              <CardItem
-                icon={icon_2}
-                title="
-                Smart Automation"
-                subtitle="Deliver seamless end-to-end process automation with integrated applications that connect people, data, and systems."
-              />
-            </div>
-            <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.7s">
-              <CardItem
-                icon={icon_3}
-                title="Data Integration"
-                subtitle="Be open and extensible at all levels: platform, models, and apps. Integrate data and logic from any service, system, or source."
-              />
-            </div> */}
             </div>
           </div>
         </div>
       </div>
+
+      <TextFeatureTwo />
 
-      <div className="text-feature-seven mt-60 lg-mt-60 service-details">
-        <div className="container">
-          <div className="border-bottom mt-40 pb-50 sm-pb-30 details-meta">
-            <div className="row">
-              <div className="title-one lg-mb-10 wow fadeInUp">
-                {/* <h3>Benefits of Oracle NetSuite</h3> */}
-              </div>
-              <p className="text-xl text-dark mb-30 lg-mb-10">
-                Even better, these benefits are not exclusive to a singular
-                industry. Oracle NetSuite offers a wide range of benefits across
-                different industries, such as:
-              </p>
-              <div className="col-lg-4 d-flex wow fadeInUp">
-                <CardItem
-                  icon={icon_1}
-                  title="Manufacturing"
-                  subtitle="Streamline production processes, manage complex supply chains, and improve operational efficiency."
-                />
-              </div>
-              <div
-                className="col-lg-4 d-flex wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                <CardItem
-                  icon={icon_2}
-                  title="
-                E-commerce"
-                  subtitle="Integrate your e-commerce platform with back-end operations for seamless order processing and inventory management."
-                />
-              </div>
-              <div
-                className="col-lg-4 d-flex wow fadeInUp"
-                data-wow-delay="0.2s"
-              >
-                <CardItem
-                  icon={icon_3}
-                  title="
-                Retail"
-                  subtitle="Seamlessly connect online and in-store operations, deliver personalized experiences, and improve inventory management."
-                />
-              </div>
-              <div
-                className="col-lg-6 d-flex wow fadeInUp"
-                data-wow-delay="0.3s"
-              >
-                <CardItem
-                  icon={icon_2}
-                  title="Services"
-                  subtitle="Efficiently manage projects, resource allocation, time tracking, and billing for professional services firms."
-                />
-              </div>
-              <div
-                className="col-lg-6 d-flex wow fadeInUp"
-                data-wow-delay="0.4s"
-              >
-                <CardItem
-                  icon={icon_3}
-                  title="Wholesale Distribution"
-                  subtitle="Optimize inventory, automate order management, and enhance customer service."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 };

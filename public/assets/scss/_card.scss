@@ -37,6 +37,10 @@
         }
     }
 }
+// card text color 
+.card-text-color{
+    color: $color-one;
+}
 // Card Three
 .card-style-three {
     .icon {
@@ -85,6 +89,10 @@
     }
 }
 // Card Five
+.card-style-five-start {
+    border-bottom: 1px dashed rgba($color: #fff, $alpha: 0.25);
+    padding-bottom: 42px;
+}
 .card-style-five {
     .icon {
         height: 42px;
@@ -92,8 +100,8 @@
     .main-count {
         font-size: 68px;
         color: #FFDB1E;
-        border-top: 1px dashed rgba($color: #fff, $alpha: 0.25);
-        margin-top: 42px;
+        // border-top: 1px dashed rgba($color: #fff, $alpha: 0.25);
+        // margin-top: 42px;
         padding-top: 25px;
     }
     p {

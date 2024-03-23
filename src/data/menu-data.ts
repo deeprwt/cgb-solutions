@@ -58,7 +58,7 @@ const menu_data: IMenu[] = [
   {
     id:3,
     link:'#',
-    title:'Solutions ',
+    title:'Services',
     dropdown:true,
     dropdown_menus:[
                    {link:'/solutions/oracle',title:'Oracle'},

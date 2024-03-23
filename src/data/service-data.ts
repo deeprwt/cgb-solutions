@@ -24,6 +24,13 @@ import icon_17 from '@/assets/images/icon/icon_10.svg';
 import icon_18 from '@/assets/images/icon/icon_11.svg';
 import icon_20 from '@/assets/images/icon/icon_20.png';
 
+// oracle images 
+import oracle1 from '@/assets/images/solutions/oracle/1.png';
+import oracle2 from '@/assets/images/solutions/oracle/2.png';
+import oracle3 from '@/assets/images/solutions/oracle/3.png';
+import oracle4 from '@/assets/images/solutions/oracle/4.png';
+import oracle5 from '@/assets/images/solutions/oracle/5.png';
+
 
 // data type
 interface IService {
@@ -503,9 +510,9 @@ const service_data:IService[] = [
   },
   {
     id:66,
-    icon:icon_11,
-    title:'Enhanced Data Accessibility',
-    desc:'Effortlessly access up-to-date data throughout the organization, ensuring quick and easy decision-making.',
+    icon:oracle1,
+    title:'Effective Supply & Demand Management',
+    desc:'R12 Upgrade Service Line',
     page:'oracle'
   },
   {
@@ -517,9 +524,9 @@ const service_data:IService[] = [
   },
   {
     id:68,
-    icon:icon_11,
+    icon:oracle4,
     title:'Streamline Manual Processes',
-    desc:'Eliminate time-consuming and resource-draining manual processes through automation and optimization.',
+    desc:'Application Testing  Services',
     page:'oracle'
   },
   {
@@ -531,9 +538,9 @@ const service_data:IService[] = [
   },
   {
     id:70,
-    icon:icon_11,
+    icon:oracle3,
     title:'Ensured Data Integrity',
-    desc:'Eliminate time-consuming and resource-draining manual processes through automation and optimization.',
+    desc:'Application  Lifecycle  Management',
     page:'oracle'
   },
   {
@@ -552,9 +559,9 @@ const service_data:IService[] = [
   },
   {
     id:73,
-    icon:icon_11,
+    icon:oracle2,
     title:'Actionable Inventory Insights',
-    desc:'Strategically plan and balance inventory to meet demand, leveraging valuable insights for optimized inventory management.',
+    desc:'Oracle Technology  Services OCI lift and  shift ( like to like  migration, migration  with upgrade,  migration with  enhancements )',
     page:'oracle'
   },
   {
@@ -566,9 +573,9 @@ const service_data:IService[] = [
   },
   {
     id:75,
-    icon:icon_11,
-    title:'Effective Supply & Demand Management',
-    desc:'Successfully manage supply chains in the face of rapid changes, rising costs, and evolving buyer behavior.',
+    icon:oracle5,
+    title:'Enhanced Data Accessibility',
+    desc:'Oracle E-Business Suite Capability Oracle Fusion Applications Mobility Solutions and Services',
     page:'oracle'
   },
   {
@@ -583,7 +590,7 @@ const service_data:IService[] = [
     icon:icon_11,
     title:'Exceed Expectations',
     desc:'Consistently deliver on promised order accuracy, on-time delivery, and cost savings to meet and surpass customer expectations.',
-    page:'oracle'
+    page:'oracle-extra'
   },
   {
     id:78,
@@ -720,41 +727,41 @@ const service_data:IService[] = [
     page:'graphic'
   },
   // Solution Snapshot------------------
-  {
-    id:96,
-    icon:icon_20,
-    title:'',
-    desc:'Oracle E- Business Suite Capability Oracle Fusion Applications Mobility Solutions and Services  ',
-    page:'SolutionSnapshot'
-  },
-  {
-    id:96,
-    icon:icon_20,
-    title:'',
-    desc:'Application Testing Services',
-    page:'SolutionSnapshot'
-  },
-  {
-    id:96,
-    icon:icon_20,
-    title:'',
-    desc:'Application Lifecycle Management  ',
-    page:'SolutionSnapshot'
-  },
-  {
-    id:96,
-    icon:icon_20,
-    title:'',
-    desc:'Oracle Technology Services ',
-    page:'SolutionSnapshot'
-  },
-  {
-    id:96,
-    icon:icon_20,
-    title:'',
-    desc:'R12 Upgrade Service Line ',
-    page:'SolutionSnapshot'
-  },
+  // {
+  //   id:96,
+  //   icon:icon_20,
+  //   title:'',
+  //   desc:'Oracle E- Business Suite Capability Oracle Fusion Applications Mobility Solutions and Services  ',
+  //   page:'SolutionSnapshot'
+  // },
+  // {
+  //   id:96,
+  //   icon:icon_20,
+  //   title:'',
+  //   desc:'Application Testing Services',
+  //   page:'SolutionSnapshot'
+  // },
+  // {
+  //   id:96,
+  //   icon:oracle3,
+  //   title:'',
+  //   desc:'Application Lifecycle Management  ',
+  //   page:'SolutionSnapshot'
+  // },
+  // {
+  //   id:96,
+  //   icon:icon_20,
+  //   title:'',
+  //   desc:'Oracle Technology Services ',
+  //   page:'SolutionSnapshot'
+  // },
+  // {
+  //   id:96,
+  //   icon:icon_20,
+  //   title:'',
+  //   desc:'R12 Upgrade Service Line ',
+  //   page:'SolutionSnapshot'
+  // },
 ]
 
 export default service_data;
