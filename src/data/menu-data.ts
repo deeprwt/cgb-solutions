@@ -91,7 +91,7 @@ const menu_data: IMenu[] = [
       { link: "/solutions/mendix", title: "Unqork" },
      ],
     },
-      { link: "/contract-staffing", title: "Contract Staffing" },
+      { link: "/contract-staffing", title: "Staff Augmentation" },
       { link: "/solutions/digital-marketing", title: "Digital Services" },
     ],
   },
