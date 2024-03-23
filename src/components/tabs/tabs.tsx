@@ -33,12 +33,12 @@ const TabsData = () => {
         </nav>
         <div className="tab-content mt-60 lg-mt-40">
             <div className="tab-pane fade show active" id="nav-oracle" role="tabpanel" tabIndex={0}>
-                <div className="accordion accordion-style-one" id="accordionOne">
+                <div className="accordion accordion-style-one service-details" id="accordionOne">
                     <div className="row align-items-center">
                         <div className="col-xl-6 col-lg-6 wow fadeInLeft">
-                            <div className="title-one pt-4">
+                            <div className="title-one details-meta pt-4">
                             {/* <div className="upper-title">Services</div> */}
-                            <h2>Oracle</h2>
+                            <h3>Oracle</h3>
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                             CGB offers a comprehensive range of services built around Oracle global business units, 
@@ -59,12 +59,12 @@ const TabsData = () => {
                 </div>
             </div>
           <div className="tab-pane fade" id="nav-finacle" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionTwo">
+            <div className="accordion accordion-style-one service-details" id="accordionTwo">
                     <div className="row align-items-center">
                         <div className="col-xl-6 col-lg-6">
-                            <div className="title-one pt-4">
+                            <div className="title-one details-meta pt-4">
                             {/* <div className="upper-title">Services</div> */}
-                            <h2>Finacle</h2>
+                            <h3>Finacle</h3>
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                                 Discover a world of financial innovation and efficiency with CGB bespoke Finacle solutions. 
@@ -85,12 +85,12 @@ const TabsData = () => {
             </div>
           </div>
           <div className="tab-pane fade" id="nav-servicenow" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionThree">
+            <div className="accordion accordion-style-one service-details" id="accordionThree">
                     <div className="row align-items-center">
                         <div className="col-xl-6 col-lg-6">
-                            <div className="title-one pt-4">
+                            <div className="title-one details-meta pt-4">
                             {/* <div className="upper-title">Services</div> */}
-                            <h2>ServiceNow</h2>
+                            <h3>ServiceNow</h3>
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                                 Welcome to CGB, your premier partner for ServiceNow consulting services. 
@@ -111,12 +111,12 @@ const TabsData = () => {
             </div>
           </div>
           <div className="tab-pane fade" id="nav-lowcode" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionFour">
+            <div className="accordion accordion-style-one service-details" id="accordionFour">
                     <div className="row align-items-center">
                         <div className="col-xl-6 col-lg-6">
-                            <div className="title-one pt-4">
+                            <div className="title-one details-meta pt-4">
                             {/* <div className="upper-title">Services</div> */}
-                            <h2>Low Code</h2>
+                            <h3>Low Code</h3>
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                                 Unlock the power of low-code with CGB. Build applications effortlessly, 
@@ -143,12 +143,12 @@ const TabsData = () => {
             </div>
           </div>
           <div className="tab-pane fade" id="nav-salesforce" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionFive">
+            <div className="accordion accordion-style-one service-details" id="accordionFive">
                     <div className="row align-items-center">
                         <div className="col-xl-6 col-lg-6">
-                            <div className="title-one pt-4">
+                            <div className="title-one details-meta pt-4">
                             {/* <div className="upper-title">Services</div> */}
-                            <h2>Salesforce</h2>
+                            <h3>Salesforce</h3>
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                             Embark on a transformative journey with CGB, where Salesforce solutions meet innovation, 
@@ -169,12 +169,12 @@ const TabsData = () => {
             </div>
           </div>
           <div className="tab-pane fade" id="nav-devops" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionSix">
+            <div className="accordion accordion-style-one service-details" id="accordionSix">
                     <div className="row align-items-center">
                         <div className="col-xl-6 col-lg-6">
-                            <div className="title-one pt-4">
+                            <div className="title-one details-meta pt-4">
                             {/* <div className="upper-title">Services</div> */}
-                            <h2>DevOps</h2>
+                            <h3>DevOps</h3>
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                             At CGB, we are your trusted partner in accelerating your software development 
