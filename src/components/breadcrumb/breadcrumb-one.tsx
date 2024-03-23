@@ -6,10 +6,10 @@ import bg from "@/assets/images/media/img_26.jpg";
 // props type
 type IProps = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   bg_img?: StaticImageData;
   // shape: StaticImageData;
-  page: string;
+  page?: string;
   cls?: string;
   style_2?: boolean;
 };
