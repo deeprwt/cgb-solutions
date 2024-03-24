@@ -24,6 +24,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: article.title,
     // description: article.description, // Assuming you have a description field in your article data
+    // imges:article.img.src, 
     openGraph: {
       title: article.title,
       // description: article.description,

@@ -35,11 +35,11 @@ function CardItem({
 
 const HowWeDo = () => {
   return (
-    <div className="project-details-one service-details position-relative pt-80 lg-pb-80">
+    <div className="service-details position-relative pt-80 lg-pb-80">
       <div className="container details-meta">
         <div>
           <div className="upper-title">Process</div>
-          <h3>How We Do</h3>
+          <h3>How we do</h3>
         </div>
         <p className="text-lg">
           We bring together a team of Technical Architects, Product Experts,

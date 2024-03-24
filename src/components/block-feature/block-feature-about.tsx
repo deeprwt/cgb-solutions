@@ -12,12 +12,12 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <>
       {!style_2 &&
-        <div className="block-feature-six position-relative pt-150 lg-pt-80 pb-120 lg-pb-50">
+        <div className="block-feature-six service-details position-relative pt-150 lg-pt-80 pb-120 lg-pb-50">
           <div className="container">
             <div className="row gx-lg-5">
               <div className="col-lg-4 wow fadeInLeft">
-                <div className="title-one">
-                  <h2 className="text-dark">What we do</h2>
+                <div className="title-one details-meta">
+                  <h3 className="text-dark">What we do</h3>
                 </div>
                 <p className="text-lg text-dark mt-40 md-mt-20 mb-35 md-mb-30">
                   Inciddnt ut labore et dolor magna aliu. ad mim venam, quis
@@ -59,15 +59,15 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
       }
 
       {style_2 && 
-      <div className="block-feature-six bg-two position-relative pt-150 lg-pt-60 pb-120 lg-pb-40">
+      <div className="block-feature-six service-details bg-two position-relative pt-150 lg-pt-60 pb-120 lg-pb-40">
         <div className="container">
           <div className="row gx-lg-5">
 
             <div className="col-lg-12">
               <div className="row">
               <div className="col-lg-4 wow fadeInLeft">
-              <div className="title-one">
-                <h2>What we do</h2>
+              <div className="title-one details-meta">
+                <h3>What we do</h3>
               </div>
               <p className="text-lg text-dark mt-40 md-mt-20 mb-35 md-mb-30">We specialize in guiding businesses through the essential pillars of digital transformation:</p>
               <Link href="/contact" className="btn-eleven d-inline-flex align-items-center md-mb-60">

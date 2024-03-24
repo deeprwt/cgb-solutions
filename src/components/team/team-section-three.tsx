@@ -17,11 +17,11 @@ const TeamSectionThree = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <>
       {!style_2 && (
-        <div className="team-section-three light-bg position-relative pt-120 lg-pt-60 pb-130 lg-pb-60 mt-90 lg-mt-40">
+        <div className="team-section-three service-details light-bg position-relative pt-120 lg-pt-60 pb-130 lg-pb-60 mt-90 lg-mt-40">
           <div className="container">
             <div className="position-relative">
-              <div className="title-one mb-40 lg-mb-10 wow fadeInUp">
-                <h2>Meet Our Team</h2>
+              <div className="title-one details-meta mb-40 lg-mb-10 wow fadeInUp">
+                <h3>Meet Our Team</h3>
               </div>
               <p className="text-xl text-dark mb-30 p-20 lg-mb-10">
               Our team is constantly committed to innovation and pushing the boundaries while delivering workplaces.
