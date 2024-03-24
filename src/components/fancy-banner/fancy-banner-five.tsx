@@ -1,56 +1,115 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 // internal
 import sticker from "@/assets/images/assets/sticker_02.png";
 import VideoPopup from "../common/video-popup";
+import infosys from "@/assets/images/solutions/Finacle/infosys.jpg"
+import Link from "next/link";
 
-// img style 
+// img style
 const imgStyle = {
-  height:'auto'
-}
+  height: "auto",
+};
 
-const FancyBannerFive = ({style_2=false,style_3=false }:{style_2?:boolean;style_3?:boolean}) => {
+const FancyBannerFive = ({
+  style_2 = false,
+  style_3 = false,
+  style_4 = false,
+}: {
+  style_2?: boolean;
+  style_3?: boolean;
+  style_4?: boolean;
+}) => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
   return (
     <>
-      {!style_2 && !style_3 && <div className="fancy-banner-five text-center position-relative mt-150 lg-mt-80 pt-80 md-pt-60 pb-80 md-pb-60">
-        <div className="container">
-          <h2 className="text-white fw-bold">
-            You have Entered Our Corporate Business Zone
-          </h2>
-          <p className="text-white text-xl pt-30 md-pt-10 pb-45 lg-pb-30">
-            Watch our intro video to get the idea about our services & many more
-          </p>
-          <a
-            className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center m-auto cursor-pointer"
-            onClick={() => setIsVideoOpen(true)}
-          >
-            <Image src={sticker} alt="sticker" className="lazy-img" style={imgStyle} />
-          </a>
-        </div>
-      </div>}
-
-      {style_2 && <div className="fancy-banner-five no-bg text-center position-relative mt-30 lg-mt-10">
-        <div className="container">
-          <div className="bg-wrapper pt-95 lg-pt-50 pb-95 lg-pb-50">
-            <h2 className="text-white fw-bold mb-50 lg-mb-30">Explore Our Business Division here.</h2>
-            <a className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center m-auto cursor-pointer" onClick={() => setIsVideoOpen(true)}>
-              <Image src={sticker} alt="sticker" className="lazy-img" style={imgStyle} />
+      {!style_2 && !style_3 && !style_4 && (
+        <div className="fancy-banner-five text-center position-relative mt-150 lg-mt-80 pt-80 md-pt-60 pb-80 md-pb-60">
+          <div className="container">
+            <h2 className="text-white fw-bold">
+              You have Entered Our Corporate Business Zone
+            </h2>
+            <p className="text-white text-xl pt-30 md-pt-10 pb-45 lg-pb-30">
+              Watch our intro video to get the idea about our services & many
+              more
+            </p>
+            <a
+              className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center m-auto cursor-pointer"
+              onClick={() => setIsVideoOpen(true)}
+            >
+              <Image
+                src={sticker}
+                alt="sticker"
+                className="lazy-img"
+                style={imgStyle}
+              />
             </a>
           </div>
         </div>
-      </div>}
+      )}
 
-      {
-        style_3 && <div className="fancy-banner-five no-bg text-center position-relative mt-100 lg-mt-80">
+      {style_2 && (
+        <div className="fancy-banner-five no-bg text-center position-relative mt-30 lg-mt-10">
+          <div className="container">
+            <div className="bg-wrapper pt-95 lg-pt-50 pb-95 lg-pb-50">
+              <h2 className="text-white fw-bold mb-50 lg-mb-30">
+                Explore Our Business Division here.
+              </h2>
+              <a
+                className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center m-auto cursor-pointer"
+                onClick={() => setIsVideoOpen(true)}
+              >
+                <Image
+                  src={sticker}
+                  alt="sticker"
+                  className="lazy-img"
+                  style={imgStyle}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {style_3 && (
+        <div className="fancy-banner-five no-bg text-center position-relative mt-100 lg-mt-80">
           <div className="bg-wrapper pt-225 xl-pt-150 lg-pt-50 pb-225 xl-pb-150 lg-pb-50">
-            <a className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center m-auto cursor-pointer" onClick={() => setIsVideoOpen(true)}>
-              <Image src={sticker} alt="sticker" className="lazy-img" style={imgStyle} />
+            <a
+              className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center m-auto cursor-pointer"
+              onClick={() => setIsVideoOpen(true)}
+            >
+              <Image
+                src={sticker}
+                alt="sticker"
+                className="lazy-img"
+                style={imgStyle}
+              />
             </a>
           </div>
         </div>
-      }
+      )}
+
+      {style_4 && (
+        <div className="fancy-banner-five service-details text-center position-relative pt-80 md-pt-60 pb-80 md-pb-60">
+          <div className="container details-meta">
+            <h3 className="text-white fw-bold">
+            Orchestrating Digital Transformations in Banking
+            </h3>
+            {/* <p className="text-white text-xl pt-30 md-pt-10 pb-45 lg-pb-30">
+              Finacle & Wipro
+            </p> */}
+              <Link href={"/contact"} className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center m-auto cursor-pointer" >
+              <Image
+                src={infosys}
+                alt="sticker"
+                className="lazy-img"
+                style={imgStyle}
+              />
+              </Link>
+          </div>
+        </div>
+      )}
 
       {/* video modal start */}
       <VideoPopup

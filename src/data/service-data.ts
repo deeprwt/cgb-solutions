@@ -726,42 +726,6 @@ const service_data:IService[] = [
     desc:'What knowledge is if we are not adapting ourselves to our fast-forwarding lives? Yes, nobody has time to know what your company offers. However, they invest time in viewing creative graphic designs and aesthetic images. Graphic designs are not only a feast for sore eyes on your website but, also help establish communication with your customer.',
     page:'graphic'
   },
-  // Solution Snapshot------------------
-  // {
-  //   id:96,
-  //   icon:icon_20,
-  //   title:'',
-  //   desc:'Oracle E- Business Suite Capability Oracle Fusion Applications Mobility Solutions and Services  ',
-  //   page:'SolutionSnapshot'
-  // },
-  // {
-  //   id:96,
-  //   icon:icon_20,
-  //   title:'',
-  //   desc:'Application Testing Services',
-  //   page:'SolutionSnapshot'
-  // },
-  // {
-  //   id:96,
-  //   icon:oracle3,
-  //   title:'',
-  //   desc:'Application Lifecycle Management  ',
-  //   page:'SolutionSnapshot'
-  // },
-  // {
-  //   id:96,
-  //   icon:icon_20,
-  //   title:'',
-  //   desc:'Oracle Technology Services ',
-  //   page:'SolutionSnapshot'
-  // },
-  // {
-  //   id:96,
-  //   icon:icon_20,
-  //   title:'',
-  //   desc:'R12 Upgrade Service Line ',
-  //   page:'SolutionSnapshot'
-  // },
 ]
 
 export default service_data;

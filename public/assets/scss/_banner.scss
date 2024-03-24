@@ -414,7 +414,8 @@
 }
 // Fancy Banner Five
 .fancy-banner-five {
-    background: url(../images/media/img_31.jpg) no-repeat center;
+    // background: url(../images/media/img_31.jpg) no-repeat center;
+    background: url(../images/media/img_33.jpg) no-repeat center;
     background-size: cover;
     z-index: 1;
     &.no-bg {
@@ -440,7 +441,7 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: #113D2F;
+        background: linear-gradient(to bottom right, transparent, rgba(235, 96, 110, 0.4));
         mix-blend-mode: hard-light;
 
 
@@ -453,7 +454,7 @@
         width: 200px;
         height: 200px;
         padding: 22px;
-        background: #FFE86B;
+        background: $color-two;
         &:hover {
             transform: rotate(15deg);
         }
