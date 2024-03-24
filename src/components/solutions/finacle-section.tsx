@@ -88,7 +88,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
                 better.
               </p>
               <p className="text-lg">
-                We are a business unit of EdgeVerve Systems, a wholly-owned
+                We are a business unit of CgbSolutions Systems, a wholly-owned
                 product subsidiary of Infosys – a global technology leader with
                 over USD 15 billion in annual revenues.
               </p>
