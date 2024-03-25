@@ -25,7 +25,7 @@ const FaqSolutions = ({cls,title,img,page}:{cls?:string,title:string,img:StaticI
 
             <div className="col-lg-7 details-meta">
                 <div className="title-one mb-40 lg-mb-20">
-                    <h2>{title}</h2>
+                    <h3>{title}</h3>
                 </div>
                 {/* <p className="text-lg mb-40 lg-mb-20">
                  

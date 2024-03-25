@@ -12,12 +12,22 @@ import FaqItem from "@/components/faq/faq-item";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
 import img1 from "@/assets/images/solutions/contract-staffing/contract-staffing1.svg";
+import Finacle1 from "@/assets/images/solutions/Finacle/Fincale-1.png";
+import Finacle2 from "@/assets/images/solutions/Finacle/Fincale-2.png";
+import Finacle3 from "@/assets/images/solutions/Finacle/Fincale-3.png";
+import ImgTextOne from "../img-text-feature/img-text-one";
+
+import icon from "@/assets/images/icon/icon_27.svg";
+// import shape_1 from "@/assets/images/shape/shape_11.svg";
+// import shape_2 from "@/assets/images/shape/shape_12.svg";
 
 import icon_3 from "@/assets/images/icon/icon_64.svg";
 import icon_4 from "@/assets/images/icon/icon_65.svg";
 import icon_5 from "@/assets/images/icon/icon_66.svg";
 import icon_6 from "@/assets/images/icon/icon_67.svg";
 import shape from "@/assets/images/shape/shape_05.svg";
+import bulb from "@/assets/images/solutions/servicenow/bulb.png";
+import digital from "@/assets/images/solutions/servicenow/digital-journey.png";
 
 // card item
 function CardItem2({
@@ -64,9 +74,7 @@ function CardItem({
 }
 
 const ServicenNowSecton = ({ cls }: { cls?: string }) => {
-  const service_items = service_data.filter(
-    (s) => s.page === "servicenow"
-  );
+  const service_items = service_data.filter((s) => s.page === "servicenow");
   return (
     <>
       {/* starts from here  */}
@@ -75,17 +83,83 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
           <div className="row align-items-center details-meta">
             <div className="title-one">
               <h3 className="text-center">
-              ServiceNow® Platform* Services <br /> One Place to Find Them All
-
+                ServiceNow Services <br /> One Place to Find Them All
               </h3>
               <p className="text-lg text-center px-4 mb-35 md-mb-30">
-              ServiceNow consulting encompasses advisory, implementation, customization, testing, and support of ServiceNow solutions. A Specialist ServiceNow Partner and an official ServiceNow Reseller, ScienceSoft shares 13 year-experience in ServiceNow and offers services to cover all platform-related needs.
+                ServiceNow consulting encompasses advisory, implementation,
+                customization, testing, and support of ServiceNow solutions. A
+                Specialist ServiceNow Partner and an official ServiceNow
+                Reseller, ScienceSoft shares 13 year-experience in ServiceNow
+                and offers services to cover all platform-related needs.
               </p>
             </div>
           </div>
         </div>
       </div>
       {/* Ends from here  */}
+
+      <div className="block-feature-six service-details position-relative pt-50 lg-pt-60 pb-80 lg-pb-40">
+        <div className="container">
+          <div className="row gx-lg-5">
+            <div className="title-one details-meta text-center pb-50 wow fadeInLeft">
+              <h3>ServiceNow Capability by the Numbers</h3>
+              {/* <p>
+                  Right here what you need 
+                </p> */}
+            </div>
+            <div className="col-md-9 m-auto md-mt-50">
+              <Image
+                src={bulb}
+                alt="screen"
+                className="lazy-img w-full h-auto rounded"
+              />
+            </div>
+          </div>
+        </div>
+        <Image src={shape_1} alt="shape" className="lazy-img shapes shape_01" />
+        <Image src={shape_2} alt="shape" className="lazy-img shapes shape_02" />
+      </div>
+
+      {/*--------------------Img and orderList tag Staring------------------ */}
+      <ImgTextOne
+        /* Main Heading   */
+        title="Expertise and Focused Area"
+        para="Our Deep Expertise and Focused Area"
+        img={Finacle1}
+        subtitle="ITSM & CSM"
+        subpara="CgbSolutions specializes in providing comprehensive ITSM and CSM services on the ServiceNow platform, with a dedicated focus on optimizing service delivery and customer satisfaction in these key areas.
+        "
+        filter_data="servicenow-1"
+      />
+      {/*--------------------Img and orderList tag End------------------ */}
+
+      {/*--------------------Img and orderList tag Staring------------------ */}
+      <ImgTextOne
+        img={Finacle2}
+        subtitle="TOM & ITAM"
+        subpara="CgbSolutions specializes in TOM and ITAM services on ServiceNow, ensuring efficient technical operations and optimized IT asset management. With our expertise, we streamline processes, maximize performance, and enhance value for our clients"
+        filter_data="servicenow-2"
+        style_2={true}
+      />
+      {/*--------------------Img and orderList tag Staring------------------ */}
+      {/*--------------------Img and orderList tag End------------------ */}
+      <ImgTextOne
+        img={Finacle3}
+        subtitle="UI/UX"
+        subpara="CgbSolutions prioritizes UI/UX design to ensure our solutions deliver intuitive interfaces and exceptional user experiences. Our focus on UI/UX enhances user satisfaction and boosts efficiency for our clients' platforms and applications."
+        filter_data="servicenow-3"
+        cls="d-none"
+      />
+      {/*--------------------Img and orderList tag End------------------ */}
+      {/*--------------------Img and orderList tag Staring------------------ */}
+      <ImgTextOne
+        img={Finacle2}
+        subtitle="INTEGRATION"
+        subpara="CgbSolutions specializes in seamless integration services, ensuring that diverse systems and applications work together harmoniously. Our integration solutions streamline processes, enhance efficiency, and optimize data flow for our clients, ultimately driving business success."
+        filter_data="servicenow-4"
+        style_2={true}
+      />
+      {/*--------------------Img and orderList tag Staring------------------ */}
 
       {/* card starts from here  */}
       <div className="block-feature-six service-details bg-two position-relative pt-50 lg-pt-60 pb-80 lg-pb-40">
@@ -95,34 +169,21 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
               <div className="row">
                 <div className="title-one">
                   {/* <div className="upper-title">Core aspects of</div> */}
-                  <h3 className="text-center pb-50">An Outline of Our A-to-Z ServiceNow Services </h3>
+                  <h3 className="text-center pb-50">
+                    An Outline of Our A-to-Z ServiceNow Services{" "}
+                  </h3>
                 </div>
                 {/* <p className="text-lg text-dark mb-35 py-3 md-mb-30">
                   Right here what you need
                 </p> */}
-                {service_items.map((item, i) => (
-                  <div
-                    key={item.id}
-                    className="col-md-6 d-flex wow fadeInUp"
-                    data-wow-delay={`0.${i}s`}
-                  >
-                    <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center align-self-center">
-                        <Image
-                          src={item.icon}
-                          alt="icon"
-                          className="lazy-img"
-                        />
-                      </div>
-                      <h4 className="fw-bold mt-30 mb-20 text-center">
-                        {item.title}
-                      </h4>
-                      <p className="text-center">{item.desc}</p>
-                      {/* <Link href="/service-details" className="stretched-link"></Link> */}
-                    </div>
-                  </div>
-                ))}
               </div>
+            </div>
+            <div className="col-md-9 m-auto md-mt-50">
+              <Image
+                src={digital}
+                alt="screen"
+                className="lazy-img w-full h-auto rounded"
+              />
             </div>
           </div>
         </div>
@@ -130,83 +191,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
         <Image src={shape_2} alt="shape" className="lazy-img shapes shape_02" />
       </div>
       {/* card end */}
-      {/* card2 starting */}
-      <div className="block-feature-ten  service-details position-relative  mb-50 mt-50 lg-mt-80 pb-60 pt-60 lg-pb-60">
-        <div className="container details-meta">
-          <div className="row align-items-center">
-            <div className="col-lg-10 wow fadeInUp">
-              <div className="title-one lg-mb-20">
-                <h3>Automation Anywhere Automation Tools</h3>
-                {/* <p>
-                  Right here what you need 
-                </p> */}
-              </div>
-            </div>
-          </div>
-          <div className="line-wrapper position-relative">
-            <div className="row gx-lg-5">
-              <div className="col-xl-4 col-md-6 wow fadeInUp">
-                <CardItem2
-                  icon={icon_1}
-                  title="Community Edition"
-                  subtitle="Complete Digital Workforce at your Fingertips"
-                />
-              </div>
-              <div
-                className="col-xl-4 col-md-6 wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                <CardItem2
-                  icon={icon_2}
-                  title="Bot Insight"
-                  subtitle="Optimize your automation value cycle by automatically turning data into actionable insights for you."
-                />
-              </div>
-              <div
-                className="col-xl-4 col-md-6 wow fadeInUp"
-                data-wow-delay="0.2s"
-              >
-                <CardItem2
-                  icon={icon_3}
-                  title="Discovery Bot"
-                  subtitle="dentify the processes in your business that can be automated and create bots"
-                />
-              </div>
-              <div className="col-xl-4 col-md-6 wow fadeInUp">
-                <CardItem2
-                  icon={icon_4}
-                  title="Bot Store"
-                  subtitle="World's leading marketplace for bots and packages"
-                />
-              </div>
-              <div
-                className="col-xl-4 col-md-6 wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                <CardItem2
-                  icon={icon_5}
-                  title="IQ Bot"
-                  subtitle="IQ BOT to employ AI for intelligent document processing."
-                />
-              </div>
-              <div
-                className="col-xl-4 col-md-6 wow fadeInUp"
-                data-wow-delay="0.2s"
-              >
-                <CardItem2
-                  icon={icon_6}
-                  title="AARI"
-                  subtitle="Your digital assistant at work to upscale automation."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* card2 end */}
-      {/* card2 starting */}
-      
-      {/* card2 end */}
+
     </>
   );
 };

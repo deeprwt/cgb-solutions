@@ -82,7 +82,7 @@ const menu_data: IMenu[] = [
       { link: "/solutions/oracle", title: "Oracle" },
       { link: "/solutions/finacle", title: "Finacle Core Banking" },
       { link: "/solutions/servicenow", title: "Service Now" },
-      { link: "/solutions/servicenow", title: "Infrastructure Management" },
+      // { link: "/solutions/servicenow", title: "Infrastructure Management" },
       { link: "/solutions/automation-anywhere", title: "Automation Anywhere" },
       {link:'/solutions/automation-anywhere',title:'Low Code No Code',
      sub_menus: [

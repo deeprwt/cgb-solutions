@@ -2,7 +2,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // internal
-import { ul_data } from "@/data/ul-data";
+import { ul_data} from "@/data/ul-data";
 
 import service_data from "@/data/service-data";
 import screen_1 from "@/assets/images/assets/screen_04.svg";
@@ -42,9 +42,9 @@ const ImgTextOne = ({
         <div className="service-details pt-40 pb-40">
           <div className="container">
             <div className={`row ${cls}`}>
-              <div className="title-one details-meta ps-xxl-5 ps-xl-3">
-                <h2 className="text-center pb-5">{title}</h2>
-                <p className="">
+              <div className="title-one details-meta pb-40 ps-xxl-5 ps-xl-3">
+                <h3 className="text-center pb-5">{title}</h3>
+                <p className=" text-center">
                   {para}
                 </p>
               </div>

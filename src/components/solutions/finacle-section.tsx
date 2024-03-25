@@ -194,6 +194,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
         Wipro's Finacle expertise is centered around:
         `}
         filter_data="finacel-1"
+        cls="d-none"
       />
       {/*--------------------Img and orderList tag End------------------ */}
 
