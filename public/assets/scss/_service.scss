@@ -43,8 +43,8 @@
         }
         .list-item {
             li {
-                font-size: 22px;
-                font-weight: 500;
+                font-size: 17px;
+                font-weight: 400;
                 color: $text-dark;
                 padding-left: 45px;
                 margin-bottom: 24px;
@@ -55,7 +55,7 @@
                     width: 26px;
                     height: 26px;
                     border-radius: 50%;
-                    background: #FFF2AC;
+                    background: $color-one;
                     left: 0;
                     top:3px;
                 }

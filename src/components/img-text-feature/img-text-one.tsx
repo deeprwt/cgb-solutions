@@ -39,7 +39,7 @@ const ImgTextOne = ({
   return (
     <>
       {!style_2 && (
-        <div className="service-details pt-80 pb-80">
+        <div className="service-details pt-40 pb-40">
           <div className="container">
             <div className={`row ${cls}`}>
               <div className="title-one details-meta ps-xxl-5 ps-xl-3">
@@ -58,7 +58,7 @@ const ImgTextOne = ({
                     {ul_data
                       .filter((s) => s.page === `${filter_data}`)
                       .map((item, i) => (
-                        <li key={item.id} className="m-0 pb-2 fs-5 lh-base">
+                        <li key={item.id} className="m-0 pb-2 lh-base">
                           {item.ul}
                         </li>
                       ))}
@@ -77,7 +77,7 @@ const ImgTextOne = ({
         </div>
       )}
       {style_2 && (
-        <div className="service-details pt-80 pb-80">
+        <div className="service-details pt-40 pb-40">
           <div className="container">
             <div className="row">
               <div className="col-xxl-7 col-lg-7 d-flex align-items-center  order-last order-md-first wow fadeInRight">
@@ -88,7 +88,7 @@ const ImgTextOne = ({
                     {ul_data
                       .filter((s) => s.page === `${filter_data}`)
                       .map((item, i) => (
-                        <li key={item.id} className="m-0 pb-2 fs-5 lh-base">
+                        <li key={item.id} className="m-0 pb-2 lh-base">
                           {item.ul}
                         </li>
                       ))}

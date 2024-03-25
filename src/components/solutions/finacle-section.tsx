@@ -185,7 +185,38 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
 
       <FancyBannerFive style_4={true} />
 
-         </>
+      {/*--------------------Img and orderList tag Staring------------------ */}
+      <ImgTextOne
+        /* Main Heading   */
+        img={Finacle1}
+        subtitle="Company Overview"
+        subpara={`Wipro Limited is a leading technology services and consulting company focused on building innovative solutions that address clients' most complex digital transformation needs. With over 250,000 employees and business partners across 66 countries, Wipro delivers on the promise of helping our customers, colleagues, and communities thrive in an ever-changing world.
+        Wipro's Finacle expertise is centered around:
+        `}
+        filter_data="finacel-1"
+      />
+      {/*--------------------Img and orderList tag End------------------ */}
+
+      {/*--------------------Img and orderList tag Staring------------------ */}
+      <ImgTextOne
+        img={Finacle2}
+        subtitle="Digital Transformation of
+        Indian Co-operative Banks"
+        subpara="Wipro led the end-to-end digital transformation and implementation of Finacle Core Banking and allied applications at multiple Co-operative Banks in India. Key client benefits include:"
+        filter_data="finacel-2"
+        style_2={true}
+      />
+      {/*--------------------Img and orderList tag Staring------------------ */}
+      {/*--------------------Img and orderList tag End------------------ */}
+      <ImgTextOne
+        img={Finacle3}
+        subtitle="Wipro and Finacle"
+        subpara="Wipro and Finacle have two decades of strong partnership in implementing Finacle Core Banking Solutions. Highlights include:"
+        filter_data="finacel-3"
+        cls="d-none"
+      />
+      {/*--------------------Img and orderList tag End------------------ */}
+    </>
   );
 };
 
