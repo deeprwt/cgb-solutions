@@ -73,7 +73,7 @@ const HeroBannerTwo = () => {
                   className="text-xl text-white pt-35 pb-25 wow fadeInUp"
                   data-wow-delay="0.1s"
                 >
-                  Maximize Oracle's potential with our tailored services - comprehensive offerings from database management to seamless cloud integration, ensuring unparalleled business performance.
+                  Maximize Oracle&apos;s potential with our tailored services - comprehensive offerings from database management to seamless cloud integration, ensuring unparalleled business performance.
                 </p>
                 {/* <Link href="/contact"
                   className="btn-two icon-link wow fadeInUp"
