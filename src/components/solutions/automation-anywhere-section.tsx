@@ -75,7 +75,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
           <div className="row align-items-center details-meta">
             <div className="title-one">
               <h3 className="text-center">
-                Cgb on Your <br /> RPA Journey with Automation Anywhere
+                RPA Journey with Automation Anywhere
               </h3>
               <p className="text-lg text-center px-4 mb-35 md-mb-30">
                 Automation Anywhere is one of the most popular RPA vendors
@@ -106,12 +106,11 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
             <div className="col-lg-12">
               <div className="row">
                 <div className="title-one">
-                  {/* <div className="upper-title">Core aspects of</div> */}
-                  <h3 className="text-center pb-50">
+                  <h3 className="text-center">
                     Robotic Process Automation (RPA)
                   </h3>
                 </div>
-                <p className="text-lg text-dark mb-35 py-3 md-mb-30">
+                <p className="text-lg text-center text-dark mb-35 py-3 md-mb-30">
                   Robotic Process Automation (RPA) accelerates digital
                   transformation of organizations by automating their repetitive
                   business processes

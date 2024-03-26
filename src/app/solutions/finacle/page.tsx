@@ -23,7 +23,7 @@ import FinacleSecton from "@/components/solutions/finacle-section";
 import screen from '@/assets/images/assets/screen_11.png';
 
 export const metadata: Metadata = {
-  title: "Finacle",
+  title: "Finacle Core Banking",
 };
 
 export default function Finacle() {
@@ -36,9 +36,9 @@ export default function Finacle() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne
-            title="Finacle"
+            title="Finacle Core Banking"
             subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
-            page="Finacle"
+            page="Finacle Core Banking"
             bg_img={about_bg}
             // // shape={shape}
             style_2={true}

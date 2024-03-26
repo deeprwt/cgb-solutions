@@ -35,13 +35,13 @@ function CardItem({
 }) {
   return (
     <div className="card-style-sixteen text-center mt-40 md-mt-20">
-      <div className="m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
+      <div className="m-auto tran3s d-flex align-items-center justify-content-center">
         <Image
           src={icon}
           alt="icon"
           width={300}
           height={300}
-          className="lazy-img rounded-circle"
+          className="lazy-img rounded"
         />
       </div>
       <h4 className="fw-bold mt-35 md-mt-30 mb-15">{title}</h4>
@@ -175,7 +175,7 @@ const OracleSection = ({ cls }: { cls?: string }) => {
               <div className="title-one lg-mb-10 wow fadeInUp">
                 <h2>Service Portfolio</h2>
               </div>
-              <p className="text-xl text-dark mb-30 lg-mb-10">
+              <p className="text-lg text-dark mb-30 lg-mb-10">
                 Discover Our Range of Expert Services Tailored to Meet Your
                 Needs
               </p>

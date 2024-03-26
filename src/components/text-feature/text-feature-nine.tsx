@@ -77,7 +77,7 @@ const TextFeatureNine = () => {
           <span>BFSI</span>
         </div>
         <div className="text-list">
-          <span>Logistic</span>
+          <span>Logistics</span>
         </div>
         <div className="text-list">
           <span>Life Sciences</span>

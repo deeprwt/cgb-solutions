@@ -47,10 +47,9 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                   <div className="upper-title">About Us</div>
                   <h3>Where Technology Meets Excellence</h3>
                 </div>
-                <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
+                <p className="text-lg">
                 Experience the extraordinary with CGB Solutions. We innovate relentlessly, 
                 transforming challenges into seamless solutions for unparalleled client excellence. 
-                Your journey to success starts here.
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
                   <Link href="/about-us" className="btn-four mt-15 me-4">

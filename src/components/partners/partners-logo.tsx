@@ -82,20 +82,6 @@ const PartnerLogo = () => {
                   {/* <div className="upper-title ">Trusted Global Brands</div> */}
                   <h3 className="m-0 text-center">Partners</h3>
                 </div>
-                {/* <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
-                Experience the extraordinary with CGB Solutions. We innovate relentlessly, 
-                transforming challenges into seamless solutions for unparalleled client excellence. 
-                Your journey to success starts here.
-                </p> */}
-                <div className="d-inline-flex flex-wrap align-items-center">
-                  {/* <Link href="/about-us" className="btn-four mt-15 me-4">
-                    More About us
-                  </Link> */}
-                  {/* <Link href="/contact" className="btn-three icon-link mt-15">
-                    <span>Request a Callback</span>
-                    <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
-                  </Link> */}
-                </div>
               </div>
               <div className="col-7 col-sm-8 col-lg-9 wow fadeInRight">
                 <Slider {...slider_setting} className="partner-slider-one">

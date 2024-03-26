@@ -48,7 +48,9 @@ const TextFeatureTwo = () => {
             </div>
           </div>
           <div className="col-lg-5 ms-auto">
-            <div className="upper-title"><h4 className="card-text-color">Bug Fixing</h4></div>
+            <div className="upper-title">
+              <h4 className="card-text-color">Bug Fixing</h4>
+            </div>
             <p className="m0 text-md text-white md-pt-10">
               Onsite / Offshore Technical Development
             </p>
@@ -59,14 +61,14 @@ const TextFeatureTwo = () => {
             <CardStyle
               icon={icon_1}
               title="Design "
-              subtitle="Technical  Specificatio  ns of all  technical  objects"
+              subtitle="Technical Specifications of all technical objects"
             />
           </div>
           <div className="col-lg-3 card-style-five-start">
             <CardStyle
               icon={icon_2}
               title="Develop"
-              subtitle="Developme  nt of  technical  objects"
+              subtitle="Development of technical objects"
               decimal={true}
             />
           </div>
