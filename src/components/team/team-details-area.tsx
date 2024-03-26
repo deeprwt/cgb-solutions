@@ -38,7 +38,7 @@ const TeamDetailsArea = () => {
                           alt="linkedinicon"
                         ></Image>
                       </Link></h2>
-                <div className="post">CEO, CGB Soltuions</div>
+                <div className="post">CEO, CGB Solutions</div>
                 <h6 className="fw-bold">About Me</h6>
                 <p className="m-0">
                 Sindhu brings over two decades of experience in managing

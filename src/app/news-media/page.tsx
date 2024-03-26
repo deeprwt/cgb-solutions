@@ -27,7 +27,7 @@ const BlogGridPage = () => {
           <BreadcrumbOne 
           title="News & Media"
           subtitle="Meet our experts, guiding you through financial intricacies with precision"
-          page="New & Media"
+          page="News & Media"
           bg_img={blog_bg}
           style_2={true}
           />

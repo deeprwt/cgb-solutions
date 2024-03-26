@@ -12,7 +12,6 @@ const imgStyle = {
   height: "auto",
 };
 
-
 const TextFeatureNine = () => {
   return (
     <div className="text-feature-nine service-details position-relative mt-180 lg-mt-80">
@@ -23,14 +22,15 @@ const TextFeatureNine = () => {
               <div className="pt-110 lg-pt-80 pb-300 xl-pb-200 md-pb-50 pe-xxl-5">
                 <div className="title-one mb-30">
                   <h3 className="text-white">
-                    Industries <br /> <span style={{color:'#4beddb'}}>We Serve</span>
+                    Industries <br />{" "}
+                    <span style={{ color: "#4beddb" }}>We Serve</span>
                   </h3>
                 </div>
                 <p className="text-lg text-white opacity-75 mb-50 lg-mb-30">
-                  CGB Solutions aims at delivering a comprehensive suite of tools that
-                  enables organisations to converge all of their IT operations
-                  efficiently under a single pane of utilising genuine workflow
-                  integrations across globe.
+                  CGB Solutions provides a comprehensive suite of tools that
+                  enables organizations to consolidate all their IT operations
+                  efficiently onto a single platform, leveraging seamless
+                  workflow integrations across the globe.
                 </p>
                 {/* <div className="row">
                   <div className="col-sm-6">

@@ -39,7 +39,7 @@ export default function Oracle() {
           <BreadcrumbOne
             title="Oracle"
             subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
-            page="Mendix"
+            page="Oracle"
             bg_img={about_bg}
             // // shape={shape}
             style_2={true}

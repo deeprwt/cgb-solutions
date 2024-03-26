@@ -78,8 +78,16 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
         <div className="container">
           <div className="row align-items-center details-meta">
+            <div className="col-xxl-5 col-md-5 order-lg-first wow fadeInLeft">
+              <Image
+                src={Finacle2}
+                alt="screen"
+                className="lazy-img w-full h-auto rounded"
+              />
+            </div>
+            <div className="col-xxl-7 col-md-7 order-lg-first wow fadeInRight">
             <div className="title-one">
-              <h3 className="text-center">Who We Are</h3>
+              <h3 className="">Who We Are</h3>
               <p className="text-lg">
                 Finacle is an industry leader in digital banking solutions. We
                 partner with emerging and established financial institutions to
@@ -89,7 +97,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
               </p>
               <p className="text-lg">
                 We are a business unit of CGB Solutions Systems, a wholly-owned
-                product subsidiary of Infosys – a global technology leader with
+                product subsidiary of Infosys - a global technology leader with
                 over USD 15 billion in annual revenues.
               </p>
               <p className="text-lg">
@@ -104,6 +112,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
                 Finacle to help more than a billion people and millions of
                 businesses to save, pay, borrow, and invest better.
               </p>
+            </div>
             </div>
           </div>
         </div>

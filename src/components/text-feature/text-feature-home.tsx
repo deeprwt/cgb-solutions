@@ -67,7 +67,7 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                   <ul className="style-none">
                     <li>IT Consulting</li>
                     <li>Workforce Solutions diverse industries</li>
-                    <li>Digital Solutions improve efficiency.</li>
+                    <li>Digital Growth Services</li>
                   </ul>
                 </div>
               </div>

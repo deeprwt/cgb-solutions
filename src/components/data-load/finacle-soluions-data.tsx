@@ -37,7 +37,7 @@ const DataLoader = () => {
             <div className="icon d-flex align-self-center">
               <Image src={item.icon} alt="icon" className="lazy-img" />
             </div>
-            <h4 className="fw-bold mt-30 mb-30 text-center text-capitalize" style={{color:"#ed1c2e"}}>{item.title}</h4>
+            <h4 className="fw-bold mt-30 mb-30 text-center text-capitalize" style={{color:"#012d50"}}>{item.title}</h4>
             <p className="text-center">{item.desc}</p>
             {/* <Link href="/service-details" className="stretched-link"></Link> */}
           </div>
