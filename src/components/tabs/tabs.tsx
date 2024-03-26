@@ -64,7 +64,7 @@ const TabsData = () => {
                         <div className="col-xl-6 col-lg-6">
                             <div className="title-one details-meta pt-4">
                             {/* <div className="upper-title">Services</div> */}
-                            <h3>Finacle</h3>
+                            <h3>Finacle Core Banking</h3>
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                                 Discover a world of financial innovation and efficiency with CGB bespoke Finacle solutions. 
@@ -116,20 +116,20 @@ const TabsData = () => {
                         <div className="col-xl-6 col-lg-6">
                             <div className="title-one details-meta pt-4">
                             {/* <div className="upper-title">Services</div> */}
-                            <h3>Low Code</h3>
+                            <h3>Low Code No Code</h3>
                             </div>
                             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                                 Unlock the power of low-code with CGB. Build applications effortlessly, 
                                 whether you&apos;re a pro or just starting out. Experience streamlined development and unleash your creativity. 
                                 Welcome to a new era of simplicity and efficiency in software creation.
                             </p>
-                            <div className="d-inline-flex flex-wrap align-items-center pb-4">
+                            <div className="d-inline-flex flex-wrap align-items-center p-4">
                             <Link href="/solutions/outsystems" className="btn-three icon-link mt-15">
                                 <span>Outsystems</span>
                                 <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
                             </Link>
                             </div>
-                            <div className="d-inline-flex flex-wrap align-items-center pb-4">
+                            <div className="d-inline-flex flex-wrap align-items-center p-4">
                             <Link href="/solutions/mendix" className="btn-three icon-link mt-15">
                                 <span>Mendix</span>
                                 <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>

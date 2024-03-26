@@ -17,11 +17,11 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
             <div className="row gx-lg-5">
               <div className="col-lg-4 wow fadeInLeft">
                 <div className="title-one details-meta">
-                  <h3 className="text-dark">What we do</h3>
+                  <h3 className="text-dark">What We Do</h3>
                 </div>
                 <p className="text-lg text-dark mt-40 md-mt-20 mb-35 md-mb-30">
                   Inciddnt ut labore et dolor magna aliu. ad mim venam, quis
-                  nostru{" "}
+                  nostru
                 </p>
                 <Link href="/service-v2"
                   className="btn-eleven d-inline-flex align-items-center"
@@ -67,7 +67,7 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
               <div className="row">
               <div className="col-lg-4 wow fadeInLeft">
               <div className="title-one details-meta">
-                <h3>What we do</h3>
+                <h3>What We Do</h3>
               </div>
               <p className="text-lg text-dark mt-40 md-mt-20 mb-35 md-mb-30">We specialize in guiding businesses through the essential pillars of digital transformation:</p>
               <Link href="/contact" className="btn-eleven d-inline-flex align-items-center md-mb-60">

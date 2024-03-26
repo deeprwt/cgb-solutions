@@ -77,7 +77,7 @@ export const ul_data: IUl[] = [
   {
     id:generateUniqueId(),
     ul: [
-      "CGBSolutions Exquisitely Crafts Brochures & Pamphlets That Help Our Clients Gain the Most Out of Them.",
+      "CGB Solutions Exquisitely Crafts Brochures & Pamphlets That Help Our Clients Gain the Most Out of Them.",
     ],
     page: "graphic-3",
   },
@@ -98,7 +98,7 @@ export const ul_data: IUl[] = [
   {
     id:generateUniqueId(),
     ul: [
-      "CGBSolutions' Primary Goal Is to Understand the Client's Needs and Their Target Audience's Needs to Create a Design.",
+      "CGB Solutions' Primary Goal Is to Understand the Client's Needs and Their Target Audience's Needs to Create a Design.",
     ],
     page: "graphic-4",
   },
@@ -113,14 +113,14 @@ export const ul_data: IUl[] = [
   {
     id:generateUniqueId(),
     ul: [
-      "CGBSolutions Is at Its Best When Using Graphics to Communicate with Its Customers. It Has Become Vital in Advertising Strategy to Attract More Potential Customers.",
+      "CGB Solutions Is at Its Best When Using Graphics to Communicate with Its Customers. It Has Become Vital in Advertising Strategy to Attract More Potential Customers.",
     ],
     page: "graphic-4",
   },
   {
     id:generateUniqueId(),
     ul: [
-      "CGBSolutions Ensures Customized Graphic Design for All Clients' Web Designing Requirements.",
+      "CGB Solutions Ensures Customized Graphic Design for All Clients' Web Designing Requirements.",
     ],
     page: "graphic-5",
   },
@@ -145,7 +145,7 @@ export const ul_data: IUl[] = [
   },
   {
     id:generateUniqueId(),
-    ul: ["At CGBSolutions, the Clients Closely Work with Our Technical Team."],
+    ul: ["At CGB Solutions, the Clients Closely Work with Our Technical Team."],
     page: "graphic-6",
   },
   {
@@ -165,7 +165,7 @@ export const ul_data: IUl[] = [
   {
     id:generateUniqueId(),
     ul: [
-      "We at Cgbsolutions Completely Understand the Significance of Technology and Implement the Same at Work",
+      "We at CGB Solutions Completely Understand the Significance of Technology and Implement the Same at Work",
     ],
     page: "graphic-6",
   },

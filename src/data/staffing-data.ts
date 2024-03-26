@@ -55,7 +55,7 @@ const staffing_data:IStaffing[] = [
   {
     id:3,
     icon:icon_16,
-    title:'Hire Train Deploy',
+    title:'Hire-Train-Deploy',
     desc:'Empower your workforce with our customized training programs and strategic deployment support. Bridge skill gaps and enhance productivity with CGB Solutions Hire-Train-Deploy solutions.',
     page:'staffing-1',
     link: '/hire-train-deploy'

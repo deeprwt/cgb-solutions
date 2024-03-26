@@ -27,7 +27,7 @@ const TextFeatureNine = () => {
                   </h3>
                 </div>
                 <p className="text-lg text-white opacity-75 mb-50 lg-mb-30">
-                  Cgbsolution aims at delivering a comprehensive suite of tools that
+                  CGB Solutions aims at delivering a comprehensive suite of tools that
                   enables organisations to converge all of their IT operations
                   efficiently under a single pane of utilising genuine workflow
                   integrations across globe.
@@ -72,6 +72,12 @@ const TextFeatureNine = () => {
         </div>
         <div className="text-list">
           <span>Hi-Tech</span>
+        </div>
+        <div className="text-list">
+          <span>BFSI</span>
+        </div>
+        <div className="text-list">
+          <span>Logistic</span>
         </div>
         <div className="text-list">
           <span>Life Sciences</span>

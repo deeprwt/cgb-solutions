@@ -44,8 +44,8 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
             <div className="row align-items-center">
               <div className="col-xl-5 col-lg-6 wow fadeInLeft">
                 <div className="title-one details-meta">
-                  <div className="upper-title">About us</div>
-                  <h3>Where Technology meets Excellence</h3>
+                  <div className="upper-title">About Us</div>
+                  <h3>Where Technology Meets Excellence</h3>
                 </div>
                 <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                 Experience the extraordinary with CGB Solutions. We innovate relentlessly, 
@@ -54,7 +54,7 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
                   <Link href="/about-us" className="btn-four mt-15 me-4">
-                    More About us
+                    More About Us
                   </Link>
                   {/* <Link href="/contact" className="btn-three icon-link mt-15">
                     <span>Request a Callback</span>
@@ -67,7 +67,7 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                 <div className="media-list-item ms-auto pe-xxl-5 pe-4 ps-xxl-5 ps-4 pb-35 md-mt-60 d-flex align-items-end">
                   <ul className="style-none">
                     <li>IT Consulting</li>
-                    <li>Staffing Solutions for diverse industries</li>
+                    <li>Workforce Solutions diverse industries</li>
                     <li>Digital Solutions improve efficiency.</li>
                   </ul>
                 </div>

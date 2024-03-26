@@ -127,7 +127,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
         para="Our Deep Expertise and Focused Area"
         img={Finacle1}
         subtitle="ITSM & CSM"
-        subpara="CgbSolutions specializes in providing comprehensive ITSM and CSM services on the ServiceNow platform, with a dedicated focus on optimizing service delivery and customer satisfaction in these key areas.
+        subpara="CGB Solutions specializes in providing comprehensive ITSM and CSM services on the ServiceNow platform, with a dedicated focus on optimizing service delivery and customer satisfaction in these key areas.
         "
         filter_data="servicenow-1"
       />
@@ -137,7 +137,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
       <ImgTextOne
         img={Finacle2}
         subtitle="TOM & ITAM"
-        subpara="CgbSolutions specializes in TOM and ITAM services on ServiceNow, ensuring efficient technical operations and optimized IT asset management. With our expertise, we streamline processes, maximize performance, and enhance value for our clients"
+        subpara="CGB Solutions specializes in TOM and ITAM services on ServiceNow, ensuring efficient technical operations and optimized IT asset management. With our expertise, we streamline processes, maximize performance, and enhance value for our clients"
         filter_data="servicenow-2"
         style_2={true}
       />
@@ -146,7 +146,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
       <ImgTextOne
         img={Finacle3}
         subtitle="UI/UX"
-        subpara="CgbSolutions prioritizes UI/UX design to ensure our solutions deliver intuitive interfaces and exceptional user experiences. Our focus on UI/UX enhances user satisfaction and boosts efficiency for our clients' platforms and applications."
+        subpara="CGB Solutions prioritizes UI/UX design to ensure our solutions deliver intuitive interfaces and exceptional user experiences. Our focus on UI/UX enhances user satisfaction and boosts efficiency for our clients' platforms and applications."
         filter_data="servicenow-3"
         cls="d-none"
       />
@@ -155,7 +155,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
       <ImgTextOne
         img={Finacle2}
         subtitle="INTEGRATION"
-        subpara="CgbSolutions specializes in seamless integration services, ensuring that diverse systems and applications work together harmoniously. Our integration solutions streamline processes, enhance efficiency, and optimize data flow for our clients, ultimately driving business success."
+        subpara="CGB Solutions specializes in seamless integration services, ensuring that diverse systems and applications work together harmoniously. Our integration solutions streamline processes, enhance efficiency, and optimize data flow for our clients, ultimately driving business success."
         filter_data="servicenow-4"
         style_2={true}
       />

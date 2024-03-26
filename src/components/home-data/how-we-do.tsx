@@ -39,7 +39,7 @@ const HowWeDo = () => {
       <div className="container details-meta">
         <div>
           <div className="upper-title">Process</div>
-          <h3>How we do</h3>
+          <h3>How We Do</h3>
         </div>
         <p className="text-lg">
           We bring together a team of Technical Architects, Product Experts,

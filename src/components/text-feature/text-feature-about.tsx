@@ -7,8 +7,8 @@ import icon_2 from "@/assets/images/icon/icon_10.svg";
 import icon_3 from "@/assets/images/icon/icon_11.svg";
 import shape from "@/assets/images/shape/shape_05.svg";
 import about from "@/assets/images/assets/screen_14.png";
-import mission from "@/assets/images/icon/mission.svg"
-import vision from "@/assets/images/icon/vision.svg"
+import mission from "@/assets/images/icon/mission.svg";
+import vision from "@/assets/images/icon/vision.svg";
 
 // card item
 function CardItem({
@@ -62,7 +62,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
               <div className="col-xl-7 col-lg-6 order-1 order-lg-2 wow fadeInLeft">
                 <div className="title-one details-meta">
                   <div className="upper-title">About Us</div>
-                  <h3>What makes the client choose Us</h3>
+                  <h3>Why Choose Us</h3>
                 </div>
                 <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                   At the heart of CGB Solutions ethos lies an unwavering
@@ -121,12 +121,12 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     of technological advancements, making their interaction with
                     us not just a service but a seamless, convenient experience.{" "}
                     <br />
-                    At CGB India, innovation is not just a commitment; it&lsquo;s a
-                    way of life. We are driven by the belief that convenience is
-                    the cornerstone of exceptional service delivery, and we
-                    tirelessly work towards ensuring that our clients not only
-                    receive solutions but experience the unparalleled
-                    convenience that comes with partnering with a
+                    At CGB India, innovation is not just a commitment;
+                    it&lsquo;s a way of life. We are driven by the belief that
+                    convenience is the cornerstone of exceptional service
+                    delivery, and we tirelessly work towards ensuring that our
+                    clients not only receive solutions but experience the
+                    unparalleled convenience that comes with partnering with a
                     forward-thinking, innovative organization.
                   </p>
                   {/* <Link href="/contact" className="btn-three icon-link mt-15 md-mb-40">
@@ -135,17 +135,19 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                   </Link> */}
                 </div>
                 <div className="col-lg-6 ms-auto wow fadeInRight">
-                  <CardItem
-                    icon={mission}
-                    link="/mission"
-                    title="Our Mission"
+                <CardItem
+                    icon={vision}
+                    link="/our-company"
+                    title="Our Vision"
                     desc="We aspire to be the visionary of a future where the seamless integration of unparalleled talent and cutting-edge technology not only redefines success for businesses but sets an entirely new standard for global excellence"
                   />
                   <CardItem
-                    icon={vision}
-                    link="/vision"
-                    title="Our company Vision."
-                    desc="We are on a relentless mission to shatter the ordinary, empowering businesses with extraordinary staffing and technology solutions. At CGB Solutions, we don't just adapt to change; we sculpt it, ensuring our clients lead the way in innovation and triumph."
+                    icon={mission}
+                    link="/our-company"
+                    title="Our Mission"
+                    desc="
+                    We are on a relentless mission to shatter the ordinary, empowering businesses with extraordinary staffing and technology solutions. At CGB Solutions, we don't just adapt to change; we sculpt it, ensuring our clients lead the way in innovation and triumph.
+                    "
                   />
                 </div>
               </div>

@@ -75,7 +75,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
           <div className="row align-items-center details-meta">
             <div className="title-one">
               <h3 className="text-center">
-                CGB on Your <br /> RPA Journey with Automation Anywhere
+                Cgb on Your <br /> RPA Journey with Automation Anywhere
               </h3>
               <p className="text-lg text-center px-4 mb-35 md-mb-30">
                 Automation Anywhere is one of the most popular RPA vendors
@@ -84,14 +84,14 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
                 actions. Automation Anywhere is a Cloud-based management system
                 that includes a Control Room to operate Bots end-to-end, round
                 the clock, non stop, much faster and with 100 % accuracy for
-                companies.CGB Solution is a preferred Automation Anywhere consulting partner
-                for small and large enterprises. We specialize in helping
-                businesses build and manage complete RPA ecosystems, ensuring
-                success every step of the way. Our team of Automation Anywhere
-                experts work with businesses to determine where automation is
-                feasible, and then take care of the hard work so you don&apos;t have
-                to. This way, you can focus on what you&apos;re good at and leave the
-                tedious tasks to the Bots.
+                companies.CGB Solution is a preferred Automation Anywhere
+                consulting partner for small and large enterprises. We
+                specialize in helping businesses build and manage complete RPA
+                ecosystems, ensuring success every step of the way. Our team of
+                Automation Anywhere experts work with businesses to determine
+                where automation is feasible, and then take care of the hard
+                work so you don't have to. This way, you can focus on what
+                you're good at and leave the tedious tasks to the Bots.
               </p>
             </div>
           </div>
@@ -107,11 +107,15 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
               <div className="row">
                 <div className="title-one">
                   {/* <div className="upper-title">Core aspects of</div> */}
-                  <h3 className="text-center pb-50">Automation Anywhere Services</h3>
+                  <h3 className="text-center pb-50">
+                    Robotic Process Automation (RPA)
+                  </h3>
                 </div>
-                {/* <p className="text-lg text-dark mb-35 py-3 md-mb-30">
-                  Right here what you need
-                </p> */}
+                <p className="text-lg text-dark mb-35 py-3 md-mb-30">
+                  Robotic Process Automation (RPA) accelerates digital
+                  transformation of organizations by automating their repetitive
+                  business processes
+                </p>
                 {service_items.map((item, i) => (
                   <div
                     key={item.id}
@@ -217,7 +221,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
       </div>
       {/* card2 end */}
       {/* card2 starting */}
-      
+
       {/* card2 end */}
     </>
   );

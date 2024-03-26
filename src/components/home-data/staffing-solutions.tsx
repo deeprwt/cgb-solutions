@@ -40,7 +40,7 @@ const StaffingSolutions = () => {
         <div className="row gx-lg-5 align-items-center">
           <div className="col-lg-5 wow fadeInLeft">
             <div className="title-one details-meta">
-              <h3 className="">Staffing Solutions</h3>
+              <h3 className="">Workforce Solutions</h3>
             </div>
             <p className="text-lg text-dark mt-30 md-mt-20 mb-45 md-mb-30">
             We offer a combination of these services tailored to the specific needs of our clients, aiming to streamline their staffing processes and optimize workforce management

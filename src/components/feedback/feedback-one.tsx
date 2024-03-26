@@ -25,7 +25,7 @@ const FeedbackOne = ({cls}:{cls?:string}) => {
         <div className="position-relative">
           <div className="title-one sm-mb-40">
             <h2>
-              Words from <br /> clients.
+              Words From <br /> Clients.
             </h2>
           </div>
           <Slider {...slider_setting} className="feedback-slider-one">

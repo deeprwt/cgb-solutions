@@ -83,7 +83,7 @@ const OracleSection = ({ cls }: { cls?: string }) => {
               {/* <div className="upper-title text-center">Oracle Capability</div> */}
               <h2 className="text-center">Oracle Capability</h2>
               <p className="text-lg  px-4 mb-35 md-mb-30">
-                <b>CGBSolutions</b> maintains an experienced and dedicated
+                <b>CGB Solutions</b> maintains an experienced and dedicated
                 Oracle Enterprise Application Practice to provide high quality,
                 yet cost effective, accelerated solutions to our growing
                 customer base across multiple geographies and industries. <br />
