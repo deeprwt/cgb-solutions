@@ -78,15 +78,15 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
         <div className="container">
           <div className="row align-items-center details-meta">
-            <div className="col-xxl-5 col-md-5 order-lg-first wow fadeInLeft">
+            <div className="col-xxl-4 col-md-4 order-lg-first wow fadeInLeft">
               <Image
                 src={Finacle2}
                 alt="screen"
                 className="lazy-img w-full h-auto rounded"
               />
             </div>
-            <div className="col-xxl-7 col-md-7 order-lg-first wow fadeInRight">
-            <div className="title-one">
+            <div className="col-xxl-8 col-md-8 order-lg-first wow fadeInRight">
+            <div className="details-meta ps-xxl-5 ps-xl-3">
               <h3 className="">Who We Are</h3>
               <p className="text-lg">
                 Finacle is an industry leader in digital banking solutions. We

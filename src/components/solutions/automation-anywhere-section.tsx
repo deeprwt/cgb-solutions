@@ -11,13 +11,30 @@ import screen from "@/assets/images/assets/screen_11.png";
 import FaqItem from "@/components/faq/faq-item";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
-import img1 from "@/assets/images/solutions/contract-staffing/contract-staffing1.svg";
 
 import icon_3 from "@/assets/images/icon/icon_64.svg";
 import icon_4 from "@/assets/images/icon/icon_65.svg";
 import icon_5 from "@/assets/images/icon/icon_66.svg";
 import icon_6 from "@/assets/images/icon/icon_67.svg";
 import shape from "@/assets/images/shape/shape_05.svg";
+import automation1 from "@/assets/images/solutions/automation/automation1.png";
+import automation2 from "@/assets/images/solutions/automation/automation2.png";
+import automation3 from "@/assets/images/solutions/automation/automation3.png";
+import img1 from "@/assets/images/solutions/automation/1.png";
+import img2 from "@/assets/images/solutions/automation/2.png";
+import img3 from "@/assets/images/solutions/automation/3.png";
+import img4 from "@/assets/images/solutions/automation/4.png";
+
+// CardItemImg
+function CardItemImg({ icon }: { icon: StaticImageData }) {
+  return (
+    <div className="card-style-sixteen text-center mt-40">
+      <div className=" m-auto  d-flex align-items-center justify-content-center">
+        <Image src={icon} alt="icon" className="lazy-img" />
+      </div>
+    </div>
+  );
+}
 
 // card item
 function CardItem2({
@@ -47,18 +64,21 @@ function CardItem({
   icon,
   title,
   subtitle,
+  subtitle2,
 }: {
   icon: StaticImageData;
   title: string;
   subtitle: string;
+  subtitle2?: string;
 }) {
   return (
-    <div className="card-style-sixteen text-center arrow mt-40 md-mt-20">
+    <div className="card-style-sixteen text-center mt-40 md-mt-20 md-mb-20 mb-40">
       <div className="icon m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
-        <Image src={icon} alt="icon" className="lazy-img" />
+        <Image src={icon} alt="icon" className="h-auto lazy-img" />
       </div>
       <h4 className="fw-bold mt-35 md-mt-30 mb-15">{title}</h4>
       <p className="m0 fs-5 lh-base">{subtitle}</p>
+      <p className="m0 fs-5 lh-base">{subtitle2}</p>
     </div>
   );
 }
@@ -73,26 +93,38 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
       <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
         <div className="container">
           <div className="row align-items-center details-meta">
-            <div className="title-one">
-              <h3 className="text-center">
-                RPA Journey with Automation Anywhere
-              </h3>
-              <p className="text-lg text-center px-4 mb-35 md-mb-30">
-                Automation Anywhere is one of the most popular RPA vendors
-                offering powerful and user-friendly RPA capabilities to execute
-                rules-based business processes by observing human digital
-                actions. Automation Anywhere is a Cloud-based management system
-                that includes a Control Room to operate Bots end-to-end, round
-                the clock, non stop, much faster and with 100 % accuracy for
-                companies.CGB Solution is a preferred Automation Anywhere
-                consulting partner for small and large enterprises. We
-                specialize in helping businesses build and manage complete RPA
-                ecosystems, ensuring success every step of the way. Our team of
-                Automation Anywhere experts work with businesses to determine
-                where automation is feasible, and then take care of the hard
-                work so you don&apos;t have to. This way, you can focus on what
-                you&apos;re good at and leave the tedious tasks to the Bots.
-              </p>
+            <h3 className="text-center">
+              RPA Journey with Automation Anywhere
+            </h3>
+            <div className="col-xxl-5 col-md-5 wow fadeInLeft">
+              <Image
+                src={automation2}
+                alt="screen"
+                className="lazy-img w-full h-auto rounded"
+              />
+            </div>
+            <div className="col-xxl-7 col-md-7 wow fadeInRight">
+              <div className="details-meta ps-xxl-5 ps-xl-3">
+                <p className="text-lg">
+                  Automation Anywhere is one of the most popular RPA vendors
+                  offering powerful and user-friendly RPA capabilities to
+                  execute rules-based business processes by observing human
+                  digital actions. Automation Anywhere is a Cloud-based
+                  management system that includes a Control Room to operate Bots
+                  end-to-end, round the clock, non stop, much faster and with
+                  100 % accuracy for companies.
+                </p>
+                <p className="text-lg">
+                  CGB Solution is a preferred Automation Anywhere consulting
+                  partner for small and large enterprises. We specialize in
+                  helping businesses build and manage complete RPA ecosystems,
+                  ensuring success every step of the way. Our team of Automation
+                  Anywhere experts work with businesses to determine where
+                  automation is feasible, and then take care of the hard work so
+                  you don&apos;t have to. This way, you can focus on what
+                  you&apos;re good at and leave the tedious tasks to the Bots.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -110,33 +142,87 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
                     Robotic Process Automation (RPA)
                   </h3>
                 </div>
-                <p className="text-lg text-center text-dark mb-35 py-3 md-mb-30">
+                <p className="text-lg text-center mb-35 py-3 md-mb-30">
                   Robotic Process Automation (RPA) accelerates digital
                   transformation of organizations by automating their repetitive
                   business processes
                 </p>
-                {service_items.map((item, i) => (
-                  <div
-                    key={item.id}
-                    className="col-md-6 d-flex wow fadeInUp"
-                    data-wow-delay={`0.${i}s`}
-                  >
-                    <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center align-self-center">
-                        <Image
-                          src={item.icon}
-                          alt="icon"
-                          className="lazy-img"
-                        />
-                      </div>
-                      <h4 className="fw-bold mt-30 mb-20 text-center">
-                        {item.title}
-                      </h4>
-                      <p className="text-center">{item.desc}</p>
-                      {/* <Link href="/service-details" className="stretched-link"></Link> */}
+                <p className="text-center text-dark">
+                  RPA liberates employees from manual, repetitive and mundane
+                  (and important) tasks creating the capacity for them to do
+                  more valuable and engaging work.
+                </p>
+
+                <div className="col-12 wow fadeInUp">
+                  <Image
+                    src={automation3}
+                    alt="screen"
+                    className="lazy-img w-full m-auto h-auto rounded"
+                  />
+                </div>
+                <div className="line-wrapper position-relative">
+                  <div className="row gx-lg-5">
+                    <div className="col-xl-3 col-md-6 wow fadeInUp">
+                      <CardItem
+                        icon={icon_1}
+                        title="Process Discovery"
+                        subtitle="AI automated discovery"
+                        subtitle2="Automated bot building
+                        "
+                      />
+                    </div>
+                    <div
+                      className="col-xl-3 col-md-6 wow fadeInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <CardItem
+                        icon={icon_2}
+                        title="Data Understanding"
+                        subtitle="Unstructured data API/UI automation"
+                        subtitle2="Predict process outcomes"
+                      />
+                    </div>
+                    <div
+                      className="col-xl-3 col-md-6 wow fadeInUp"
+                      data-wow-delay="0.2s"
+                    >
+                      <CardItem
+                        icon={icon_3}
+                        title="RPA"
+                        subtitle="Attended automation"
+                        subtitle2="Unattended automation"
+                      />
+                    </div>
+                    <div
+                      className="col-xl-3 col-md-6 wow fadeInUp"
+                      data-wow-delay="0.3s"
+                    >
+                      <CardItem
+                        icon={icon_4}
+                        title="Smart Analytics"
+                        subtitle="Operational insights"
+                        subtitle2="Business insights"
+                      />
                     </div>
                   </div>
-                ))}
+                </div>
+                <div className="title-one lg-mb-20">
+                  <h4 className="text-center pt-4 pb-2 fw-bold">
+                    Specialists in RPA Technology
+                  </h4>
+                </div>
+                <div className="col-md-3 wow fadeInUp">
+                  <CardItemImg icon={img1} />
+                </div>
+                <div className="col-md-3 wow fadeInUp" data-wow-delay="0.1s">
+                  <CardItemImg icon={img2} />
+                </div>
+                <div className="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                  <CardItemImg icon={img3} />
+                </div>
+                <div className="col-md-3 wow fadeInUp" data-wow-delay="0.3s">
+                  <CardItemImg icon={img4} />
+                </div>
               </div>
             </div>
           </div>
@@ -149,12 +235,13 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
       <div className="block-feature-ten  service-details position-relative mb-50 mt-50 lg-mt-80 pb-60 pt-60 lg-pb-60">
         <div className="container details-meta">
           <div className="row align-items-center">
-            <div className="col-lg-10 wow fadeInUp">
+            <div className="col-12 wow fadeInUp">
               <div className="title-one lg-mb-20">
-                <h3>Automation Anywhere Automation Tools</h3>
-                {/* <p>
-                  Right here what you need 
-                </p> */}
+                <h3 className="text-center">Delivery, Methodology and Approach</h3>
+                <p className="text-lg text-center mb-35 py-3 md-mb-30">
+                  Comprehensive delivery methodology and approach to deliver a
+                  successful hyperautomation implementation
+                </p>
               </div>
             </div>
           </div>
@@ -218,9 +305,6 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
           </div>
         </div>
       </div>
-      {/* card2 end */}
-      {/* card2 starting */}
-
       {/* card2 end */}
     </>
   );

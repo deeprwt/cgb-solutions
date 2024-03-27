@@ -68,26 +68,27 @@ const TextFeatureNine = () => {
       </div>
       <div className="vertical-text-wrapper">
         <div className="text-list">
-          <span>Manufacturing</span>
+          <span>Energy & Utilities</span>
         </div>
         <div className="text-list">
-          <span>Hi-Tech</span>
-        </div>
-        <div className="text-list">
-          <span>BFSI</span>
+          <span>Public Sector</span>
         </div>
         <div className="text-list">
           <span>Logistics</span>
         </div>
         <div className="text-list">
+          <span>FMCG</span>
+        </div>
+        <div className="text-list">
           <span>Life Sciences</span>
         </div>
         <div className="text-list">
-          <span>Energy & Utilities</span>
+          <span>Manufacturing</span>
         </div>
         <div className="text-list">
-          <span>Consumer Products</span>
+          <span>Banking & Insurance</span>
         </div>
+
         <Image
           src={shape_1}
           alt="shape"
