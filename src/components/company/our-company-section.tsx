@@ -46,7 +46,7 @@ const OurCompanySection = ()=> {
             <div className="details-meta ps-xxl-5 ps-xl-3">
               <h2>Story</h2>
               <p>As we forge ahead, the spirit of innovation is not confined to our internal processes alone. We strive to create an ecosystem where our clients experience the tangible benefits of technological advancements, making their interaction with us not just a service but a seamless, convenient experience.</p>
-              <p>At CGB Solutions, innovation is not just a commitment; it's a way of life. We are driven by the belief that convenience is the cornerstone of exceptional service delivery, and we tirelessly work towards ensuring that our clients not only receive solutions but experience the unparalleled convenience that comes with partnering with a forward-thinking, innovative organization.</p>
+              <p>At CGB Solutions, innovation is not just a commitment; it&apos;s a way of life. We are driven by the belief that convenience is the cornerstone of exceptional service delivery, and we tirelessly work towards ensuring that our clients not only receive solutions but experience the unparalleled convenience that comes with partnering with a forward-thinking, innovative organization.</p>
               {/* <div className="img-meta mb-60 lg-mb-40">
                 <Image src={service_img} alt="service_img" className="lazy-img w-100 rounded-4" 
                 style={imgStyle}/>
