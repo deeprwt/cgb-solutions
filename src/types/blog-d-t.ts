@@ -5,12 +5,18 @@ interface PostContent {
   paragraph?: string;
 }
 
+// interface MetaContent {
+//   title: string;
+//   desc: string;
+//   keyword: string;
+// }
+
 export interface IBlog {
   id: number;
   img: StaticImageData;
   date: string;
-  title: string;
   link?: string;
+  title: string;
   post_info?: string;
   quote_blog?: boolean;
   designation?: string;
@@ -20,4 +26,6 @@ export interface IBlog {
   content2: string; // Change the type to string
   page: string;
   tag?: string;
+  desc?: string;
+  keyword?: string;
 }

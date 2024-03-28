@@ -14,9 +14,39 @@ import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
 import NewsDetailsArea from "@/components/blogs/blog-details/news-details-area";
 
-export const metadata: Metadata = {
-  title: "News details Page 2",
+// export const metadata: Metadata = {
+//   title: "News details Page 2",
+// };
+
+type Props = {
+  params: { link: string };
 };
+
+
+export function generateMetadata({ params }: Props): Metadata {
+  const article = news_data.find((b) => b.link === params.link);
+
+  if (!article) {
+    throw new Error(` link ${params.link} not found`);
+  }
+
+  return {
+    title: article.title,
+    description: article.desc || 'no data found', 
+    keywords:article.keyword || 'no data', 
+    // imges:article.img.src, 
+    openGraph: {
+      title: article.title,
+      description: article.desc,
+      images: [
+        {
+          url: article.img.src, 
+          alt: article.title,
+        },
+      ],
+    },
+  };
+}
 
 const NewsDetailsPage = ({ params }: { params: { id: string } }) => {
   const blog = news_data.find((b) => Number(b.id) === Number(params.id))!;

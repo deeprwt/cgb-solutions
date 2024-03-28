@@ -5,11 +5,11 @@ interface PostContent {
   paragraph?: string;
 }
 
-interface MetaContent {
-    title: string;
-    desc: string;
-    keyword: string;
-}
+// interface MetaContent {
+//     title: string;
+//     desc: string;
+//     keyword: string;
+// }
 
 export interface IArticle {
   id: number;
@@ -26,5 +26,6 @@ export interface IArticle {
   content2: string; // Change the type to string
   page: string;
   tag?: string;
-  meta?: MetaContent[];
+  desc?: string;
+  keyword?: string;
 }

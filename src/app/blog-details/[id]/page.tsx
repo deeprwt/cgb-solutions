@@ -25,16 +25,17 @@ export function generateMetadata({ params }: Props): Metadata {
   const article = blog_data.find((b) => b.link === params.link);
 
   if (!article) {
-    throw new Error(`Article with link ${params.link} not found`);
+    throw new Error(` link ${params.link} not found`);
   }
 
   return {
     title: article.title,
-    // description: article.description, // Assuming you have a description field in your article data
+    description: article.desc || 'no data found', 
+    keywords:article.keyword || 'no data', 
     // imges:article.img.src, 
     openGraph: {
       title: article.title,
-      // description: article.description,
+      description: article.desc,
       images: [
         {
           url: article.img.src, 
