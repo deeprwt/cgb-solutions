@@ -22,6 +22,13 @@ import TextFeatureOne from "@/components/text-feature/text-feature-one";
 import FooterOne from "@/layout/footer/footer-one";
 import Header from "@/layout/header/Header";
 import Wrapper from "@/layout/wrapper";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "CGB Solutions",
+  description: "Empower your business with CGB Solutions' IT expertise. Strategic consulting & managed services for peak performance. Contact us.",
+  keywords: "IT services, consulting, managed services, peak performance",
+};
 
 export default function HomePage() {
   return (

@@ -24,6 +24,8 @@ import HowWeDo from "@/components/home-data/how-we-do";
 
 export const metadata: Metadata = {
   title: "About Us",
+  description : "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 const AboutUsPage = () => {

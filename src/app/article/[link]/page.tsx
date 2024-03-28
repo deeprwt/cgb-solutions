@@ -18,7 +18,7 @@ export function generateMetadata({ params }: Props): Metadata {
   const article = articleData.find((b) => b.link === params.link);
 
   if (!article) {
-    throw new Error(` link ${params.link} not found`);
+    throw new Error(`link ${params.link} not found`);
   }
 
   return {
