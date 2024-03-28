@@ -55,9 +55,9 @@ const BlogDetailsArea = ({ blog }: { blog: IBlog }) => {
                           </h3>
                         </div>
                       </div>
-                      <h6>
+                      {/* <h6>
                         Sindhu BRJ <span>CEO CGB Solutions</span>
-                      </h6>
+                      </h6> */}
                     </div>
                   </div>
                   {/* uncomment add images in blog dynamicaly  */}

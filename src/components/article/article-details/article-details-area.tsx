@@ -53,9 +53,9 @@ const ArticleDetailsArea = ({ blog }: { blog: IArticle }) => {
                           </h3>
                         </div>
                       </div>
-                      <h6>
+                      {/* <h6>
                         Sindhu BRJ <span>CEO CGB Solutions</span>
-                      </h6>
+                      </h6> */}
                     </div>
                   </div>
                 </div>
