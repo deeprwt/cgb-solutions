@@ -12,9 +12,38 @@ import blog_data from "@/data/blog-data";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
 
-export const metadata: Metadata = {
-  title: "Blog Details Page2",
+// export const metadata: Metadata = {
+//   title: "Blog Details Page2",
+// };
+
+type Props = {
+  params: { link: string };
 };
+
+
+export function generateMetadata({ params }: Props): Metadata {
+  const article = blog_data.find((b) => b.link === params.link);
+
+  if (!article) {
+    throw new Error(`Article with link ${params.link} not found`);
+  }
+
+  return {
+    title: article.title,
+    // description: article.description, // Assuming you have a description field in your article data
+    // imges:article.img.src, 
+    openGraph: {
+      title: article.title,
+      // description: article.description,
+      images: [
+        {
+          url: article.img.src, 
+          alt: article.title,
+        },
+      ],
+    },
+  };
+}
 
 const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
   const blog = blog_data.find((b) => Number(b.id) === Number(params.id))!;

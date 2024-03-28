@@ -10,6 +10,7 @@ export interface IBlog {
   img: StaticImageData;
   date: string;
   title: string;
+  link?: string;
   post_info?: string;
   quote_blog?: boolean;
   designation?: string;
