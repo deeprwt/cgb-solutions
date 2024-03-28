@@ -29,7 +29,7 @@ import img4 from "@/assets/images/solutions/automation/4.png";
 function CardItemImg({ icon }: { icon: StaticImageData }) {
   return (
     <div className="card-style-sixteen text-center mt-40">
-      <div className=" m-auto  d-flex align-items-center justify-content-center">
+      <div className=" m-auto d-flex align-items-center justify-content-center">
         <Image src={icon} alt="icon" className="lazy-img" />
       </div>
     </div>
@@ -237,7 +237,9 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
           <div className="row align-items-center">
             <div className="col-12 wow fadeInUp">
               <div className="title-one lg-mb-20">
-                <h3 className="text-center">Delivery, Methodology and Approach</h3>
+                <h3 className="text-center">
+                  Delivery, Methodology and Approach
+                </h3>
                 <p className="text-lg text-center mb-35 py-3 md-mb-30">
                   Comprehensive delivery methodology and approach to deliver a
                   successful hyperautomation implementation
@@ -245,60 +247,52 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
               </div>
             </div>
           </div>
-          <div className="line-wrapper position-relative">
-            <div className="row gx-lg-5">
-              <div className="col-xl-4 col-md-6 wow fadeInUp">
-                <CardItem2
+          <div className="position-relative">
+            <div className="row gx-lg-5 justify-content-center">
+              <div className="col-xl-2 col-md-6 wow fadeInUp">
+                <CardItem
                   icon={icon_1}
-                  title="Community Edition"
-                  subtitle="Complete Digital Workforce at your Fingertips"
+                  title="Qualify"
+                  subtitle="Qualify the scope and prioritise the work.
+                  "
                 />
               </div>
               <div
-                className="col-xl-4 col-md-6 wow fadeInUp"
+                className="col-xl-2 col-md-6 wow fadeInUp"
                 data-wow-delay="0.1s"
               >
-                <CardItem2
+                <CardItem
                   icon={icon_2}
-                  title="Bot Insight"
-                  subtitle="Optimize your automation value cycle by automatically turning data into actionable insights for you."
+                  title="Plan"
+                  subtitle="Establish project controls, plan statement of work, confirm resources."
                 />
               </div>
               <div
-                className="col-xl-4 col-md-6 wow fadeInUp"
+                className="col-xl-2 col-md-6 wow fadeInUp"
                 data-wow-delay="0.2s"
               >
-                <CardItem2
+                <CardItem
                   icon={icon_3}
-                  title="Discovery Bot"
-                  subtitle="dentify the processes in your business that can be automated and create bots"
+                  title="Deliver"
+                  subtitle="Deliver iterative cyclic work packages as sprints, Design,
+                  Build, Develop, Testing, Review"
                 />
               </div>
-              <div className="col-xl-4 col-md-6 wow fadeInUp">
-                <CardItem2
+              <div className="col-xl-2 col-md-6 wow fadeInUp">
+                <CardItem
                   icon={icon_4}
-                  title="Bot Store"
-                  subtitle="World's leading marketplace for bots and packages"
+                  title="Transition "
+                  subtitle="Increase load, stabilise new way of working, acceptance of work."
                 />
               </div>
               <div
-                className="col-xl-4 col-md-6 wow fadeInUp"
+                className="col-xl-2 col-md-6 wow fadeInUp"
                 data-wow-delay="0.1s"
               >
-                <CardItem2
+                <CardItem
                   icon={icon_5}
-                  title="IQ Bot"
-                  subtitle="IQ BOT to employ AI for intelligent document processing."
-                />
-              </div>
-              <div
-                className="col-xl-4 col-md-6 wow fadeInUp"
-                data-wow-delay="0.2s"
-              >
-                <CardItem2
-                  icon={icon_6}
-                  title="AARI"
-                  subtitle="Your digital assistant at work to upscale automation."
+                  title="Support "
+                  subtitle="Continuous improvement, maintain solution health."
                 />
               </div>
             </div>
