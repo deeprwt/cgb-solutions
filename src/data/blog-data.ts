@@ -31,7 +31,7 @@ const blog_data: IBlog[] = [
       "Empowering the Climate Tech Revolution for a Carbon-Free Future",
     author: "Deepak Rawat",
     post_info: "CGB Solutions . Sustainable",
-    category: "IT",
+    category: "Sustainable",
    content: [
     {
       "heading": "",
@@ -163,7 +163,7 @@ content2: "",
   ],
 content2: "",
     page: "blog-list",
-    tag: "sustainability"
+    tag: "IT"
   },
 
 ];

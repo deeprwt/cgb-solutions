@@ -18,7 +18,7 @@ const HomeTwoBlogs = () => {
 
           <div className="row gx-xxl-5">
             {blog_item.map((b, i) => (
-              <div key={i} className="col-md-4">
+              <div key={i} className="col-md-6 col-lg-4">
                 <BlogItemTwo blog={b} />
               </div>
             ))}

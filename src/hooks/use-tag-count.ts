@@ -10,7 +10,7 @@ const UseTag = () => {
     useEffect(() => {
         // Filter data based on tag 'it'
         const sustainabilityData = blog_data.filter(item => item.tag === 'sustainability');
-        const itData = blog_data.filter(item => item.tag === 'it');
+        const itData = blog_data.filter(item => item.tag === 'IT');
         // Set the count of 'it' tagged data
         setSustainabilityDataCount(sustainabilityData.length);
         setItDataCount(itData.length);
