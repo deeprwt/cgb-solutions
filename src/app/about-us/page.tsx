@@ -21,6 +21,7 @@ import TextFeatureAbout from "@/components/text-feature/text-feature-about";
 import BlockFeatureAbout from "@/components/block-feature/block-feature-about";
 import DottedMap from "@/components/map/maps";
 import HowWeDo from "@/components/home-data/how-we-do";
+import logo_2 from "@/assets/images/logo/logome.png";
 
 export const metadata: Metadata = {
   title: "About Us",

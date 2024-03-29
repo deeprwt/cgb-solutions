@@ -88,10 +88,10 @@ const menu_data: IMenu[] = [
      sub_menus: [
       { link: "/solutions/outsystems", title: "Outsystems" },
       { link: "/solutions/mendix", title: "Mendix" },
-      { link: "/solutions/mendix", title: "Unqork" },
+      // { link: "/solutions/mendix", title: "Unqork" },
      ],
     },
-      { link: "/contract-staffing", title: "Staff Augmentation" },
+      { link: "/contract-staffing", title: "Workforce Solutions" },
       { link: "/solutions/digital-marketing", title: "Digital Services" },
     ],
   },
