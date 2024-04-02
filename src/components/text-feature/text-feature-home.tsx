@@ -66,7 +66,7 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                 <div className="media-list-item ms-auto pe-xxl-5 pe-4 ps-xxl-5 ps-4 pb-35 md-mt-60 d-flex align-items-end">
                   <ul className="style-none">
                     <li>IT Consulting</li>
-                    <li>Workforce Solutions Diverse Industries</li>
+                    <li>Workforce Solutions </li>
                     <li>Digital Growth Services</li>
                   </ul>
                 </div>
