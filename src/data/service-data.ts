@@ -9,10 +9,10 @@ import icon_5 from '@/assets/images/icon/icon_06.svg';
 import icon_6 from '@/assets/images/icon/icon_07.svg';
 import icon_7 from '@/assets/images/icon/icon_08.svg';
 // home 3
-import icon_8 from '@/assets/images/icon/icon_32.svg';
-import icon_9 from '@/assets/images/icon/icon_33.svg';
-import icon_10 from '@/assets/images/icon/icon_34.svg';
-import icon_11 from '@/assets/images/icon/icon_35.svg';
+import icon_8 from '@/assets/images/icon/icon_32.png';
+import icon_9 from '@/assets/images/icon/icon_33.png';
+import icon_10 from '@/assets/images/icon/icon_34.png';
+import icon_11 from '@/assets/images/icon/icon_35.png';
 // home 4
 import icon_12 from '@/assets/images/icon/icon_40.svg';
 import icon_13 from '@/assets/images/icon/icon_41.svg';
@@ -23,6 +23,7 @@ import icon_16 from '@/assets/images/icon/icon_95.svg';
 import icon_17 from '@/assets/images/icon/icon_10.svg';
 import icon_18 from '@/assets/images/icon/icon_11.svg';
 import icon_20 from '@/assets/images/icon/icon_20.png';
+import icon_21 from '@/assets/images/icon/icon_20.png';
 
 // oracle images 
 import oracle1 from '@/assets/images/solutions/oracle/1.png';
@@ -125,6 +126,13 @@ const service_data:IService[] = [
     desc:'Establish stringent frameworks to optimize efficiency and ensure compliance, mitigating risks effectively.',
     page:'home-3'
   },
+  {
+    id:21,
+    icon:icon_21,
+    title:'Continuous Improvement',
+    desc:'Commit to ongoing refinement, evolving our offerings to stay ahead in a dynamic market landscape.',
+    page:'home-3'
+  },
   // home 3 end ------------------------------------------------------------------------------------
   // home 4 staring ------------------------------------------------------------------------------------
   {
@@ -193,13 +201,7 @@ const service_data:IService[] = [
     page:'home-5'
   },
   // home 5 end-----------------------------------------------------------------------------------------
-  {
-    id:21,
-    icon:icon_11,
-    title:'Continuous Improvement',
-    desc:'Commit to ongoing refinement, evolving our offerings to stay ahead in a dynamic market landscape.',
-    page:'home-3'
-  },
+  
   {
     id:22,
     icon:icon_11,
