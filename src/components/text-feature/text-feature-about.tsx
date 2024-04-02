@@ -66,7 +66,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                 </div>
                 <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                   At the heart of CGB Solutions ethos lies an unwavering
-                  commitment to innovation — a commitment that transcends the
+                  commitment to innovation, a commitment that transcends the
                   ordinary and propels us into the realm of groundbreaking
                   service delivery. <br />
                   Our approach goes beyond meeting expectations; it anticipates
