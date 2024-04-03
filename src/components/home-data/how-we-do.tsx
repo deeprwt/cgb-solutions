@@ -3,9 +3,10 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // internal
 import screen from "@/assets/images/assets/screen_15.png";
-import icon_1 from "@/assets/images/icon/icon_82.svg";
-import icon_2 from "@/assets/images/icon/icon_83.svg";
-import icon_3 from "@/assets/images/icon/icon_81.svg";
+import icon_1 from "@/assets/images/icon/icon_82.png";
+import icon_2 from "@/assets/images/icon/icon_83.png";
+import icon_3 from "@/assets/images/icon/icon_81.png";
+import icon_4 from "@/assets/images/icon/icon_84.png";
 
 
 // image style
@@ -18,14 +19,14 @@ function CardItem({
   title,
   subtitle,
 }: {
-  icon: string;
+  icon: StaticImageData;
   title: string;
   subtitle: string;
 }) {
   return (
     <div className="card-style-sixteen text-center arrow mt-40 md-mt-20">
-      <div className="icon m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
-        <Image src={icon} alt="icon"  className="lazy-img" />
+      <div className=" m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
+        <Image src={icon} alt="icon" width={70} height={70}  className="lazy-img" />
       </div>
       <h4 className="fw-bold mt-35 md-mt-30 mb-15">{title}</h4>
       <p className="m0 fs-5 lh-base pe-xl-3 ps-xl-3">{subtitle}</p>
@@ -51,7 +52,7 @@ const HowWeDo = () => {
         <div className="line-wrapper border-top border-bottom pt-20 pb-60 lg-pb-40 mt-60 lg-mt-40 mb-70 lg-mb-40">
           {/* project details feature start */}
           <div className="row">
-            <div className="col-lg-3 wow fadeInUp">
+            <div className="col-lg-3 fadeInUp">
               <CardItem
                 icon={icon_1}
                 title="Technical Architects"
@@ -60,25 +61,25 @@ const HowWeDo = () => {
             </div>
             <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
               <CardItem
-                icon={icon_1}
+                icon={icon_2}
                 title="Product Experts"
                 subtitle=" Develop innovative products aligned with market demands."
               />
             </div>
             <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
               <CardItem
-                icon={icon_1}
+                icon={icon_3}
                 title="Coaches"
                 subtitle=" Empower your team with guidance and expertise."
               />
             </div>
             <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
               <div className="card-style-sixteen text-center position-relative mt-40">
-                <div className="icon m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
-                  <Image src={icon_2} alt="icon" className="lazy-img" />
+                <div className=" m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
+                  <Image src={icon_4} alt="icon" width={70} height={70}  className="lazy-img" />
                 </div>
                 <h4 className="fw-bold mt-35 md-mt-30 mb-15">
-                  Product Experts
+                Industry Experts
                 </h4>
                 <p className="m0 fs-5 lh-base pe-xl-3 ps-xl-3">
                   Provide strategic insights to navigate market challenges

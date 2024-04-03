@@ -19,9 +19,15 @@ import icon_13 from '@/assets/images/icon/icon_41.svg';
 import icon_14 from '@/assets/images/icon/icon_42.svg';
 // home 5
 import icon_15 from '@/assets/images/icon/icon_95.svg';
-import icon_16 from '@/assets/images/icon/icon_95.svg';
+import icon_16 from '@/assets/images/icon/icon_95.png';
+import icon_22 from '@/assets/images/icon/icon_95.png';
 import icon_17 from '@/assets/images/icon/icon_10.svg';
 import icon_18 from '@/assets/images/icon/icon_11.svg';
+import icon_19 from '@/assets/images/icon/icon_12.png';
+import icon_20 from '@/assets/images/icon/icon_12.png';
+import icon_21 from '@/assets/images/icon/icon_23.svg';
+import icon_23 from '@/assets/images/icon/icon_23.png';
+import icon_24 from '@/assets/images/icon/icon_13.png';
 
 
 
@@ -38,7 +44,7 @@ const staffing_data:IStaffing[] = [
   // home 1
   {
     id:1,
-    icon:icon_16,
+    icon:icon_22,
     title:'Contract Staffing',
     desc:'CGB Solutions offers flexible workforce solutions with our contract staffing services. Access skilled professionals on a temporary basis to meet project demands and scale your team as needed.',
     page:'staffing-1',
@@ -46,7 +52,7 @@ const staffing_data:IStaffing[] = [
   },
   {
     id:2,
-    icon:icon_16,
+    icon:icon_23,
     title:'Permanent Staffing',
     desc:'Find the right talent for long-term success with CGB Solutions permanent staffing solutions. Our recruiters specialize in identifying top-tier candidates who align with your company culture and values.',
     page:'staffing-1',
@@ -54,7 +60,7 @@ const staffing_data:IStaffing[] = [
   },
   {
     id:3,
-    icon:icon_16,
+    icon:icon_19,
     title:'Hire-Train-Deploy',
     desc:'Empower your workforce with our customized training programs and strategic deployment support. Bridge skill gaps and enhance productivity with CGB Solutions Hire-Train-Deploy solutions.',
     page:'staffing-1',
@@ -62,7 +68,7 @@ const staffing_data:IStaffing[] = [
   },
   {
     id:4,
-    icon:icon_16,
+    icon:icon_24,
     title:'RPO',
     desc:'Optimize your talent acquisition strategy with CGB Solutions RPO services. Our dedicated team manages the entire recruitment lifecycle, reducing time-to-hire and cost-per-hire while maintaining quality standards.',
     page:'staffing-1',

@@ -80,8 +80,8 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                 {service_items.map((item, i) => (
                   <div key={item.id} className="col-md-4 d-flex wow fadeInUp" data-wow-delay={`0.${i}s`}>
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center">
-                      <Image src={item.icon} alt="icon" className="lazy-img" />
+                      <div className="d-flex align-items-center">
+                      <Image src={item.icon} width={70} height={70} alt="icon" className="lazy-img" />
                       </div>
                       <h4 className="fw-bold mt-30 mb-20">{item.title}</h4>
                       <p>{item.desc}</p>
