@@ -9,10 +9,13 @@ import icon_5 from '@/assets/images/icon/icon_06.svg';
 import icon_6 from '@/assets/images/icon/icon_07.svg';
 import icon_7 from '@/assets/images/icon/icon_08.svg';
 // home 3
-import icon_8 from '@/assets/images/icon/icon_32.png';
-import icon_9 from '@/assets/images/icon/icon_33.png';
-import icon_10 from '@/assets/images/icon/icon_34.png';
-import icon_11 from '@/assets/images/icon/icon_35.png';
+import icon_9 from '@/assets/images/icon/icon_33.svg';
+import icon_8 from '@/assets/images/icon/icon_32.svg';
+import icon_10 from '@/assets/images/icon/icon_34.svg';
+import icon_22 from '@/assets/images/icon/icon_32.png';
+import icon_23 from '@/assets/images/icon/icon_33.png';
+import icon_24 from '@/assets/images/icon/icon_34.png';
+import icon_11 from '@/assets/images/icon/icon_35.svg';
 // home 4
 import icon_12 from '@/assets/images/icon/icon_40.svg';
 import icon_13 from '@/assets/images/icon/icon_41.svg';
@@ -22,8 +25,10 @@ import icon_15 from '@/assets/images/icon/icon_95.svg';
 import icon_16 from '@/assets/images/icon/icon_95.svg';
 import icon_17 from '@/assets/images/icon/icon_10.svg';
 import icon_18 from '@/assets/images/icon/icon_11.svg';
-import icon_20 from '@/assets/images/icon/icon_20.png';
-import icon_21 from '@/assets/images/icon/icon_20.png';
+import icon_20 from '@/assets/images/icon/icon_20.svg';
+import icon_21 from '@/assets/images/icon/icon_20.svg';
+import icon_25 from '@/assets/images/icon/icon_35.png';
+import icon_26 from '@/assets/images/icon/icon_20.png';
 
 // oracle images 
 import oracle1 from '@/assets/images/solutions/oracle/1.png';
@@ -100,35 +105,35 @@ const service_data:IService[] = [
   // 
   {
     id:8,
-    icon:icon_8,
+    icon:icon_22,
     title:'Design',
     desc:'Craft bespoke IT and staffing solutions tailored to your needs for unparalleled performance.',
     page:'home-3'
   },
   {
     id:9,
-    icon:icon_9,
+    icon:icon_23,
     title:'Success Criteria',
     desc:'Exceed benchmarks with our innovative strategies, ensuring your success in every endeavor.',
     page:'home-3'
   },
   {
     id:10,
-    icon:icon_10,
+    icon:icon_24,
     title:'Adoption',
     desc:'Seamlessly integrate our solutions into your workflow, guaranteeing swift and effortless implementation.',
     page:'home-3'
   },
   {
     id:11,
-    icon:icon_11,
+    icon:icon_25,
     title:'Governance',
     desc:'Establish stringent frameworks to optimize efficiency and ensure compliance, mitigating risks effectively.',
     page:'home-3'
   },
   {
     id:21,
-    icon:icon_21,
+    icon:icon_26,
     title:'Continuous Improvement',
     desc:'Commit to ongoing refinement, evolving our offerings to stay ahead in a dynamic market landscape.',
     page:'home-3'
