@@ -1,8 +1,14 @@
 import { StaticImageData } from "next/image";
 
+
+interface Licontent{
+  li?: string;
+}
+
 interface PostContent {
   heading?: string;
   paragraph?: string;
+  ul?: Licontent[];
 }
 
 // interface MetaContent {
