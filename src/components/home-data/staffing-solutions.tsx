@@ -55,8 +55,8 @@ const StaffingSolutions = () => {
                 {service_items.map((s) => (
                   <div key={s.id} className="item">
                     <div className="card-style-seventeen d-lg-flex tran3s w-100">
-                      <div className="icon tran3s rounded-circle d-flex justify-content-center align-items-center">
-                        <Image src={s.icon} alt="icon" />
+                      <div className="tran3s rounded-circle d-flex justify-content-center">
+                        <Image src={s.icon} alt="icon" width={70} height={70}/>
                       </div>
                       <div className="text">
                         <h4 className="fw-bold mb-25 md-mb-20">
