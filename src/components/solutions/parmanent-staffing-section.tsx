@@ -146,11 +146,13 @@ const ParmanentStaffingSection = ({ cls }: { cls?: string }) => {
                     data-wow-delay={`0.${i}s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center align-self-center">
+                      <div className="d-flex align-items-center align-self-center">
                         <Image
                           src={item.icon}
                           alt="icon"
                           className="lazy-img"
+                          width={100}
+                          height={100}
                         />
                       </div>
                       <h4 className="fw-bold mt-30 mb-20 text-center">

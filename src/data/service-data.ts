@@ -37,6 +37,10 @@ import oracle3 from '@/assets/images/solutions/oracle/3.png';
 import oracle4 from '@/assets/images/solutions/oracle/4.png';
 import oracle5 from '@/assets/images/solutions/oracle/5.png';
 
+//New icons
+import icon_101 from '@/assets/images/icon/icon_101.png';
+import icon_102 from '@/assets/images/icon/icon_102.png';
+
 
 // data type
 interface IService {
@@ -293,14 +297,14 @@ const service_data:IService[] = [
   },
   {
     id:34,
-    icon:icon_11,
+    icon:icon_101,
     title:'Manage talent and skill scarcity across your business',
     desc:'Using our extensive talent acquisition resources, we help you hire the best, across any skillset, regardless of scarcity.',
     page:'parmanent-staffing'
   },
   {
     id:35,
-    icon:icon_11,
+    icon:icon_102,
     title:'Tailored recruitment advisory',
     desc:'We advise you across a range of topics from employer branding and organizational changes, to ESG with the goal to attract and retain top talent.',
     page:'parmanent-staffing'
