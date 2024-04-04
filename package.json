@@ -20,7 +20,7 @@
     "@types/react-responsive-masonry": "^2.1.1",
     "bootstrap": "^5.3.2",
     "firebase": "^10.9.0",
-    "next": "latest",
+    "next": "^14.2.0-canary.56",
     "react": "latest",
     "react-countup": "^6.4.2",
     "react-dom": "latest",
