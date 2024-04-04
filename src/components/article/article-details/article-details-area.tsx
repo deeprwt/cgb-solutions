@@ -33,34 +33,37 @@ const ArticleDetailsArea = ({ blog }: { blog: IArticle }) => {
                   {/* Rendering content headings and paragraphs dynamically */}
                   {content.map((item, index) => (
                     <div key={index}>
-                      <h3>
-                       {item.heading}
-                      </h3>
+                      <h3>{item.heading}</h3>
                       <p>{item.paragraph}</p>
+                      {/* <ul className="style-none list-item pb-20">
+                        <li className="lim">
+                          {item.ul.li}
+                        </li>
+                      </ul> */}
                     </div>
                   ))}
                   {/* End of content rendering */}
-                  <div className="quote-wrapper">
+                  {/* <div className="quote-wrapper">
                     <div className="wrapper">
                       <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto">
                         <Image src={icon} alt="icon" className="lazy-img" />
                       </div>
                       <div className="row">
                         <div className="col-xxl-9 col-xl-11 m-auto">
-                          <h3>
+                           <h3>
                             Grow wealth like a tree, roots in savings, branches
                             reaching toward diverse investments.
-                          </h3>
+                          </h3> 
                         </div>
                       </div>
-                      {/* <h6>
+                       <h6>
                         Sindhu BRJ <span>CEO CGB Solutions</span>
-                      </h6> */}
+                      </h6> 
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="bottom-widget d-sm-flex align-items-center justify-content-between">
-                  <ul className="d-flex align-items-center tags style-none pt-20">
+                  {/* <ul className="d-flex align-items-center tags style-none pt-20">
                     <li>Tag:</li>
                     <li>
                       <Link href="#">Finance</Link>
@@ -71,7 +74,7 @@ const ArticleDetailsArea = ({ blog }: { blog: IArticle }) => {
                     <li>
                       <Link href="#">Banking</Link>
                     </li>
-                  </ul>
+                  </ul> */}
                   {/* social media sharing link start  */}
                   <UseSocialShare />
                   {/* social media sharing link end  */}
