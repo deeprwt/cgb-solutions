@@ -129,5 +129,4 @@ const article_data: IArticle[] = [
     content2: "",
   },
 ];
-
 export default article_data;
