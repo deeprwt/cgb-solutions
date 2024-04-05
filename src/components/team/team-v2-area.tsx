@@ -14,7 +14,7 @@ const TeamTwoArea = () => {
             <h3>Meet Our Team</h3>
           </div>
           <p className="text-lg text-dark mb-30 lg-mb-10 text-center px-5 py-3">
-            Our team is constantly committed to innovation and pushing the boundaries while delivering workplaces. Our greatest strength is the relationship of trust we have with our clients. Our CGB wear many hats. They are bikers, philosophers, farmers and musicians who are also the designers, engineers, innovators and project managers of workplaces of the future.
+            Our Team at CGB Solutions is a dynamic ensemble of individuals dedicated to excellence and innovation in workplace solutions.  United by a shared commitment to pushing boundaries and delivering exceptional results, our team fosters a culture of collaboration, continuous learning, and growth. Together, we are shaping the future of work and redefining possibilities in workplace innovation.
           </p>
           <div className="row">
             {teams.map((t, i) => (
