@@ -4,7 +4,7 @@ import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import FooterThree from "@/layout/footer/footer-three";
-import service_bg from "@/assets/images/media/img_32.jpg";
+import service_bg from "@/assets/images/media/OurCompanybanner.png";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import shape from "@/assets/images/shape/shape_27.svg";
 import ServiceDetailsArea from "@/components/services/service-details-area";

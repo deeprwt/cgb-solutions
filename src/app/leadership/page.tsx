@@ -7,7 +7,7 @@ import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
 import TeamTwoArea from "@/components/team/team-v2-area";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
-import team_bg from "@/assets/images/media/img_32.jpg";
+import team_bg from "@/assets/images/media/Leadershipbanner.png";
 import FooterOne from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/Header";
 import TeamDetailsArea from "@/components/team/team-details-area";

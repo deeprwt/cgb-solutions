@@ -5,7 +5,7 @@ import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 // import FooterThree from "@/layout/footer/footer-three";
 import FooterOne from "@/layout/footer/footer-one";
-import about_bg from "@/assets/images/media/img_26.jpg";
+import about_bg from "@/assets/images/media/Aboutbanner.png";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import shape from "@/assets/images/shape/shape_25.svg";
 import TextFeatureOne from "@/components/text-feature/text-feature-one";
