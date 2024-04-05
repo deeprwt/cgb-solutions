@@ -26,7 +26,7 @@ const ArticlePage = () => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Explore our Article"
+            title="Our Article"
             subtitle="Meet our experts, guiding you through financial intricacies with precision"
             page="Article"
             bg_img={blog_bg}
