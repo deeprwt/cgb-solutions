@@ -23,11 +23,13 @@ import FooterOne from "@/layout/footer/footer-one";
 import Header from "@/layout/header/Header";
 import Wrapper from "@/layout/wrapper";
 import type { Metadata } from "next";
+import Image from "next/image";
+import clogo from "@/assets/images/cgbhome/testlogo.png"
 
 export const metadata: Metadata = {
   title: "CGB Solutions",
   description: "Empower your business with CGB Solutions' IT expertise. Strategic consulting & managed services for peak performance. Contact us.",
-  keywords: "IT services, consulting, managed services, peak performance",
+  keywords: "IT services, consulting, managed services, peak performance",  
 };
 
 export default function HomePage() {
@@ -61,7 +63,6 @@ export default function HomePage() {
           {/* tabs are for solutions start */}
    
           <StaffingSolutions />
-
 
           {/* clints logo start  */}
           <ClintLogo />
