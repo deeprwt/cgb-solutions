@@ -4,7 +4,7 @@ import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import FooterThree from "@/layout/footer/footer-three";
-import blog_bg from "@/assets/images/media/img_32.jpg";
+import blog_bg from "@/assets/images/media/BlogBanner.png";
 import shape from "@/assets/images/shape/shape_34.svg";
 import BlogListArea from "@/components/blogs/blog-list-area";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
@@ -25,7 +25,7 @@ const BlogPage = () => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Explore our Blogs"
+            title="Our Blogs"
             subtitle="Meet our experts, guiding you through financial intricacies with precision"
             page="Blog"
             bg_img={blog_bg}

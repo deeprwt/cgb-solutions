@@ -9,7 +9,7 @@ import NewsGridArea from "@/components/blogs/news-grid-area";
 import FooterOne from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
-import blog_bg from "@/assets/images/media/img_32.jpg";
+import blog_bg from "@/assets/images/media/NewsBanner.png";
 
 export const metadata: Metadata = {
   title: "News & Media",
