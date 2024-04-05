@@ -61,7 +61,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
               </div>
               <div className="col-xl-7 col-lg-6 order-1 order-lg-2 wow fadeInLeft">
                 <div className="title-one details-meta">
-                  <div className="upper-title">About Us</div>
+                  {/* <div className="upper-title">About Us</div> */}
                   <h3>Why Choose Us</h3>
                 </div>
                 <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">

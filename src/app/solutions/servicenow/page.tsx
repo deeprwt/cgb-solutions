@@ -22,7 +22,7 @@ import screen from "@/assets/images/assets/screen_11.png";
 import ServicenNowSecton from "@/components/solutions/servicenow-section";
 
 export const metadata: Metadata = {
-  title: "ServicenNow",
+  title: "ServiceNow",
 };
 
 export default function ServiceNow() {
@@ -35,7 +35,7 @@ export default function ServiceNow() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne 
-          title="ServicenNow"
+          title="ServiceNow"
           subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
           page="ServicenNow"
           bg_img={about_bg}
