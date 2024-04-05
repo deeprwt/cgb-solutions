@@ -13,7 +13,7 @@ import FooterThree from "@/layout/footer/footer-three";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 
-import about_bg from "@/assets/images/media/img_26.jpg";
+import about_bg from "@/assets/images/media/ServiceNowbanner.png";
 import TwoColData from "@/components/two-col/two-col-data";
 import FaqSolutions from "@/components/faq/faq-solutions";
 import FooterOne from "@/layout/footer/footer-one";
