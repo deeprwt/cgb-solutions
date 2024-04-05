@@ -11,7 +11,7 @@ const article_data: IArticle[] = [
     link: "Celebrating-World-Forestry-Day-CGB's-Commitment-to-Sustainability!",
     title: "Celebrating World Forestry Day CGB's Commitment to Sustainability!",
     author: "Manish Chand",
-    post_info: "CGB Solutions . Sustainable",
+    post_info: "CGB Solutions",
     category: "IT",
     page: "blog-list",
     tag: "sustainability",

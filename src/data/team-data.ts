@@ -109,7 +109,7 @@ const team_data: ITeam[] = [
     id: 10,
     img: Moumita,
     name: "Moumita Ganguly",
-    designation: "HR Manager",
+    designation: "HR",
     page: "team-three",
     gif: gif3,
   },
