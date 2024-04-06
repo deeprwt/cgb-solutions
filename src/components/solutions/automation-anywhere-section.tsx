@@ -12,9 +12,20 @@ import FaqItem from "@/components/faq/faq-item";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
 
-import icon_3 from "@/assets/images/icon/icon_64.svg";
-import icon_4 from "@/assets/images/icon/icon_65.svg";
-import icon_5 from "@/assets/images/icon/icon_66.svg";
+// starting new icon
+
+import icon_100 from "@/assets/images/icon/icon_100.png";
+import icon_101 from "@/assets/images/icon/icon_1000.png";
+import icon_1001 from "@/assets/images/icon/icon_1001.png";
+import icon_1002 from "@/assets/images/icon/icon_1002.png";
+import icon_1003 from "@/assets/images/icon/icon_1003.png";
+import icon_1004 from "@/assets/images/icon/icon_1004.png";
+import icon_1005 from "@/assets/images/icon/icon_1005.png";
+import icon_1006 from "@/assets/images/icon/icon_1006.png";
+import icon_1007 from "@/assets/images/icon/icon_1007.png";
+
+// starting new icon
+
 import icon_6 from "@/assets/images/icon/icon_67.svg";
 import shape from "@/assets/images/shape/shape_05.svg";
 import automation1 from "@/assets/images/solutions/automation/automation1.png";
@@ -73,8 +84,8 @@ function CardItem({
 }) {
   return (
     <div className="card-style-sixteen text-center mt-40 md-mt-20 md-mb-20 mb-40">
-      <div className="icon m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
-        <Image src={icon} alt="icon" className="h-auto lazy-img" />
+      <div className="m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
+        <Image src={icon} alt="icon" width={70} height={70} className="h-auto lazy-img" />
       </div>
       <h4 className="fw-bold mt-35 md-mt-30 mb-15">{title}</h4>
       <p className="m0 fs-5 lh-base">{subtitle}</p>
@@ -164,7 +175,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
                   <div className="row gx-lg-5">
                     <div className="col-xl-3 col-md-6 wow fadeInUp">
                       <CardItem
-                        icon={icon_1}
+                        icon={icon_100}
                         title="Process Discovery"
                         subtitle="AI automated discovery"
                         subtitle2="Automated bot building
@@ -176,7 +187,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
                       data-wow-delay="0.1s"
                     >
                       <CardItem
-                        icon={icon_2}
+                        icon={icon_101}
                         title="Data Understanding"
                         subtitle="Unstructured data API/UI automation"
                         subtitle2="Predict process outcomes"
@@ -187,7 +198,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
                       data-wow-delay="0.2s"
                     >
                       <CardItem
-                        icon={icon_3}
+                        icon={icon_1001}
                         title="RPA"
                         subtitle="Attended automation"
                         subtitle2="Unattended automation"
@@ -198,7 +209,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
                       data-wow-delay="0.3s"
                     >
                       <CardItem
-                        icon={icon_4}
+                        icon={icon_1002}
                         title="Smart Analytics"
                         subtitle="Operational insights"
                         subtitle2="Business insights"
@@ -251,7 +262,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
             <div className="row gx-lg-5 justify-content-center">
               <div className="col-xl-2 col-md-6 wow fadeInUp">
                 <CardItem
-                  icon={icon_1}
+                  icon={icon_1003}
                   title="Qualify"
                   subtitle="Qualify the scope and prioritise the work.
                   "
@@ -262,7 +273,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
                 data-wow-delay="0.1s"
               >
                 <CardItem
-                  icon={icon_2}
+                  icon={icon_1004}
                   title="Plan"
                   subtitle="Establish project controls, plan statement of work, confirm resources."
                 />
@@ -272,7 +283,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
                 data-wow-delay="0.2s"
               >
                 <CardItem
-                  icon={icon_3}
+                  icon={icon_1005}
                   title="Deliver"
                   subtitle="Deliver iterative cyclic work packages as sprints, Design,
                   Build, Develop, Testing, Review"
@@ -280,7 +291,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
               </div>
               <div className="col-xl-2 col-md-6 wow fadeInUp">
                 <CardItem
-                  icon={icon_4}
+                  icon={icon_1006}
                   title="Transition "
                   subtitle="Increase load, stabilise new way of working, acceptance of work."
                 />
@@ -290,7 +301,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
                 data-wow-delay="0.1s"
               >
                 <CardItem
-                  icon={icon_5}
+                  icon={icon_1007}
                   title="Support "
                   subtitle="Continuous improvement, maintain solution health."
                 />
