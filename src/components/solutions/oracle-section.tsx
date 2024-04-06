@@ -147,6 +147,8 @@ const OracleSection = ({ cls }: { cls?: string }) => {
                           src={item.icon}
                           alt="icon"
                           className="lazy-img"
+                          width={70}
+                          height={70}
                         />
                       </div>
                       {/* <h4 className="fw-bold mt-30 mb-20 text-center">
