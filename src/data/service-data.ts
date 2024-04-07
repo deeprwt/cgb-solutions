@@ -44,6 +44,14 @@ import icon_1008 from '@/assets/images/icon/icon_12.png';
 import icon_1009 from '@/assets/images/icon/icon_1009.png';
 import icon_1010 from '@/assets/images/icon/icon_1010.png';
 
+//OutSystemsIcons
+import icon_1021 from '@/assets/images/icon/icon_1021.png';
+import icon_1022 from '@/assets/images/icon/icon_1023.png';
+import icon_1023 from '@/assets/images/icon/icon_1022.png';
+import icon_1024 from '@/assets/images/icon/icon_1024.png';
+import icon_1025 from '@/assets/images/icon/icon_1025.png';
+import icon_1026 from '@/assets/images/icon/icon_1026.png';
+
 
 
 // data type
@@ -483,42 +491,42 @@ const service_data:IService[] = [
   },
   {
     id:60,
-    icon:icon_11,
+    icon:icon_1021,
     title:'OutSystems Consulting',
     desc:'As a recognized OutSystems consulting partner, we perform an in-depth analysis of your business to determine the scope of your project and devise a strategy for Systems Development Life Cycle (SDLC) Management.',
     page:'outsystems'
   },
   {
     id:61,
-    icon:icon_11,
+    icon:icon_1022,
     title:'Web App Development',
     desc:'Our OutSystems development experts build feature-rich web apps that boost user engagement and enhance brand value and update them as or when required.',
     page:'outsystems'
   },
   {
     id:62,
-    icon:icon_11,
+    icon:icon_1023,
     title:'Mobile App Development',
     desc:'OutSystems rapid application development platforms enable us to develop mobile apps compatible with Windows, Android, and iOS, in much less time and at lower costs than traditional platforms.',
     page:'outsystems'
   },
   {
     id:63,
-    icon:icon_11,
+    icon:icon_1024,
     title:'Integration',
     desc:'We can seamlessly integrate OutSystems with all major database systems, web services, REST APIs, SAP, and Salesforce for better and more optimized results.',
     page:'outsystems'
   },
   {
     id:64,
-    icon:icon_11,
+    icon:icon_1025,
     title:'Resource Augmentation',
     desc:'With a team of certified OutSystems consultants, administrators, developers, and project managers – we help you expand your in-house resources to implement and deliver projects in a hassle-free manner.',
     page:'outsystems'
   },
   {
     id:65,
-    icon:icon_11,
+    icon:icon_1026,
     title:'Maintenance & Support',
     desc:'Our support team assists you with platform upgrades, security, maintenance, as well as complex integrations, enabling you to keep pace with a dynamic business environment.',
     page:'outsystems'

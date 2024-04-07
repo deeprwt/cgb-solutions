@@ -9,11 +9,11 @@ import shape_1 from "@/assets/images/shape/shape_11.svg";
 import shape_2 from "@/assets/images/shape/shape_12.svg";
 import screen from "@/assets/images/assets/screen_11.png";
 import FaqItem from "@/components/faq/faq-item";
-import icon_1 from "@/assets/images/icon/icon_82.svg";
-import icon_2 from "@/assets/images/icon/icon_83.svg";
+import icon_1 from "@/assets/images/icon/icon_1027.png";
+import icon_2 from "@/assets/images/icon/icon_1028.png";
 import img1 from "@/assets/images/solutions/contract-staffing/contract-staffing1.svg";
 import img_2 from "@/assets/images/solutions/outsystems/outsystem1.jpg";
-import icon_3 from "@/assets/images/icon/icon_64.svg";
+import icon_3 from "@/assets/images/icon/icon_1029.png";
 import icon_4 from "@/assets/images/icon/icon_65.svg";
 import icon_5 from "@/assets/images/icon/icon_66.svg";
 import icon_6 from "@/assets/images/icon/icon_67.svg";
@@ -32,8 +32,8 @@ function CardItem3({
   }) {
     return (
       <div className="card-style-twelve w-100 text-center mt-30">
-        <div className="icon m-auto tran3s d-flex align-items-center justify-content-center rounded-circle">
-          <Image src={icon} alt="icon" className="lazy-img" />
+        <div className="m-auto tran3s d-flex align-items-center justify-content-center rounded-circle">
+          <Image src={icon} alt="icon" className="lazy-img" width={70} height={70} />
         </div>
         <h4 className="fw-bold mt-20 mb-15">{title}</h4>
         <p className="ps-xl-4 pe-xl-4">{subtitle}</p>
@@ -54,8 +54,8 @@ function CardItem2({
 }) {
   return (
     <div className="card-style-sixteen d-flex mt-60 lg-mt-40 mb-60 lg-mb-10">
-      <div className="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
-        <Image src={icon} alt="icon" className="lazy-img" />
+      <div className="tran3s rounded-circle d-flex align-items-center justify-content-center">
+        <Image src={icon} alt="icon" className="lazy-img" width={70} height={70} />
       </div>
       <div className="text">
         <h4 className="fw-bold mb-20 sm-mb-10">{title}</h4>
@@ -77,8 +77,8 @@ function CardItem({
 }) {
   return (
     <div className="card-style-sixteen text-center arrow mt-40 md-mt-20">
-      <div className="icon m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
-        <Image src={icon} alt="icon" className="lazy-img" />
+      <div className="m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
+        <Image src={icon} alt="icon" className="lazy-img" width={70} height={70}/>
       </div>
       <h4 className="fw-bold mt-35 md-mt-30 mb-15">{title}</h4>
       <p className="m0 fs-5 lh-base">{subtitle}</p>
@@ -172,11 +172,12 @@ const OutsystemsSection = ({ cls }: { cls?: string }) => {
                     data-wow-delay={`0.${i}s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center align-self-center">
+                      <div className="d-flex align-items-center align-self-center">
                         <Image
                           src={item.icon}
                           alt="icon"
                           className="lazy-img"
+                          width={70} height={70}
                         />
                       </div>
                       <h4 className="fw-bold mt-30 mb-20 text-center">
