@@ -11,16 +11,19 @@ import { notifySuccess, notifyError } from "@/utils/toast"; // Import notificati
 
 import { addDoc, collection } from "firebase/firestore"; // Import Firestore functions
 
-
 type FormData = {
   name: string;
   email: string;
+  websiteurl: string;
+  companyname: string;
   message: string;
 };
 
 const schema = yup.object().shape({
   name: yup.string().required().label("Name"),
   email: yup.string().required().email().label("Email"),
+  websiteurl: yup.string().required().label("Website Url"),
+  companyname: yup.string().required().label("Company Name"),
   message: yup.string().required().min(10).label("Message"),
 });
 
@@ -45,7 +48,7 @@ const ContactForm = () => {
       if (typeof window !== "undefined") {
         // Check if window is defined (browser environment)
         const { db } = await import("@/database/firebase");
-        const contactRef = collection(db, "contacts");
+        const contactRef = collection(db, "newcontact");
         await addDoc(contactRef, data);
         notifySuccess("Message sent successfully!"); // Use notifySuccess
         reset(); // Clear the form
@@ -88,6 +91,36 @@ const ContactForm = () => {
               />
               <div className="help-block with-errors">
                 <ErrorMsg msg={errors.email?.message!} />
+              </div>
+            </div>
+          </div>
+          <div className="col-12">
+            <div className="input-group-meta form-group mb-40">
+              <label htmlFor="">Website Url*</label>
+              <input
+                type="text"
+                placeholder="Website Url*"
+                {...register("websiteurl")}
+                id="websiteurl"
+                name="websiteurl"
+              />
+              <div className="help-block with-errors">
+                <ErrorMsg msg={errors.websiteurl?.message!} />
+              </div>
+            </div>
+          </div>
+          <div className="col-12">
+            <div className="input-group-meta form-group mb-40">
+              <label htmlFor="">Company Name*</label>
+              <input
+                type="text"
+                placeholder="Company Name*"
+                {...register("companyname")}
+                id="companyname"
+                name="companyname"
+              />
+              <div className="help-block with-errors">
+                <ErrorMsg msg={errors.companyname?.message!} />
               </div>
             </div>
           </div>
