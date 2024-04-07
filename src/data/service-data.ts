@@ -40,6 +40,10 @@ import oracle5 from '@/assets/images/solutions/oracle/5.png';
 //New icons
 import icon_101 from '@/assets/images/icon/icon_101.png';
 import icon_102 from '@/assets/images/icon/icon_102.png';
+import icon_1008 from '@/assets/images/icon/icon_12.png';
+import icon_1009 from '@/assets/images/icon/icon_1009.png';
+import icon_1010 from '@/assets/images/icon/icon_1010.png';
+
 
 
 // data type
@@ -276,21 +280,21 @@ const service_data:IService[] = [
   },
   {
     id:31,
-    icon:icon_11,
+    icon:icon_1008,
     title:'Hire employees during peak times',
     desc:'When your talent needs change throughout the year, flexible placements ensure productivity.',
     page:'contract-staffing'
   },
   {
     id:32,
-    icon:icon_11,
+    icon:icon_1009,
     title:'Evaluating talent before longer contracts',
     desc:'Hire with increased certainty by spending longer times evaluating and ensuring the right fit for your business.',
     page:'contract-staffing'
   },
   {
     id:33,
-    icon:icon_11,
+    icon:icon_1010,
     title:'Realize cost savings through flexibility',
     desc:'Only pay for staff when you actually need them and maintain the most efficient business output.',
     page:'contract-staffing'
