@@ -82,7 +82,7 @@ const LocationTabsData = () => {
               >
                 United Arab Emirates
               </button>
-              {/* <button
+              <button
                 className="nav-link"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-servicenow"
@@ -93,7 +93,7 @@ const LocationTabsData = () => {
               >
                 United States
               </button>
-              <button
+              {/* <button
                 className="nav-link"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-lowcode"
@@ -103,8 +103,8 @@ const LocationTabsData = () => {
                 tabIndex={-1}
               >
                 Japan
-              </button>
-              <button
+              </button> */}
+              {/* <button
                 className="nav-link"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-salesforce"
@@ -198,8 +198,8 @@ const LocationTabsData = () => {
                   <div className="col-md-4 pt-30">
                     <AddressBlock
                       icon={icon_1}
-                      title="Dubai"
-                      subtitle="ultan Business Centre,Oud Mehta, Dubai,UAE.PO BOX- 554617"
+                      title="United State"
+                      subtitle="98 Cuttermill Road Suite  466 Great Neck NY 11021"
                     />
                   </div>
 
