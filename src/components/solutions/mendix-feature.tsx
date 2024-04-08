@@ -3,9 +3,14 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // internal
 import screen from "@/assets/images/assets/screen_15.png";
-import icon_1 from "@/assets/images/icon/icon_82.svg";
-import icon_2 from "@/assets/images/icon/icon_83.svg";
-import icon_3 from "@/assets/images/icon/icon_81.svg";
+import icon_1 from "@/assets/images/icon/icon_2030.png";
+import icon_2 from "@/assets/images/icon/icon_1023.png";
+import icon_3 from "@/assets/images/icon/icon_1031.png";
+import icon_4 from "@/assets/images/icon/icon_1032.png";
+import icon_5 from "@/assets/images/icon/icon_1033.png";
+import icon_6 from "@/assets/images/icon/icon_1034.png";
+import icon_7 from "@/assets/images/icon/icon_1035.png";
+import icon_8 from "@/assets/images/icon/icon_1036.png";
 
 // image style
 const imgStyle = {
@@ -24,8 +29,8 @@ function CardItem({
 }) {
   return (
     <div className="card-style-sixteen w-100 text-center mt-30">
-      <div className="icon m-auto tran3s d-flex align-items-center justify-content-center rounded-circle">
-        <Image src={icon} alt="icon" className="lazy-img" />
+      <div className="m-auto tran3s d-flex align-items-center justify-content-center rounded-circle">
+        <Image src={icon} alt="icon" className="lazy-img" width={70} height={70}/>
       </div>
       <h4 className="fw-bold mt-20 mb-15">{title}</h4>
       <p className="ps-xl-4 pe-xl-4">{subtitle}</p>
@@ -68,28 +73,28 @@ const MendixFeature = () => {
             </div>
             <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.3s">
               <CardItem
-                icon={icon_2}
+                icon={icon_4}
                 title="Cross Model Experience"
                 subtitle="Develop visually stunning and smart applications for exceptional cross-modal experiences across touchpoints."
               />
             </div>
             <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.4s">
               <CardItem
-                icon={icon_3}
+                icon={icon_5}
                 title="Collaboration"
                 subtitle="Mendix enables teams to work collaboratively on application development, with features like version control, commenting, and project management."
               />
             </div>
             <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.5s">
               <CardItem
-                icon={icon_1}
+                icon={icon_6}
                 title="Artificial Intelligence"
                 subtitle="Leverage smart applications; seamlessly integrate AI and cognitive services to elevate the effectiveness of your solutions."
               />
             </div>
             <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.6s">
               <CardItem
-                icon={icon_2}
+                icon={icon_7}
                 title="
                 Smart Automation"
                 subtitle="Deliver seamless end-to-end process automation with integrated applications that connect people, data, and systems."
@@ -97,7 +102,7 @@ const MendixFeature = () => {
             </div>
             <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.7s">
               <CardItem
-                icon={icon_3}
+                icon={icon_8}
                 title="Data Integration"
                 subtitle="Be open and extensible at all levels: platform, models, and apps. Integrate data and logic from any service, system, or source."
               />
