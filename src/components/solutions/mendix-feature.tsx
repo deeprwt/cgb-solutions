@@ -10,6 +10,7 @@ import icon_4 from "@/assets/images/icon/icon_1032.png";
 import icon_5 from "@/assets/images/icon/icon_1033.png";
 import icon_6 from "@/assets/images/icon/icon_1034.png";
 import icon_7 from "@/assets/images/icon/icon_1035.png";
+import icon_8 from "@/assets/images/icon/icon_1036.png";
 
 // image style
 const imgStyle = {
@@ -93,7 +94,7 @@ const MendixFeature = () => {
             </div>
             <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.6s">
               <CardItem
-                icon={icon_2}
+                icon={icon_7}
                 title="
                 Smart Automation"
                 subtitle="Deliver seamless end-to-end process automation with integrated applications that connect people, data, and systems."
@@ -101,7 +102,7 @@ const MendixFeature = () => {
             </div>
             <div className="col-lg-4 d-flex wow fadeInUp" data-wow-delay="0.7s">
               <CardItem
-                icon={icon_3}
+                icon={icon_8}
                 title="Data Integration"
                 subtitle="Be open and extensible at all levels: platform, models, and apps. Integrate data and logic from any service, system, or source."
               />
