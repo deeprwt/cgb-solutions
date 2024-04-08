@@ -86,9 +86,6 @@ const FooterOne = () => {
               <h5 className="footer-title">Company</h5>
               <ul className="footer-nav-link style-none">
                 <li>
-                  <Link href="/culture">Our Culture</Link>
-                </li>
-                <li>
                   <Link href="/leadership">Leadership</Link>
                 </li>
                 <li>
