@@ -23,7 +23,7 @@ const ContactPage = () => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Contact us for inquiries"
+            title="Contact us for inquiry"
             subtitle="Get our all info and also can message us directly from here"
             page="Contact"
             // // shape={shape}

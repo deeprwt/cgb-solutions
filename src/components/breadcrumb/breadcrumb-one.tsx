@@ -1,7 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import bg from "@/assets/images/media/img_26.jpg";
+import bg from "@/assets/images/media/ContactUsBanner.png";
 
 // props type
 type IProps = {
