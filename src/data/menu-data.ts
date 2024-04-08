@@ -84,7 +84,7 @@ const menu_data: IMenu[] = [
       { link: "/solutions/servicenow", title: "Service Now" },
       // { link: "/solutions/servicenow", title: "Infrastructure Management" },
       { link: "/solutions/automation-anywhere", title: "Automation Anywhere" },
-      {link:'/solutions/automation-anywhere',title:'Low Code No Code',
+      {link:'/solutions/automation-anywhere',title:'Digital Process Automation',
      sub_menus: [
       { link: "/solutions/outsystems", title: "Outsystems" },
       { link: "/solutions/mendix", title: "Mendix" },

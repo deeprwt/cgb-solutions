@@ -37,15 +37,15 @@ const BlockFeatureEleven = () => {
     .filter((s) => s.page === "home-5")
     .slice(0, 6);
   return (
-    <div className="block-feature-eleven overflow-hidden position-relative mt-50 lg-mt-100 pb-200 lg-pb-100 md-pb-80">
+    <div className="block-feature-eleven service-details overflow-hidden position-relative mt-50 lg-mt-100 pb-200 lg-pb-100 md-pb-80">
       <div className="container">
-        <div className="row gx-lg-5 align-items-center">
+        <div className="row gx-lg-5 align-items-center details-meta">
           {/* ---------------------------------section staring-------------------------------*/}
           <div className="col-lg-5 wow fadeInLeft">
             <div className="title-one">
-              <h2 className="color-deep">
+              <h3 className="color-deep">
                 Digital marketing services we offer
-              </h2>
+              </h3>
             </div>
             <p className="text-lg text-dark mt-30 md-mt-20 mb-45 md-mb-30">
               Our prowess as one of the top digital marketing agencies in the

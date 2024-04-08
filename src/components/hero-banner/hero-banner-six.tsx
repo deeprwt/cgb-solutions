@@ -15,14 +15,17 @@ const imgStyle = {
 
 const HeroBannerSix = () => {
   return (
-    <div className="hero-banner-six pt-170 position-relative">
+    <div className="hero-banner-six service-details pt-170 position-relative">
       <div className="container position-relative">
-        <div className="row justify-content-between">
+        <div className="row justify-content-between details-meta">
           <div className="col-md-6 wow fadeInLeft">
             <div className="pt-20 pb-50">
-              <h1 className="hero-heading fw-bold">
+              {/* <h1 className="hero-heading fw-bold">
                 Delivers more, not just marketing.
-              </h1>
+              </h1> */}
+              <h3 className="hero-heading fw-bold">
+                Our Digital Marketing Company Goes Beyond Just Promises.
+              </h3>
               <p className="text-lg pt-35 lg-pt-30 pb-35 lg-pb-20">
                 Unlock your business growth potential with a marketing agency
                 expertise.
@@ -41,12 +44,12 @@ const HeroBannerSix = () => {
           </div>
           <div className="col-md-6 d-md-flex justify-content-end wow fadeInRight">
             <div className="media-wrapper position-relative ms-lg-5">
-              <Image
+              {/* <Image
                 src={screen_1}
                 alt="screen"
                 className="lazy-img shapes screen_01"
                 style={imgStyle}
-              />
+              /> */}
               <Image
                 src={screen_2}
                 alt="screen"

@@ -19,14 +19,14 @@ const BlockFeatureTwelve = () => {
     .filter((s) => s.page === "home-5")
     .slice(0, 1);
   return (
-    <div className="block-feature-twelve position-relative pt-130 lg-pt-80 pb-40 lg-pb-40">
+    <div className="block-feature-twelve position-relative service-details pt-130 lg-pt-80 pb-40 lg-pb-40">
       <div className="container">
-        <div className="row">
+        <div className="row details-meta">
           <div className="col-lg-11">
-            <div className="title-one mb-40 lg-mb-20">
-              <h2 className="color-deep">
-                CGB Solutions: Unlocking Digital Excellence
-              </h2>
+            <div className="title-one text-center mb-40 lg-mb-20">
+              <h3 className="color-deep">
+                Unlocking Digital Excellence
+              </h3>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ const BlockFeatureTwelve = () => {
                   using multiple cards.
                 </p>
                 <Link
-                  href="/service-details"
+                  href="/our-company"
                   className="arrow-btn tran3s mt-auto stretched-link"
                 >
                   <Image src={arrow} alt="arrow-icon" className="lazy-img" />
@@ -82,17 +82,17 @@ const BlockFeatureTwelve = () => {
               </div>
             </div>
           ))}
-          <div className="col-lg-8 d-flex mt-40 md-mt-20">
+          <div className="col-lg-8 d-flex mt-40 md-mt-20 details-meta">
             <div className="card-style-nineteen">
               <div className="row">
                 <div className="col-lg-7">
-                  <h2 className="color-deep fw-bold mt-20">We’r CGB </h2>
+                  <h3 className="color-deep fw-bold mt-20">We’r CGB </h3>
                   <p className="text-md mt-30 lg-mt-20 mb-35">
                     Your success is our mission. As business advisors, we offer
                     expert guidance, unlocking your potential
                   </p>
                   <Link
-                    href="/service-v2"
+                    href="/about-us"
                     className="btn-seven d-inline-flex align-items-center"
                   >
                     <span className="text">Learn More</span>

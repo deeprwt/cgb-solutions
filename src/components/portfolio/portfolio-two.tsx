@@ -45,13 +45,13 @@ const PortfolioTwo = () => {
     sliderRef.current?.slickNext();
   };
   return (
-    <div className="portfolio-two position-relative mt-80 lg-mt-80">
+    <div className="portfolio-two service-details position-relative mt-80 lg-mt-80">
       <div className="container">
-        <div className="position-relative mb-80 lg-mb-40">
+        <div className="position-relative mb-80 lg-mb-40 details-meta">
           {/* ---------------------------------Section staring-------------------------------*/}
           <div className="d-flex justify-content-between align-items-center">
             <div className="title-one">
-              <h2 className="color-deep m0">Our Projects.</h2>
+              <h3 className="color-deep m0">Our Projects.</h3>
             </div>
             <ul className="slider-arrows slick-arrow-one d-flex justify-content-center style-none">
               <li onClick={sliderPrev} className="prev_b slick-arrow">
