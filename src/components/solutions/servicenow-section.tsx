@@ -16,6 +16,7 @@ import Finacle1 from "@/assets/images/solutions/Finacle/Fincale-1.png";
 import Finacle2 from "@/assets/images/solutions/Finacle/Fincale-2.png";
 import Finacle3 from "@/assets/images/solutions/Finacle/Fincale-3.png";
 import ImgTextOne from "../img-text-feature/img-text-one";
+import servicenow1 from "@/assets/images/solutions/servicenow/servicenow.png";
 
 import icon from "@/assets/images/icon/icon_27.svg";
 // import shape_1 from "@/assets/images/shape/shape_11.svg";
@@ -81,6 +82,34 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
       <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
         <div className="container">
           <div className="row align-items-center details-meta">
+            <div className="col-xxl-5 col-md-5 wow fadeInLeft">
+              <Image
+                src={servicenow1}
+                alt="screen"
+                className="lazy-img w-full h-auto rounded"
+              />
+            </div>
+            <div className="col-xxl-7 col-md-7 wow fadeInRight">
+              <h3 className="ps-xxl-5 ps-xl-3">ServiceNow Services <br /> One Place to Find Them All</h3>
+              <div className="details-meta ps-xxl-5 ps-xl-3">
+                <p className="text-lg mb-35 md-mb-30">
+                  ServiceNow consulting encompasses advisory, implementation,
+                  customization, testing, and support of ServiceNow solutions. A
+                  Specialist ServiceNow Partner and an official ServiceNow
+                  Reseller, ScienceSoft shares 13 year-experience in ServiceNow
+                  and offers services to cover all platform-related needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Ends from here  */}
+
+      {/* starts from here  */}
+      {/* <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
+        <div className="container">
+          <div className="row align-items-center details-meta">
             <div className="title-one">
               <h3 className="text-center">
                 ServiceNow Services <br /> One Place to Find Them All
@@ -95,7 +124,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Ends from here  */}
 
       <div className="block-feature-six service-details position-relative pt-50 lg-pt-60 pb-80 lg-pb-40">
@@ -191,7 +220,6 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
         <Image src={shape_2} alt="shape" className="lazy-img shapes shape_02" />
       </div>
       {/* card end */}
-
     </>
   );
 };
