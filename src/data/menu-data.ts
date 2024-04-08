@@ -161,7 +161,7 @@ const menu_data: IMenu[] = [
       // {link:'/mission',title:'Mission'},
       // {link:'/awards',title:'Awards'},
       // {link:'/recognition',title:'Recognition'},
-      { link: "/our-culture", title: "Our Culture" },
+      // { link: "/our-culture", title: "Our Culture" },
       { link: "/leadership", title: "Leadership" },
       { link: "/partners", title: "Partners" },
     ],
