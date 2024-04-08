@@ -12,22 +12,14 @@ import { notifySuccess, notifyError } from "@/utils/toast"; // Import notificati
 import { addDoc, collection } from "firebase/firestore"; // Import Firestore functions
 
 type FormData = {
-  name: string;
   email: string;
-  websiteurl: string;
-  companyname: string;
-  message: string;
 };
 
 const schema = yup.object().shape({
-  name: yup.string().required().label("Name"),
   email: yup.string().required().email().label("Email"),
-  websiteurl: yup.string().required().label("Website Url"),
-  companyname: yup.string().required().label("Company Name"),
-  message: yup.string().required().min(10).label("Message"),
 });
 
-const ContactForm = () => {
+const Newsletter = () => {
   const {
     register,
     handleSubmit,
@@ -48,9 +40,9 @@ const ContactForm = () => {
       if (typeof window !== "undefined") {
         // Check if window is defined (browser environment)
         const { db } = await import("@/database/firebase");
-        const contactRef = collection(db, "newcontact");
+        const contactRef = collection(db, "newsletter");
         await addDoc(contactRef, data);
-        notifySuccess("Message sent successfully!"); // Use notifySuccess
+        notifySuccess("Successfully subscribed to the newsletter!"); // Use notifySuccess
         reset(); // Clear the form
       }
     } catch (error) {
@@ -62,8 +54,21 @@ const ContactForm = () => {
   return (
     <>
       <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          {...register("email")}
+          id="email"
+          name="email"
+        />
+        <button>
+          <i className="bi bi-arrow-right"></i>
+        </button>
+        <div className="help-block with-errors">
+          <ErrorMsg msg={errors.email?.message!} />
+        </div>
         <div className="messages"></div>
-        <div className="row controls">
+        {/* <div className="row controls">
           <div className="col-12">
             <div className="input-group-meta form-group mb-30">
               <label htmlFor="">Name*</label>
@@ -142,10 +147,10 @@ const ContactForm = () => {
               Send Message
             </button>
           </div>
-        </div>
+        </div> */}
       </form>
     </>
   );
 };
 
-export default ContactForm;
+export default Newsletter;

@@ -9,6 +9,7 @@ import MapWithCountries from "@/components/map/maps";
 import icon_1 from '@/assets/images/icon/icon_49.svg';
 import icon_2 from '@/assets/images/icon/icon_50.svg';
 import map from "@/assets/images/icon/footer-map.svg";
+import Newsletter from "@/components/forms/newsletter";
 
 const FooterOne = () => {
   return (
@@ -104,12 +105,13 @@ const FooterOne = () => {
             <div className="col-lg-5 order-lg-last mb-15">
               <div className="footer-newsletter float-xl-end">
                 <h5 className="footer-title">Subscribe Newsletter</h5>
-                <form action="#">
+                {/* <form action="#">
                   <input type="email" placeholder="Enter your email address" />
                   <button>
                     <i className="bi bi-arrow-right"></i>
                   </button>
-                </form>
+                </form> */}
+                <Newsletter />
               </div>
             </div>
             <div className="col-lg-7 order-lg-first mb-15">

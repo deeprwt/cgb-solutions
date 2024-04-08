@@ -10,7 +10,7 @@ import icon_4 from "@/assets/images/assets/ils_07.svg";
 import ContactForm from "../forms/contact-form";
 
 const maxcontent = {
-  width: "max-content",
+  width: "fit-content",
   "border-radius": "30px",
 };
 
