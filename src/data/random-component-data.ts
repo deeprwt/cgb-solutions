@@ -33,6 +33,15 @@ import img30 from "@/assets/images/solutions/Finacle/icon/Youth-Banking-Solution
 import img31 from "@/assets/images/solutions/Finacle/icon/Virtual-Accounts-Management-Solution-icon.svg";
 
 import icon_16 from "@/assets/images/icon/icon_95.svg";
+import icon_1038 from "@/assets/images/icon/icon_1038.png";
+import icon_1039 from "@/assets/images/icon/icon_1039.png";
+import icon_1040 from "@/assets/images/icon/icon_1040.png";
+import icon_1041 from "@/assets/images/icon/icon_1041.png";
+import icon_1042 from "@/assets/images/icon/icon_1042.png";
+import icon_1043 from "@/assets/images/icon/icon_1043.png";
+import icon_1044 from "@/assets/images/icon/icon_1044.png";
+import icon_1045 from "@/assets/images/icon/icon_1045.png";
+import icon_1046 from "@/assets/images/icon/icon_1046.png";
 
 interface IStaffing {
   id: number;
@@ -47,7 +56,7 @@ const fincale_slide_data: IStaffing[] = [
   // home 1
   {
     id: 1,
-    icon: icon_16,
+    icon: icon_1038,
     title: "Corporate Banking Suite",
     desc: "CGB Solutions offers flexible workforce solutions with our contract staffing services. Access skilled professionals on a temporary basis to meet project demands and scale your team as needed.",
     page: "staffing-1",
@@ -55,7 +64,7 @@ const fincale_slide_data: IStaffing[] = [
   },
   {
     id: 2,
-    icon: icon_16,
+    icon: icon_1039,
     title: "Cash Management Suite",
     desc: "Find the right talent for long-term success with CGB Solutions permanent staffing solutions. Our recruiters specialize in identifying top-tier candidates who align with your company culture and values.",
     page: "staffing-1",
@@ -63,7 +72,7 @@ const fincale_slide_data: IStaffing[] = [
   },
   {
     id: 3,
-    icon: icon_16,
+    icon: icon_1040,
     title: "Virtual Accounts Management",
     desc: "Empower your workforce with our customized training programs and strategic deployment support. Bridge skill gaps and enhance productivity with CGB Solutions Hire-Train-Deploy solutions.",
     page: "staffing-1",
@@ -71,7 +80,7 @@ const fincale_slide_data: IStaffing[] = [
   },
   {
     id: 4,
-    icon: icon_16,
+    icon: icon_1041,
     title: "Core Banking solution",
     desc: "Empower your workforce with our customized training programs and strategic deployment support. Bridge skill gaps and enhance productivity with CGB Solutions Hire-Train-Deploy solutions.",
     page: "staffing-2",
@@ -79,7 +88,7 @@ const fincale_slide_data: IStaffing[] = [
   },
   {
     id: 5,
-    icon: icon_16,
+    icon: icon_1042,
     title: "Lending",
     desc: "Empower your workforce with our customized training programs and strategic deployment support. Bridge skill gaps and enhance productivity with CGB Solutions Hire-Train-Deploy solutions.",
     page: "staffing-2",
@@ -87,25 +96,25 @@ const fincale_slide_data: IStaffing[] = [
   },
   {
     id: 6,
-    icon: icon_16,
+    icon: icon_1043,
     title: "Payments Suite",
     page: "staffing-2",
   },
   {
     id: 7,
-    icon: icon_16,
+    icon: icon_1044,
     title: "Digital Engagement Hub",
     page: "staffing-3",
   },
   {
     id: 8,
-    icon: icon_16,
+    icon: icon_1045,
     title: "Mobile Banking",
     page: "staffing-3",
   },
   {
     id: 9,
-    icon: icon_16,
+    icon: icon_1046,
     title: "Mobile Teller",
     page: "staffing-3",
   },
