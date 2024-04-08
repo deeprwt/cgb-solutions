@@ -66,8 +66,8 @@ const FinacleSolutionsSlide = ({filter_co,
                         padding: "10px 20px;",
                       }}
                     >
-                      <div className="icon tran3s rounded-circle d-flex justify-content-center align-items-center">
-                        <Image src={s.icon} alt="icon" />
+                      <div className="tran3s rounded-circle d-flex justify-content-center align-items-center">
+                        <Image src={s.icon} alt="icon" width={70} height={70} />
                       </div>
                       <div className="text d-flex align-items-center">
                         <h5 className="md-mb-20">{s.title}</h5>
