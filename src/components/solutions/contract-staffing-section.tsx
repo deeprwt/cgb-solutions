@@ -213,7 +213,7 @@ const ContractStaffingSection = ({ cls }: { cls?: string }) => {
               </div>
               <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
                 <CardItem
-                  icon={icon_1013}
+                  icon={icon_1015}
                   title="Shortlist"
                   subtitle="We provide you with a selection of the best candidates, having already checked references, negotiated salary, and validated the right to work."
                 />
@@ -250,7 +250,7 @@ const ContractStaffingSection = ({ cls }: { cls?: string }) => {
           <div className="row gx-lg-5">
             <div className="col-xl-4 col-md-6 wow fadeInUp">
               <CardItem2
-                icon={icon_1015}
+                icon={icon_1013}
                 title="Nurture"
                 subtitle="Using our extensive proprietary data, we nurture existing talent, ensuring you have a pool of great candidates ready when you need them."
               />
