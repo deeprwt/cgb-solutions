@@ -300,13 +300,13 @@ const faq_data: IFaq[] = [
     page:'serviceNow'
   },
   {
-    id: 45,
+    id: 103943,
     title: "How does ServiceNow ensure the security and compliance of its platform?",
     desc: "ServiceNow is committed to the highest standards of security and compliance. The platform incorporates robust security features, including data encryption, role-based access control, and comprehensive audit trails. ServiceNow complies with global regulatory standards, such as GDPR, HIPAA, SOC 2, and ISO 27001, ensuring that businesses meet their compliance requirements effortlessly. Regular security assessments and updates ensure that the platform remains secure against emerging threats.",
     page:'serviceNow'
   },
   {
-    id: 46,
+    id: 103588,
     title: "What kind of support and resources does ServiceNow offer?",
     desc: " ServiceNow provides extensive support and resources to ensure successful implementation and maximization of the platform. This includes a comprehensive knowledge base, community forums, developer resources, and training and certification programs through the Now Learning platform. Customers also have access to 24/7 support, professional services, and a network of experienced partners to help with strategic planning, implementation, and optimization of ServiceNow solutions.",
     page:'serviceNow'
