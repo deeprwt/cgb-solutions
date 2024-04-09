@@ -85,6 +85,9 @@ const FooterOne = () => {
             <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
               <h5 className="footer-title">Company</h5>
               <ul className="footer-nav-link style-none">
+              <li>
+                  <Link href="/our-company">Our Company</Link>
+                </li>
                 <li>
                   <Link href="/leadership">Leadership</Link>
                 </li>
