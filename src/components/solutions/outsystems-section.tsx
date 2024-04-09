@@ -40,8 +40,6 @@ function CardItem3({
       </div>
     );
   }
-
-
 // card item
 function CardItem2({
   icon,
