@@ -4,7 +4,8 @@ import Link from "next/link";
 // internal
 import icon from "@/assets/images/icon/icon_27.svg";
 import shape_1 from "@/assets/images/shape/shape_11.svg";
-import shape_2 from "@/assets/images/shape/shape_12.svg";
+// import shape_2 from "@/assets/images/shape/shape_05.svg";
+import shape_2 from "@/assets/images/shape/shape_05.svg";
 import service_data from "@/data/service-data";
 
 const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {

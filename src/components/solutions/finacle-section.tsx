@@ -6,7 +6,7 @@ import faq_data from "@/data/faq-data";
 import Image, { StaticImageData } from "next/image";
 import service_data from "@/data/service-data";
 import shape_1 from "@/assets/images/shape/shape_11.svg";
-import shape_2 from "@/assets/images/shape/shape_12.svg";
+import shape_2 from "@/assets/images/shape/shape_05.svg";
 import Finacle1 from "@/assets/images/solutions/Finacle/Fincale-1.png";
 import Finacle2 from "@/assets/images/solutions/Finacle/Fincale-2.png";
 import Finacle3 from "@/assets/images/solutions/Finacle/Fincale-3.png";

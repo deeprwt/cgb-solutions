@@ -6,7 +6,7 @@ import faq_data from "@/data/faq-data";
 import Image, { StaticImageData } from "next/image";
 import service_data from "@/data/service-data";
 import shape_1 from "@/assets/images/shape/shape_11.svg";
-import shape_2 from "@/assets/images/shape/shape_12.svg";
+import shape_2 from "@/assets/images/shape/shape_05.svg";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
 import icon_3 from "@/assets/images/icon/icon_64.svg";

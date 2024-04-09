@@ -6,7 +6,7 @@ import faq_data from "@/data/faq-data";
 import Image, { StaticImageData } from "next/image";
 import service_data from "@/data/service-data";
 import shape_1 from "@/assets/images/shape/shape_11.svg";
-import shape_2 from "@/assets/images/shape/shape_12.svg";
+import shape_2 from "@/assets/images/shape/shape_05.svg";
 import screen from "@/assets/images/assets/screen_11.png";
 import FaqItem from "@/components/faq/faq-item";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
@@ -20,7 +20,7 @@ import servicenow1 from "@/assets/images/solutions/servicenow/servicenow.png";
 
 import icon from "@/assets/images/icon/icon_27.svg";
 // import shape_1 from "@/assets/images/shape/shape_11.svg";
-// import shape_2 from "@/assets/images/shape/shape_12.svg";
+// import shape_2 from "@/assets/images/shape/shape_05.svg";
 
 import icon_3 from "@/assets/images/icon/icon_64.svg";
 import icon_4 from "@/assets/images/icon/icon_65.svg";

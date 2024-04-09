@@ -10,7 +10,7 @@ import screen_1 from "@/assets/images/assets/screen_04.svg";
 import img_1 from "@/assets/images/solutions/webdevlopment/1.jpg";
 import icon from "@/assets/images/icon/icon_27.svg";
 import shape_1 from "@/assets/images/shape/shape_11.svg";
-import shape_2 from "@/assets/images/shape/shape_12.svg";
+import shape_2 from "@/assets/images/shape/shape_05.svg";
 import screen from "@/assets/images/assets/screen_11.png";
 import FaqItem from "@/components/faq/faq-item";
 import about from "@/assets/images/assets/screen_14.png";
