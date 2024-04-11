@@ -45,7 +45,7 @@ export default function Mendix() {
           {/* hero banner end */}
 
           {/* Start */}
-          <TwoColData />
+          {/* <TwoColData /> */}
           {/* end */}
 
           {/* start */}
