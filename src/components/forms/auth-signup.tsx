@@ -38,7 +38,7 @@ const submitForm = async(values:any) => {
     console.log("Register form value", values)
     createUserWithEmailAndPassword(auth,values.email,values.password).then((response)=>{
         // console.log('firebase user', response)
-        notifySuccess("User Register Successfully!"); // Use notifySuccess
+        notifySuccess(`Welcome ${response.user.email}!`); // Use notifySuccess
         reset(); // Clear the form
         
     }).catch(e=>{
@@ -53,7 +53,7 @@ const submitForm = async(values:any) => {
       <div className="col-12">
         <div className="input-group-meta position-relative mb-25">
           <label>Email*</label>
-          <input type="email" {...register("email")} id='email' placeholder="zubayerhasan@gmail.com"/>
+          <input type="email" {...register("email")} id='email' placeholder="YourEmail@gmail.com"/>
           <ErrorMsg msg={errors.email?.message!} />
         </div>
       </div>

@@ -39,6 +39,12 @@ const HeaderTwo = () => {
                       Contact Us
                     </Link>
                   </li>
+                  {/* logout button  */}
+                  <li className={`${pathrouter === "/admin/profile" ? "d-block" : "d-none" }`}>
+                    <Link href="/contact" className="btn-fourteen tran3s">
+                    <i className="bi bi-box-arrow-right"></i>
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <nav className="navbar navbar-expand-lg p0 order-lg-2">

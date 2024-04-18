@@ -9,11 +9,13 @@ import LoginForm from "../forms/login-form";
 import { Auth } from "firebase/auth";
 import AuthLogin from "../forms/auth-login";
 import AuthSignup from "../forms/auth-signup";
+
+
 const AdminLogin = () => {
   return (
-      <div className="modal-dialog modal-fullscreen modal-dialog-centered">
-        <div className="container">
-          <div className="user-data-form modal-content">
+      <div className="modal-dialog modal-fullscreen modal-dialog-centered vh-100">
+        <div className="container d-flex align-items-center justify-content-center">
+          <div className="user-data-form modal-content p-5 mx-5" style={{boxShadow: "2px 5px 20px rgba(0, 0, 0, 0.1)"}} >
             <div className="form-wrapper m-auto">
               <ul className="nav nav-tabs border-0 w-100" role="tablist">
                 <li className="nav-item" role="presentation">

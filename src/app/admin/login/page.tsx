@@ -9,7 +9,7 @@ import FaqArea from "@/components/faq/faq-area";
 import AdminLogin from "@/components/adminform/adminlogin";
 
 export const metadata: Metadata = {
-  title: "Faq Page",
+  title: "Admin login",
 };
 
 const Login = () => {

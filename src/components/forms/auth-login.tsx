@@ -1,5 +1,5 @@
 'use client'
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Image from 'next/image';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -8,6 +8,8 @@ import Link from 'next/link';
 // internal
 import icon from '@/assets/images/icon/icon_13.svg';
 import ErrorMsg from '../common/error-msg';
+import { notifySuccess, notifyError } from "@/utils/toast"; // Import notification functions
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '@/database/firebase';
 
 type FormData = {
@@ -25,13 +27,49 @@ const AuthLogin = () => {
   const {register,handleSubmit,reset,formState: { errors }} = useForm<FormData>({
     resolver: yupResolver(schema),
   });
-  const onSubmit = handleSubmit((data) => {
-    alert(JSON.stringify(data))
-    reset()
-  });
-  console.log("verify", auth.config);
+
+  // const onSubmit = handleSubmit((data) => {
+  //   alert(JSON.stringify(data))
+  //   reset()
+  // });
+
+    // checking user is sign up or not 
+    const [nuser, setUser] = useState(null);
+
+    useEffect(() => {
+      const unsubscribe = auth.onAuthStateChanged((user) => {
+        if (user) {
+          // User is signed in.
+          console.log("user login")
+          setUser(nuser);
+        } else {
+          // No user is signed in.
+          setUser(null);
+          console.log("no user")
+        }
+      });
+  
+      // Clean up the subscription when component unmounts
+      return () => unsubscribe();
+    }, []);
+
+
+  const submitForm = async(values:any) => {
+    console.log("user is login now ", values)
+    signInWithEmailAndPassword(auth,values.email,values.password).then((response)=>{
+        // console.log('firebase user', response)
+        notifySuccess("User Register Successfully!"); // Use notifySuccess
+        reset(); // Clear the form
+        
+    }).catch(e=>{
+        console.log('catch', e.message)
+        notifyError("Something went wrong"); // Use notifySuccess
+    })
+}
+
+  // console.log("verify", auth.config);
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={handleSubmit(submitForm)}>
       <div className="row">
         <div className="col-12">
           <div className="input-group-meta position-relative mb-25">
