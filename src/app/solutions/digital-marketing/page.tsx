@@ -17,6 +17,7 @@ import HeaderTwo from "@/layout/header/Header";
 import HeaderOne from "@/layout/header/header-one";
 import FooterOne from "@/layout/footer/footer-one";
 import DigitalMarketingSection from "@/components/solutions/digital-marketing-section";
+import ImgTextBtnData from "@/components/two-col/img-text-btn-data";
 
 export const metadata: Metadata = {
   title: "Digital Marketing",
@@ -58,6 +59,8 @@ export default function HomePageSix() {
           {/* feedback six start */}
           <FeedbackSix />
           {/* feedback six end */}
+
+          <ImgTextBtnData style_2={true} />
 
           {/* team section start */}
           {/* <TeamSectionThree style_2={true} /> */}

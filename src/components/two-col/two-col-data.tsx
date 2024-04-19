@@ -32,14 +32,14 @@ const TwoColData = () => {
                   <p className="text-lg text-dark mt-25 mb-35 lg-mb-30">
                     Mendix is a low-code application development platform that allows users to create custom software without needing extensive coding knowledge. With its intuitive visual interface, users can easily drag and drop components to build and deploy applications quickly. Mendix is ideal for businesses that want to rapidly create software solutions to meet their specific needs, without the time and expense of traditional software development.
                   </p>
-                  {/* <Link href="/about-us"
+                  <Link href="/about-us"
                     className="btn-eleven d-inline-flex align-items-center mt-40"
                   >
                     <span className="text">More about us</span>
                     <div className="icon tran3s rounded-circle d-flex align-items-center">
                       <Image src={icon_1} alt="icon" className="lazy-img" />
                     </div>
-                  </Link> */}
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-5 d-flex order-lg-first">
