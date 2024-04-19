@@ -27,7 +27,7 @@ const TeamSectionThree = ({ style_2 = false }: { style_2?: boolean }) => {
               Our team is constantly committed to innovation and pushing the boundaries while delivering workplaces.
                 </p>
 
-              <div className="row">
+              <div className="row justify-content-center">
                 {teams.map((item, i) => (
                   <div
                     key={i}

@@ -105,14 +105,14 @@ const team_data: ITeam[] = [
     page: "team-three",
     gif: gif2,
   },
-  {
-    id: 10,
-    img: Moumita,
-    name: "Moumita Ganguly",
-    designation: "HR",
-    page: "team-three",
-    gif: gif3,
-  },
+  // {
+  //   id: 10,
+  //   img: Moumita,
+  //   name: "Moumita Ganguly",
+  //   designation: "HR",
+  //   page: "team-three",
+  //   gif: gif3,
+  // },
   {
     id: 11,
     img: Shobha,
