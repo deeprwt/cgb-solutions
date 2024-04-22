@@ -14,7 +14,7 @@ const slider_setting = {
   slidesToShow: 3,
   slidesToScroll: 1,
   centerMode: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 3000,
   responsive: [
     {
