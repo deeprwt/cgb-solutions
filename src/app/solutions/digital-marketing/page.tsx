@@ -22,7 +22,7 @@ import servicenow1 from "@/assets/images/solutions/servicenow/servicenow.png";
 import seo from "@/assets/images/solutions/digital-marketing/seo.png";
 import Webdesign from "@/assets/images/solutions/digital-marketing/website-devlopment.png";
 import appdevlopment from "@/assets/images/solutions/digital-marketing/app-development.png";
-import brandig from "@/assets/images/solutions/digital-marketing/BRAND.png";
+import brandig from "@/assets/images/solutions/digital-marketing/brand.png";
 import leadgenration from "@/assets/images/solutions/digital-marketing/lead-generation.png";
 
 export const metadata: Metadata = {
