@@ -27,7 +27,7 @@ const Leadership = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Leadership"
-            subtitle="Meet our experts, guiding you through financial intricacies with precision"
+            subtitle=""
             page="Leadership"
             // // shape={shape}
             bg_img={team_bg}

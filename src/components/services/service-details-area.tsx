@@ -79,7 +79,7 @@ const ServiceDetailsArea = () => {
                   <Image src={icon_13} alt="icon" className="lazy-img icon"/>
                     <div className="ps-xl-5">
                       <blockquote>Quick solutions coupled with extraordinary performance— a recommendation that is great though.</blockquote>
-                      <div><span className="fw-bold">James Bond.</span> USA</div>
+                      {/* <div><span className="fw-bold">James Bond.</span> USA</div> */}
                     </div>
                 </div>
                 <Image src={ils_icon} alt="ils_icon" className="lazy-img shapes shape_01"/>

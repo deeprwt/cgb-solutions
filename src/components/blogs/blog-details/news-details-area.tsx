@@ -42,7 +42,7 @@ const NewsDetailsArea = ({ blog }: { blog: IBlog }) => {
                     </div>
                   ))}
                   {/* End of content rendering */}
-                  <div className="quote-wrapper">
+                  {/* <div className="quote-wrapper">
                     <div className="wrapper">
                       <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto">
                         <Image src={icon} alt="icon" className="lazy-img" />
@@ -59,7 +59,7 @@ const NewsDetailsArea = ({ blog }: { blog: IBlog }) => {
                         James Bond. <span>Founder Agro</span>
                       </h6>
                     </div>
-                  </div>
+                  </div> */}
                   {/* uncomment add images in blog dynamicaly  */}
                   {/* <div className="row img-gallery">
                     <div className="col-sm-8">

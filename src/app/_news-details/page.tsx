@@ -30,7 +30,7 @@ const NewsDetailsPage = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="News Details"
-            subtitle="Meet our experts, guiding you through financial intricacies with precision"
+            subtitle=""
             page="Blog"
             bg_img={blog_bg}
             style_2={true}

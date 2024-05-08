@@ -36,7 +36,7 @@ const FeedbackOne = ({cls}:{cls?:string}) => {
                     <div className="col-md-7 ms-auto order-md-last">
                       <blockquote>{item.desc}</blockquote>
                       <div className="d-flex align-items-center">
-                        <Image
+                        {/* <Image
                           src={item.user}
                           alt="user"
                           className="avatar rounded-circle"
@@ -46,7 +46,7 @@ const FeedbackOne = ({cls}:{cls?:string}) => {
                             {item.name}
                           </div>
                           <p className="fs-6 m0">{item.location}</p>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                     <div className="col-md-4 order-md-first">

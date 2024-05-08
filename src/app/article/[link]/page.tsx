@@ -50,7 +50,7 @@ const ArticlePage = ({ params }: Props) => {
         <main>
           <BreadcrumbOne
             title="Single Blog Details"
-            subtitle="Meet our experts, guiding you through financial intricacies with precision"
+            subtitle=""
             page="Blog"
             bg_img={blog_bg}
             style_2={true}
