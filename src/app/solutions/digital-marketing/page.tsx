@@ -101,7 +101,7 @@ export default function HomePageSix() {
           {/* block feature twelve end */}
           {/* <DigitalMarketingSection/> */}
           {/* portfolio two start */}
-          <PortfolioTwo />
+          {/* <PortfolioTwo /> */}
           {/* portfolio two end */}
 
           {/* text feature eight start */}
