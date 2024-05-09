@@ -49,9 +49,9 @@ const FeedbackSix = () => {
               <div key={item.id} className="item">
                 <div className="feedback-block-six text-center">
                   <p>{item.desc}</p>
-                  <h6 className="text-lg position-relative">{item.name}, 
+                  {/* <h6 className="text-lg position-relative">{item.name}, 
                   <span className="fw-normal">{item.location}</span>
-                  </h6>
+                  </h6> */}
                 </div>
               </div>
               ))}
