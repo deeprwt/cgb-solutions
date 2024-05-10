@@ -96,7 +96,7 @@ const OurCompanySection = () => {
                 {/* <div className="upper-title"></div> */}
                 <h2>Our Mission</h2>
                 <p>
-                We are on a relentless mission to shatter the ordinary, empowering businesses with extraordinary staffing and technology solutions. At CGB Solutions, we don't just adapt to change; we sculpt it, ensuring our clients lead the way in innovation and triumph.
+                We are on a relentless mission to shatter the ordinary, empowering businesses with extraordinary staffing and technology solutions. At CGB Solutions, we don&apos;t just adapt to change; we sculpt it, ensuring our clients lead the way in innovation and triumph.
                 </p>
 
                 {/* <div className="img-meta mb-60 lg-mb-40">
