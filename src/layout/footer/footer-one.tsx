@@ -54,9 +54,9 @@ const FooterOne = () => {
                 <li>
                   <Link href="/blog">Blogs</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/internship">Internship Program</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
