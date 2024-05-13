@@ -127,10 +127,10 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
       </div> */}
       {/* Ends from here  */}
 
-      <div className="block-feature-six service-details position-relative pt-50 lg-pt-60 pb-80 lg-pb-40">
+      <div className="block-feature-six service-details position-relative pt-50 lg-pt-60 lg-pb-40">
         <div className="container">
           <div className="row gx-lg-5">
-            <div className="title-one details-meta text-center pb-50 wow fadeInLeft">
+            <div className="title-one details-meta text-center pb-10 wow fadeInLeft">
               <h3>ServiceNow Capability by the Numbers</h3>
               {/* <p>
                   Right here what you need 
@@ -198,16 +198,16 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
               <div className="row">
                 <div className="title-one">
                   {/* <div className="upper-title">Core aspects of</div> */}
-                  <h3 className="text-center pb-50">
+                  {/* <h3 className="text-center pb-50">
                     An Outline of Our A-to-Z ServiceNow Services{" "}
-                  </h3>
+                  </h3> */}
                 </div>
                 {/* <p className="text-lg text-dark mb-35 py-3 md-mb-30">
                   Right here what you need
                 </p> */}
               </div>
             </div>
-            <div className="col-md-9 m-auto md-mt-50">
+            <div className="col-md-12 m-auto md-mt-50">
               <Image
                 src={digital}
                 alt="screen"
