@@ -59,8 +59,6 @@ const ContactForm = () => {
     }
   };
 
-  
-
   return (
     <>
       <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
