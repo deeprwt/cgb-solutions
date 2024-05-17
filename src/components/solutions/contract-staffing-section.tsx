@@ -96,7 +96,7 @@ const ContractStaffingSection = ({ cls }: { cls?: string }) => {
                 src={img1}
                 layout="responsive"
                 alt="About us"
-                className="w-100 h-auto"
+                className="w-100 h-auto rounded"
               ></Image>
             </div>
             <div className="col-xl-6 col-lg-6 wow fadeInLeft">
