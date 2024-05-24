@@ -34,22 +34,22 @@ export default function ServiceNow() {
         {/* header end */}
         <main>
           {/* hero banner start */}
-          <BreadcrumbOne 
-          title="ServiceNow"
-          subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
-          page="ServicenNow"
-          bg_img={about_bg}
-          // // shape={shape}
-          style_2={true}
+          <BreadcrumbOne
+            title="ServiceNow"
+            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            page="ServicenNow"
+            bg_img={about_bg}
+            // // shape={shape}
+            style_2={true}
           />
           {/* hero banner end */}
 
           {/* Start */}
-         
+
           {/* end */}
 
           {/* start */}
-         <ServicenNowSecton/>
+          <ServicenNowSecton />
           {/* end */}
 
           {/* start */}
@@ -59,10 +59,6 @@ export default function ServiceNow() {
             page="serviceNow"
           />
           {/* end */}
-
-          
-
-
 
           {/* block feature six start */}
           {/* <BlockFeatureSix /> */}
@@ -97,6 +93,12 @@ export default function ServiceNow() {
         <FooterOne />
         {/* footer end */}
       </div>
+      {/* add tidio scritp for chat bot */}
+      <script
+        src="//code.tidio.co/ohsdb1pchgfjw1yfgmpk8nx3haysxugt.js"
+        async
+      ></script>
+      {/* add tidio scritp for chat bot */}
     </Wrapper>
   );
 }
