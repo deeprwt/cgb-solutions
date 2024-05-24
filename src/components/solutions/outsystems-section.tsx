@@ -109,7 +109,7 @@ const OutsystemsSection = ({ cls }: { cls?: string }) => {
             </div>
             <div className="col-xl-7 col-lg-6 order-1 order-lg-2 wow fadeInLeft">
               <div className="title-one">
-                <div className="upper-title">Lightning Speed With an </div>
+                <div className="upper-title">Lightning Speed With an</div>
                 <h3>OutSystems</h3>
               </div>
               <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">

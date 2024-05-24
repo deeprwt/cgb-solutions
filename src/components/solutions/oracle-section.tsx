@@ -14,8 +14,8 @@ import img1 from "@/assets/images/solutions/oracle/oracle1.png";
 import img2 from "@/assets/images/solutions/oracle/oracle2.png";
 
 import bg_image from "@/assets/images/solutions/mendix.jpg";
-import portfolio1 from "@/assets/images/solutions/oracle/portfolio1.png";
-import portfolio2 from "@/assets/images/solutions/oracle/portfolio2.png";
+import portfolio1 from "@/assets/images/solutions/oracle/portfolio1.jpg";
+import portfolio2 from "@/assets/images/solutions/oracle/portfolio2.jpg";
 import portfolio3 from "@/assets/images/solutions/oracle/portfolio3.png";
 import TextFeatureTwo from "../text-feature/text-feature-two";
 
