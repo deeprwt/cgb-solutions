@@ -20,6 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>{children}</Providers>
+        {/* add tidio scritp for chat bot */}
+        <script src="//code.tidio.co/ohsdb1pchgfjw1yfgmpk8nx3haysxugt.js" async></script>
+        {/* add tidio scritp for chat bot */}
       </body>
       {/* staring here gtag */}
       <GoogleAnalytics gaId="G-NYNVJH0DG6" />
