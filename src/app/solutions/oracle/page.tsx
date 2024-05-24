@@ -91,6 +91,9 @@ export default function Oracle() {
         <FooterOne />
         {/* footer end */}
       </div>
+                    {/* add tidio scritp for chat bot */}
+                    <script src="//code.tidio.co/ohsdb1pchgfjw1yfgmpk8nx3haysxugt.js" async></script>
+        {/* add tidio scritp for chat bot */}
     </Wrapper>
   );
 }
