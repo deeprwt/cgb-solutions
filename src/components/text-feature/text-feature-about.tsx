@@ -6,7 +6,7 @@ import icons from "@/assets/images/icon/icon_09.svg";
 import icon_2 from "@/assets/images/icon/icon_10.svg";
 import icon_3 from "@/assets/images/icon/icon_11.svg";
 import shape from "@/assets/images/shape/shape_05.svg";
-import about from "@/assets/images/assets/screen_14.png";
+import about from "@/assets/images/assets/about_us.jpg";
 import mission from "@/assets/images/icon/mission.svg";
 import vision from "@/assets/images/icon/vision.svg";
 

@@ -7,11 +7,11 @@ import Image, { StaticImageData } from "next/image";
 import service_data from "@/data/service-data";
 import shape_1 from "@/assets/images/shape/shape_11.svg";
 import shape_2 from "@/assets/images/shape/shape_05.svg";
-import Finacle1 from "@/assets/images/solutions/Finacle/Fincale-1.png";
-import Finacle2 from "@/assets/images/solutions/Finacle/Fincale-2.png";
+import Finacle2 from "@/assets/images/solutions/Finacle/who_we_are.jpg";
 import Finacle3 from "@/assets/images/solutions/Finacle/Fincale-3.png";
-import Finacle4 from "@/assets/images/solutions/Finacle/Fincale-4.png";
-import Finacle5 from "@/assets/images/solutions/Finacle/Fincale-5.png";
+import Finacle1 from "@/assets/images/solutions/Finacle/company_overview.jpg";
+import Finacle4 from "@/assets/images/solutions/Finacle/wipro_finacle.jpg";
+import Finacle5 from "@/assets/images/solutions/Finacle/digitaltransformation.jpg";
 import Finacle6 from "@/assets/images/solutions/Finacle/Fincale-6.png";
 import ImgTextOne from "../img-text-feature/img-text-one";
 import DataLoader from "../data-load/finacle-soluions-data";
@@ -209,7 +209,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
 
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
-        img={Finacle2}
+        img={Finacle4}
         subtitle="Digital Transformation of
         Indian Co-operative Banks"
         subpara="Wipro led the end-to-end digital transformation and implementation of Finacle Core Banking and allied applications at multiple Co-operative Banks in India. Key client benefits include:"
@@ -219,7 +219,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       {/*--------------------Img and orderList tag End------------------ */}
       <ImgTextOne
-        img={Finacle3}
+        img={Finacle5}
         subtitle="Wipro and Finacle"
         subpara="Wipro and Finacle have two decades of strong partnership in implementing Finacle Core Banking Solutions. Highlights include:"
         filter_data="finacel-3"

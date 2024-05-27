@@ -103,7 +103,7 @@ const FooterOne = () => {
         <div className="bottom-footer">
           <div className="row align-items-center">
             <div className="col-lg-5 order-lg-last mb-15">
-              <div className="footer-newsletter float-xl-end">
+              <div className="footer-newsletter float-xl-end" style={{zIndex:"1000000000"}}>
                 <h5 className="footer-title">Subscribe Newsletter</h5>
                 {/* <form action="#">
                   <input type="email" placeholder="Enter your email address" />
