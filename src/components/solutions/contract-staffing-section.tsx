@@ -11,7 +11,7 @@ import screen from "@/assets/images/assets/screen_11.png";
 import FaqItem from "@/components/faq/faq-item";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
-import img1 from "@/assets/images/solutions/contract-staffing/contract-staffing1.svg";
+import img1 from "@/assets/images/solutions/contract-staffing/contract_staffing.jpg";
 
 import icon_3 from "@/assets/images/icon/icon_64.svg";
 import icon_4 from "@/assets/images/icon/icon_65.svg";
