@@ -9,6 +9,7 @@ import BlogDetailsForm from "@/components/forms/blog-details-form";
 // import { IBlog } from "@/types/blog-d-t";
 import { IArticle } from "@/types/article-d-t";
 import UseSocialShare from "@/components/socail-media/socialshare";
+import BlogSidebar from "@/components/blogs/blog-sidebar";
 
 const ArticleDetailsArea = ({ blog }: { blog: IArticle }) => {
   const { date, title, post_info, img, content } = blog || {};
@@ -103,6 +104,7 @@ const ArticleDetailsArea = ({ blog }: { blog: IArticle }) => {
 
           <div className="col-lg-4 col-md-8">
             {/* blog sidebar start */}
+            <BlogSidebar />
             {/* blog sidebar end */}
           </div>
         </div>
