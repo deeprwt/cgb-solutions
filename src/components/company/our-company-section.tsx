@@ -2,7 +2,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // internal
-import service_img from "@/assets/images/media/img_35.jpg";
+import service_img from "@/assets/images/media/vision.jpg";
 import icon_1 from "@/assets/images/icon/icon_72.svg";
 import icon_2 from "@/assets/images/icon/icon_73.svg";
 import icon_3 from "@/assets/images/icon/icon_74.svg";

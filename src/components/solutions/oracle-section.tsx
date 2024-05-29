@@ -10,7 +10,7 @@ import shape_2 from "@/assets/images/shape/shape_05.svg";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
 import icon_3 from "@/assets/images/icon/icon_64.svg";
-import img1 from "@/assets/images/solutions/oracle/oracle1.png";
+import img1 from "@/assets/images/solutions/oracle/oracle_capibilty.png";
 import img2 from "@/assets/images/solutions/oracle/oracle2.png";
 
 import bg_image from "@/assets/images/solutions/mendix.jpg";
