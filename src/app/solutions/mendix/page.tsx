@@ -18,7 +18,7 @@ import TwoColData from "@/components/two-col/two-col-data";
 import MendixFeature from "@/components/solutions/mendix-feature";
 import FaqSolutions from "@/components/faq/faq-solutions";
 import FooterOne from "@/layout/footer/footer-one";
-import screen from "@/assets/images/solutions/automation/faq.jpg";
+import screen from "@/assets/images/solutions/mendix/faq.jpg";
 import SectionSol1 from "@/components/two-col/section-sol1";
 
 export const metadata: Metadata = {
