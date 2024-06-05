@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 // internal
 import Image from "next/image";
+import cloud_img from "@/assets/images/solutions/mendix/cloud_deployment.jpg";
 import mendix1 from "@/assets/images/solutions/mendix-studio-pro-image-1.jpg";
 import mendix3 from "@/assets/images/solutions/mendix-studio-web-image.jpg";
 import img_2 from "@/assets/images/solutions/mendix/2.jpg";
@@ -92,16 +93,17 @@ const SectionSol1 = () => {
               </div>
             </div>
             <div className="col-lg-5 d-flex order-lg-first">
-              <div
+            <Image
+                src={cloud_img}
+                layout="responsive"
+                alt="About us"
+                className="w-100 h-auto"
+              ></Image>
+              {/* <div
                 className="media-wrapper w-100 d-flex align-items-center justify-content-center position-relative wow fadeInLeft"
                 style={backImg}
-              >
-                {/* <Image
-                    src={screen}
-                    alt="screen"
-                    className="lazy-img shapes screen_01"
-                  /> */}
-              </div>
+              >               
+              </div> */}
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ import icon_6 from "@/assets/images/icon/icon_1034.png";
 import icon_7 from "@/assets/images/icon/icon_1035.png";
 import icon_8 from "@/assets/images/icon/icon_1036.png";
 import screen2 from "@/assets/images/shape/element_3.svg";
-import bg_image from "@/assets/images/solutions/mendix/cloud_deployment.jpg";
+import bg_image from "@/assets/images/solutions/mendix/mendix.jpg";
 
 // image style
 const imgStyle = {
@@ -80,9 +80,9 @@ const MendixFeature = () => {
       </div>
       {/* Ends from here  */}
 
-      <div className="text-feature-seven mt-80 service-details">
+      <div className="text-feature-seven mt-40 service-details">
         <div className="container">
-          <div className="border-bottom mt-40 pb-50 sm-pb-30 details-meta">
+          <div className="border-bottom pb-50 sm-pb-30 details-meta">
             <div className="row">
               <div className="title-one lg-mb-10 wow fadeInUp">
                 <h3>Features of Mendix</h3>
