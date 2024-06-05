@@ -12,9 +12,10 @@ import FaqItem from "@/components/faq/faq-item";
 import icon_1 from "@/assets/images/icon/icon_82.svg";
 import icon_2 from "@/assets/images/icon/icon_83.svg";
 import img1 from "@/assets/images/solutions/contract-staffing/contract-staffing1.svg";
-import Finacle1 from "@/assets/images/solutions/Finacle/Fincale-1.png";
-import Finacle2 from "@/assets/images/solutions/Finacle/Fincale-2.png";
-import Finacle3 from "@/assets/images/solutions/Finacle/Fincale-3.png";
+import Integration from "@/assets/images/solutions/servicenow/Integration.jpg";
+import ITSM from "@/assets/images/solutions/servicenow/itsm_csm.jpg";
+import UI_UX from "@/assets/images/solutions/servicenow/ui_ux.jpg";
+import aot from "@/assets/images/solutions/servicenow/aot.jpg";
 import ImgTextOne from "../img-text-feature/img-text-one";
 import servicenow1 from "@/assets/images/solutions/servicenow/servicenow.png";
 
@@ -154,7 +155,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
         /* Main Heading   */
         title="Expertise and Focused Area"
         para="Our Deep Expertise and Focused Area"
-        img={Finacle1}
+        img={ITSM}
         subtitle="ITSM & CSM"
         subpara="CGB Solutions specializes in providing comprehensive ITSM and CSM services on the ServiceNow platform, with a dedicated focus on optimizing service delivery and customer satisfaction in these key areas.
         "
@@ -164,7 +165,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
 
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
-        img={Finacle2}
+        img={aot}
         subtitle="TOM & ITAM"
         subpara="CGB Solutions specializes in TOM and ITAM services on ServiceNow, ensuring efficient technical operations and optimized IT asset management. With our expertise, we streamline processes, maximize performance, and enhance value for our clients"
         filter_data="servicenow-2"
@@ -173,7 +174,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag Staring------------------ */}
       {/*--------------------Img and orderList tag End------------------ */}
       <ImgTextOne
-        img={Finacle3}
+        img={UI_UX}
         subtitle="UI/UX"
         subpara="CGB Solutions prioritizes UI/UX design to ensure our solutions deliver intuitive interfaces and exceptional user experiences. Our focus on UI/UX enhances user satisfaction and boosts efficiency for our clients' platforms and applications."
         filter_data="servicenow-3"
@@ -182,7 +183,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
       {/*--------------------Img and orderList tag End------------------ */}
       {/*--------------------Img and orderList tag Staring------------------ */}
       <ImgTextOne
-        img={Finacle2}
+        img={Integration}
         subtitle="INTEGRATION"
         subpara="CGB Solutions specializes in seamless integration services, ensuring that diverse systems and applications work together harmoniously. Our integration solutions streamline processes, enhance efficiency, and optimize data flow for our clients, ultimately driving business success."
         filter_data="servicenow-4"
