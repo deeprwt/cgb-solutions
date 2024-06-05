@@ -6,7 +6,8 @@ import Link from "next/link";
 const ArticleListItem = ({ blog }: { blog: IArticle }) => {
   // add - after every words present in title 
   const hyphen = "-";
-  const dynamiclink = blog.title.split(' ').join(hyphen);
+  // const dynamiclink = blog.link.split(' ').join(hyphen);
+  const dynamiclink = blog.link.toLowerCase().split(' ').join(hyphen);
 
   return (
     <article className="blog-meta-two style-two mb-50 lg-mb-40">

@@ -15,7 +15,9 @@ type Props = {
 
 
 export function generateMetadata({ params }: Props): Metadata {
-  const article = articleData.find((b) => b.link === params.link);
+  const hyphen = "-";
+const formattedLink = params.link.toLowerCase().split(' ').join(hyphen);
+  const article = articleData.find((b) => b.link.toLowerCase().split(' ').join(hyphen) === formattedLink);
 
   if (!article) {
     throw new Error(`link ${params.link} not found`);
@@ -41,7 +43,10 @@ export function generateMetadata({ params }: Props): Metadata {
 }
 
 const ArticlePage = ({ params }: Props) => {
-  const article = articleData.find((b) => b.link === params.link);
+  const hyphen = "-";
+  const formattedLink = params.link.toLowerCase().split(' ').join(hyphen);
+    const article = articleData.find((b) => b.link.toLowerCase().split(' ').join(hyphen) === formattedLink);
+  // const article = articleData.find((b) => b.link === params.link);
 
   return (
     <Wrapper>

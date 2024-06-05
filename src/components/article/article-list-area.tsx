@@ -10,7 +10,7 @@ import { IArticle } from "@/types/article-d-t";
 import Pagination from "@/ui/pagination";
 
 const ArticleListArea = () => {
-  const blog_items = article_data.filter((b) => b.page === "blog-list");
+  const blog_items = article_data.filter((b) => b.page === "blog-list") .reverse();
   const {currentItems,handlePageClick,pageCount} = usePagination<IArticle>(blog_items,4);
   return (
     <div className="blog-section-two position-relative mt-150 lg-mt-80 mb-150 lg-mb-80">

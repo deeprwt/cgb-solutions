@@ -34,8 +34,19 @@ const ArticleDetailsArea = ({ blog }: { blog: IArticle }) => {
                   {/* Rendering content headings and paragraphs dynamically */}
                   {content.map((item, index) => (
                     <div key={index}>
-                      <h3>{item.heading}</h3>
-                      <p>{item.paragraph}</p>
+                      {item.paragraphfirst && <p>{item.paragraphfirst}</p>}
+                      {item.heading && <h4>{item.heading}</h4>}
+                      {item.paradesc && <h5>{item.paradesc}</h5>}
+                      {item.paragraph && <p>{item.paragraph}</p>}
+                      {item.paragraph2 && <p>{item.paragraph2}</p>}
+                      {item.paragraph3 && <p>{item.paragraph3}</p>}
+                      {item.paragraph4 && <p>{item.paragraph4}</p>}
+                      {item.paragraph5 && <p>{item.paragraph5}</p>}
+                      {item.paragraph6 && <p>{item.paragraph6}</p>}
+                      {item.paragraph7 && <p>{item.paragraph7}</p>}
+                      {item.paragraph9 && <p>{item.paragraph9}</p>}
+                      {item.paragraph10 && <p>{item.paragraph10}</p>}
+                      {item.endingbold && <h4>{item.endingbold}</h4>}
                       {/* <ul className="style-none list-item pb-20">
                         <li className="lim">
                           {item.ul.li}
