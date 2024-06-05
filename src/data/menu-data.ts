@@ -111,7 +111,7 @@ const menu_data: IMenu[] = [
         title: "Digital Process Automation",
       },
       { link: "/contract-staffing", title: "Workforce Solutions" },
-      { link: "/solutions/digital-marketing", title: "Digital Services" },
+      { link: "https://studios.cgbsolution.com", title: "Digital Services" },
     ],
   },
   // {
