@@ -20,7 +20,7 @@ import FaqSolutions from "@/components/faq/faq-solutions";
 import FooterOne from "@/layout/footer/footer-one";
 import SectionSol1 from "@/components/two-col/section-sol1";
 import OracleSection from "@/components/solutions/oracle-section";
-import screen from "@/assets/images/assets/screen_11.png";
+import screen from "@/assets/images/solutions/automation/faq.jpg";
 import OutsystemsSection from "@/components/solutions/outsystems-section";
 
 export const metadata: Metadata = {

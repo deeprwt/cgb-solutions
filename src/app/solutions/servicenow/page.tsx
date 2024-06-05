@@ -18,7 +18,7 @@ import TwoColData from "@/components/two-col/two-col-data";
 import FaqSolutions from "@/components/faq/faq-solutions";
 import FooterOne from "@/layout/footer/footer-one";
 import SectionSol1 from "@/components/two-col/section-sol1";
-import screen from "@/assets/images/assets/screen_11.png";
+import screen from "@/assets/images/solutions/automation/faq.jpg";
 import ServicenNowSecton from "@/components/solutions/servicenow-section";
 
 export const metadata: Metadata = {
