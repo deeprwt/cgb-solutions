@@ -4,6 +4,7 @@ import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import blog_bg from "@/assets/images/media/img_32.jpg";
+import article_back from "@/assets/images/media/ArticleBanner.png";
 import ArticleDetailsArea from "@/components/article/article-details/article-details-area";
 import articleData from "@/data/article-data";
 import FooterOne from "@/layout/footer/footer-one";
@@ -54,10 +55,10 @@ const ArticlePage = ({ params }: Props) => {
         <HeaderTwo />
         <main>
           <BreadcrumbOne
-            title="Single Blog Details"
+            title="Article Details"
             subtitle=""
-            page="Blog"
-            bg_img={blog_bg}
+            page="Article"
+            bg_img={article_back}
             style_2={true}
           />
           {article ? (
