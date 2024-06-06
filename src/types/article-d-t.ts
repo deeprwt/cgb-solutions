@@ -1,36 +1,34 @@
 import Image, { StaticImageData, ImageProps } from "next/image";
 
-
-
-
 interface Licontent{
   li?: string;
 }
 
 interface PostContent {
+  subimg0?: StaticImageData;
   paragraphfirst?: string;
   heading?: string;
-  subimg?: ImageProps['src']; // Correctly define the type for subimg
+  subimg?: StaticImageData;// Correctly define the type for subimg
   paradesc?: string;
-  subimg1?: ImageProps['src']; 
+  subimg1?: StaticImageData;
   paragraph?: string;
-  subimg2?: ImageProps['src']; 
+  subimg2?: StaticImageData;
   paragraph2?: string;
-  subimg3?: ImageProps['src']; 
+  subimg3?: StaticImageData;
   paragraph3?: string;
-  subimg4?: ImageProps['src']; 
+  subimg4?: StaticImageData;
   paragraph4?: string;
-  subimg5?: ImageProps['src']; 
+  subimg5?: StaticImageData;
   paragraph5?: string;
-  subimg6?: ImageProps['src']; 
+  subimg6?: StaticImageData;
   paragraph6?: string;
-  subimg7?: ImageProps['src']; 
+  subimg7?: StaticImageData;
   paragraph7?: string;
-  subimg8?: ImageProps['src']; 
+  subimg8?: StaticImageData;
   paragraph8?: string;
-  subimg9?: ImageProps['src']; 
+  subimg9?: StaticImageData;
   paragraph9?: string;
-  subimg10?: ImageProps['src']; 
+  subimg10?: StaticImageData;
   paragraph10?: string;
   endingbold?: string;
   ul?: Licontent[];

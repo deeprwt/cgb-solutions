@@ -14,6 +14,7 @@ import BlogSidebar from "@/components/blogs/blog-sidebar";
 const ArticleDetailsArea = ({ blog }: { blog: IArticle }) => {
   const { date, title, post_info, img, content } = blog || {};
   return (
+    <>
     <div className="blog-details position-relative mt-150 lg-mt-80 mb-150 lg-mb-80">
       <div className="container">
         <div className="row gx-xl-5">
@@ -34,18 +35,102 @@ const ArticleDetailsArea = ({ blog }: { blog: IArticle }) => {
                   {/* Rendering content headings and paragraphs dynamically */}
                   {content.map((item, index) => (
                     <div key={index}>
+                      {item.subimg && (
+                        <img
+                          src={item.subimg.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraphfirst && <p>{item.paragraphfirst}</p>}
                       {item.heading && <h4>{item.heading}</h4>}
+                      {item.subimg0 && (
+                        <img
+                          src={item.subimg0.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paradesc && <h5>{item.paradesc}</h5>}
+                      {item.subimg1 && (
+                        <img
+                          src={item.subimg1.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraph && <p>{item.paragraph}</p>}
+                      {item.subimg2 && (
+                        <img
+                          src={item.subimg2.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraph2 && <p>{item.paragraph2}</p>}
+                      {item.subimg2 && (
+                        <img
+                          src={item.subimg2.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraph3 && <p>{item.paragraph3}</p>}
+                      {item.subimg3 && (
+                        <img
+                          src={item.subimg3.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraph4 && <p>{item.paragraph4}</p>}
+                      {item.subimg4 && (
+                        <img
+                          src={item.subimg4.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraph5 && <p>{item.paragraph5}</p>}
+                      {item.subimg5 && (
+                        <img
+                          src={item.subimg5.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraph6 && <p>{item.paragraph6}</p>}
+                      {item.subimg6 && (
+                        <img
+                          src={item.subimg6.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraph7 && <p>{item.paragraph7}</p>}
+                      {item.subimg7 && (
+                        <img
+                          src={item.subimg7.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraph9 && <p>{item.paragraph9}</p>}
+                      {item.subimg9 && (
+                        <img
+                          src={item.subimg9.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.paragraph10 && <p>{item.paragraph10}</p>}
+                      {item.subimg10 && (
+                        <img
+                          src={item.subimg10.src}
+                          alt="what's new"
+                          className="w-100 h-100 mb-30 mt-30 shadowimg cursor-pointer rounded-1"
+                        />
+                      )}
                       {item.endingbold && <h4>{item.endingbold}</h4>}
                       {/* <ul className="style-none list-item pb-20">
                         <li className="lim">
@@ -121,6 +206,7 @@ const ArticleDetailsArea = ({ blog }: { blog: IArticle }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
