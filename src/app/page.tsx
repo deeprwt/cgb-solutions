@@ -49,7 +49,7 @@ export default function HomePage() {
           {/* number counter end */}
 
           {/* whatsnew section start */}
-          <WhatsNew />
+          {/* <WhatsNew /> */}
           {/* whatsnew section end */}
 
           {/* about us content start  */}
