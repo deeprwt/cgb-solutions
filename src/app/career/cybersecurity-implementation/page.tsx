@@ -10,7 +10,9 @@ import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import team_bg from "@/assets/images/media/img_32.jpg";
 import FooterOne from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/Header";
+import icon_4 from "@/assets/images/assets/ils_07.svg";
 import CareerListArea from "@/components/career/career-list-area";
+import CareerForm from "@/components/forms/career-form";
 
 
 export const metadata: Metadata = {
@@ -33,7 +35,8 @@ const Career = () => {
             // // shape={shape}
             bg_img={team_bg}
           />
-          <CareerListArea />
+
+           <CareerForm />
 
         </main>
 
