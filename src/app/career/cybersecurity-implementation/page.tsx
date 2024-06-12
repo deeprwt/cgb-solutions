@@ -12,7 +12,8 @@ import FooterOne from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/Header";
 import icon_4 from "@/assets/images/assets/ils_07.svg";
 import CareerListArea from "@/components/career/career-list-area";
-import CareerForm from "@/components/forms/career-form";
+import CareerMainForm from "@/components/forms/career-main-form";
+import ApplyNowBtn from "@/components/button/applynowbtn";
 
 
 export const metadata: Metadata = {
@@ -35,8 +36,9 @@ const Career = () => {
             // // shape={shape}
             bg_img={team_bg}
           />
-
-           <CareerForm />
+          <ApplyNowBtn 
+          />
+           <CareerMainForm />
 
         </main>
 

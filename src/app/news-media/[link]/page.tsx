@@ -24,7 +24,11 @@ type Props = {
 
 
 export function generateMetadata({ params }: Props): Metadata {
-  const article = news_data.find((b) => b.link === params.link);
+  // const article = news_data.find((b) => b.link === params.link);
+  const hyphen = "-";
+  const formattedLink = params.link.toLowerCase().split(' ').join(hyphen);
+    const article = news_data.find((b) => b.link.toLowerCase().split(' ').join(hyphen) === formattedLink);
+
 
   if (!article) {
     throw new Error(` link ${params.link} not found`);
@@ -48,8 +52,12 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-const NewsDetailsPage = ({ params }: { params: { id: string } }) => {
-  const blog = news_data.find((b) => Number(b.id) === Number(params.id))!;
+const NewsDetailsPage = ({ params }: Props) => {
+  // const blog = news_data.find((b) => Number(b.id) === Number(params.id))!;
+  const hyphen = "-";
+  const formattedLink = params.link.toLowerCase().split(' ').join(hyphen);
+    const article = news_data.find((b) => b.link.toLowerCase().split(' ').join(hyphen) === formattedLink);
+  // const article = articleData.find((b) => b.link === params.link);
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -69,13 +77,13 @@ const NewsDetailsPage = ({ params }: { params: { id: string } }) => {
           {/* breadcrumb end */}
 
           {/* blog details area start */}
-          {blog ? (
+          {article ? (
             // <BlogDetailsArea blog={blog} />
-            <NewsDetailsArea blog={blog} />
+            <NewsDetailsArea blog={article} />
           ) : (
             <div className="container">
               <div className="mt-80 mb-80 text-center">
-                <h3>Not Found Any News & media this id {params.id}</h3>
+                <h3>Not Found Any News & media this id {params.link}</h3>
               </div>
             </div>
           )}

@@ -1,8 +1,14 @@
 import React from "react";
-import { IBlog } from "@/types/blog-d-t";
+// import { IBlog } from "@/types/blog-d-t";
+import { IArticle } from "@/types/article-d-t";
+
 import Link from "next/link";
 
-const NewsGridItem = ({ blog }: { blog: IBlog }) => {
+const NewsGridItem = ({ blog }: { blog: IArticle }) => {
+    // add - after every words present in title 
+    const hyphen = "-";
+    // const dynamiclink = blog.link.split(' ').join(hyphen);
+    const dynamiclink = blog.link.toLowerCase().split(' ').join(hyphen);
   return (
     <article
       className="blog-meta-two mb-80 lg-mb-50 wow fadeInUp"
@@ -12,7 +18,7 @@ const NewsGridItem = ({ blog }: { blog: IBlog }) => {
         className="post-img rounded-5 position-relative d-flex align-items-end m0"
         style={{ backgroundImage: `url(${blog.img.src})` }}
       >
-        <Link href={`/news-media/${blog.id}`}
+        <Link href={`/news-media/${dynamiclink}`}
           className="stretched-link rounded-5 date tran3s"
         >
           {blog.date.split(" ")[0]} {blog.date.split(" ")[1]}
@@ -20,10 +26,10 @@ const NewsGridItem = ({ blog }: { blog: IBlog }) => {
       </figure>
       <div className="post-data">
         <div className="d-flex justify-content-between align-items-center flex-wrap">
-          <Link href={`/news-media/${blog.id}`} className="blog-title">
+          <Link href={`/news-media/${dynamiclink}`} className="blog-title">
             <h4>{blog.title}</h4>
           </Link>
-          <Link href={`/news-media/${blog.id}`}
+          <Link href={`/news-media/${dynamiclink}`}
             className="round-btn rounded-circle d-flex align-items-center justify-content-center tran3s"
           >
             <i className="bi bi-arrow-up-right"></i>
