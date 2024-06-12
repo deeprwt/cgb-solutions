@@ -14,18 +14,26 @@ import icon_4 from "@/assets/images/assets/ils_07.svg";
 import { addDoc, collection } from "firebase/firestore"; // Import Firestore functions
 
 type FormData = {
+  title: string;
   name: string;
+  number: number;
   email: string;
+  designation: string;
+  experience: number;
   websiteurl: string;
-  companyname: string;
   message: string;
 };
 
 const schema = yup.object().shape({
+  title: yup.string().required().label("Title"),
   name: yup.string().required().label("Name"),
+  number: yup.number()    .typeError("Number must be a valid number")
+  .required("Number is a required field").label("Number"),
   email: yup.string().required().email().label("Email"),
+  designation: yup.string().required().label("Designation"),
+  experience: yup.number()    .typeError("Experience must be a valid number")
+  .required("Experience is a required field").label("Experience"),
   websiteurl: yup.string().required().label("Website Url"),
-  companyname: yup.string().required().label("Company Name"),
   message: yup.string().required().min(10).label("Message"),
 });
 
@@ -50,7 +58,7 @@ const CareerVendorForm = () => {
       if (typeof window !== "undefined") {
         // Check if window is defined (browser environment)
         const { db } = await import("@/database/firebase");
-        const contactRef = collection(db, "newcontact");
+        const contactRef = collection(db, "vendorform");
         await addDoc(contactRef, data);
         notifySuccess("Message sent successfully!"); // Use notifySuccess
         reset(); // Clear the form
@@ -62,7 +70,8 @@ const CareerVendorForm = () => {
   };
 
   return (
-    <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
+    <form id="vendor-form" onSubmit={handleSubmit(onSubmit)}>
+      <div className="messages"></div>
       <div className="row">
         <div className="col-12">
           <div className="input-group-meta form-group mb-30">
@@ -70,12 +79,12 @@ const CareerVendorForm = () => {
             <input
               type="text"
               placeholder="Job Title - Apply for*"
-              {...register("name")}
-              id="name"
-              name="name"
+              {...register("title")}
+              id="title"
+              name="title"
             />
             <div className="help-block with-errors">
-              <ErrorMsg msg={errors.name?.message!} />
+              <ErrorMsg msg={errors.title?.message!} />
             </div>
           </div>
         </div>
@@ -95,12 +104,12 @@ const CareerVendorForm = () => {
           <div className="input-group-meta position-relative mb-25">
             <label>Phone Number*</label>
             <input
-              type="text"
-              {...register("name")}
-              id="name"
+              type="number"
+              {...register("number")}
+              id="number"
               placeholder="Enter Your Name"
             />
-            <ErrorMsg msg={errors.name?.message!} />
+            <ErrorMsg msg={errors.number?.message!} />
           </div>
         </div>
         <div className="col-12 col-md-6">
@@ -119,36 +128,36 @@ const CareerVendorForm = () => {
           <div className="input-group-meta position-relative mb-25">
             <label>Designation*</label>
             <input
-              type="email"
-              {...register("email")}
-              id="email"
-              placeholder="YourEmail@gmail.com"
+              type="text"
+              {...register("designation")}
+              id="designation"
+              placeholder="Your Designation In Company"
             />
-            <ErrorMsg msg={errors.email?.message!} />
+            <ErrorMsg msg={errors.designation?.message!} />
           </div>
         </div>
         <div className="col-12 col-md-6">
           <div className="input-group-meta position-relative mb-25">
             <label>Year of Experience*</label>
             <input
-              type="email"
-              {...register("email")}
-              id="email"
-              placeholder="YourEmail@gmail.com"
+              type="number"
+              {...register("experience")}
+              id="experience"
+              placeholder="Enter Number of Experience"
             />
-            <ErrorMsg msg={errors.email?.message!} />
+            <ErrorMsg msg={errors.experience?.message!} />
           </div>
         </div>
         <div className="col-12 col-md-6">
           <div className="input-group-meta position-relative mb-25">
             <label>website url*</label>
             <input
-              type="email"
-              {...register("email")}
-              id="email"
-              placeholder="YourEmail@gmail.com"
+              type="text"
+              {...register("websiteurl")}
+              id="websiteurl"
+              placeholder="websiteurl"
             />
-            <ErrorMsg msg={errors.email?.message!} />
+            <ErrorMsg msg={errors.websiteurl?.message!} />
           </div>
         </div>
         <div className="col-12">
