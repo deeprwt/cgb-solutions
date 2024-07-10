@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Link from 'next/link';
+import { useRouter } from "next/navigation"; // Import useRouter
 // internal
 import icon from '@/assets/images/icon/icon_13.svg';
 import ErrorMsg from '../common/error-msg';
@@ -28,6 +29,7 @@ const AuthLogin = () => {
     resolver: yupResolver(schema),
   });
 
+
   // const onSubmit = handleSubmit((data) => {
   //   alert(JSON.stringify(data))
   //   reset()
@@ -35,6 +37,7 @@ const AuthLogin = () => {
 
     // checking user is sign up or not 
     const [nuser, setUser] = useState(null);
+    const router = useRouter(); // Initialize useRouter
 
     useEffect(() => {
       const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -60,10 +63,13 @@ const AuthLogin = () => {
         // console.log('firebase user', response)
         notifySuccess("User Register Successfully!"); // Use notifySuccess
         reset(); // Clear the form
+        router.push('/dashboard'); // Redirect to dashboard
         
     }).catch(e=>{
         console.log('catch', e.message)
-        notifyError("Something went wrong"); // Use notifySuccess
+        console.error('Firebase Error:', e.message);
+      notifyError(e.message); // Display Firebase error message using notifyError
+        // notifyError("Something went wrong"); // Use notifySuccess
     })
 }
 
