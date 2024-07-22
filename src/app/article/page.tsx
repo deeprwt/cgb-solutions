@@ -11,6 +11,8 @@ import ArticleListArea from "@/components/article/article-list-area";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
+import BlogList from "@/components/dynamic/bloglist";
+import ArticleList from "@/components/dynamic/articledesigndata/articlelist";
 
 export const metadata: Metadata = {
   title: "Article",
@@ -36,8 +38,10 @@ const ArticlePage = () => {
           {/* breadcrumb end */}
 
           {/* blog list area start */}
-          <ArticleListArea />
+          {/* <ArticleListArea /> */}
           {/* blog list area end */}
+          {/* <BlogList /> */}
+          <ArticleList />
 
           {/* fancy banner three start */}
           <FancyBannerThree />

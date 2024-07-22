@@ -24,7 +24,7 @@ const ArticleListArea = () => {
     });
   const {currentItems,handlePageClick,pageCount} = usePagination<IArticle>(blog_items,6);
   return (
-    <div className="blog-section-two position-relative mt-150 lg-mt-80 mb-150 lg-mb-80">
+  <div className="blog-section-two position-relative mt-150 lg-mt-80 mb-150 lg-mb-80">
     <div className="container">
       <div className="position-relative">
         <div className="row gx-xxl-5">

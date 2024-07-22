@@ -10,6 +10,7 @@ import BlogListArea from "@/components/blogs/blog-list-area";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
+import BlogList from "@/components/dynamic/bloglist";
 
 export const metadata: Metadata = {
   title: "Blog Page",
@@ -35,7 +36,8 @@ const BlogPage = () => {
           {/* breadcrumb end */}
 
           {/* blog list area start */}
-          <BlogListArea />
+          {/* <BlogListArea /> */}
+          <BlogList />
           {/* blog list area end */}
 
           {/* fancy banner three start */}

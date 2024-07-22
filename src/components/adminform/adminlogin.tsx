@@ -17,7 +17,7 @@ const AdminLogin = () => {
         <div className="container d-flex align-items-center justify-content-center">
           <div className="user-data-form modal-content p-5 mx-5" style={{boxShadow: "2px 5px 20px rgba(0, 0, 0, 0.1)"}} >
             <div className="form-wrapper m-auto">
-              <ul className="nav nav-tabs border-0 w-100" role="tablist">
+              {/* <ul className="nav nav-tabs border-0 w-100" role="tablist">
                 <li className="nav-item" role="presentation">
                   <button
                     className="nav-link active"
@@ -42,7 +42,7 @@ const AdminLogin = () => {
                     Signup
                   </button>
                 </li>
-              </ul>
+              </ul> */}
               <div className="tab-content mt-30">
                 <div className="tab-pane show active" role="tabpanel" id="fc1">
                   <div className="text-center mb-20">
