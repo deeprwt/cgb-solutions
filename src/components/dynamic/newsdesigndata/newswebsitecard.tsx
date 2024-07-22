@@ -24,14 +24,14 @@ const NewsWebsiteCard: React.FC<NewsCardProps> = ({ news }) => {
         className="post-img rounded-5 position-relative d-flex align-items-end m0"
         style={{ backgroundImage: `url(${news.imageUrl || news.image})`}}
       >
-        <Link href={`/news/${news.link}`} className="stretched-link rounded-5 date tran3s">
+        <Link href={`/news-media/${news.link}`} className="stretched-link rounded-5 date tran3s">
           {news.date.split(" ")[0]} {news.date.split(" ")[1]}
         </Link>
       </figure>
       <div className="post-data">
         {/* <div className="post-info">{news.category}</div> */}
         <div className="d-flex justify-content-between align-items-center flex-wrap">
-          <Link href={`/news/${news.link}`} className="blog-title">
+          <Link href={`/news-media/${news.link}`} className="blog-title">
             <h4 style={{ fontSize: "23px" }}>{news.title}</h4>
           </Link>
           <Link href={`/news-media/${news.link}`}
