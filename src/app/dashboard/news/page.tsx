@@ -207,7 +207,6 @@ const AddNews = () => {
                               <input
                                 type="file"
                                 className="form-control"
-                                required
                                 id="image"
                                 onChange={(e) => setImageUpload(e.target.files?.[0] || null)}
                               />
