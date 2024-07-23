@@ -9,6 +9,8 @@ import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import article_bg from "@/assets/images/media/img_32.jpg";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FooterOne from "@/layout/footer/footer-one";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 type Article = {
   id?: string;
@@ -54,14 +56,6 @@ const ArticlePageClient: React.FC<ArticlePageClientProps> = ({ slug }) => {
     fetchArticle();
   }, [slug]);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (!article) {
-    return <div>No article found.</div>;
-  }
-
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -74,7 +68,19 @@ const ArticlePageClient: React.FC<ArticlePageClientProps> = ({ slug }) => {
             bg_img={article_bg}
             style_2={true}
           />
-          <ArticleDetailsArea article={article} />
+          
+          {loading ? (
+            <div className="article-details-skeleton">
+              <Skeleton height={400} />
+              <Skeleton count={5} />
+            </div>
+          ) : (
+            article ? (
+              <ArticleDetailsArea article={article} />
+            ) : (
+              <div>No article found.</div>
+            )
+          )}
           <FancyBannerThree />
         </main>
         <FooterOne />

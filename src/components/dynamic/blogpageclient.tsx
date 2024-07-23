@@ -9,6 +9,8 @@ import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import blog_bg from "@/assets/images/media/img_32.jpg";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FooterOne from "@/layout/footer/footer-one";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 type Blog = {
   id?: string;
@@ -54,14 +56,6 @@ const BlogPageClient: React.FC<BlogPageClientProps> = ({ slug }) => {
     fetchBlog();
   }, [slug]);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (!blog) {
-    return <div>No blog found.</div>;
-  }
-
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -74,7 +68,19 @@ const BlogPageClient: React.FC<BlogPageClientProps> = ({ slug }) => {
             bg_img={blog_bg}
             style_2={true}
           />
-          <BlogDetailsArea blog={blog} />
+            {loading ? (
+            <div>
+              <Skeleton height={400} />
+              <Skeleton count={5} />
+            </div>
+          ) : (
+            blog ? (
+              <BlogDetailsArea blog={blog} />
+            ) : (
+              <div>No article found.</div>
+            )
+          )}
+          {/* <BlogDetailsArea blog={blog} /> */}
           <FancyBannerThree />
         </main>
         <FooterOne />

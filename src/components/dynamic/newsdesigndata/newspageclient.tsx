@@ -10,6 +10,8 @@ import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import article_bg from "@/assets/images/media/img_32.jpg";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FooterOne from "@/layout/footer/footer-one";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 type News = {
   id?: string;
@@ -55,13 +57,6 @@ const NewsPageClient: React.FC<NewsPageClientProps> = ({ slug }) => {
     fetchNews();
   }, [slug]);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (!news) {
-    return <div>No news found.</div>;
-  }
 
   return (
     <Wrapper>
@@ -69,13 +64,25 @@ const NewsPageClient: React.FC<NewsPageClientProps> = ({ slug }) => {
         <HeaderTwo />
         <main>
           <BreadcrumbOne
-            title="Single Article Details"
+            title="News Details"
             subtitle=""
-            page="Article"
+            page="NewsDetailsArea"
             bg_img={article_bg}
             style_2={true}
           />
-          <NewsDetailsArea news={news} />
+          {loading ? (
+            <div>
+              <Skeleton height={400} />
+              <Skeleton count={5} />
+            </div>
+          ) : (
+            news ? (
+              <NewsDetailsArea news={news} />
+            ) : (
+              <div>No article found.</div>
+            )
+          )}
+          {/* <NewsDetailsArea news={news} /> */}
           <FancyBannerThree />
         </main>
         <FooterOne />
