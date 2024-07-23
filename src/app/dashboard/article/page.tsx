@@ -118,7 +118,7 @@ const AddArticle = () => {
         ...article,
         date: article.date || "",
         imageUrl: imageUrl || "",
-        link: link.toLowerCase().replace(/\s+/g, "-"), // Ensure link is in lowercase and hyphenated
+        link: link.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, "-"), // Ensure link is in lowercase and hyphenated
       };
 
       if (isEditing && currentArticle?.id) {
@@ -128,10 +128,12 @@ const AddArticle = () => {
           articles.map((a) => (a.id === currentArticle.id ? newArticle : a))
         );
         notifySuccess("Article updated successfully!");
+        resetForm();
       } else {
         const docRef = await addDoc(collection(db, "articles"), newArticle);
         setArticles([...articles, { id: docRef.id, ...newArticle }]);
         notifySuccess("Article added successfully!");
+        resetForm();
       }
 
       resetForm();

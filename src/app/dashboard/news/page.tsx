@@ -104,7 +104,7 @@ const AddNews = () => {
         ...news,
         date: news.date || "",
         imageUrl: imageUrl || "",
-        link: link.toLowerCase().replace(/\s+/g, '-') // Ensure link is in lowercase and hyphenated
+        link: link.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-') // Ensure link is in lowercase and hyphenated
       };
 
       if (isEditing && currentNews?.id) {
