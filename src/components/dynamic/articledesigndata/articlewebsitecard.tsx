@@ -9,6 +9,7 @@ type ArticleCardProps = {
     date: string;
     title: string;
     author: string;
+    category: string;
     link: string;
     post_info: string;
   };
@@ -26,7 +27,7 @@ const ArticleWebsiteCard: React.FC<ArticleCardProps> = ({ article }) => {
         </Link>
       </figure>
       <div className="post-data">
-        <div className="post-info">{article.post_info}</div>
+        <div className="post-info">{article.category}</div>
         <div className="d-flex justify-content-between align-items-center flex-wrap">
           <Link href={`/article/${article.link}`} className="blog-title">
             <h4 style={{ fontSize: "23px" }}>{article.title}</h4>
