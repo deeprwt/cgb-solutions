@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc, query, where } from "firebase/firestore";
 import { db, storage } from "@/database/firebase";
 import { useRouter } from "next/navigation";
@@ -14,6 +14,7 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import BlogCard from "@/components/dynamic/blogcard";
 import usePagination from "@/hooks/use-pagination";
 import Pagination from "@/ui/pagination";
+import debounce from 'lodash/debounce';
 
 // Dynamically import ReactQuill with ssr: false
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
@@ -192,6 +193,14 @@ const AddBlog = () => {
     setIsEditing(true);
   };
 
+    // Debounce the handleQuillChange function to reduce re-renders
+    const handleQuillChange = useCallback(
+      debounce((content: string) => {
+        setBlog((prevBlog) => ({ ...prevBlog, post_info: content }));
+      }, 300),
+      []
+    );
+
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -301,7 +310,7 @@ const AddBlog = () => {
                             <ReactQuill
                               theme="snow"
                               value={blog.post_info}
-                              onChange={(content) => setBlog({ ...blog, post_info: content })}
+                              onChange={handleQuillChange}
                             />
                           </div>
                         </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   collection,
   addDoc,
@@ -24,6 +24,7 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import ArticleCard from "@/components/dynamic/articledesigndata/articlecard";
 import usePagination from "@/hooks/use-pagination";
 import Pagination from "@/ui/pagination";
+import debounce from 'lodash/debounce';
 
 // Dynamically import ReactQuill with ssr: false
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
@@ -211,6 +212,14 @@ const AddArticle = () => {
     setIsEditing(true);
   };
 
+    // Debounce the handleQuillChange function to reduce re-renders
+    const handleQuillChange = useCallback(
+      debounce((content: string) => {
+        setArticle((prevArticle) => ({ ...prevArticle, post_info: content }));
+      }, 300),
+      []
+    );
+
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -357,9 +366,7 @@ const AddArticle = () => {
                             <ReactQuill
                               theme="snow"
                               value={article.post_info}
-                              onChange={(content) =>
-                                setArticle({ ...article, post_info: content })
-                              }
+                              onChange={handleQuillChange}
                             />
                           </div>
                         </div>

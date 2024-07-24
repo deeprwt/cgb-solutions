@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc, query, where } from "firebase/firestore";
 import { db, storage } from "@/database/firebase";
 import { useRouter } from "next/navigation";
@@ -11,10 +11,10 @@ import FooterOne from "@/layout/footer/footer-one";
 import Sidebar from "@/layout/admin/sidebar";
 import withAuth from "@/components/hoc/withAuth";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-// import NewsCard from "@/components/dynamic/articledesigndata/newscard";
 import NewsCard from "@/components/dynamic/newsdesigndata/newscard";
 import usePagination from "@/hooks/use-pagination";
 import Pagination from "@/ui/pagination";
+import debounce from 'lodash/debounce';
 
 // Dynamically import ReactQuill with ssr: false
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
@@ -187,6 +187,14 @@ const AddNews = () => {
     setIsEditing(true);
   };
 
+  // Debounce the handleQuillChange function to reduce re-renders
+  const handleQuillChange = useCallback(
+    debounce((content: string) => {
+      setNews((prevNews) => ({ ...prevNews, post_info: content }));
+    }, 300),
+    []
+  );
+
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -309,7 +317,7 @@ const AddNews = () => {
                               <ReactQuill
                                 theme="snow"
                                 value={news.post_info}
-                                onChange={(content) => setNews({ ...news, post_info: content })}
+                                onChange={handleQuillChange}
                               />
                             </div>
                           </div>
