@@ -55,7 +55,7 @@ const NewsList = () => {
 
   const { currentItems, handlePageClick, pageCount } = usePagination<News>(
     sortedNews,
-    3
+    4
   );
 
   return (
