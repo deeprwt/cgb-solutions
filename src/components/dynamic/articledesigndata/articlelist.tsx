@@ -55,7 +55,7 @@ const ArticleList = () => {
 
   const { currentItems, handlePageClick, pageCount } = usePagination<Article>(
     sortedArticles,
-    3
+    9
   );
 
   return (
@@ -64,7 +64,7 @@ const ArticleList = () => {
         <div className="position-relative">
           <div className="row gx-xxl-5">
           {loading ? (
-              Array.from({ length: 3 }).map((_, index) => (
+              Array.from({ length: 9 }).map((_, index) => (
                 <div key={index} className="col-md-4 mb-5">
                   <Skeleton height={250} />
                   <Skeleton count={3} />
