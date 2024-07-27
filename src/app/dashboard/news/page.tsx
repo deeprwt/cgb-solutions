@@ -141,6 +141,8 @@ const AddNews = () => {
 
   const handleNewsDelete = async (id?: string) => {
     if (!id) return;
+    const isConfirmed = window.confirm("Are you sure you want to delete this article?");
+  if (!isConfirmed) return;
     try {
       await deleteDoc(doc(db, "news", id));
       setNewsList(newsList.filter(news => news.id !== id));

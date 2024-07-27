@@ -147,6 +147,8 @@ const AddBlog = () => {
 
   const handleBlogDelete = async (id?: string) => {
     if (!id) return;
+    const isConfirmed = window.confirm("Are you sure you want to delete this article?");
+  if (!isConfirmed) return;
     try {
       await deleteDoc(doc(db, "blogs", id));
       setBlogs(blogs.filter(blog => blog.id !== id));

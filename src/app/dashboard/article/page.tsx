@@ -163,6 +163,8 @@ const AddArticle = () => {
 
   const handleArticleDelete = async (id?: string) => {
     if (!id) return;
+    const isConfirmed = window.confirm("Are you sure you want to delete this article?");
+  if (!isConfirmed) return;
     try {
       await deleteDoc(doc(db, "articles", id));
       setArticles(articles.filter((article) => article.id !== id));
