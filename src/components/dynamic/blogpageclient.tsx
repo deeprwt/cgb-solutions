@@ -11,6 +11,8 @@ import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FooterOne from "@/layout/footer/footer-one";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import HeaderSix from "@/layout/header/header-six";
+
 
 type Blog = {
   id?: string;
@@ -59,15 +61,9 @@ const BlogPageClient: React.FC<BlogPageClientProps> = ({ slug }) => {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
-        <HeaderTwo />
+      <HeaderSix />
         <main>
-          <BreadcrumbOne
-            title="Single Blog Details"
-            subtitle=""
-            page="Blog"
-            bg_img={blog_bg}
-            style_2={true}
-          />
+
             {loading ? (
             <div>
               <Skeleton height={400} />

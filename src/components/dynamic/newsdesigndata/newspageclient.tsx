@@ -12,6 +12,8 @@ import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FooterOne from "@/layout/footer/footer-one";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import HeaderSix from "@/layout/header/header-six";
+
 
 type News = {
   id?: string;
@@ -61,15 +63,9 @@ const NewsPageClient: React.FC<NewsPageClientProps> = ({ slug }) => {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
-        <HeaderTwo />
+      <HeaderSix />
         <main>
-          <BreadcrumbOne
-            title="News Details"
-            subtitle=""
-            page="NewsDetailsArea"
-            bg_img={article_bg}
-            style_2={true}
-          />
+
           {loading ? (
             <div>
               <Skeleton height={400} />

@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from '@/assets/images/logo/logo_06.svg';
+import logo from "@/assets/images/logo/logome.png";
 import icon from '@/assets/images/icon/icon_94.svg';
 import LoginModal from "@/components/common/login-modal";
 import useSticky from "@/hooks/use-sticky";
@@ -20,10 +20,10 @@ const HeaderSix = () => {
           <div className="d-flex align-items-center justify-content-between">
             <div className="logo order-lg-0">
               <Link href="/" className="d-flex align-items-center">
-                <Image src={logo} alt="logo" />
+                <Image width={110}  src={logo} alt="Cgb logo" />
               </Link>
             </div>
-            <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
+            {/* <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
               <ul className="d-flex align-items-center style-none">
                 <li className="d-flex align-items-center login-btn-two">
                   <Image
@@ -51,7 +51,26 @@ const HeaderSix = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
+                          <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
+                <ul className="d-flex align-items-center style-none">
+                  <li className="d-none d-md-block">
+                    <Link href="/contact" className="btn-one tran3s">
+                      Contact Us
+                    </Link>
+                  </li>
+                  {/* <li className="d-flex align-items-center login-btn-two">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#loginModal"
+                      className="btn-fourteen tran3s"
+                    >
+                      <i className="bi bi-person"></i>
+                    </a>
+                  </li> */}
+                </ul>
+              </div>
             <nav className="navbar navbar-expand-lg p0 ms-lg-5 order-lg-2">
               <button
                 className="navbar-toggler d-block d-lg-none"

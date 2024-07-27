@@ -4,13 +4,12 @@ import { collection, getDocs, query, where, QueryDocumentSnapshot, DocumentData 
 import { db } from "@/database/firebase";
 import ArticleDetailsArea from "@/components/dynamic/articledesigndata/articledetialsarea";
 import Wrapper from "@/layout/wrapper";
-import HeaderTwo from "@/layout/header/Header";
-import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
-import article_bg from "@/assets/images/media/img_32.jpg";
+// import HeaderTwo from "@/layout/header/Header";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FooterOne from "@/layout/footer/footer-one";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import HeaderSix from "@/layout/header/header-six";
 
 type Article = {
   id?: string;
@@ -59,15 +58,8 @@ const ArticlePageClient: React.FC<ArticlePageClientProps> = ({ slug }) => {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
-        <HeaderTwo />
+        <HeaderSix />
         <main>
-          <BreadcrumbOne
-            title="Single Article Details"
-            subtitle=""
-            page="Article"
-            bg_img={article_bg}
-            style_2={true}
-          />
           
           {loading ? (
             <div className="article-details-skeleton">

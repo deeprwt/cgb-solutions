@@ -2,21 +2,24 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 // internal
 import Navbar from "./navbar";
 import logo from "@/assets/images/logo/logome.png";
+import icon from "@/assets/images/icon/icon_94.svg";
 import useSticky from "@/hooks/use-sticky";
 import LoginModal from "@/components/common/login-modal";
 
 const HeaderTwo = () => {
   const { sticky } = useSticky();
-     // Access the current page URL
+  // Access the current page URL
   const pathrouter = usePathname();
   return (
     <>
       <header
-        className={`${pathrouter === "/solutions/digital-marketing" ? "header-change " : "" } theme-main-menu menu-overlay menu-style-one white-vr sticky-menu ${
+        className={`${
+          pathrouter === "/solutions/digital-marketing" ? "header-change " : ""
+        } theme-main-menu menu-overlay menu-style-one white-vr sticky-menu ${
           sticky ? "fixed" : ""
         }`}
       >
@@ -39,12 +42,16 @@ const HeaderTwo = () => {
                       Contact Us
                     </Link>
                   </li>
-                  {/* logout button  */}
-                  <li className={`${pathrouter === "/admin/profile" ? "d-block" : "d-none" }`}>
-                    <Link href="/contact" className="btn-fourteen tran3s">
-                    <i className="bi bi-box-arrow-right"></i>
-                    </Link>
-                  </li>
+                  {/* <li className="d-flex align-items-center login-btn-two">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#loginModal"
+                      className="btn-fourteen tran3s"
+                    >
+                      <i className="bi bi-person"></i>
+                    </a>
+                  </li> */}
                 </ul>
               </div>
               <nav className="navbar navbar-expand-lg p0 order-lg-2">

@@ -9,11 +9,27 @@ import NavbarAdmin from "../header/navbar-admin";
 import logo from "@/assets/images/logo/logome.png";
 import useSticky from "@/hooks/use-sticky";
 import LoginModal from "@/components/common/login-modal";
+import { signOut } from "firebase/auth"; // Import signOut function
+import { useRouter } from "next/navigation"; // Import useRouter
+import { notifySuccess, notifyError } from "@/utils/toast"; // Import notification functions
+import { db, auth } from "@/database/firebase"; // Adjust the path as necessary
 
 const Sidebar = () => {
   const { sticky } = useSticky();
      // Access the current page URL
   const pathrouter = usePathname();
+  const router = useRouter();
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      router.push("/login"); // Redirect to login after successful logout
+      notifySuccess("Successfully logged out");
+    } catch (error) {
+      console.error("Error logging out:", error);
+      notifyError("Failed to log out");
+    }
+  };
   return (
     <>
       <header
@@ -35,16 +51,12 @@ const Sidebar = () => {
 
               <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
                 <ul className="d-flex align-items-center style-none">
-                  <li className="d-none d-md-block">
-                    <Link href="/contact" className="btn-one tran3s" style={{backgroundColor:"#e28d8d"}}>
-                      Log Out
-                    </Link>
-                  </li>
                   {/* logout button  */}
-                  <li className={`${pathrouter === "/admin/profile" ? "d-block" : "d-none" }`}>
-                    <Link href="/contact" className="btn-fourteen tran3s">
+                  <li>
+                  <button onClick={handleLogout} className="btn-fourteen tran3s">  <i className="bi bi-box-arrow-right"></i></button>
+                    {/* <Link href="/contact" className="btn-fourteen tran3s">
                     <i className="bi bi-box-arrow-right"></i>
-                    </Link>
+                    </Link> */}
                   </li>
                 </ul>
               </div>
