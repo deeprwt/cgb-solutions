@@ -41,6 +41,7 @@ type Article = {
   metaKeywords: string;
   metaDescription: string;
   link: string;
+  draft: boolean; // Add this line
 };
 
 const AddArticle = () => {
@@ -56,6 +57,7 @@ const AddArticle = () => {
     metaKeywords: "",
     metaDescription: "",
     link: "",
+    draft: false, // Add this line
   });
   const [imageUpload, setImageUpload] = useState<File | null>(null);
   const [isEditing, setIsEditing] = useState(false);
@@ -175,6 +177,23 @@ const AddArticle = () => {
     }
   };
 
+  const toggleDraftStatus = async (id?: string, currentDraftStatus?: boolean) => {
+    if (!id) return;
+    try {
+      const docRef = doc(db, "articles", id);
+      await updateDoc(docRef, { draft: !currentDraftStatus });
+      setArticles(
+        articles.map((article) =>
+          article.id === id ? { ...article, draft: !currentDraftStatus } : article
+        )
+      );
+      notifySuccess("Article draft status updated successfully!");
+    } catch (error) {
+      console.error("Error updating draft status:", error);
+      notifyError("Failed to update draft status");
+    }
+  };
+
   const resetForm = () => {
     setArticle({
       image: "",
@@ -187,6 +206,7 @@ const AddArticle = () => {
       metaKeywords: "",
       metaDescription: "",
       link: "",
+      draft: false, // Add this line
     });
     setImageUpload(null);
     setCurrentArticle(null);
@@ -396,6 +416,7 @@ const AddArticle = () => {
                               article={article}
                               onDelete={handleArticleDelete}
                               onEdit={handleEdit}
+                              onToggleDraftStatus={toggleDraftStatus} // Pass the function here
                             />
                           </div>
                         ))}

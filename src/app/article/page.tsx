@@ -7,7 +7,6 @@ import FooterThree from "@/layout/footer/footer-three";
 import blog_bg from "@/assets/images/media/ArticleBanner.png";
 import shape from "@/assets/images/shape/shape_34.svg";
 // import BlogListArea from "@/components/blogs/blog-list-area";
-import ArticleListArea from "@/components/article/article-list-area";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";

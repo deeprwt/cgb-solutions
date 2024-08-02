@@ -20,6 +20,7 @@ type Article = {
   metaKeywords: string;
   metaDescription: string;
   link: string;
+  draft: boolean; // Add this line
 };
 
 const ArticleList = () => {
@@ -47,7 +48,10 @@ const ArticleList = () => {
     return new Date(dateString);
   };
 
-  const sortedArticles = articles.sort((a, b) => {
+  // Filter out draft articles and sort the remaining articles
+  const filteredArticles = articles.filter((article) => !article.draft);
+
+  const sortedArticles = filteredArticles.sort((a, b) => {
     const dateA = parseDate(a.date);
     const dateB = parseDate(b.date);
     return dateB.getTime() - dateA.getTime();
@@ -63,7 +67,7 @@ const ArticleList = () => {
       <div className="container">
         <div className="position-relative">
           <div className="row gx-xxl-5">
-          {loading ? (
+            {loading ? (
               Array.from({ length: 9 }).map((_, index) => (
                 <div key={index} className="col-md-4 mb-5">
                   <Skeleton height={250} />

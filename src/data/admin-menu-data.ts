@@ -41,6 +41,11 @@ const admin_menu_data: IMenu[] = [
       { link: "/article", title: "Your Article" },
     ],
   },
+  {
+    id: 7,
+    link: "/dashboard/image-gallery",
+    title: "Assest Gallery",
+  },
   
 ];
 
