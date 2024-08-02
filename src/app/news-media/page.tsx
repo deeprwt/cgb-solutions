@@ -5,7 +5,6 @@ import HeaderOne from "@/layout/header/header-one";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
 import FooterTwo from "@/layout/footer/footer-two";
-import NewsGridArea from "@/components/blogs/news-grid-area";
 import FooterOne from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
