@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import RedirectToUAE from "@/hooks/use-to-redirect";
 // adding this gtag
 
 import "./globals.scss";
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>{children}</Providers>
+        <RedirectToUAE />  {/* Include the redirection logic here */}
       </body>
       {/* staring here gtag */}
       <GoogleAnalytics gaId="G-NYNVJH0DG6" />
