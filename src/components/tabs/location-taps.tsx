@@ -133,7 +133,7 @@ const LocationTabsData = () => {
                     <AddressBlock
                       icon={icon_1}
                       title="Bengaluru"
-                      subtitle="46/1, NH 44, Near Krishan Reddy Industrial Area, Kudlu Gate, Hosapalaya, Garvebhavi Palya Bengaluru, Karnataka, 560068"
+                      subtitle="2nd Floor, No.112, AKR Tech Park, 7th Mile Hosur Rd, Krishna Reddy Industrial Area, Bengaluru, Bengaluru Urban, Karnataka-560068"
                     />
                   </div>
                   <div className="col-md-4 pt-30 wow fadeInUp">
