@@ -80,14 +80,14 @@ const team_data: ITeam[] = [
     page: "home-5",
     gif: gif1,
   },
-  {
-    id: 7,
-    img: Anurag,
-    name: "Anurag Gupta",
-    designation: "Marketing",
-    page: "team-three",
-    gif: gif1,
-  },
+  // {
+  //   id: 7,
+  //   img: Anurag,
+  //   name: "Anurag Gupta",
+  //   designation: "Marketing",
+  //   page: "team-three",
+  //   gif: gif1,
+  // },
   {
     id: 8,
     img: Rawan,
