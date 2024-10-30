@@ -27,8 +27,8 @@ import Image from "next/image";
 import clogo from "@/assets/images/cgbhome/testlogo.png"
 
 export const metadata: Metadata = {
-  title: "CGB Solutions",
-  description: "Empower your business with CGB Solutions' IT expertise. Strategic consulting & managed services for peak performance. Contact us.",
+  title: "IT Solutions & Services Company | CGB Solutions",
+  description: "Discover CGB Solutions' comprehensive IT services and business technology solutions for companies. We offer expert IT consulting, managed services, cloud solutions, etc.",
   keywords: "IT services, consulting, managed services, peak performance",  
 };
 

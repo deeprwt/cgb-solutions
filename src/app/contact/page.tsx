@@ -10,7 +10,8 @@ import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
-  title: "Contact Page",
+  title: "Contact Us - IT solutions | CGB SOlutions",
+  description:"Contact CGB Solutions for expert IT services, consulting, and business solutions. We’re here to answer all your IT-related questions and offer tailored solutions for your needs.",
 };
 
 const ContactPage = () => {

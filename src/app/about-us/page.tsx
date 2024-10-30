@@ -24,8 +24,8 @@ import HowWeDo from "@/components/home-data/how-we-do";
 import logo_2 from "@/assets/images/logo/logome.png";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description : "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
+  title: "About Us - IT Consulting & Business Solutions",
+  description : "Learn more about CGB Solutions, a global leader in IT consulting and business technology services. Explore our mission to provide innovative IT solutions and support.",
   keywords : "IT consulting, financial growth, insightful solutions",
 };
 
