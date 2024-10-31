@@ -21,7 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>{children}</Providers>
-        <RedirectToUAE />  {/* Include the redirection logic here */}
+        {/* <RedirectToUAE /> */}
+          {/* Include the redirection logic here */}
       </body>
       {/* staring here gtag */}
       <GoogleAnalytics gaId="G-NYNVJH0DG6" />
