@@ -16,7 +16,9 @@ import MissionSection from "@/components/company/mission-section";
 import OurCompanySection from "@/components/company/our-company-section";
 
 export const metadata: Metadata = {
-  title: "Mission - CGB's",
+  title: "About CGB Solutions | IT Consulting & Business Services",
+  description : " Learn more about CGB Solutions, a leading provider of IT consulting and business technology services. Discover how we drive innovation and success for global businesses.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 export default function OurCompany() {

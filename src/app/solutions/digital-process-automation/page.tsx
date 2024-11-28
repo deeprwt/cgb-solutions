@@ -49,7 +49,9 @@ function CardItem({
 }
 
 export const metadata: Metadata = {
-  title: "Digital Process Automation - CGB's",
+  title: " Digital Process Automation Solutions | CGB Solutions",
+  description : "Boost efficiency with CGB Solutions' digital process automation services. We design automated solutions that optimize business workflows and enhance productivity.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 const Vision = () => {

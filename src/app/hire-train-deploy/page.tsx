@@ -23,7 +23,9 @@ import ContractStaffingSection from "@/components/solutions/contract-staffing-se
 import HireTrainDepolySection from "@/components/solutions/hire-train-depoly-sections";
 
 export const metadata: Metadata = {
-  title: "Hire Train Deploy - CGB's",
+  title: "Hire Train Deploy Solutions | IT Consulting and Support",
+  description : " CGB Solutions' Hire-Train-Deploy model equips your business with skilled professionals, customized training, and seamless deployment for your staffing needs.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 export default function HireTrainDeploy() {

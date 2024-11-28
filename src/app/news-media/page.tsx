@@ -12,7 +12,9 @@ import blog_bg from "@/assets/images/media/NewsBanner.png";
 import NewsList from "@/components/dynamic/newsdesigndata/newslist";
 
 export const metadata: Metadata = {
-  title: "News & Media",
+  title: "News & Media | IT Support Company in India",
+  description : "Get the latest news and media updates from CGB Solutions. Stay informed on company announcements, IT innovations, and success stories from our global projects.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 const BlogGridPage = () => {

@@ -22,7 +22,9 @@ import SectionSol1 from "@/components/two-col/section-sol1";
 import ContractStaffingSection from "@/components/solutions/contract-staffing-section";
 
 export const metadata: Metadata = {
-  title: "Contract Staffing - CGB's",
+  title: "Contract Staffing Solutions India | CGB Solutions",
+  description : "CGB Solutions offers flexible contract staffing solutions, providing skilled professionals to meet short-term business needs across industries. Hire top talent with ease.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 export default function ContractStaffing() {

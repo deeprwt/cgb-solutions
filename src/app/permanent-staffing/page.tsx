@@ -21,7 +21,9 @@ import FooterOne from "@/layout/footer/footer-one";
 import ParmanentStaffingSection from "@/components/solutions/parmanent-staffing-section";
 
 export const metadata: Metadata = {
-  title: "Permanent Staffing - CGB's",
+  title: "Permanent Staffing Solutions | CGB Solutions",
+  description : "CGB Solutions provides permanent staffing services to help businesses recruit top-tier professionals for long-term roles. We deliver customized talent acquisition solutions.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 export default function PermanentStaffing() {

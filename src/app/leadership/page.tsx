@@ -13,7 +13,9 @@ import HeaderTwo from "@/layout/header/Header";
 import TeamDetailsArea from "@/components/team/team-details-area";
 
 export const metadata: Metadata = {
-  title: "Leadership",
+  title: "Leadership Team - IT Consulting Support | CGB Solutions",
+  description : "Meet the experienced global IT services provider at CGB Solutions. Our leaders are committed to delivering exceptional IT solutions and driving business transformation for our clients.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 const Leadership = () => {

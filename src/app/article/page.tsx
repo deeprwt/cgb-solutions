@@ -13,7 +13,9 @@ import BlogList from "@/components/dynamic/bloglist";
 import ArticleList from "@/components/dynamic/articledesigndata/articlelist";
 
 export const metadata: Metadata = {
-  title: "Article",
+  title: "Articles | IT Solutions & Business Trends | CGB Solutions",
+  description : "Read articles from CGB Solutions on IT solutions, industry developments, and business technology trends. Learn how to transform your business with our expertise.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 const ArticlePage = () => {

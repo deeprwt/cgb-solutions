@@ -22,7 +22,9 @@ import ParmanentStaffingSection from "@/components/solutions/parmanent-staffing-
 import RPOSections from "@/components/solutions/rpo-section";
 
 export const metadata: Metadata = {
-  title: "RPO - CGB's",
+  title: "Recruitment Process Outsourcing (RPO) | CGB Solutions",
+  description : "CGB Solutions offers Recruitment Process Outsourcing (RPO) services to streamline your hiring process. Our tailored solutions ensure you find the right talent quickly.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 export default function PermanentStaffing() {

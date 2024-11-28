@@ -24,7 +24,7 @@ import HowWeDo from "@/components/home-data/how-we-do";
 import logo_2 from "@/assets/images/logo/logome.png";
 
 export const metadata: Metadata = {
-  title: "About Us - IT Consulting & Business Solutions",
+  title: "About Us - IT Consulting & Business Solutions India",
   description : "Learn more about CGB Solutions, a global leader in IT consulting and business technology services. Explore our mission to provide innovative IT solutions and support.",
   keywords : "IT consulting, financial growth, insightful solutions",
 };

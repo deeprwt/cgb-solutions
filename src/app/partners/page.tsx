@@ -16,7 +16,9 @@ import PartnersSection from "@/components/company/partners-section";
 
 
 export const metadata: Metadata = {
-  title: "Partners - CGB's",
+  title: "Our Partners - Global IT Consulting | CGB Solutions",
+  description : "CGB Solutions collaborates with industry-leading partners to deliver cutting-edge IT solutions. Explore our strategic partnerships that enhance innovation and client success.",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 export default function Partners() {

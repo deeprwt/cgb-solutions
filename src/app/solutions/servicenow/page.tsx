@@ -22,7 +22,9 @@ import screen from "@/assets/images/solutions/servicenow/faq.jpg";
 import ServicenNowSecton from "@/components/solutions/servicenow-section";
 
 export const metadata: Metadata = {
-  title: "ServiceNow",
+  title: "ServiceNow Solutions & Consulting | CGB Solutions",
+  description : "Streamline your IT operations with CGB Solutions Servicenow Consulting Services in India. We help businesses optimize workflows, automate processes, and improve service delivery",
+  keywords : "IT consulting, financial growth, insightful solutions",
 };
 
 export default function ServiceNow() {
