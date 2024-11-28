@@ -29,6 +29,7 @@
     "react": "latest",
     "react-countup": "^6.4.2",
     "react-dom": "latest",
+    "react-facebook-pixel": "^1.0.4",
     "react-hook-form": "^7.47.0",
     "react-icons": "^5.0.1",
     "react-intersection-observer": "^9.5.2",

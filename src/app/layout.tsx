@@ -5,6 +5,7 @@ import RedirectToUAE from "@/hooks/use-to-redirect";
 
 import "./globals.scss";
 import { Providers } from "@/redux/provider";
+import { FacebookPixelEvents } from "@/components/facebookpixelevents/FacebookPixelEvents";
 
 export const metadata: Metadata = {
   title: "CGB Solutions",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Providers>{children}</Providers>
         {/* <RedirectToUAE /> */}
           {/* Include the redirection logic here */}
+          <FacebookPixelEvents />
       </body>
       {/* staring here gtag */}
       <GoogleAnalytics gaId="G-NYNVJH0DG6" />
