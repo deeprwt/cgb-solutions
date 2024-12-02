@@ -24,7 +24,7 @@ export default function RootLayout({
         <Providers>{children}</Providers>
         {/* <RedirectToUAE /> */}
           {/* Include the redirection logic here */}
-          <FacebookPixelEvents />
+          {/* <FacebookPixelEvents /> */}
       </body>
       {/* staring here gtag */}
       <GoogleAnalytics gaId="G-NYNVJH0DG6" />
