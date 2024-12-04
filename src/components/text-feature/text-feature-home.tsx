@@ -66,7 +66,7 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                   seamless business growth. Our client-centric approach and
                   commitment to excellence make us the preferred partner for
                   organizations looking to achieve technological and operational
-                  excellence in today's dynamic market.
+                  excellence in today&apos;s dynamic market.
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
                   <Link href="/about-us" className="btn-four mt-15 me-4">
