@@ -72,7 +72,7 @@ const RPOSections = ({ cls }: { cls?: string }) => {
         <div className="container">
           <div className="row align-items-center details-meta">
             <div className="title-one">
-              <h3 className="text-center">Recruitment Process Outsourcing</h3>
+              <h3 className="text-center">Tailored Talent Acquisition with Recruitment Process Outsourcing Excellence</h3>
               <p className="text-lg text-center px-4 mb-35 md-mb-30">
                 Recruiting in today&lsquo;s market can be challenging; hiring is often
                 time-consuming and costly due to high demand for the best
