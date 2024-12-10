@@ -22,7 +22,7 @@ const FooterThree = ({style_2}:{style_2?:boolean}) => {
 									</Link>
 								</div> 
 								<p className="lh-sm mb-45 lg-mb-30">2190 Urban Terrace, Mirpur,  <br/>Licensed in 50 states.</p>
-								<p className="m0"><Link href="#">9888912909</Link></p>
+								<p className="m0"><Link href="#">9844406599</Link></p>
 							</div>
 						</div>
 						<div className="col-lg-2 col-sm-4 mb-20">

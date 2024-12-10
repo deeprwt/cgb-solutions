@@ -26,7 +26,7 @@ const HeaderOne = () => {
                 </li>
               <li className="d-flex align-items-center">
                 <Image src={icon_2} alt="icon" className="lazy-img icon me-2" /> 
-                <Link href="tel:9888912909" className="fw-500">9888912909</Link>
+                <Link href="tel:9844406599" className="fw-500">9844406599</Link>
                 </li>
             </ul>
           </div>

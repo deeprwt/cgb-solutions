@@ -29,7 +29,7 @@ const FooterFour = () => {
               </li>
               <li className="d-flex align-items-center">
                 <Image src={icon_2} alt="icon" className="lazy-img icon me-3"/>
-                <Link href="#">9888912909</Link>
+                <Link href="#">9844406599</Link>
               </li>
             </ul>
           </div>
