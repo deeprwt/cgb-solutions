@@ -62,7 +62,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
               <div className="col-xl-7 col-lg-6 order-1 order-lg-2 wow fadeInLeft">
                 <div className="title-one details-meta">
                   {/* <div className="upper-title">About Us</div> */}
-                  <h3>Why Choose Us</h3>
+                  <h3>Transforming Businesses with Cutting-Edge IT Consulting Solutions in India</h3>
                 </div>
                 <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
                   At the heart of CGB Solutions ethos lies an unwavering

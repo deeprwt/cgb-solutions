@@ -25,7 +25,7 @@ const ContactPage = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Contact us for inquiry"
-            subtitle="Get our all info and also can message us directly from here"
+            subtitle="Get in Touch with CGB Solutions, the Leading IT Support Provider."
             page="Contact"
             // // shape={shape}
           />

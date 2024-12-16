@@ -38,7 +38,7 @@ export default function OutSystems() {
           {/* hero banner start */}
           <BreadcrumbOne 
           title="Outsystems"
-          subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+          subtitle="Outsystems: The fast path to innovation with an IT solutions company."
           page="Outsystems"
           bg_img={about_bg}
           // // shape={shape}

@@ -39,7 +39,7 @@ export default function HireTrainDeploy() {
           {/* hero banner start */}
           <BreadcrumbOne 
           title="Hire Train Deploy"
-          subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+          subtitle="Hire Train Deploy: Empowering Businesses with Ready-to-Perform Talent"
           page="Hire Train Deploy "
           bg_img={about_bg}
           // // shape={shape}

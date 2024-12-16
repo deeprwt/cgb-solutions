@@ -38,7 +38,7 @@ export default function PermanentStaffing() {
           {/* hero banner start */}
           <BreadcrumbOne 
           title="RPO"
-          subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+          subtitle="Tailored Talent Acquisition with Recruitment Process Outsourcing Excellence"
           page="RPO"
           bg_img={about_bg}
           // // shape={shape}

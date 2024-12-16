@@ -24,7 +24,7 @@ import ServicenNowSecton from "@/components/solutions/servicenow-section";
 export const metadata: Metadata = {
   title: "ServiceNow Solutions & Consulting | CGB Solutions",
   description : "Streamline your IT operations with CGB Solutions Servicenow Consulting Services in India. We help businesses optimize workflows, automate processes, and improve service delivery",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  keywords : "Servicenow Consulting Services in India",
 };
 
 export default function ServiceNow() {
@@ -38,7 +38,7 @@ export default function ServiceNow() {
           {/* hero banner start */}
           <BreadcrumbOne
             title="ServiceNow"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            subtitle="Automate workflows and service management with expert ServiceNow consulting services"
             page="ServicenNow"
             bg_img={about_bg}
             // // shape={shape}

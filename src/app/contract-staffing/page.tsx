@@ -38,7 +38,7 @@ export default function ContractStaffing() {
           {/* hero banner start */}
           <BreadcrumbOne 
           title="Contract Staffing"
-          subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+          subtitle="Contract Staffing: Flexible Talent Solutions for Dynamic Workforce Needs"
           page="Contract Staffing"
           bg_img={about_bg}
           // // shape={shape}

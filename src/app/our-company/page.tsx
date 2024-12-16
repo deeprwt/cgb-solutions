@@ -32,7 +32,7 @@ export default function OurCompany() {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Our Company"
-            subtitle="Deliver Products and Services That Leave a Positive Impact"
+            subtitle="Empowering enterprises through cutting-edge IT services."
             page="Our Company"
             // // shape={shape}
             bg_img={service_bg}

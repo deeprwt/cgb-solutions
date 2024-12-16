@@ -29,7 +29,7 @@ const ArticlePage = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Our Article"
-            subtitle=""
+            subtitle="The Ultimate Guide to the IT Consulting Process for Businesses."
             page="Article"
             bg_img={blog_bg}
             style_2={true}

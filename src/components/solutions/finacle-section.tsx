@@ -86,33 +86,36 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
               />
             </div>
             <div className="col-xxl-8 col-md-8 order-lg-first wow fadeInRight">
-            <div className="details-meta ps-xxl-5 ps-xl-3">
-              <h3 className="">Who We Are</h3>
-              <p className="text-lg">
-                Finacle is an industry leader in digital banking solutions. We
-                partner with emerging and established financial institutions to
-                inspire better banking. Our cloud-native solution suite and SaaS
-                services help banks to engage, innovate, operate, and transform
-                better.
-              </p>
-              <p className="text-lg">
-                We are a business unit of CGB Solutions Systems, a wholly-owned
-                product subsidiary of Infosys - a global technology leader with
-                over USD 15 billion in annual revenues.
-              </p>
-              <p className="text-lg">
-                We are differentiated by our functionally-rich solution suite,
-                composable architecture, culture, and entrepreneurial spirit of
-                a start-up. We are also known for an impeccable track record of
-                helping financial institutions of all sizes drive digital
-                transformation at speed and scale.
-              </p>
-              <p className="text-lg">
-                Today, financial institutions in more than 100 countries rely on
-                Finacle to help more than a billion people and millions of
-                businesses to save, pay, borrow, and invest better.
-              </p>
-            </div>
+              <div className="details-meta ps-xxl-5 ps-xl-3">
+                <h3 className="">Who We Are</h3>
+                <p className="text-lg">
+                  <b>Finacle Core Banking Solutions</b> is a leader in digital
+                  banking transformation, partnering with both emerging and
+                  established financial institutions to inspire better banking
+                  experiences. Our <b>cloud-native solutions</b> and{" "}
+                  <b>SaaS services</b> empower banks to engage, innovate,
+                  operate, and transform more efficiently, helping them deliver
+                  enhanced services to their customers.
+                </p>
+                <p className="text-lg">
+                  We are a business unit of <b>CGB Solutions System</b>s, a
+                  wholly-owned subsidiary of Infosys, a global technology leader
+                  with over USD 15 billion in annual revenue. Our solutions are
+                  distinguished by a functionally rich suite, composable
+                  architecture, and the entrepreneurial spirit of a start-up.
+                  With an impeccable track record, we have successfully
+                  supported financial institutions of all sizes to drive digital
+                  transformation at speed and scale.
+                </p>
+                <p className="text-lg">
+                  Today, <b>Finacle Core Banking Solutions</b> is trusted by
+                  financial institutions in over 100 countries, helping more
+                  than a billion people and millions of businesses save, pay,
+                  borrow, and invest better. Our innovative solutions empower
+                  banks to scale rapidly and deliver smarter, more efficient
+                  financial services, enabling a transformative digital journey.
+                </p>
+              </div>
             </div>
           </div>
         </div>

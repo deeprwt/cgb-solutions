@@ -83,14 +83,34 @@ const OracleSection = ({ cls }: { cls?: string }) => {
               {/* <div className="upper-title text-center">Oracle Capability</div> */}
               <h2 className="text-center">Oracle Capability</h2>
               <p className="text-lg  px-4 mb-35 md-mb-30">
-                <b>CGB Solutions</b> maintains an experienced and dedicated
-                Oracle Enterprise Application Practice to provide high quality,
-                yet cost effective, accelerated solutions to our growing
-                customer base across multiple geographies and industries. <br />
-                Our services provide you with strategic differentiation and
-                operational superiority. <br />
-                Leverage our experience and methodologies to maximize return on
-                investments for your oracle applications.
+                At <b>CGB Solutions</b>, we maintain an experienced and
+                dedicated Oracle Enterprise Application Practice, offering{" "}
+                <b>Oracle Cloud Services</b> that deliver high-quality,
+                cost-effective, and accelerated solutions to our diverse
+                customer base across multiple industries and geographies. Our
+                services are designed to provide strategic differentiation and
+                operational superiority, enabling businesses to leverage the
+                full potential of Oracle applications. By utilizing our expert
+                methodologies and vast experience, we help clients maximize
+                their return on investment (ROI) from{" "}
+                <b>Oracle Cloud services</b>, ensuring long-term success and
+                seamless integration with their existing business operations.
+              </p>
+              <p className="text-lg  px-4 mb-35 md-mb-30">
+                <b>Oracle Cloud Services</b> enhance business capabilities
+                through automation, scalability, and enhanced security. With CGB
+                Solutions, businesses can seamlessly transition to Oracle Cloud,
+                optimizing their IT infrastructure and enabling improved
+                decision-making processes. Our solutions focus on improving
+                operational efficiency, streamlining business processes, and
+                reducing costs, empowering our clients to stay competitive in
+                today&apos;s dynamic market.
+              </p>
+              <p className="text-lg  px-4 mb-35 md-mb-30">
+                This approach not only strengthens your Oracle application
+                investments but also ensures that your business is equipped to
+                scale, innovate, and achieve greater performance across the
+                board.
               </p>
             </div>
             <div className="col-xl-6 col-lg-6 wow fadeInLeft">
@@ -225,7 +245,6 @@ const OracleSection = ({ cls }: { cls?: string }) => {
       </div>
 
       <TextFeatureTwo />
-
     </>
   );
 };

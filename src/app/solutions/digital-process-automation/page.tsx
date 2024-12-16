@@ -51,7 +51,7 @@ function CardItem({
 export const metadata: Metadata = {
   title: " Digital Process Automation Solutions | CGB Solutions",
   description : "Boost efficiency with CGB Solutions' digital process automation services. We design automated solutions that optimize business workflows and enhance productivity.",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  keywords : "IT business services",
 };
 
 const Vision = () => {
@@ -65,7 +65,7 @@ const Vision = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Digital Process Automation"
-            subtitle="To achieve innovation, excellence, and ingenuity"
+            subtitle="Drive efficiency and Transform your IT business services with Digital Process Automation"
             page="Digital Process Automation"
             // // shape={shape}
             bg_img={service_bg}
@@ -73,6 +73,30 @@ const Vision = () => {
             cls="me-xl-4"
           />
           {/* breadcrumb end */}
+
+          <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
+        <div className="container">
+          <div className="row align-items-center details-meta">
+            <div className="col-md-12 wow fadeInUp">
+              <h3 className="ps-xxl-5 ps-xl-3">
+                ServiceNow Services
+              </h3>
+              <div className="details-meta ps-xxl-5 ps-xl-3">
+                <p className="text-lg mb-35 md-mb-30">
+                CGB Solutions is a trusted partner for <b>Digital Process Automation Services</b>, specializing in building and managing comprehensive RPA ecosystems with <b>Automation Anywhere</b>. Our expertise ensures businesses can identify automation opportunities, implement tailored solutions, and optimize workflows for efficiency.
+
+                </p>
+                <p className="text-lg mb-35 md-mb-30">
+                By automating tedious and repetitive tasks, our services free up your workforce to focus on strategic priorities, improving productivity and reducing operational costs. Our team of certified experts ensures seamless integration, scalable automation strategies, and end-to-end support for sustained success.
+                </p>
+                <p className="text-lg mb-35 md-mb-30">
+                <b>Digital Process Automation Services</b> help organizations enhance process efficiency by automating workflows across departments such as finance, HR, and IT. Leveraging tools like Automation Anywhere, CGB Solutions delivers intelligent solutions that drive agility, scalability, and measurable ROI. From process mapping to bot management, our services ensure businesses stay ahead in their digital transformation journey.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
           {/* service details area start */}
           <div className="text-feature-one mt-80 lg-mt-80 service-details">

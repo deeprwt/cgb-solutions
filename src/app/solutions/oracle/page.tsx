@@ -26,7 +26,7 @@ import ComponentsDiv from "@/components/solutions/components";
 export const metadata: Metadata = {
   title: "Oracle Cloud Solutions & Services India | CGB Solutions",
   description : "CGB Solutions provides tailored Oracle solutions to enhance business processes, integrate systems, and drive efficiency. Maximize your Oracle investment with expert support.",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  keywords : "Oracle Cloud Services in India, Oracle Cloud Integration in India, Oracle Cloud Solutions in India, ",
 };
 
 export default function Oracle() {
@@ -40,7 +40,7 @@ export default function Oracle() {
           {/* hero banner start */}
           <BreadcrumbOne
             title="Oracle"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            subtitle="Streamline Business Operations with Oracle Cloud Integration"
             page="Oracle"
             bg_img={about_bg}
             // // shape={shape}

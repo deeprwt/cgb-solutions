@@ -100,6 +100,7 @@ const AutomationAnywhereSecton = ({ cls }: { cls?: string }) => {
   );
   return (
     <>
+
       {/* starts from here  */}
       <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
         <div className="container">

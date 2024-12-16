@@ -91,14 +91,34 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
               />
             </div>
             <div className="col-xxl-7 col-md-7 wow fadeInRight">
-              <h3 className="ps-xxl-5 ps-xl-3">ServiceNow Services <br /> One Place to Find Them All</h3>
+              <h3 className="ps-xxl-5 ps-xl-3">
+                ServiceNow Services <br /> One Place to Find Them All
+              </h3>
               <div className="details-meta ps-xxl-5 ps-xl-3">
                 <p className="text-lg mb-35 md-mb-30">
-                  ServiceNow consulting encompasses advisory, implementation,
-                  customization, testing, and support of ServiceNow solutions. A
-                  Specialist ServiceNow Partner and an official ServiceNow
-                  Reseller, ScienceSoft shares 13 year-experience in ServiceNow
-                  and offers services to cover all platform-related needs.
+                  Unlock the full potential of your business with{" "}
+                  <b>ServiceNow Consulting Services</b>, offering comprehensive
+                  support for advisory, implementation, customization, testing,
+                  and maintenance of ServiceNow solutions. As a specialist
+                  <b>ServiceNow Partner</b> and an authorized ServiceNow
+                  Reseller, CGB Solutions leverages over 13 years of expertise
+                  to address all platform-related needs efficiently and
+                  effectively.
+                </p>
+                <p className="text-lg mb-35 md-mb-30">
+                  Our tailored services ensure seamless adoption and optimal
+                  utilization of the ServiceNow platform, enabling businesses to
+                  enhance productivity, streamline workflows, and achieve
+                  operational excellence.
+                </p>
+                <p className="text-lg mb-35 md-mb-30">
+                  <b>ServiceNow Consulting Services</b> empower organizations to
+                  automate processes across IT, HR, customer service, and more.
+                  With ServiceNow&apos;s robust capabilities, companies can improve
+                  service delivery, reduce costs, and achieve faster
+                  time-to-value. CGB Solutions' expertise ensures that every
+                  implementation is tailored to your unique requirements,
+                  maximizing ROI and delivering measurable business outcomes.
                 </p>
               </div>
             </div>

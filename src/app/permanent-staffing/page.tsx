@@ -37,7 +37,7 @@ export default function PermanentStaffing() {
           {/* hero banner start */}
           <BreadcrumbOne 
           title="Permanent Staffing"
-          subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+          subtitle="Building Foundations: The Power of Permanent Staffing"
           page="Permanent Staffing"
           bg_img={about_bg}
           // // shape={shape}

@@ -40,7 +40,7 @@ const AboutUsPage = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="About Us"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            subtitle="Delivering Excellence and Driving Innovation with best IT Business Services."
             page="About Us"
             bg_img={about_bg}
             // // shape={shape}
