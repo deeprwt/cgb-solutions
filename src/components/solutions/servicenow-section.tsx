@@ -91,9 +91,6 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
               />
             </div>
             <div className="col-xxl-7 col-md-7 wow fadeInRight">
-              <h3 className="ps-xxl-5 ps-xl-3">
-                ServiceNow Services <br /> One Place to Find Them All
-              </h3>
               <div className="details-meta ps-xxl-5 ps-xl-3">
                 <p className="text-lg mb-35 md-mb-30">
                   Unlock the full potential of your business with{" "}
