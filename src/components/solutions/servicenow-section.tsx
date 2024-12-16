@@ -116,7 +116,7 @@ const ServicenNowSecton = ({ cls }: { cls?: string }) => {
                   automate processes across IT, HR, customer service, and more.
                   With ServiceNow&apos;s robust capabilities, companies can improve
                   service delivery, reduce costs, and achieve faster
-                  time-to-value. CGB Solutions' expertise ensures that every
+                  time-to-value. CGB Solutions expertise ensures that every
                   implementation is tailored to your unique requirements,
                   maximizing ROI and delivering measurable business outcomes.
                 </p>
