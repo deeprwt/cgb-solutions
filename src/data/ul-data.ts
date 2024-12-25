@@ -558,4 +558,64 @@ export const ul_data: IUl[] = [
     ],
     page: "servicenow-4",
   },
+  {
+    id:generateUniqueId(),
+    ul: ["Gain Actionable Insights: Visualize and analyze data in real time with Power BI to make informed business decisions."],
+    page: "powerplatform-1",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Build Custom Applications: Develop tailored apps with Power Apps, even without coding expertise."],
+    page: "powerplatform-1",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Automate Processes: Streamline repetitive tasks using Power Automate, reducing errors and saving time."],
+    page: "powerplatform-1",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Enhance Customer Interaction: Create intelligent chatbots with Power Virtual Agents to provide seamless customer support."],
+    page: "powerplatform-1",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Optimize Customer Relationship Management (CRM): Deliver personalized customer experiences with in-depth insights and efficient workflows."],
+    page: "powerplatform-2",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Enhance Enterprise Resource Planning (ERP): Streamline operations, improve resource management, and drive profitability."],
+    page: "powerplatform-2",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Unify Data Across Departments: Break silos and enable seamless communication across your organization with centralized data."],
+    page: "powerplatform-2",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Drive Strategic Growth: Empower teams with predictive analytics and AI-driven recommendations."],
+    page: "powerplatform-2",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Tailored Solutions: We design solutions that align with your specific goals and challenges."],
+    page: "powerplatform-3",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["End-to-End Support: From consultation to implementation and beyond, we offer continuous support."],
+    page: "powerplatform-3",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Training and Enablement: Empower your team to maximize the potential of these powerful tools."],
+    page: "powerplatform-3",
+  },
+  {
+    id:generateUniqueId(),
+    ul: ["Proven Expertise: With years of experience, we deliver results that drive real business impact."],
+    page: "powerplatform-3",
+  },
 ];
