@@ -39,6 +39,19 @@ const ContactArea = () => {
             <LocationTabsData />
             {/* Location data import */}
           </div>
+          <p className="text-lg text-center px-4 mb-35 md-mb-30">
+            CGB Solutions operates as a global <b>IT Support Provider</b>, with
+            offices strategically located in vibrant cities around the world.
+            Our international presence ensures that businesses receive seamless,
+            round-the-clock IT support and tailored solutions. Whether you need
+            assistance with infrastructure, cloud services, or technical
+            challenges, our team is ready to empower your operations from
+            anywhere in the world. <br />
+            <b>
+              Get in touch with us today and experience the global expertise of
+              CGB Solutions.
+            </b>
+          </p>
 
           <div className="bg-wrapper light-bg mt-80 lg-mt-40">
             <div className="row">

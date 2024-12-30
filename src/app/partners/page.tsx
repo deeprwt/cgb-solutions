@@ -32,7 +32,7 @@ export default function Partners() {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Partners"
-            subtitle="Our trusted partners in delivering world-class IT business solutions."
+            subtitle="Strategic Partners: Innovating with Leading Global IT Consulting Services"
             page="Partners"
             // // shape={shape}
             bg_img={service_bg}

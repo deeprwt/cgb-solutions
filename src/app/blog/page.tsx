@@ -28,7 +28,7 @@ const BlogPage = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Our Blogs"
-            subtitle="Discover How Strategic IT Solutions Drive Efficiency and Success"
+            subtitle="Explore Strategic IT Consulting for Unmatched Business Success"
             page="Blog"
             bg_img={blog_bg}
             style_2={true}

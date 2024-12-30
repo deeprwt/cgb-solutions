@@ -23,7 +23,7 @@ const Sidebar = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      router.push("/login"); // Redirect to login after successful logout
+      router.push("/"); // Redirect to login after successful logout
       notifySuccess("Successfully logged out");
     } catch (error) {
       console.error("Error logging out:", error);

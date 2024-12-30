@@ -87,8 +87,10 @@ const ContractStaffingSection = ({ cls }: { cls?: string }) => {
                 When a flexible work program is right for you
               </h3>
               <p className="text-lg text-center px-4 mb-35 md-mb-30">
-                We are here to help you figure out if flexible staffing services
-                are the right solution for your business.
+                We are here to help you figure out if <b>flexible staffing services</b>
+                are the right solution for your business. <br />
+                At CGB Solutions, we specialize in <b>Contract Staffing Services</b>, providing businesses with the flexibility to bring in skilled temporary talent for seasonal demands, project completions, or short-term needs. Our process ensures seamless onboarding, quick time-to-hire, and thorough candidate evaluations. With a focus on reducing attrition and ensuring compliance with local labor laws, we streamline workforce management while delivering value to your organization.
+
               </p>
             </div>
             <div className="col-xl-6 col-lg-6 wow fadeInRight">

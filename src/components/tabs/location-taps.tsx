@@ -38,7 +38,7 @@ const LocationTabsData = () => {
   return (
     <>
       {/* starts from here  */}
-      <div className="text-feature-one service-details pt-80 lg-pt-80">
+      <div className="text-feature-one service-details pt-40 lg-pt-80">
         <div className="container">
           <div className="row align-items-center details-meta">
             <div className="title-one">

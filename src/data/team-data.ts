@@ -15,6 +15,8 @@ import Kushangi  from "@/assets/images/media/1.jpg"
 import Shobha  from "@/assets/images/media/3.jpg"
 import Anurag from "@/assets/images/media/7.png"
 import Rawan from "@/assets/images/media/8.png"
+import Gaurav from "@/assets/images/media/Gaurav.jpg"
+import Prakshu from "@/assets/images/media/Prakshu.jpg"
 import gif1 from "@/assets/images/media/gif.gif"
 import gif2 from "@/assets/images/media/gif2.gif"
 import gif3 from "@/assets/images/media/gif3.gif"
@@ -37,6 +39,7 @@ const team_data: ITeam[] = [
     name: "John Smith",
     designation: "Manager",
     page: "home",
+    link: "",
     gif: gif1,
   },
   {
@@ -45,6 +48,7 @@ const team_data: ITeam[] = [
     name: "Rylan Blackthorn",
     designation: "Marketing Expert",
     page: "home",
+    link: "",
     gif: gif1,
   },
   {
@@ -53,6 +57,7 @@ const team_data: ITeam[] = [
     name: "Mark Smith",
     designation: "Analysis",
     page: "home",
+    link: "",
     gif: gif1,
   },
   {
@@ -61,6 +66,7 @@ const team_data: ITeam[] = [
     name: "Maria Escolova",
     designation: "Senior Officer",
     page: "home",
+    link: "",
     gif: gif1,
   },
   // home 5
@@ -70,6 +76,7 @@ const team_data: ITeam[] = [
     name: "Stormrider",
     designation: "Owner & Founder",
     page: "home-5",
+    link: "",
     gif: gif1,
   },
   {
@@ -78,6 +85,7 @@ const team_data: ITeam[] = [
     name: "Frostfall",
     designation: "Project Manager",
     page: "home-5",
+    link: "",
     gif: gif1,
   },
   // {
@@ -94,6 +102,7 @@ const team_data: ITeam[] = [
     name: "Rawan Abu Hamdam",
     designation: "Business Development",
     page: "team-three",
+    link: "https://www.linkedin.com/in/rawan-a-h-2558725a/",
     gif: gif1,
   },
   // team three
@@ -101,8 +110,9 @@ const team_data: ITeam[] = [
     id: 9,
     img: Rahul,
     name: "Rahul Sharma",
-    designation: "Finance",
+    designation: "Finance Manger",
     page: "team-three",
+    link: "https://www.linkedin.com/in/rahul-sharma-802153111/",
     gif: gif2,
   },
   // {
@@ -115,18 +125,20 @@ const team_data: ITeam[] = [
   // },
   {
     id: 11,
-    img: Shobha,
-    name: "Shobha M",
-    designation: "Account Manager",
-    page: "home",
+    img: Gaurav,
+    name: "Prakshu Khurana",
+    designation: "HR Manager",
+    page: "team-three",
+    link: "https://www.linkedin.com/in/prakshu-khurana-499b47263/",
     gif: gif1,
   },
   {
     id: 12,
-    img: Kushangi,
-    name: "Kushangi Shrithika",
-    designation: "Social Media ",
-    page: "home",
+    img: Prakshu,
+    name: "Gaurav Agnihotri",
+    designation: "Vice President of Sales",
+    page: "team-three",
+    link: "https://www.linkedin.com/in/gaurav-agnihotri-aa333919/",
     gif: gif4,
   },
   // team page

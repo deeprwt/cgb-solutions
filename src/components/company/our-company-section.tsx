@@ -53,6 +53,10 @@ const OurCompanySection = () => {
             <div className="col-xxl-9 col-lg-9 order-lg-1">
               <div className="details-meta ps-xxl-5 ps-xl-3 pb-30">
                 <h2>Our Journey: Shaping Success with Global IT Consulting Service</h2>
+
+                <p>
+                At <b>CGB Solutions</b>, innovation is more than a promise; it's our essence. We are an <b>IT services leader</b>, delivering transformative solutions that blend unparalleled talent with cutting-edge technology.
+                </p>
                 <p>
                   As we forge ahead, the spirit of innovation is not confined to
                   our internal processes alone. We strive to create an ecosystem

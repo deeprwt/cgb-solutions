@@ -13,6 +13,11 @@ const TeamSingleTwo = ({team,spacing}: {team:ITeam;spacing?: string;}) => {
           className="lazy-img w-100"
           style={{ height: "auto" }}
         />
+         <Link href={team.link}
+          className="round-btn rounded-circle d-flex align-items-center justify-content-center tran3s"
+        >
+          <i className="bi bi-arrow-up-right"></i>
+        </Link>
         {/* <Link href="#"
           className="round-btn rounded-circle d-flex align-items-center h-100 w-100 tran3s"
         > */}
