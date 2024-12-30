@@ -58,7 +58,7 @@ const TeamDetailsArea = () => {
                 <p className="m-0">
                   Her expertise lies in identifying untapped revenue streams,
                   uncovering growth opportunities, and building leadership
-                  capital to ensure sustainable success. Sindhu's visionary
+                  capital to ensure sustainable success. Sindhu&apos;s visionary
                   approach has positioned CGB Solutions as a trusted name in
                   delivering tailored digital solutions to clients across
                   industries. <br />
