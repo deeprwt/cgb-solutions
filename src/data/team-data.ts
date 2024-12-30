@@ -125,7 +125,7 @@ const team_data: ITeam[] = [
   // },
   {
     id: 11,
-    img: Gaurav,
+    img: Prakshu,
     name: "Prakshu Khurana",
     designation: "HR Manager",
     page: "team-three",
@@ -134,7 +134,7 @@ const team_data: ITeam[] = [
   },
   {
     id: 12,
-    img: Prakshu,
+    img: Gaurav,
     name: "Gaurav Agnihotri",
     designation: "Vice President of Sales",
     page: "team-three",
