@@ -20,11 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+        <head>
        {/* Add Google site verification meta tag */}
        <meta
           name="google-site-verification"
           content="fBBPFxWRPec7_HGzyMQf4QHLqalNQO_NJUmDbK23SM4"
         />
+          </head>
       <body>
         <Providers>{children}</Providers>
         {/* <RedirectToUAE /> */}
