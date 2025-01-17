@@ -10,6 +10,7 @@ type Article = {
   author: string;
   post_info: string;
   category: string;
+  metaTitle: string;
   metaKeywords: string;
   metaDescription: string;
   link: string;
