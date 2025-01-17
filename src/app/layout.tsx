@@ -10,7 +10,7 @@ import { FacebookPixelEvents } from "@/components/facebookpixelevents/FacebookPi
 export const metadata: Metadata = {
   title: "CGB Solutions",
   description:
-    "Empower your business with CGB Solutions' IT expertise. Strategic consulting & managed services for peak performance. Contact us.",
+    "Empower your business with CGB Solutions IT expertise. Strategic consulting & managed services for peak performance. Contact us.",
 };
 
 export default function RootLayout({

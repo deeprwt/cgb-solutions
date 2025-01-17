@@ -38,6 +38,7 @@ type Article = {
   author: string;
   post_info: string;
   category: string;
+  metaTitle?: string;
   metaKeywords: string;
   metaDescription: string;
   link: string;
@@ -54,6 +55,7 @@ const AddArticle = () => {
     author: "",
     post_info: "",
     category: "",
+    metaTitle: "",
     metaKeywords: "",
     metaDescription: "",
     link: "",
@@ -203,6 +205,7 @@ const AddArticle = () => {
       author: "",
       post_info: "",
       category: "",
+      metaTitle: "",
       metaKeywords: "",
       metaDescription: "",
       link: "",
@@ -354,6 +357,19 @@ const AddArticle = () => {
                                 setArticle({ ...article, link: e.target.value })
                               }
                             />
+                          </div>
+                          <div className="col-md-12">
+                            <div className="mb-3">
+                              <label htmlFor="metaTitle" className="form-label">Meta Title</label>
+                              <input
+                                type="text"
+                                className="form-control"
+                                required
+                                id="metaTitle"
+                                value={article.metaTitle}
+                                onChange={(e) => setArticle({ ...article, metaTitle: e.target.value })}
+                              />
+                            </div>
                           </div>
                           <div className="col-md-6">
                             <div className="mb-3">
