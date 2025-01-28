@@ -25,9 +25,9 @@ import OutsystemsSection from "@/components/solutions/outsystems-section";
 import PowerPlatformSection from "@/components/solutions/power-platform-sections";
 
 export const metadata: Metadata = {
-    title: "Empower Business with Microsoft Power Platform & Dynamics 365",
-    description : "Leverage Microsoft Power Platform & Dynamics 365 with CGB Solution to boost efficiency, automate processes, and drive growth. Unlock your business potential today!",
-    keywords : "Oracle Cloud Services in India, Oracle Cloud Integration in India, Oracle Cloud Solutions in India, ",
+    title: "Microsoft Power Platform & Dynamic 365 Services | CGB Solutions",
+    description : "Enhance automation and business insights with Power Platform and Dynamic 365 consulting from CGB Solutions.",
+    keywords : "Automation Anywhere Consulting, ServiceNow Integration Services for IT Operations",
   };
 
 export default function PowerPlatform() {
@@ -40,9 +40,9 @@ export default function PowerPlatform() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne 
-          title="Power Platform and Dynamic 365"
+          title="Power Platform and Dynamics 365 Solutions"
           subtitle="Empower Business with Microsoft Power Platform & Dynamics 365"
-          page="Power Platform and Dynamic 365"
+          page="Power Platform and Dynamics 365 Solutions"
           bg_img={about_bg}
           // // shape={shape}
           style_2={true}

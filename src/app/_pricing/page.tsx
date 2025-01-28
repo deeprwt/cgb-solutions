@@ -5,7 +5,7 @@ import HeaderOne from "@/layout/header/header-one";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FooterTwo from "@/layout/footer/footer-two";
 import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
-import PricingArea from "@/components/pricing/pricing-area";
+import PricingArea from "@/components/_pricing/pricing-area";
 
 export const metadata: Metadata = {
   title: "Pricing Page",

@@ -13,9 +13,9 @@ import HeaderTwo from "@/layout/header/Header";
 import TeamDetailsArea from "@/components/team/team-details-area";
 
 export const metadata: Metadata = {
-  title: "Leadership Team - IT Consulting Support | CGB Solutions",
-  description : "Meet the experienced global IT services provider at CGB Solutions. Our leaders are committed to delivering exceptional IT solutions and driving business transformation for our clients.",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  title: "Meet the Leadership Team at CGB Solutions",
+  description : "Explore the visionaries leading CGB Solutions, driving digital innovation and business growth through strategic leadership and expert consulting.",
+  keywords : "leadership team, business leaders, digital transformation experts, IT consultants, leadership vision, CGB Solutions leadership, innovation leaders, tech leadership, executive team",
 };
 
 const Leadership = () => {
@@ -28,9 +28,9 @@ const Leadership = () => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Leadership"
+            title="Leadership Team"
             subtitle="Meet Our Team: Redefining Leadership in IT Business Services"
-            page="Leadership"
+            page="Leadership Team"
             // // shape={shape}
             bg_img={team_bg}
           />

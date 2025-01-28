@@ -24,7 +24,9 @@ import screen from "@/assets/images/solutions/automation/faq.jpg";
 
 
 export const metadata: Metadata = {
-  title: "Automation Anywhere",
+  title: "Automation Anywhere Solutions for Business Efficiency | CGB Solutions",
+  description : "Leverage Automation Anywhere to streamline business processes and enhance efficiency. Discover intelligent automation solutions with CGB Solutions.",
+  keywords : "automation solutions, intelligent automation, business automation, process automation, CGB Solutions, automation software, enterprise automation, Robotic Process Automation (RPA), digital transformation, workflow automation",
 };
 
 export default function AutomationAnywhere() {
@@ -37,9 +39,9 @@ export default function AutomationAnywhere() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne 
-          title="Automation Anywhere"
+          title="Automation Anywhere Solutions"
           subtitle="Unlock business growth with Automation Anywhere guided by top-tier IT consulting services."
-          page="Automation Anywhere"
+          page="Automation Anywhere Solutions"
           bg_img={about_bg}
           // // shape={shape}
           style_2={true}

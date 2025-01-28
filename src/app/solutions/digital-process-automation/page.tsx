@@ -50,8 +50,8 @@ function CardItem({
 
 export const metadata: Metadata = {
   title: " Digital Process Automation Solutions | CGB Solutions",
-  description : "Boost efficiency with CGB Solutions' digital process automation services. We design automated solutions that optimize business workflows and enhance productivity.",
-  keywords : "IT business services",
+  description : "Enhance efficiency with CGB Solutions' Digital Process Automation services. Our expertise in Automation Anywhere, Outsystems, and Mendix streamlines your business processes for optimal performance.",
+  keywords : "Digital Process Automation,Business Process Automation,Automation Anywhere,ServiceNow,Digital Process Automation Services,Business Process Automation Solutions,Automation Anywhere,ServiceNow Integration,digital business automation, automated workflows, business process optimization, digital transformation solutions, automated business systems, productivity improvement strategies, process automation tools, digital workflow design, IT process automation, scalable automation solutions, Services Consulting,ServiceNow,Implementation",
 };
 
 const Vision = () => {
@@ -64,9 +64,9 @@ const Vision = () => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Digital Process Automation"
+            title="Digital Process Automation Solutions"
             subtitle="Drive efficiency and Transform your IT business services with Digital Process Automation"
-            page="Digital Process Automation"
+            page="Digital Process Automation Solutions"
             // // shape={shape}
             bg_img={service_bg}
             style_2={true}

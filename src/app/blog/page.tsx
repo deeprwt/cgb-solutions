@@ -12,9 +12,9 @@ import FooterOne from "@/layout/footer/footer-one";
 import BlogList from "@/components/dynamic/bloglist";
 
 export const metadata: Metadata = {
-  title: "Blog | Latest IT Insights & Business Solutions | CGB Solutions",
-  description : "Stay updated with CGB Solutions blog. Get the latest insights on IT consulting, technology trends, business solutions, and innovation from our expert team.",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  title: "Insights on IT Solutions and Business Trends | CGB Solutions Blog",
+  description : "Stay updated with the latest articles, tips, and insights on IT solutions, business trends, and digital transformation from CGB Solutions expert blog.",
+  keywords : "IT blog, business insights, digital transformation, IT solutions, technology news, business trends, innovation in IT, software solutions, CGB Solutions blog, tech advice",
 };
 
 const BlogPage = () => {

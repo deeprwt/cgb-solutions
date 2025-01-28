@@ -22,9 +22,9 @@ import ParmanentStaffingSection from "@/components/solutions/parmanent-staffing-
 import RPOSections from "@/components/solutions/rpo-section";
 
 export const metadata: Metadata = {
-  title: "Recruitment Process Outsourcing (RPO) | CGB Solutions",
-  description : "CGB Solutions offers Recruitment Process Outsourcing (RPO) services to streamline your hiring process. Our tailored solutions ensure you find the right talent quickly.",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  title: "RPO Services for Efficient Recruitment | CGB Solutions",
+  description : "Outsource your recruitment with CGB Solutions. Get tailored RPO services that streamline hiring processes and deliver top talent",
+  keywords : "RPO services, recruitment outsourcing, talent acquisition, recruitment process outsourcing, hiring solutions, recruitment strategy, outsourced recruitment, recruitment experts, CGB Solutions, staffing solutions.",
 };
 
 export default function PermanentStaffing() {
@@ -37,9 +37,9 @@ export default function PermanentStaffing() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne 
-          title="RPO"
+          title="Recruitment Process Outsourcing (RPO)"
           subtitle="Tailored Talent Acquisition with Recruitment Process Outsourcing Excellence"
-          page="RPO"
+          page="Recruitment Process Outsourcing (RPO)"
           bg_img={about_bg}
           // // shape={shape}
           style_2={true}

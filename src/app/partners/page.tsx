@@ -16,9 +16,9 @@ import PartnersSection from "@/components/company/partners-section";
 
 
 export const metadata: Metadata = {
-  title: "Our Partners - Global IT Consulting | CGB Solutions",
-  description : "CGB Solutions collaborates with industry-leading partners to deliver cutting-edge IT solutions. Explore our strategic partnerships that enhance innovation and client success.",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  title: "Our Trusted Partners in IT and Business Solutions | CGB Solutions",
+  description : "Partnering with global technology leaders, CGB Solutions ensures top-tier IT and business services. Discover our strategic alliances and partnerships.",
+  keywords : "technology partners, business partnerships, IT partnerships, strategic alliances, cloud technology partners, business service providers, CGB Solutions partners, IT vendor solutions",
 };
 
 export default function Partners() {
@@ -31,9 +31,9 @@ export default function Partners() {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Partners"
+            title="Partners and Alliances"
             subtitle="Strategic Partners: Innovating with Leading Global IT Consulting Services"
-            page="Partners"
+            page="Partners and Alliances"
             // // shape={shape}
             bg_img={service_bg}
             style_2={true}

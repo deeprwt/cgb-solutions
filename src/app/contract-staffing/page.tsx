@@ -22,9 +22,9 @@ import SectionSol1 from "@/components/two-col/section-sol1";
 import ContractStaffingSection from "@/components/solutions/contract-staffing-section";
 
 export const metadata: Metadata = {
-  title: "Contract Staffing Solutions India | CGB Solutions",
-  description : "CGB Solutions offers flexible contract staffing solutions, providing skilled professionals to meet short-term business needs across industries. Hire top talent with ease.",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  title: "Workforce Solutions and Contract Staffing Services | CGB Solutions",
+  description : "Optimize your workforce with CGB Solutions' contract staffing services. Our flexible staffing strategies and workforce management consulting provide skilled temporary talent to meet your business needs.",
+  keywords : "Contract Staffing,workforce solutions, staffing Staffing Solutions,Workforce Management,Temporary Staffing,Temporary Staffing,Workforce Management Consulting,Hire-Train-Deploy Services,IT Talent Acquisition,IT Contract Staffing Services,contract staffing solutions, hire-train-deploy services, workforce management consulting, recruitment process outsourcing, flexible staffing strategies, skill gap bridging, IT talent acquisition, permanent staffing solutions, employment lifecycle optimization, scalable recruitment models",
 };
 
 export default function ContractStaffing() {
@@ -37,9 +37,9 @@ export default function ContractStaffing() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne 
-          title="Contract Staffing"
+          title="Contract Staffing Services"
           subtitle="Expert contract staffing services to Enhance your IT solutions"
-          page="Contract Staffing"
+          page="Contract Staffing Services"
           bg_img={about_bg}
           // // shape={shape}
           style_2={true}

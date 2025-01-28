@@ -24,8 +24,8 @@ import screen from "@/assets/images/solutions/oracle/faq.jpg";
 import ComponentsDiv from "@/components/solutions/components";
 
 export const metadata: Metadata = {
-  title: "Oracle Cloud Solutions & Services India | CGB Solutions",
-  description : "CGB Solutions provides tailored Oracle solutions to enhance business processes, integrate systems, and drive efficiency. Maximize your Oracle investment with expert support.",
+  title: "Oracle Solutions and Services | Oracle Consulting & Cloud Support",
+  description : "Explore professional Oracle solutions, consulting, and Oracle cloud services. From Oracle E-Business Suite to Fusion Applications, we provide tailored support for seamless integration, upgrades, and management.",
   keywords : "Oracle Cloud Services in India, Oracle Cloud Integration in India, Oracle Cloud Solutions in India, ",
 };
 
@@ -39,9 +39,9 @@ export default function Oracle() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne
-            title="Oracle"
+            title="Oracle Solutions and Services"
             subtitle="Streamline Business Operations with Oracle Cloud Integration"
-            page="Oracle"
+            page="Oracle Solutions and Services"
             bg_img={about_bg}
             // // shape={shape}
             style_2={true}

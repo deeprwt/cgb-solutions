@@ -23,9 +23,9 @@ import FinacleSecton from "@/components/solutions/finacle-section";
 import screen from "@/assets/images/solutions/Finacle/faq.jpg";
 
 export const metadata: Metadata = {
-  title: "Finacle Core Banking Solutions in India | CGB Solutions",
-  description : "Transform your banking operations with CGB Solutions’ Finacle services. We offer seamless integration, implementation, and support for Finacle's core banking solutions.",
-  keywords : "Finacle Core Banking Solutions in India",
+  title: "Finacle Core Banking | Next-Generation Banking with CGB Solutions",
+  description : "Enhance banking efficiency with CGB’s Finacle Core Banking expertise for financial technology innovation.",
+  keywords : "Finacle core banking, banking solutions,core banking solutions, Finacle consulting services, digital banking innovation, banking technology customization, financial software implementation, core banking optimization, digital finance solutions, customized banking software, Finacle cloud solutions, banking process automation,",
 };
 
 export default function Finacle() {
@@ -38,9 +38,9 @@ export default function Finacle() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne
-            title="Finacle Core Banking"
+            title="Finacle Core Banking Solutions"
             subtitle="Finacle Core Banking: Transform your financial services with Finacle Core Banking Solutions"
-            page="Finacle Core Banking"
+            page="Finacle Core Banking Solutions"
             bg_img={about_bg}
             // // shape={shape}
             style_2={true}

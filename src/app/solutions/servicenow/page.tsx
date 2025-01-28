@@ -22,9 +22,9 @@ import screen from "@/assets/images/solutions/servicenow/faq.jpg";
 import ServicenNowSecton from "@/components/solutions/servicenow-section";
 
 export const metadata: Metadata = {
-  title: "ServiceNow Solutions & Consulting | CGB Solutions",
-  description : "Streamline your IT operations with CGB Solutions Servicenow Consulting Services in India. We help businesses optimize workflows, automate processes, and improve service delivery",
-  keywords : "Servicenow Consulting Services in India",
+  title: "ServiceNow Consulting | IT Service Management Simplified with CGB Solutions",
+  description : "Optimize workflows and IT operations with CGB Solutions' ServiceNow consulting services, from implementation to customization for seamless efficiency.",
+  keywords : "ServiceNow solutions, IT automation,ServiceNow consulting services, IT process optimization, ServiceNow ITSM implementation, workflow automation experts, customized IT solutions, IT service management software, ServiceNow cloud solutions, automated IT processes, ServiceNow module customization, digital service optimization,ServiceNow consulting, ServiceNow implementation, IT service management, ITSM consulting, ServiceNow solutions, workflow automation, ServiceNow customization, ServiceNow optimization, IT workflows, IT operations, enterprise IT management, ServiceNow integrations, ServiceNow platform solutions, process efficiency tools, IT workflow automation, IT service solutions, advanced ITSM, business automation tools, scalable ServiceNow solutions, enterprise ServiceNow services, ServiceNow implementation strategy, process optimization tools, IT efficiency solutions, ServiceNow enterprise tools, ServiceNow workflow management, streamlined IT operations.",
 };
 
 export default function ServiceNow() {
@@ -37,9 +37,9 @@ export default function ServiceNow() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne
-            title="ServiceNow"
+            title="ServiceNow Implementation and Consulting"
             subtitle="Automate workflows and service management with expert ServiceNow consulting services"
-            page="ServicenNow"
+            page="ServiceNow Implementation and Consulting"
             bg_img={about_bg}
             // // shape={shape}
             style_2={true}

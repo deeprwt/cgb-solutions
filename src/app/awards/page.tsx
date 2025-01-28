@@ -14,7 +14,9 @@ import AwardsSection from "@/components/company/awards-section";
 
 
 export const metadata: Metadata = {
-  title: "Awards - CGB's",
+  title: "Industry Awards & Recognition | CGB Solutions | Excellence in IT Consulting",
+  description : "CGB Solutions has earned multiple industry awards for excellence in IT consulting and digital services. Discover our commitment to quality and customer satisfaction.",
+  keywords : "IT consulting awards, industry recognition, CGB Solutions awards, excellence in IT, digital services recognition, best IT consulting, industry leadership, award-winning IT services, technology solutions awards, customer satisfaction awards, innovation in IT, technology excellence, consulting awards, CGB Solutions recognition, top IT firm, IT industry leaders, prestigious awards, tech consulting achievements, award-winning solutions, technology excellence awards, IT services accolades.",
 };
 
 export default function Mission() {
@@ -27,9 +29,9 @@ export default function Mission() {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Awards"
+            title="Awards and Achievements"
             subtitle="Offering solutions & services to address a spectrum of financial issues"
-            page="Awards"
+            page="Awards and Achievements"
             // // shape={shape}
             bg_img={service_bg}
             style_2={true}

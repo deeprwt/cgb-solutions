@@ -22,7 +22,9 @@ import screen from "@/assets/images/solutions/mendix/faq.jpg";
 import SectionSol1 from "@/components/two-col/section-sol1";
 
 export const metadata: Metadata = {
-  title: "Mendix",
+  title: "Mendix Solutions: Low-Code Application Development Platform",
+  description : "Find the right Mendix solution for your business needs. Explore our platform, services, and partner ecosystem.",
+  keywords : "Mendix low-code platform,Mendix, low-code development, app development, agile apps, enterprise solutions, CGB Solutions, Mendix platform, app automation, rapid development, digital transformation,Low-code development platform,Low-code development platform,Low-code solutions,Mendix app development,Low-code solutions,Mendix for business solutions,Build apps with Mendix,Smart Automation,",
 };
 
 export default function Mendix() {
@@ -35,9 +37,9 @@ export default function Mendix() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne
-            title="Mendix"
+            title="Mendix Application Development Solutions"
             subtitle="Optimize your application development with Mendix using strategic IT consulting solutions."
-            page="Mendix"
+            page="Mendix Application Development Solutions"
             bg_img={about_bg}
             // // shape={shape}
             style_2={true}

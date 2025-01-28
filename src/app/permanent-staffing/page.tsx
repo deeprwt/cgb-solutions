@@ -21,9 +21,9 @@ import FooterOne from "@/layout/footer/footer-one";
 import ParmanentStaffingSection from "@/components/solutions/parmanent-staffing-section";
 
 export const metadata: Metadata = {
-  title: "Permanent Staffing Solutions | CGB Solutions",
-  description : "CGB Solutions provides permanent staffing services to help businesses recruit top-tier professionals for long-term roles. We deliver customized talent acquisition solutions.",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  title: "Permanent Staffing Solutions for Seamless Hiring | CGB Solutions",
+  description : "Hire top permanent staff with CGB Solutions. We offer customized recruitment strategies to fulfill your talent needs quickly and effectively.",
+  keywords : "permanent staffing, talent acquisition, recruitment, staffing solutions, hiring strategies, talent management, direct hire, workforce solutions, CGB Solutions, job placement services,staffing solutions,talent management,permanent recruitment,direct hire services,",
 };
 
 export default function PermanentStaffing() {
@@ -36,9 +36,9 @@ export default function PermanentStaffing() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne 
-          title="Permanent Staffing"
+          title="Permanent Staffing Solutions"
           subtitle="Building Foundations: The Power of Permanent Staffing"
-          page="Permanent Staffing"
+          page="Permanent Staffing Solutions"
           bg_img={about_bg}
           // // shape={shape}
           style_2={true}

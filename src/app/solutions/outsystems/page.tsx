@@ -24,7 +24,9 @@ import screen from "@/assets/images/solutions/outsystems/faq.jpg";
 import OutsystemsSection from "@/components/solutions/outsystems-section";
 
 export const metadata: Metadata = {
-  title: "Outsystems - CGB's",
+  title: "OutSystems Services | Fast Low-Code Development Platform Solutions",
+  description : "Accelerate app development with Outsystems low-code platform. Build scalable, innovative apps quickly with CGB Solutions.",
+  keywords : "OutSystems Services, OutSystems Consulting,, Fast Low-Code Development, Low-Code Development Platform Solutions,Outsystems, low-code platform, app development, app automation, CGB Solutions, enterprise apps, software development, scalable apps, low-code solutions, rapid application development,Mobile App Development ,",
 };
 
 export default function OutSystems() {
@@ -37,9 +39,9 @@ export default function OutSystems() {
         <main>
           {/* hero banner start */}
           <BreadcrumbOne 
-          title="Outsystems"
+          title="OutSystems Low-Code Development Solutions"
           subtitle="Outsystems: The fast path to innovation with an IT solutions company."
-          page="Outsystems"
+          page="OutSystems Low-Code Development Solutions"
           bg_img={about_bg}
           // // shape={shape}
           style_2={true}

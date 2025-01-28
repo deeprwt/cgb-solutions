@@ -24,9 +24,9 @@ import HowWeDo from "@/components/home-data/how-we-do";
 import logo_2 from "@/assets/images/logo/logome.png";
 
 export const metadata: Metadata = {
-  title: "About Us - IT Consulting & Business Solutions India",
-  description : "Learn more about CGB Solutions, a global leader in IT consulting and business technology services. Explore our mission to provide innovative IT solutions and support.",
-  keywords : "IT consulting, financial growth, insightful solutions",
+  title: "About CGB Solutions | Leading IT Consulting and Business Solutions Provider",
+  description : "At CGB Solutions, we specialize in innovative IT consulting, staffing, and business solutions. Our mission is to empower businesses with cutting-edge technology, ensuring exceptional service and success.",
+  keywords : "IT consulting, business solutions, IT services provider, technology consulting, digital transformation, staff augmentation, custom IT solutions, IT staffing services, innovation in IT, IT strategy consulting, IT consulting for businesses, IT solutions for small businesses, enterprise IT services, technology consulting firms, professional IT consulting, digital business solutions, managed IT services, IT infrastructure solutions, business technology solutions, IT support services, IT consulting firm",
 };
 
 const AboutUsPage = () => {
