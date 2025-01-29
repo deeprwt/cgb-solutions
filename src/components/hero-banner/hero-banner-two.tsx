@@ -75,13 +75,13 @@ const HeroBannerTwo = () => {
                 >
                   Maximize Oracle&apos;s potential with our tailored services - comprehensive offerings from database management to seamless cloud integration, ensuring unparalleled business performance.
                 </p>
-                {/* <Link href="/contact"
+                <Link href="#contact"
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
                   <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
-                </Link> */}
+                </Link> 
               </div>
             </div>
           </div>
@@ -100,13 +100,13 @@ const HeroBannerTwo = () => {
                   Innovate effortlessly with our Low Code No Code solutions. Empower teams, accelerate time-to-market,
                    and achieve groundbreaking solutions with user-friendly platforms.
                 </p>
-                  {/* <Link href="/contact"
+                  <Link href="#contact"
                     className="btn-two icon-link wow fadeInUp"
                     data-wow-delay="0.2s"
                   >
                     <span>Let&apos;s Talk</span>
                     <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
-                  </Link> */}
+                  </Link>
               </div>
             </div>
           </div>
@@ -125,13 +125,13 @@ const HeroBannerTwo = () => {
                   Confidently navigate Salesforce complexities with our expert consulting. From implementation to optimization,
                    propel your business with bespoke solutions, transforming customer relationships.
                 </p>
-                {/* <Link href="/contact"
+                <Link href="#contact"
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
                   <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
-                </Link> */}
+                </Link> 
               </div>
             </div>
           </div>
@@ -150,13 +150,13 @@ const HeroBannerTwo = () => {
                   Optimize efficiency with our ServiceNow solutions. Seamless implementation, 
                   tailored customization, and expert optimization transform IT service management.
                 </p>
-                {/* <Link href="/contact"
+                <Link href="#contact"
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
                   <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
-                </Link> */}
+                </Link> 
               </div>
             </div>
           </div>
@@ -174,13 +174,13 @@ const HeroBannerTwo = () => {
                 >
                   Enhance your brand with our holistic digital marketing—SEO, social media, content finesse, and analytics for tangible online success.
                 </p>
-                {/* <Link href="/contact"
+                <Link href="#contact"
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
                   <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
-                </Link> */}
+                </Link> 
               </div>
             </div>
           </div>
@@ -199,19 +199,19 @@ const HeroBannerTwo = () => {
                   Confidently navigate Salesforce complexities with our expert consulting. From implementation to optimization,
                    propel your business with bespoke solutions, transforming customer relationships.
                 </p>
-                {/* <Link href="/contact"
+                <Link href="#contact"
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
                   <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
-                </Link> */}
+                </Link> 
               </div>
             </div>
           </div>
         </div>
       </Slider>
-      <Link href="/contact"
+      <Link href="#contact"
         className="more-btn rounded-circle d-flex align-items-center justify-content-center tran3s wow fadeInLeft"
         target="_blank"
       >
