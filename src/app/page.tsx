@@ -25,6 +25,8 @@ import Wrapper from "@/layout/wrapper";
 import type { Metadata } from "next";
 import Image from "next/image";
 import clogo from "@/assets/images/cgbhome/testlogo.png"
+import ContactForm from "@/components/forms/contact-form";
+import icon_4 from "@/assets/images/assets/ils_07.svg";
 
 export const metadata: Metadata = {
   title: "IT Solutions and Business Management Consultant Company | CGB Solutions",
@@ -112,8 +114,42 @@ export default function HomePage() {
           <HomeTwoBlogs />
           {/* blog item end */}
 
+          <div className="contact-us-section pt-80 pb-80 lg-pt-80">
+      <div className="container">
+        <div className="position-relative">
+          <div className="bg-wrapper light-bg mt-80 lg-mt-40">
+            <div className="row">
+              <div className="col-lg-5">
+                <div className="d-flex flex-column flex-lg-column-reverse">
+                  <div className="row">
+                    <div className="col-md-8 col-6 me-auto ms-auto">
+                      <Image
+                        src={icon_4}
+                        alt="icon"
+                        className="lazy-img me-auto ms-auto"
+                      />
+                    </div>
+                  </div>
+                  <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
+                    <h2>Have inquiry? Reach to out us via message...</h2>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-7">
+                <div className="form-style-one ps-xl-5">
+                  {/* form start */}
+                  <ContactForm />
+                  {/* form end */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
           {/* fancy banner two start */}
-          <FancyBannerTwo />
+          {/* <FancyBannerTwo /> */}
           {/* fancy banner two end */}
         </main>
 

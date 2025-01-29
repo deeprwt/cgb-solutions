@@ -79,7 +79,7 @@ const HeroBannerTwo = () => {
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let’s Talk</span>
+                  <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> */}
               </div>
@@ -100,13 +100,13 @@ const HeroBannerTwo = () => {
                   Innovate effortlessly with our Low Code No Code solutions. Empower teams, accelerate time-to-market,
                    and achieve groundbreaking solutions with user-friendly platforms.
                 </p>
-                {/* <Link href="/contact"
-                  className="btn-two icon-link wow fadeInUp"
-                  data-wow-delay="0.2s"
-                >
-                  <span>Let’s Talk</span>
-                  <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
-                </Link> */}
+                  {/* <Link href="/contact"
+                    className="btn-two icon-link wow fadeInUp"
+                    data-wow-delay="0.2s"
+                  >
+                    <span>Let&apos;s Talk</span>
+                    <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
+                  </Link> */}
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ const HeroBannerTwo = () => {
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let’s Talk</span>
+                  <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> */}
               </div>
@@ -154,7 +154,7 @@ const HeroBannerTwo = () => {
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let’s Talk</span>
+                  <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> */}
               </div>
@@ -178,7 +178,7 @@ const HeroBannerTwo = () => {
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let’s Talk</span>
+                  <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> */}
               </div>
@@ -203,7 +203,7 @@ const HeroBannerTwo = () => {
                   className="btn-two icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let’s Talk</span>
+                  <span>Let&apos;s Talk</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> */}
               </div>

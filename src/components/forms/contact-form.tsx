@@ -14,7 +14,8 @@ import { addDoc, collection } from "firebase/firestore"; // Import Firestore fun
 type FormData = {
   name: string;
   email: string;
-  websiteurl: string;
+  number: string;
+  // websiteurl: string;
   companyname: string;
   message: string;
 };
@@ -22,7 +23,11 @@ type FormData = {
 const schema = yup.object().shape({
   name: yup.string().required().label("Name"),
   email: yup.string().required().email().label("Email"),
-  websiteurl: yup.string().required().label("Website Url"),
+  number: yup
+  .string()
+  .required("Phone Number is required")
+  .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits"),
+  // websiteurl: yup.string().required().label("Website Url"),
   companyname: yup.string().required().label("Company Name"),
   message: yup.string().required().min(10).label("Message"),
 });
@@ -64,7 +69,7 @@ const ContactForm = () => {
       <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
         <div className="messages"></div>
         <div className="row controls">
-          <div className="col-12">
+          <div className="col-12 col-md-6">
             <div className="input-group-meta form-group mb-30">
               <label htmlFor="">Name*</label>
               <input
@@ -79,7 +84,7 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 col-md-6">
             <div className="input-group-meta form-group mb-30">
               <label htmlFor="">Email*</label>
               <input
@@ -94,7 +99,30 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 col-md-6">
+            <div className="input-group-meta form-group mb-30">
+              <label htmlFor="">
+                Phone Number*
+              </label>
+              <input
+                type="number"
+                {...register("number")}
+                id="number"
+                placeholder="Enter Your Phone Number"
+                maxLength={10}
+                pattern="\d{10}"
+                onInput={(e) => {
+                  if (e.currentTarget.value.length > 10) {
+                    e.currentTarget.value = e.currentTarget.value.slice(0, 10); // Restrict input to 10 digits
+                  }
+                }}
+              />
+              <div className="help-block with-errors">
+                <ErrorMsg msg={errors.number?.message!} />
+              </div>
+            </div>
+          </div>
+          {/* <div className="col-12 col-md-6">
             <div className="input-group-meta form-group mb-30">
               <label htmlFor="">Website Url*</label>
               <input
@@ -108,8 +136,8 @@ const ContactForm = () => {
                 <ErrorMsg msg={errors.websiteurl?.message!} />
               </div>
             </div>
-          </div>
-          <div className="col-12">
+          </div> */}
+          <div className="col-12 col-md-6">
             <div className="input-group-meta form-group mb-40">
               <label htmlFor="">Company Name*</label>
               <input
@@ -127,7 +155,7 @@ const ContactForm = () => {
           <div className="col-12">
             <div className="input-group-meta form-group mb-35">
               <textarea
-                placeholder="Your message*"
+                placeholder="Service Required*"
                 {...register("message")}
                 id="message"
                 name="message"
