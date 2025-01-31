@@ -24,14 +24,17 @@ import Header from "@/layout/header/Header";
 import Wrapper from "@/layout/wrapper";
 import type { Metadata } from "next";
 import Image from "next/image";
-import clogo from "@/assets/images/cgbhome/testlogo.png"
+import clogo from "@/assets/images/cgbhome/testlogo.png";
 import ContactForm from "@/components/forms/contact-form";
 import icon_4 from "@/assets/images/assets/ils_07.svg";
 
 export const metadata: Metadata = {
-  title: "IT Solutions and Business Management Consultant Company | CGB Solutions",
-  description: "CGB Solution, a leading IT services and Business Management Consultant company, offers cutting-edge IT solutions and Business consulting to drive efficiency and success for your business.",
-  keywords: "IT services, IT support, IT company,IT solutions,IT consulting,IT services company,IT consulting companies,IT support companies,IT solutions company,IT consulting services, Integrated technology services,Top IT companies,Best IT company IT business solutions,Strategic technology solutions,IT outsourcing company,IT solutions provider,IT consulting firm ,IT services provider ,IT support services ,IT solutions and services ,IT services and solutions ,IT support and services,IT services for small business ,IT solutions for businesses,IT consulting for enterprises ,IT solutions and services,IT services and solutions,IT support and services,IT services for small businesses,IT solutions for businesses,digital transformation services,technology solutions,business management consultant,software company in India,it services & consulting,IT consulting for enterprises ,",  
+  title:
+    "IT Solutions and Business Management Consultant Company | CGB Solutions",
+  description:
+    "CGB Solution, a leading IT services and Business Management Consultant company, offers cutting-edge IT solutions and Business consulting to drive efficiency and success for your business.",
+  keywords:
+    "IT services, IT support, IT company,IT solutions,IT consulting,IT services company,IT consulting companies,IT support companies,IT solutions company,IT consulting services, Integrated technology services,Top IT companies,Best IT company IT business solutions,Strategic technology solutions,IT outsourcing company,IT solutions provider,IT consulting firm ,IT services provider ,IT support services ,IT solutions and services ,IT services and solutions ,IT support and services,IT services for small business ,IT solutions for businesses,IT consulting for enterprises ,IT solutions and services,IT services and solutions,IT support and services,IT services for small businesses,IT solutions for businesses,digital transformation services,technology solutions,business management consultant,software company in India,it services & consulting,IT consulting for enterprises ,",
 };
 
 export default function HomePage() {
@@ -63,7 +66,7 @@ export default function HomePage() {
           {/* tabs are for solutions start */}
           <TabsData />
           {/* tabs are for solutions start */}
-   
+
           <StaffingSolutions />
 
           {/* clints logo start  */}
@@ -115,38 +118,38 @@ export default function HomePage() {
           {/* blog item end */}
 
           <div className="contact-us-section pt-80 pb-80 lg-pt-80" id="contact">
-      <div className="container">
-        <div className="position-relative">
-          <div className="bg-wrapper light-bg mt-80 lg-mt-40">
-            <div className="row">
-              <div className="col-lg-5">
-                <div className="d-flex flex-column flex-lg-column-reverse">
+            <div className="container">
+              <div className="position-relative">
+                <div className="bg-wrapper light-bg mt-80 lg-mt-40">
                   <div className="row">
-                    <div className="col-md-8 col-6 me-auto ms-auto">
-                      <Image
-                        src={icon_4}
-                        alt="icon"
-                        className="lazy-img me-auto ms-auto"
-                      />
+                    <div className="col-lg-5">
+                      <div className="d-flex flex-column flex-lg-column-reverse">
+                        <div className="row">
+                          <div className="col-md-8 col-6 me-auto ms-auto">
+                            <Image
+                              src={icon_4}
+                              alt="icon"
+                              className="lazy-img me-auto ms-auto"
+                            />
+                          </div>
+                        </div>
+                        <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
+                          <h2>Have inquiry? Reach to out us via message...</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-7">
+                      <div className="form-style-one ps-xl-5">
+                        {/* form start */}
+                        <ContactForm />
+                        {/* form end */}
+                      </div>
                     </div>
                   </div>
-                  <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
-                    <h2>Have inquiry? Reach to out us via message...</h2>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-7">
-                <div className="form-style-one ps-xl-5">
-                  {/* form start */}
-                  <ContactForm />
-                  {/* form end */}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
           {/* fancy banner two start */}
           {/* <FancyBannerTwo /> */}

@@ -12,7 +12,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // internal
 import bg_image from "@/assets/images/solutions/mendix.jpg";
-
+import icon_4 from "@/assets/images/assets/ils_07.svg";
 import icons from "@/assets/images/icon/icon_09.svg";
 import icon_2 from "@/assets/images/icon/icon_10.svg";
 import icon_3 from "@/assets/images/icon/icon_11.svg";
@@ -20,6 +20,7 @@ import shape from "@/assets/images/shape/shape_05.svg";
 import about from "@/assets/images/assets/screen_14.png";
 import mission from '@/assets/images/icon/icon_1021.png';
 import vision from '@/assets/images/icon/icon_1023.png';
+import ContactForm from "@/components/forms/contact-form";
 
 // card item
 function CardItem({
@@ -156,6 +157,39 @@ const Vision = () => {
             </div>
           </div>
           {/* service details area end */}
+          <div className="contact-us-section pt-80 pb-80 lg-pt-80" id="contact">
+            <div className="container">
+              <div className="position-relative">
+                <div className="bg-wrapper light-bg mt-80 lg-mt-40">
+                  <div className="row">
+                    <div className="col-lg-5">
+                      <div className="d-flex flex-column flex-lg-column-reverse">
+                        <div className="row">
+                          <div className="col-md-8 col-6 me-auto ms-auto">
+                            <Image
+                              src={icon_4}
+                              alt="icon"
+                              className="lazy-img me-auto ms-auto"
+                            />
+                          </div>
+                        </div>
+                        <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
+                          <h2>Have inquiry? Reach to out us via message...</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-7">
+                      <div className="form-style-one ps-xl-5">
+                        {/* form start */}
+                        <ContactForm />
+                        {/* form end */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
 
         {/* footer start */}
@@ -163,9 +197,6 @@ const Vision = () => {
         <FooterOne />
         {/* footer end */}
       </div>
-                    {/* add tidio scritp for chat bot */}
-                    <script src="//code.tidio.co/ohsdb1pchgfjw1yfgmpk8nx3haysxugt.js" async></script>
-        {/* add tidio scritp for chat bot */}
     </Wrapper>
   );
 };

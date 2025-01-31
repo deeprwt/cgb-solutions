@@ -39,7 +39,7 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <>
       {!style_2 && (
-        <div className="text-feature-one service-details mt-150 lg-mt-100">
+        <div className="text-feature-one service-details mt-80 lg-mt-80">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-6 col-lg-6 wow fadeInLeft">
@@ -58,9 +58,10 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                 </p>
                 <p className="text-lg">
                   CGB Solutions, a trusted name in the industry, excels in
-                  offering cutting-edge <b>IT solutions and services in India</b>,
-                  tailored to empower businesses with innovative technologies
-                  and strategic expertise. As a premier <b>IT solutions company</b>, we
+                  offering cutting-edge{" "}
+                  <b>IT solutions and services in India</b>, tailored to empower
+                  businesses with innovative technologies and strategic
+                  expertise. As a premier <b>IT solutions company</b>, we
                   specialize in delivering comprehensive services that drive
                   digital transformation, optimize operations, and ensure
                   seamless business growth. Our client-centric approach and
@@ -93,9 +94,12 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
         </div>
       )}
       {style_2 && (
-        <div className="container">
-          <div className="counter-wrapper lg-mt-20 lg-mb-20">
+        <div className="container light-bg ">
+          <div className="counter-wrapper pt-80 lg-pt-40 pb-80 lg-pb-40 service-details">
             <div className="row">
+              <div className="title-one details-meta text-center">
+                <h3>Our Trusted Partners</h3>
+              </div>
               <div className="col-md-3 col-6">
                 <CounterBlock num={160} text="+" title="Clients" />
               </div>

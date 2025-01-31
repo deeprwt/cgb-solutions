@@ -94,11 +94,11 @@
         .blog-title {
             // width: 70%;
             width: 80%;
-            h4 {
+            h4,h1 {
                 font-size: 32px;
                 line-height: 1.281em;  
             }
-            &:hover h4 {
+            &:hover h4,h1 {
                 text-decoration: underline;
             }
         }
@@ -249,7 +249,7 @@
             left: 50%;
             transform: translate(-50% , -50%);
         }
-        .blog-title h4 {
+        .blog-title h4,h1 {
             font-size: 43px;
             line-height: 1.302em;
             margin: 0;
