@@ -94,11 +94,12 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
         </div>
       )}
       {style_2 && (
-        <div className="container light-bg ">
+        <div className="container">
           <div className="counter-wrapper pt-80 lg-pt-40 pb-80 lg-pb-40 service-details">
             <div className="row">
               <div className="title-one details-meta text-center">
-                <h3>Our Trusted Partners</h3>
+                <h3>Your search ends here.</h3>
+                <div class="upper-title">Learn why businesses trust CGB Solutions to power growth</div>
               </div>
               <div className="col-md-3 col-6">
                 <CounterBlock num={160} text="+" title="Clients" />
