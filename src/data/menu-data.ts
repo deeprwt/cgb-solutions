@@ -112,7 +112,7 @@ const menu_data: IMenu[] = [
       },
       { link: "/contract-staffing", title: "Workforce Solutions" },
       { link: "/solutions/power-platform-dynamic-365", title: "Power Platform and Dynamic 365" },
-      { link: "https://studios.cgbsolution.com", title: "Digital Services" },
+      { link: "https://cgb-studios.com", title: "Digital Services" },
     ],
   },
   // {
