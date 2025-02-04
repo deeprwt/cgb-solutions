@@ -30,7 +30,7 @@ const BlogItemTwo: React.FC<ArticleCardProps> = ({ article }) => {
         className="post-img position-relative d-flex justify-content-end align-items-end m0"
         style={{ backgroundImage: `url(${article.imageUrl || article.image})`, height: "252px" }}
       >
-        <Link href={`/article/${article.link}}`}
+        <Link href={`/article/${article.link}`}
           className="round-btn stretched-link rounded-circle d-flex align-items-center justify-content-center tran3s"
         >
           <i className="bi bi-arrow-up-right"></i>
