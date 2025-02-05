@@ -6,7 +6,7 @@ import * as yup from "yup";
 import ErrorMsg from "../common/error-msg";
 import { db } from "@/database/firebase"; // Import Firestore instance
 import { notifySuccess, notifyError } from "@/utils/toast"; // Import notification functions
-
+import { useRouter } from "next/navigation"; // Import useRouter
 // ... existing imports
 
 import { addDoc, collection } from "firebase/firestore"; // Import Firestore functions
@@ -24,15 +24,16 @@ const schema = yup.object().shape({
   name: yup.string().required().label("Name"),
   email: yup.string().required().email().label("Email"),
   number: yup
-  .string()
-  .required("Phone Number is required")
-  .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits"),
+    .string()
+    .required("Phone Number is required")
+    .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits"),
   // websiteurl: yup.string().required().label("Website Url"),
   companyname: yup.string().required().label("Company Name"),
   message: yup.string().required().min(10).label("Message"),
 });
 
 const ContactForm = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -55,8 +56,10 @@ const ContactForm = () => {
         const { db } = await import("@/database/firebase");
         const contactRef = collection(db, "newcontact");
         await addDoc(contactRef, data);
-        notifySuccess("Message sent successfully!"); // Use notifySuccess
         reset(); // Clear the form
+        // Redirect after successful submission
+        router.push("/thank-you");
+        notifySuccess("Message sent successfully!"); // Use notifySuccess
       }
     } catch (error) {
       console.error("Error adding document: ", error);
@@ -101,9 +104,7 @@ const ContactForm = () => {
           </div>
           <div className="col-12 col-md-6">
             <div className="input-group-meta form-group mb-30">
-              <label htmlFor="">
-                Phone Number*
-              </label>
+              <label htmlFor="">Phone Number*</label>
               <input
                 type="number"
                 {...register("number")}

@@ -76,10 +76,10 @@ const HeroBannerTwo = () => {
                   Maximize Oracle&apos;s potential with our tailored services - comprehensive offerings from database management to seamless cloud integration, ensuring unparalleled business performance.
                 </p>
                 <Link href="#contact"
-                  className="btn-two icon-link wow fadeInUp"
+                  className="btn-four icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let&apos;s Talk</span>
+                  <span>Contact Us</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> 
               </div>
@@ -101,10 +101,10 @@ const HeroBannerTwo = () => {
                    and achieve groundbreaking solutions with user-friendly platforms.
                 </p>
                   <Link href="#contact"
-                    className="btn-two icon-link wow fadeInUp"
+                    className="btn-four icon-link wow fadeInUp"
                     data-wow-delay="0.2s"
                   >
-                    <span>Let&apos;s Talk</span>
+                    <span>Contact Us</span>
                     <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                   </Link>
               </div>
@@ -126,10 +126,10 @@ const HeroBannerTwo = () => {
                    propel your business with bespoke solutions, transforming customer relationships.
                 </p>
                 <Link href="#contact"
-                  className="btn-two icon-link wow fadeInUp"
+                  className="btn-four icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let&apos;s Talk</span>
+                  <span>Contact Us</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> 
               </div>
@@ -151,10 +151,10 @@ const HeroBannerTwo = () => {
                   tailored customization, and expert optimization transform IT service management.
                 </p>
                 <Link href="#contact"
-                  className="btn-two icon-link wow fadeInUp"
+                  className="btn-four icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let&apos;s Talk</span>
+                  <span>Contact Us</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> 
               </div>
@@ -175,10 +175,10 @@ const HeroBannerTwo = () => {
                   Enhance your brand with our holistic digital marketing—SEO, social media, content finesse, and analytics for tangible online success.
                 </p>
                 <Link href="#contact"
-                  className="btn-two icon-link wow fadeInUp"
+                  className="btn-four icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let&apos;s Talk</span>
+                  <span>Contact Us</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> 
               </div>
@@ -200,10 +200,10 @@ const HeroBannerTwo = () => {
                    propel your business with bespoke solutions, transforming customer relationships.
                 </p>
                 <Link href="#contact"
-                  className="btn-two icon-link wow fadeInUp"
+                  className="btn-four icon-link wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  <span>Let&apos;s Talk</span>
+                  <span>Contact Us</span>
                   <Image src={icon} alt="icon" className="lazy-img icon ms-2" />
                 </Link> 
               </div>
