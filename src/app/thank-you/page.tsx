@@ -9,7 +9,7 @@ import ils_1 from "@/assets/images/assets/ils_05.svg";
 import ils_2 from "@/assets/images/assets/ils_06.svg";
 
 export const metadata: Metadata = {
-  title: "Not Found Page",
+  title: "Thank you for form Submiting | CGB Solutions",
 };
 
 const NotFound = () => {
