@@ -208,6 +208,11 @@ const menu_data: IMenu[] = [
     // {link:'/blog-details',title:'Blog Details'},
     // ]
   },
+  {
+    id: 9,
+    link: "/career",
+    title: "Career",
+  },
 ];
 
 export default menu_data;

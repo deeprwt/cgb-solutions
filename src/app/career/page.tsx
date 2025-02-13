@@ -11,6 +11,7 @@ import team_bg from "@/assets/images/media/img_32.jpg";
 import FooterOne from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/Header";
 import CareerListArea from "@/components/career/career-list-area";
+import CareerSection from "@/components/solutions/career-section";
 
 
 export const metadata: Metadata = {
@@ -33,7 +34,8 @@ const Career = () => {
             // // shape={shape}
             bg_img={team_bg}
           />
-          <CareerListArea />
+          {/* <CareerListArea /> */}
+          <CareerSection />
 
         </main>
 

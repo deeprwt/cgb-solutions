@@ -35,21 +35,23 @@ const ArticleDetailsArea: React.FC<{ article: Article }> = ({ article }) => {
               >
                 <div className="date">{article.date}</div>
               </figure> */}
-               <Image
-          src={article.imageUrl || article.image}
-          alt={article.title || "Article Image"}
-          layout="responsive"
-          width={600}
-          height={400}
-          className="lazy-img me-auto ms-auto"
-        />
+              <Image
+                src={article.imageUrl || article.image}
+                alt={article.title || "Article Image"}
+                layout="responsive"
+                width={600}
+                height={400}
+                className="lazy-img me-auto ms-auto"
+              />
               <div className="post-data">
                 <div className="post-info">{article.category}</div>
                 <div className="blog-title">
                   <h4>{article.title}</h4>
                 </div>
                 <div className="post-details-meta">
-                  <div dangerouslySetInnerHTML={{ __html: article.post_info }} />
+                  <div
+                    dangerouslySetInnerHTML={{ __html: article.post_info }}
+                  />
                 </div>
                 <div className="bottom-widget d-sm-flex align-items-center justify-content-between">
                   <UseSocialShare />
