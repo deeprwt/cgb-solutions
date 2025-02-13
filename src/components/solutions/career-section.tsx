@@ -125,7 +125,7 @@ const CareerSection = ({ cls }: { cls?: string }) => {
                 <p className="text-lg mb-35 md-mb-30">
                   We are looking for dynamic, results-driven professionals ready
                   to contribute their expertise to innovative projects and
-                  collaborate with industry leaders. Whether you're an
+                  collaborate with industry leaders. Whether you&apos;re an
                   experienced specialist or seeking the next step in your
                   career, we provide opportunities that foster growth, career
                   progression, and technical excellence. <br />
