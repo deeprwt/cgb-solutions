@@ -46,6 +46,11 @@ const admin_menu_data: IMenu[] = [
     link: "/dashboard/image-gallery",
     title: "Assest Gallery",
   },
+  {
+    id: 8,
+    link: "/dashboard/cv-data",
+    title: "CV Data",
+  },
   
 ];
 

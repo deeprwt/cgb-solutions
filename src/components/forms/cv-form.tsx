@@ -15,17 +15,22 @@ type FormData = {
   name: string;
   email: string;
   number: string;
+  role: string; // Add role field
   cv?: FileList; // Use undefined instead of null
 };
 
 // Validation schema using Yup
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
-  email: yup.string().required("Email is required").email("Invalid email format"),
+  email: yup
+    .string()
+    .required("Email is required")
+    .email("Invalid email format"),
   number: yup
     .string()
     .required("Phone Number is required")
     .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits"),
+  role: yup.string().required("Role is required"), // Validate role field
   cv: yup
     .mixed<FileList>() // Explicitly specify the type as FileList
     .test("fileRequired", "CV is required", (value) => {
@@ -34,7 +39,11 @@ const schema = yup.object().shape({
     .test("fileType", "Only PDF, DOC, and DOCX files are allowed", (value) => {
       if (!value || value.length === 0) return true; // Skip if no file is uploaded
       const file = value[0];
-      return ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"].includes(file.type);
+      return [
+        "application/pdf",
+        "application/msword",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      ].includes(file.type);
     }),
 });
 
@@ -61,7 +70,7 @@ const CVForm = () => {
     try {
       const file = data.cv[0]; // Get the uploaded file
       const storageRef = ref(storage, `cvs/${file.name}-${Date.now()}`);
-      
+
       // Upload CV to Firebase Storage
       const snapshot = await uploadBytes(storageRef, file);
       const downloadURL = await getDownloadURL(snapshot.ref);
@@ -72,6 +81,7 @@ const CVForm = () => {
         name: data.name,
         email: data.email,
         number: data.number,
+        role: data.role, // Save role
         cvUrl: downloadURL,
         submittedAt: new Date().toISOString(), // Save submission time
       });
@@ -94,7 +104,7 @@ const CVForm = () => {
         <div className="col-12 col-md-6">
           <div className="input-group-meta form-group mb-30">
             <label>Name*</label>
-            <input type="text" placeholder="Your Name*" {...register("name")} />
+            <input className="form-control" type="text" placeholder="Your Name*" {...register("name")} />
             <ErrorMsg msg={errors.name?.message!} />
           </div>
         </div>
@@ -102,7 +112,12 @@ const CVForm = () => {
         <div className="col-12 col-md-6">
           <div className="input-group-meta form-group mb-30">
             <label>Email*</label>
-            <input type="email" placeholder="Email Address*" {...register("email")} />
+            <input
+            className="form-control"
+              type="email"
+              placeholder="Email Address*"
+              {...register("email")}
+            />
             <ErrorMsg msg={errors.email?.message!} />
           </div>
         </div>
@@ -111,6 +126,7 @@ const CVForm = () => {
           <div className="input-group-meta form-group mb-30">
             <label>Phone Number*</label>
             <input
+            className="form-control"
               type="number"
               placeholder="Enter Your Phone Number"
               {...register("number")}
@@ -125,6 +141,30 @@ const CVForm = () => {
           </div>
         </div>
 
+        {/* Role Dropdown */}
+        <div className="col-12">
+          <div className="input-group-meta form-group mb-30">
+            <label>Role*</label>
+            <select className="form-select" {...register("role")}>
+              <option value="">Select a role</option>
+              <option value="Technical Lead">Technical Lead</option>
+              <option value="Cloud Engineer - Identity">
+                Cloud Engineer - Identity
+              </option>
+              <option value="Cloud Engineer - Operating Systems">
+                Cloud Engineer - Operating Systems
+              </option>
+              <option value="Integration Software Engineer">
+                Integration Software Engineer
+              </option>
+              <option value="Senior Integration Software Engineer">
+                Senior Integration Software Engineer
+              </option>
+            </select>
+            <ErrorMsg msg={errors.role?.message!} />
+          </div>
+        </div>
+
         {/* CV Upload Section */}
         <div className="col-12">
           <div className="input-group-meta form-group mb-35">
@@ -135,7 +175,11 @@ const CVForm = () => {
         </div>
 
         <div className="col-12">
-          <button type="submit" className="btn-four tran3s w-100 d-block" disabled={uploading}>
+          <button
+            type="submit"
+            className="btn-four tran3s w-100 d-block"
+            disabled={uploading}
+          >
             {uploading ? "Uploading..." : "Submit"}
           </button>
         </div>
