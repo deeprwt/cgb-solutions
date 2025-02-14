@@ -4,11 +4,11 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import ErrorMsg from "../common/error-msg";
-import { db, storage } from "@/database/firebase";
+import { db, storage } from "@/database/firebase"; // Import Firestore & Storage
 import { notifySuccess, notifyError } from "@/utils/toast";
 import { useRouter } from "next/navigation";
 import { addDoc, collection } from "firebase/firestore";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage"; // Firebase Storage functions
 
 // Define form data type
 type FormData = {
@@ -17,10 +17,10 @@ type FormData = {
   number: string;
   companyname: string;
   message: string;
-  cv?: File; // CV is optional but validated manually
+  cv?: FileList; // Use undefined instead of null
 };
 
-// Yup validation for text fields only (No validation for CV)
+// Validation schema using Yup
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
   email: yup.string().required("Email is required").email("Invalid email format"),
@@ -30,55 +30,47 @@ const schema = yup.object().shape({
     .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits"),
   companyname: yup.string().required("Company Name is required"),
   message: yup.string().required("Message is required").min(10, "Message must be at least 10 characters"),
+  cv: yup
+    .mixed<FileList>() // Explicitly specify the type as FileList
+    .test("fileRequired", "CV is required", (value) => {
+      return value instanceof FileList && value.length > 0;
+    }) // Ensure at least one file is uploaded
+    .test("fileType", "Only PDF, DOC, and DOCX files are allowed", (value) => {
+      if (!value || value.length === 0) return true; // Skip if no file is uploaded
+      const file = value[0];
+      return ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"].includes(file.type);
+    }),
 });
 
 const CVForm = () => {
   const router = useRouter();
   const [uploading, setUploading] = useState(false);
-  const [cvError, setCvError] = useState<string | null>(null); // For manual file validation error
 
   const {
     register,
     handleSubmit,
-    setValue,
+    reset,
     formState: { errors },
   } = useForm<FormData>({
-    resolver: yupResolver(schema), // Resolver now only validates name, email, etc.
+    resolver: yupResolver(schema),
   });
 
-  const validateFile = (file: File) => {
-    const allowedTypes = ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"];
-    if (!allowedTypes.includes(file.type)) {
-      setCvError("Only PDF, DOC, and DOCX files are allowed.");
-      return false;
-    }
-    if (file.size > 5 * 1024 * 1024) {
-      setCvError("File size must be less than 5MB.");
-      return false;
-    }
-    setCvError(null); // No errors
-    return true;
-  };
-
   const onSubmit = async (data: FormData) => {
+    if (!data.cv || data.cv.length === 0) {
+      notifyError("Please upload your CV.");
+      return;
+    }
+
     setUploading(true);
     try {
-      let cvUrl = "";
+      const file = data.cv[0]; // Get the uploaded file
+      const storageRef = ref(storage, `cvs/${file.name}-${Date.now()}`);
+      
+      // Upload CV to Firebase Storage
+      const snapshot = await uploadBytes(storageRef, file);
+      const downloadURL = await getDownloadURL(snapshot.ref);
 
-      // Upload file if provided
-      if (data.cv) {
-        if (!validateFile(data.cv)) {
-          setUploading(false);
-          return;
-        }
-
-        const file = data.cv;
-        const storageRef = ref(storage, `cvs/${file.name}-${Date.now()}`);
-        const snapshot = await uploadBytes(storageRef, file);
-        cvUrl = await getDownloadURL(snapshot.ref);
-      }
-
-      // Save form data along with CV URL (if uploaded) & timestamp to Firestore
+      // Save form data along with CV URL & timestamp to Firestore
       const contactRef = collection(db, "cv");
       await addDoc(contactRef, {
         name: data.name,
@@ -86,12 +78,13 @@ const CVForm = () => {
         number: data.number,
         companyname: data.companyname,
         message: data.message,
-        cvUrl: cvUrl, // Save empty string if no file was uploaded
-        submittedAt: new Date().toISOString(),
+        cvUrl: downloadURL,
+        submittedAt: new Date().toISOString(), // Save submission time
       });
 
+      reset();
       router.push("/thank-you");
-      notifySuccess("Message submitted successfully!");
+      notifySuccess("Message & CV submitted successfully!");
     } catch (error) {
       console.error("Error uploading CV:", error);
       notifyError("Error submitting form, please try again.");
@@ -145,27 +138,6 @@ const CVForm = () => {
             <ErrorMsg msg={errors.companyname?.message!} />
           </div>
         </div> */}
-                {/* CV Upload Section (Manual Validation) */}
-                <div className="col-12">
-          <div className="input-group-meta form-group mb-35">
-            <label>Upload CV (Optional) - PDF, DOC, DOCX (Max: 5MB)</label>
-            <input
-              type="file"
-              accept=".pdf,.doc,.docx"
-              onChange={(e) => {
-                if (e.target.files && e.target.files.length > 0) {
-                  const file = e.target.files[0];
-                  if (validateFile(file)) {
-                    setValue("cv", file);
-                  } else {
-                    setValue("cv", undefined);
-                  }
-                }
-              }}
-            />
-            {cvError && <ErrorMsg msg={cvError} />}
-          </div>
-        </div>
 
         {/* <div className="col-12">
           <div className="input-group-meta form-group mb-35">
@@ -175,7 +147,14 @@ const CVForm = () => {
           </div>
         </div> */}
 
-
+        {/* CV Upload Section */}
+        <div className="col-12">
+          <div className="input-group-meta form-group mb-35">
+            <label>Upload CV* (PDF, DOC, DOCX)</label>
+            <input type="file" {...register("cv")} accept=".pdf,.doc,.docx" />
+            <ErrorMsg msg={errors.cv?.message!} />
+          </div>
+        </div>
 
         <div className="col-12">
           <button type="submit" className="btn-four tran3s w-100 d-block" disabled={uploading}>
