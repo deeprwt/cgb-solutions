@@ -206,7 +206,7 @@ const CareerSection = ({ cls }: { cls?: string }) => {
                 </div>
               </div> */}
               <div className="col-lg-7 light-bg rounded" style={{padding:"30px"}}>
-                <div className="form-style-one">
+                <div className="form-style-one" id="cv">
                   {/* form start */}
                   {/* <ContactForm /> */}
                   <CVForm />

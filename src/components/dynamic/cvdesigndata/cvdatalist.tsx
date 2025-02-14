@@ -50,7 +50,8 @@ const CVList = () => {
     if (roleFilter && cv.role !== roleFilter) return false;
 
     // Filter by name
-    if (nameFilter && !cv.name.toLowerCase().includes(nameFilter.toLowerCase())) return false;
+    if (nameFilter && !cv.name.toLowerCase().includes(nameFilter.toLowerCase()))
+      return false;
 
     // Filter by date range
     if (startDate && endDate) {
@@ -68,10 +69,10 @@ const CVList = () => {
 
   return (
     <div className="cv-section position-relative mt-150 lg-mt-80 mb-150 lg-mb-80">
-      <div className="container">
+      <div className="container form-style-one">
         {/* Filters Section */}
-        <div className="row mb-4">
-          <div className="col-md-3">
+        <div className="row mb-4 form-style-one">
+          <div className="col-md-3 d-flex flex-column">
             <label htmlFor="roleFilter" className="form-label">
               Filter by Role
             </label>
@@ -98,7 +99,7 @@ const CVList = () => {
             </select>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-3  d-flex flex-column">
             <label htmlFor="nameFilter" className="form-label">
               Filter by Name
             </label>
@@ -112,7 +113,7 @@ const CVList = () => {
             />
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-3  d-flex flex-column">
             <label htmlFor="startDate" className="form-label">
               Start Date
             </label>
@@ -127,7 +128,7 @@ const CVList = () => {
             />
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-3  d-flex flex-column">
             <label htmlFor="endDate" className="form-label">
               End Date
             </label>

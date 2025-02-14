@@ -12,13 +12,12 @@ import FooterOne from "@/layout/footer/footer-one";
 import HeaderTwo from "@/layout/header/Header";
 import CareerListArea from "@/components/career/career-list-area";
 import CareerSection from "@/components/solutions/career-section";
-
+import BreadcrumbFour from "@/components/breadcrumb/breadcrumb-four";
 
 export const metadata: Metadata = {
-  title:
-    "Careers | CGB Solutions",
+  title: "Careers at CGB Solutions | Join Our Innovative Team",
   description:
-    "CGB Solution, a leading IT services and Business Management Consultant company, offers cutting-edge IT solutions and Business consulting to drive efficiency and success for your business.",
+    "Explore exciting career opportunities at CGB Solutions. Join a dynamic team driving innovation and growth. Apply now to shape the future with us!",
   keywords:
     "IT services, IT support, IT company,IT solutions,IT consulting,IT services company,IT consulting companies,IT support companies,IT solutions company,IT consulting services, Integrated technology services,Top IT companies,Best IT company IT business solutions,Strategic technology solutions,IT outsourcing company,IT solutions provider,IT consulting firm ,IT services provider ,IT support services ,IT solutions and services ,IT services and solutions ,IT support and services,IT services for small business ,IT solutions for businesses,IT consulting for enterprises ,IT solutions and services,IT services and solutions,IT support and services,IT services for small businesses,IT solutions for businesses,digital transformation services,technology solutions,business management consultant,software company in India,it services & consulting,IT consulting for enterprises ,",
 };
@@ -28,20 +27,19 @@ const Career = () => {
     <Wrapper>
       <div className="main-page-wrapper">
         {/* header start */}
-            <HeaderTwo />
+        <HeaderTwo />
         {/* header end */}
         <main>
           {/* breadcrumb start */}
-          <BreadcrumbOne
-            title="Career Opportunity"
-            subtitle="Meet our experts, guiding you"
-            page="Career"
+          <BreadcrumbFour
+            title="Careers Opportunity"
+            subtitle="Submit Big 4 Hiring Submission"
+            page="Careers"
             // // shape={shape}
             bg_img={team_bg}
           />
           {/* <CareerListArea /> */}
           <CareerSection />
-
         </main>
 
         {/* footer start */}
