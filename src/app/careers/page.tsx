@@ -33,7 +33,7 @@ const Career = () => {
           {/* breadcrumb start */}
           <BreadcrumbFour
             title="Careers Opportunity"
-            subtitle="Submit Big 4 Hiring Submission"
+            subtitle=""
             page="Careers"
             // // shape={shape}
             bg_img={team_bg}

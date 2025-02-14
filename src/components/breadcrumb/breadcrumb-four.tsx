@@ -44,7 +44,7 @@ IProps) => {
                 <p className="text-white text-lg mb-20 lg-mb-40">{subtitle}</p>
                 <div>
                   <Link href="#cv" className="btn-one tran3s mb-20 ">
-                  Submit CV for Big4
+                  Submit CV for BIG4
                   </Link>
                 </div>
                 <ul className="style-none d-inline-flex pager">
