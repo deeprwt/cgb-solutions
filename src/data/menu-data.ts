@@ -210,8 +210,8 @@ const menu_data: IMenu[] = [
   },
   {
     id: 9,
-    link: "/career",
-    title: "Career",
+    link: "/careers",
+    title: "Careers",
   },
 ];
 

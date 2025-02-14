@@ -89,6 +89,8 @@ const CVForm = () => {
         cvUrl: cvUrl, // Save empty string if no file was uploaded
         submittedAt: new Date().toISOString(),
       });
+
+      router.push("/thank-you");
       notifySuccess("Message submitted successfully!");
     } catch (error) {
       console.error("Error uploading CV:", error);
@@ -177,7 +179,7 @@ const CVForm = () => {
 
         <div className="col-12">
           <button type="submit" className="btn-four tran3s w-100 d-block" disabled={uploading}>
-            {uploading ? "Uploading..." : "Send Message"}
+            {uploading ? "Uploading..." : "Submit"}
           </button>
         </div>
       </div>
