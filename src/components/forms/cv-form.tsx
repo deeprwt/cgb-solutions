@@ -15,8 +15,6 @@ type FormData = {
   name: string;
   email: string;
   number: string;
-  companyname: string;
-  message: string;
   cv?: FileList; // Use undefined instead of null
 };
 
@@ -28,8 +26,6 @@ const schema = yup.object().shape({
     .string()
     .required("Phone Number is required")
     .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits"),
-  companyname: yup.string().required("Company Name is required"),
-  message: yup.string().required("Message is required").min(10, "Message must be at least 10 characters"),
   cv: yup
     .mixed<FileList>() // Explicitly specify the type as FileList
     .test("fileRequired", "CV is required", (value) => {
@@ -76,15 +72,13 @@ const CVForm = () => {
         name: data.name,
         email: data.email,
         number: data.number,
-        companyname: data.companyname,
-        message: data.message,
         cvUrl: downloadURL,
         submittedAt: new Date().toISOString(), // Save submission time
       });
 
       reset();
       router.push("/thank-you");
-      notifySuccess("Message & CV submitted successfully!");
+      notifySuccess("CV submitted successfully!");
     } catch (error) {
       console.error("Error uploading CV:", error);
       notifyError("Error submitting form, please try again.");
@@ -130,22 +124,6 @@ const CVForm = () => {
             <ErrorMsg msg={errors.number?.message!} />
           </div>
         </div>
-
-        {/* <div className="col-12 col-md-6">
-          <div className="input-group-meta form-group mb-40">
-            <label>Company Name*</label>
-            <input type="text" placeholder="Company Name*" {...register("companyname")} />
-            <ErrorMsg msg={errors.companyname?.message!} />
-          </div>
-        </div> */}
-
-        {/* <div className="col-12">
-          <div className="input-group-meta form-group mb-35">
-            <label>Service Required*</label>
-            <textarea placeholder="Message" {...register("message")}></textarea>
-            <ErrorMsg msg={errors.message?.message!} />
-          </div>
-        </div> */}
 
         {/* CV Upload Section */}
         <div className="col-12">
