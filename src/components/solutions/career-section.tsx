@@ -85,9 +85,9 @@ const CareerSection = ({ cls }: { cls?: string }) => {
           <div className="row align-items-center details-meta">
             <div className="title-one">
               {/* <div className="upper-title text-center">Oracle Capability</div> */}
-              <h2 className="text-center">
+              <h1 className="text-center pb-40">
                 Exciting Career Opportunities at CGB Solutions{" "}
-              </h2>
+              </h1>
               <p className="text-lg  px-4 mb-35 md-mb-30">
                 At <b>CGB Solutions</b>, we connect skilled professionals with
                 top organizations, offering both permanent and contract-based

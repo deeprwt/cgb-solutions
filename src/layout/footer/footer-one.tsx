@@ -97,6 +97,9 @@ const FooterOne = () => {
                 <li>
                   <Link href="/privacy-policy">Privacy Policy</Link>
                 </li>
+                <li>
+                  <Link href="/careers">Careers</Link>
+                </li>
               </ul>
             </div>
           </div>
