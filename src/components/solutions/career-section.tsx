@@ -88,7 +88,7 @@ const CareerSection = ({ cls }: { cls?: string }) => {
               <h1 className="text-center pb-40">
                 Exciting Career Opportunities at CGB Solutions{" "}
               </h1>
-              <p className="text-lg  px-4 mb-35 md-mb-30">
+              <p className="text-lg  px-4 mb-35 md-mb-30 text-sm-justify">
                 At <b>CGB Solutions</b>, we connect skilled professionals with
                 top organizations, offering both permanent and contract-based
                 roles across diverse industries. As part of our expanding
@@ -122,7 +122,7 @@ const CareerSection = ({ cls }: { cls?: string }) => {
                     Senior Integration Software Engineer
                   </li>
                 </ul>
-                <p className="text-lg mb-35 md-mb-30">
+                <p className="text-lg mb-35 md-mb-30 text-sm-justify">
                   We are looking for dynamic, results-driven professionals ready
                   to contribute their expertise to innovative projects and
                   collaborate with industry leaders. Whether you&apos;re an

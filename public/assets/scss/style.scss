@@ -187,7 +187,11 @@
     background-size: contain !important;
 }
 
-
+@media (max-width: 576px) { /* Applies only to small devices */
+    .text-sm-justify {
+      text-align: justify !important;
+    }
+  }
 
 //-----Manish----
 
