@@ -167,13 +167,13 @@ const CVForm = () => {
           </div>
         </div>
 
-        <div className="col-12">
+        {/* <div className="col-12">
           <div className="input-group-meta form-group mb-35">
             <label>Service Required*</label>
             <textarea placeholder="Message" {...register("message")}></textarea>
             <ErrorMsg msg={errors.message?.message!} />
           </div>
-        </div>
+        </div> */}
 
 
 
