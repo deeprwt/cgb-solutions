@@ -38,6 +38,32 @@ const FooterOne = () => {
               </ul>
               {/* social link */}
             </div>
+            <div className="col-xl-3 col-md-2 col-sm-4 mb-20">
+              <h5 className="footer-title">Tech Solutions</h5>
+              <ul className="footer-nav-link style-none">
+                <li>
+                  <Link href="/solutions/oracle">Oracle</Link>
+                </li>
+                <li>
+                  <Link href="/solutions/finacle">Finacle</Link>
+                </li>
+                <li>
+                  <Link href="/solutions/outsystems">Outsystems</Link>
+                </li>
+                <li>
+                  <Link href="/solutions/mendix">Mendix</Link>
+                </li>
+                <li>
+                  <Link href="/solutions/servicenow">ServiceNow</Link>
+                </li>
+                <li>
+                  <Link href="solutions/power-platform-dynamic-365">Microsoft Power Platform</Link>
+                </li>
+                <li>
+                  <Link href="/solutions/automation-anywhere">Automation Anywhere</Link>
+                </li>
+              </ul>
+            </div>
             <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
               <h5 className="footer-title">About</h5>
               <ul className="footer-nav-link style-none">
@@ -57,32 +83,6 @@ const FooterOne = () => {
                 {/* <li>
                   <Link href="/internship">Internship Program</Link>
                 </li> */}
-              </ul>
-            </div>
-            <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
-              <h5 className="footer-title">Tech Solutions</h5>
-              <ul className="footer-nav-link style-none">
-                <li>
-                  <Link href="/solutions/oracle">Oracle</Link>
-                </li>
-                <li>
-                  <Link href="/solutions/finacle">Finacle</Link>
-                </li>
-                <li>
-                  <Link href="/solutions/outsystems">Outsystems</Link>
-                </li>
-                <li>
-                  <Link href="/solutions/mendix">Mendix</Link>
-                </li>
-                <li>
-                  <Link href="/solutions/servicenow">ServiceNow</Link>
-                </li>
-                <li>
-                  <Link href="solutions/power-platform-dynamic-365">Power Platform and Dynamic 365</Link>
-                </li>
-                <li>
-                  <Link href="/solutions/automation-anywhere">Automation Anywhere</Link>
-                </li>
               </ul>
             </div>
             <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
