@@ -78,6 +78,9 @@ const FooterOne = () => {
                   <Link href="/solutions/servicenow">ServiceNow</Link>
                 </li>
                 <li>
+                  <Link href="solutions/power-platform-dynamic-365">Power Platform and Dynamic 365</Link>
+                </li>
+                <li>
                   <Link href="/solutions/automation-anywhere">Automation Anywhere</Link>
                 </li>
               </ul>
