@@ -27,8 +27,8 @@ import icon_4 from "@/assets/images/assets/ils_07.svg";
 
 export const metadata: Metadata = {
   title: "Oracle Solutions and Services | Oracle Consulting & Cloud Support",
-  description : "Explore professional Oracle solutions, consulting, and Oracle cloud services. From Oracle E-Business Suite to Fusion Applications, we provide tailored support for seamless integration, upgrades, and management.",
-  keywords : "Oracle Cloud Services in India, Oracle Cloud Integration in India, Oracle Cloud Solutions in India, ",
+  description : "CGB Solutions provides expert Oracle cloud, Oracle consulting and implementation services to optimize your business processes and drive growth.",
+  keywords : "Oracle solutions, Oracle consulting, Oracle implementation, Oracle services, Oracle consulting firm, Oracle experts, Oracle cloud services, Oracle technology, Oracle software, Oracle database, Oracle cloud, Oracle ERP, Oracle CRM, Oracle consulting services, Oracle solutions provider, Oracle integration, Oracle support, Oracle consulting company, Oracle implementation services, Oracle business solutions, Oracle technology consulting, ",
 };
 
 export default function Oracle() {

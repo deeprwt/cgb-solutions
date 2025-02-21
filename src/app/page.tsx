@@ -30,11 +30,11 @@ import icon_4 from "@/assets/images/assets/ils_07.svg";
 
 export const metadata: Metadata = {
   title:
-    "IT Solutions and Business Management Consultant Company | CGB Solutions",
+    "IT Solutions & Business Management Consulting | CGB Solutions",
   description:
-    "CGB Solution, a leading IT services and Business Management Consultant company, offers cutting-edge IT solutions and Business consulting to drive efficiency and success for your business.",
+    "CGB Solutions delivers IT solutions and business management consulting, specializing in Oracle services, digital transformation, and enterprise process optimization.",
   keywords:
-    "IT services, IT support, IT company,IT solutions,IT consulting,IT services company,IT consulting companies,IT support companies,IT solutions company,IT consulting services, Integrated technology services,Top IT companies,Best IT company IT business solutions,Strategic technology solutions,IT outsourcing company,IT solutions provider,IT consulting firm ,IT services provider ,IT support services ,IT solutions and services ,IT services and solutions ,IT support and services,IT services for small business ,IT solutions for businesses,IT consulting for enterprises ,IT solutions and services,IT services and solutions,IT support and services,IT services for small businesses,IT solutions for businesses,digital transformation services,technology solutions,business management consultant,software company in India,it services & consulting,IT consulting for enterprises ,",
+    "IT solutions, Business management consulting, Best IT company, Business consultant, Business consulting, Business consulting firms, Business management consultant, Enterprise IT consulting, Integrated technology services, IT business solutions, IT consulting, IT consulting companies, IT consulting firm, IT consulting services, IT outsourcing company, IT services, IT services company, IT services provider, IT support companies, IT support services, IT solutions and services, IT solutions company, IT solutions provider, Management consulting, Oracle consulting services, Strategic technology solutions, Technology consulting services,Business management consulting company,Top IT companies,",
 };
 
 export default function HomePage() {
