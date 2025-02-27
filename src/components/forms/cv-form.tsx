@@ -104,7 +104,12 @@ const CVForm = () => {
         <div className="col-12 col-md-6">
           <div className="input-group-meta form-group mb-30">
             <label>Name*</label>
-            <input className="form-control" type="text" placeholder="Your Name*" {...register("name")} />
+            <input
+              className="form-control"
+              type="text"
+              placeholder="Your Name*"
+              {...register("name")}
+            />
             <ErrorMsg msg={errors.name?.message!} />
           </div>
         </div>
@@ -113,7 +118,7 @@ const CVForm = () => {
           <div className="input-group-meta form-group mb-30">
             <label>Email*</label>
             <input
-            className="form-control"
+              className="form-control"
               type="email"
               placeholder="Email Address*"
               {...register("email")}
@@ -126,7 +131,7 @@ const CVForm = () => {
           <div className="input-group-meta form-group mb-30">
             <label>Phone Number*</label>
             <input
-            className="form-control"
+              className="form-control"
               type="number"
               placeholder="Enter Your Phone Number"
               {...register("number")}
@@ -147,6 +152,9 @@ const CVForm = () => {
             <label>Role*</label>
             <select className="form-select" {...register("role")}>
               <option value="">Select a role</option>
+              <option value="Executive Assistant">
+              Executive Assistant
+              </option>
               <option value="Technical Lead">Technical Lead</option>
               <option value="Cloud Engineer - Identity">
                 Cloud Engineer - Identity

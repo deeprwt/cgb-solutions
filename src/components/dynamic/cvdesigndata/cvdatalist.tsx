@@ -83,6 +83,9 @@ const CVList = () => {
               onChange={(e) => setRoleFilter(e.target.value)}
             >
               <option value="">All Roles</option>
+              <option value="Executive Assistant">
+                Executive Assistant
+              </option>
               <option value="Technical Lead">Technical Lead</option>
               <option value="Cloud Engineer - Identity">
                 Cloud Engineer - Identity
