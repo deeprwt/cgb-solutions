@@ -108,6 +108,7 @@ const CareerSection = ({ cls }: { cls?: string }) => {
               {/* <h3 className="fw-bold text-center mt-20 mb-15">Studio (Web)</h3> */}
               <div className="details-meta ps-xxl-5 ps-xl-3">
                 <ul className="style-none list-item pb-20">
+                  <li className="m-0 pb-2 lh-base">Executive Assistant</li>
                   <li className="m-0 pb-2 lh-base">Technical Lead</li>
                   <li className="m-0 pb-2 lh-base">
                     Cloud Engineer - Identity
