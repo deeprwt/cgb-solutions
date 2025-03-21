@@ -34,6 +34,12 @@ const CVList = () => {
         const cvData = cvSnapshot.docs.map(
           (doc) => ({ id: doc.id, ...doc.data() } as CVData)
         );
+        // Sort data by 'submittedAt' in descending order (newest first)
+        cvData.sort(
+          (a, b) =>
+            new Date(b.submittedAt).getTime() -
+            new Date(a.submittedAt).getTime()
+        );
         setCVData(cvData);
         setLoading(false); // Set loading to false after data is fetched
       } catch (error) {
@@ -83,9 +89,7 @@ const CVList = () => {
               onChange={(e) => setRoleFilter(e.target.value)}
             >
               <option value="">All Roles</option>
-              <option value="Executive Assistant">
-                Executive Assistant
-              </option>
+              <option value="Executive Assistant">Executive Assistant</option>
               <option value="Technical Lead">Technical Lead</option>
               <option value="Cloud Engineer - Identity">
                 Cloud Engineer - Identity
@@ -185,13 +189,12 @@ const CVList = () => {
                           >
                             View CV
                           </a>
-                          <embed
+                          <iframe
                             src={cv.cvUrl}
-                            type="application/pdf"
                             width="100%"
                             height="300px"
-                            style={{ marginTop: "10px" }}
-                          />
+                            style={{ marginTop: "10px", border: "none" }}
+                          ></iframe>
                         </div>
                       </div>
                     </div>

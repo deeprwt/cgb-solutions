@@ -8,7 +8,12 @@ import { db, storage } from "@/database/firebase"; // Import Firestore & Storage
 import { notifySuccess, notifyError } from "@/utils/toast";
 import { useRouter } from "next/navigation";
 import { addDoc, collection } from "firebase/firestore";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage"; // Firebase Storage functions
+import {
+  ref,
+  uploadBytes,
+  getDownloadURL,
+  updateMetadata,
+} from "firebase/storage"; // Firebase Storage functions
 
 // Define form data type
 type FormData = {
@@ -69,11 +74,18 @@ const CVForm = () => {
     setUploading(true);
     try {
       const file = data.cv[0]; // Get the uploaded file
-      const storageRef = ref(storage, `cvs/${file.name}-${Date.now()}`);
+      // const storageRef = ref(storage, `cvs/${file.name}-${Date.now()}`);
+      // file name will remain same and extension only unique will save on before the file name
+      const storageRef = ref(storage, `cvs/${Date.now()}-${file.name}`);
 
       // Upload CV to Firebase Storage
       const snapshot = await uploadBytes(storageRef, file);
       const downloadURL = await getDownloadURL(snapshot.ref);
+
+      // Set metadata to prevent forced downloads
+      await updateMetadata(snapshot.ref, {
+        contentDisposition: "inline",
+      });
 
       // Save form data along with CV URL & timestamp to Firestore
       const contactRef = collection(db, "cv");
@@ -152,9 +164,7 @@ const CVForm = () => {
             <label>Role*</label>
             <select className="form-select" {...register("role")}>
               <option value="">Select a role</option>
-              <option value="Executive Assistant">
-              Executive Assistant
-              </option>
+              <option value="Executive Assistant">Executive Assistant</option>
               <option value="Technical Lead">Technical Lead</option>
               <option value="Cloud Engineer - Identity">
                 Cloud Engineer - Identity
