@@ -8,6 +8,8 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import DatePicker from "react-datepicker"; // For date filtering
 import "react-datepicker/dist/react-datepicker.css"; // Date picker styles
+import JSZip from "jszip";
+import { saveAs } from "file-saver";
 
 type CVData = {
   id?: string;
@@ -72,6 +74,76 @@ const CVList = () => {
     filteredData,
     9
   );
+
+   // Function to get count of filtered CVs
+   const getFilteredCVCount = () => {
+    return cvData.filter((cv) => {
+      const submittedDate = new Date(cv.submittedAt);
+      if (startDate && submittedDate < startDate) return false;
+      if (endDate && submittedDate > endDate) return false;
+      return true;
+    }).length;
+  };
+
+  // Function to download all CVs
+  const downloadAllCVs = async () => {
+    if (cvData.length === 0) return;
+    const zip = new JSZip();
+    const folder = zip.folder("CVs");
+
+    if (!folder) return;
+
+    try {
+      await Promise.all(
+        cvData.map(async (cv) => {
+          const response = await fetch(cv.cvUrl);
+          const blob = await response.blob();
+          folder.file(`${cv.name.replace(/\s+/g, "_")}.pdf`, blob);
+        })
+      );
+
+      const zipBlob = await zip.generateAsync({ type: "blob" });
+      saveAs(zipBlob, "CVs.zip");
+    } catch (error) {
+      console.error("Error downloading files:", error);
+    }
+  };
+
+  // Function to download date-filtered CVs
+  const downloadFilteredCVs = async () => {
+    const zip = new JSZip();
+    const folder = zip.folder("Filtered_CVs");
+
+    if (!folder) return;
+
+    const filteredCVs = cvData.filter((cv) => {
+      const submittedDate = new Date(cv.submittedAt);
+      if (startDate && submittedDate < startDate) return false;
+      if (endDate && submittedDate > endDate) return false;
+      return true;
+    });
+
+    if (filteredCVs.length === 0) {
+      alert("No CVs found in the selected date range.");
+      return;
+    }
+
+    try {
+      await Promise.all(
+        filteredCVs.map(async (cv) => {
+          const response = await fetch(cv.cvUrl);
+          const blob = await response.blob();
+          folder.file(`${cv.name.replace(/\s+/g, "_")}.pdf`, blob);
+        })
+      );
+
+      const zipBlob = await zip.generateAsync({ type: "blob" });
+      saveAs(zipBlob, "Filtered_CVs.zip");
+    } catch (error) {
+      console.error("Error downloading files:", error);
+    }
+  };
+
 
   return (
     <div className="cv-section position-relative mt-150 lg-mt-80 mb-150 lg-mb-80">
@@ -150,6 +222,16 @@ const CVList = () => {
               placeholderText="Select end date"
             />
           </div>
+        </div>
+
+          {/* Download Buttons */}
+          <div className="mb-4">
+          <button className="btn btn-primary me-3" onClick={downloadAllCVs}>
+            Download All CVs
+          </button>
+          <button className="btn btn-success" onClick={downloadFilteredCVs}>
+            Download Filtered CVs ({getFilteredCVCount()})
+          </button>
         </div>
 
         {/* CV List Section */}
