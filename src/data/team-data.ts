@@ -9,14 +9,14 @@ import team_6 from "@/assets/images/media/img_23.jpg";
 import team_7 from "@/assets/images/media/img_24.jpg";
 import team_8 from "@/assets/images/media/img_25.jpg";
 // team 3
-import Rahul  from "@/assets/images/media/6.jpg"
+import Rahul  from "@/assets/images/media/rahul.jpg"
 import Moumita  from "@/assets/images/media/2.jpg"
 import Kushangi  from "@/assets/images/media/1.jpg"
 import Shobha  from "@/assets/images/media/3.jpg"
-import Anurag from "@/assets/images/media/7.png"
+import Anurag from "@/assets/images/media/anurag.jpg"
 import Rawan from "@/assets/images/media/8.png"
 import Gaurav from "@/assets/images/media/Gaurav.jpg"
-import Prakshu from "@/assets/images/media/Prakshu.jpg"
+import Prakshu from "@/assets/images/media/prakshu.jpg"
 import gif1 from "@/assets/images/media/gif.gif"
 import gif2 from "@/assets/images/media/gif2.gif"
 import gif3 from "@/assets/images/media/gif3.gif"
@@ -88,23 +88,24 @@ const team_data: ITeam[] = [
     link: "",
     gif: gif1,
   },
-  // {
-  //   id: 7,
-  //   img: Anurag,
-  //   name: "Anurag Gupta",
-  //   designation: "Marketing",
-  //   page: "team-three",
-  //   gif: gif1,
-  // },
   {
-    id: 8,
-    img: Rawan,
-    name: "Rawan Abu Hamdam",
-    designation: "Business Development",
+    id: 7,
+    img: Anurag,
+    name: "Anurag Gupta",
+    designation: "Marketing",
     page: "team-three",
-    link: "https://www.linkedin.com/in/rawan-a-h-2558725a/",
+    link: "https://www.linkedin.com/in/anurag-r-gupta/",
     gif: gif1,
   },
+  // {
+  //   id: 8,
+  //   img: Rawan,
+  //   name: "Rawan Abu Hamdam",
+  //   designation: "Business Development",
+  //   page: "team-three",
+  //   link: "https://www.linkedin.com/in/rawan-a-h-2558725a/",
+  //   gif: gif1,
+  // },
   // team three
   {
     id: 9,

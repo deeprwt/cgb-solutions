@@ -90,24 +90,75 @@ const CVList = () => {
     if (cvData.length === 0) return;
     const zip = new JSZip();
     const folder = zip.folder("CVs");
-
+  
     if (!folder) return;
-
+  
+    console.log("🔄 Downloading all CVs...");
+  
+    let failedFiles: string[] = [];
+    let successfulFiles: string[] = [];
+  
     try {
       await Promise.all(
         cvData.map(async (cv) => {
-          const response = await fetch(cv.cvUrl);
-          const blob = await response.blob();
-          folder.file(`${cv.name.replace(/\s+/g, "_")}.pdf`, blob);
+          try {
+            console.log(`⏳ Fetching: ${cv.cvUrl} for ${cv.name}`);
+  
+            const response = await fetch(cv.cvUrl);
+            if (!response.ok) {
+              console.error(`❌ Failed to fetch: ${cv.cvUrl} (HTTP ${response.status})`);
+              failedFiles.push(cv.cvUrl);
+              return;
+            }
+  
+            const blob = await response.blob();
+            if (blob.size === 0) {
+              console.error(`⚠️ Empty file received: ${cv.cvUrl}`);
+              failedFiles.push(cv.cvUrl);
+              return;
+            }
+  
+            const contentType = response.headers.get("Content-Type");
+            let extension = "pdf"; // Default to PDF
+  
+            if (contentType?.includes("msword")) {
+              extension = "doc";
+            } else if (contentType?.includes("vnd.openxmlformats")) {
+              extension = "docx";
+            }
+  
+            const fileName = `${cv.name.replace(/\s+/g, "_")}.${extension}`;
+            folder.file(fileName, blob);
+            successfulFiles.push(fileName);
+  
+            console.log(`✅ Added: ${fileName} (${blob.size / 1024} KB)`);
+          } catch (error: unknown) {
+            console.error(`🚨 Error downloading ${cv.name}:`, error);
+            failedFiles.push(cv.cvUrl);
+          }
         })
       );
-
+  
+      console.log("🎯 Summary:");
+      console.log(`✅ ${successfulFiles.length} files added:`, successfulFiles);
+      console.log(`❌ ${failedFiles.length} failed:`, failedFiles);
+  
+      if (successfulFiles.length === 0) {
+        console.error("🚨 No files were added to ZIP. Check failed URLs above.");
+        return;
+      }
+  
+      console.log("📦 Generating ZIP file...");
       const zipBlob = await zip.generateAsync({ type: "blob" });
+  
+      console.log("🗂 Final ZIP size:", zipBlob.size / 1024, "KB");
       saveAs(zipBlob, "CVs.zip");
-    } catch (error) {
-      console.error("Error downloading files:", error);
+      console.log("✅ Download completed!");
+    } catch (error: unknown) {
+      console.error("🚨 Error creating ZIP:", error);
     }
   };
+  
 
   // Function to download date-filtered CVs
   const downloadFilteredCVs = async () => {
