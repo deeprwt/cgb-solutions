@@ -1,10 +1,18 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { collection, getDocs, query, where, QueryDocumentSnapshot, DocumentData } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  query,
+  where,
+  QueryDocumentSnapshot,
+  DocumentData,
+} from "firebase/firestore";
 import { db } from "@/database/firebase";
 import UseSocialShare from "@/components/socail-media/socialshare";
 import BlogSidebar from "@/components/blogs/blog-sidebar";
+import Image from "next/image";
 
 type Blog = {
   id?: string;
@@ -31,12 +39,20 @@ const BlogDetailsArea: React.FC<{ blog: Blog }> = ({ blog }) => {
         <div className="row gx-xl-5">
           <div className="col-lg-8">
             <article className="blog-meta-two style-two">
-              <figure
+              {/* <figure
                 className="post-img position-relative d-flex align-items-end m0"
                 style={{ backgroundImage: `url(${blog.imageUrl || blog.image})` }}
               >
                 <div className="date">{blog.date}</div>
-              </figure>
+              </figure> */}
+              <Image
+                src={blog.imageUrl || blog.image}
+                alt={blog.title || "Blog Image"}
+                layout="responsive"
+                width={600}
+                height={400}
+                className="lazy-img me-auto ms-auto"
+              />
               <div className="post-data">
                 <div className="post-info">{blog.category}</div>
                 <div className="blog-title">
