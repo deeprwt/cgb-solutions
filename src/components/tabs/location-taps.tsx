@@ -199,7 +199,7 @@ const LocationTabsData = () => {
                     <AddressBlock
                       icon={icon_1}
                       title="United State"
-                      subtitle="98 Cuttermill Road Suite  466 Great Neck NY 11021"
+                      subtitle="3500 South Dupont Highway, Dover, DE 19901"
                     />
                   </div>
 
