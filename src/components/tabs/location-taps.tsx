@@ -199,7 +199,9 @@ const LocationTabsData = () => {
                     <AddressBlock
                       icon={icon_1}
                       title="United State"
-                      subtitle="3500 South Dupont Highway, Dover, DE 19901"
+                      subtitle="3500 S. Dupont Hwy
+Dover, DE 19901
+Kent County, USA"
                     />
                   </div>
 
