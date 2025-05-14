@@ -143,14 +143,14 @@ const LocationTabsData = () => {
                       subtitle="Goregaon, Building 4, North Wing, NESCO IT Park, Western Express Highway, Goregaon East, Mumbai, MH 400063"
                     />
                   </div>
-                  <div className="col-md-4 pt-30 wow fadeInUp">
+                  {/* <div className="col-md-4 pt-30 wow fadeInUp">
                     <AddressBlock
                       icon={icon_1}
                       title="New Delhi"
                       subtitle="
                           GF-28 TDI Center, Jasola, New Delhi-110025"
                     />
-                  </div>
+                  </div> */}
 
                   {/*-------------------------------------------Adding address IND div End-------------------------- */}
                 </div>
