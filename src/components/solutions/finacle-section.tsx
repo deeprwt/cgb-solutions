@@ -97,7 +97,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
                   operate, and transform more efficiently, helping them deliver
                   enhanced services to their customers.
                 </p>
-                <p className="text-lg">
+                {/* <p className="text-lg">
                   We are a business unit of <b>CGB Solutions System</b>s, a
                   wholly-owned subsidiary of Infosys, a global technology leader
                   with over USD 15 billion in annual revenue. Our solutions are
@@ -106,7 +106,7 @@ const FinacleSecton = ({ cls }: { cls?: string }) => {
                   With an impeccable track record, we have successfully
                   supported financial institutions of all sizes to drive digital
                   transformation at speed and scale.
-                </p>
+                </p> */}
                 <p className="text-lg">
                   Today, <b>Finacle Core Banking Solutions</b> is trusted by
                   financial institutions in over 100 countries, helping more
