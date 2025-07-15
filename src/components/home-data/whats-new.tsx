@@ -24,10 +24,10 @@ const WhatsNew = () => {
             <div className="row details-meta">
               <div className="title-one">
                 {/* <div className="upper-title"></div> */}
-                <h3 className="text-center">What&apos;s New</h3>
+                {/* <h3 className="text-center">What&apos;s New</h3> */}
               </div>
               <div
-                className="col-md-3 mb-35 mt-35  wow fadeInUp transition delay-150 duration-300 ease-in-out"
+                className="col-md-4 mb-35 mt-35  wow fadeInUp transition delay-150 duration-300 ease-in-out"
                 data-wow-delay="0.0s"
               >
                 
@@ -38,7 +38,7 @@ const WhatsNew = () => {
                 />
               </div>
               <div
-                className="col-md-3 mb-35 mt-35  wow fadeInUp"
+                className="col-md-4 mb-35 mt-35  wow fadeInUp"
                 data-wow-delay="0.1s"
               >
                 <Image
@@ -48,7 +48,7 @@ const WhatsNew = () => {
                 />
               </div>
               <div
-                className="col-md-3 mb-35 mt-35  wow fadeInUp "
+                className="col-md-4 mb-35 mt-35  wow fadeInUp "
                 data-wow-delay="0.2s"
               >
                 <Image
@@ -57,7 +57,7 @@ const WhatsNew = () => {
                   className="w-100 h-100 shadowimg cursor-pointer rounded-1"
                 />
               </div>
-              <div
+              {/* <div
                 className="col-md-3 mb-35 mt-35  wow fadeInUp"
                 data-wow-delay="0.3s"
               >
@@ -66,7 +66,7 @@ const WhatsNew = () => {
                   alt="what's new"
                   className="w-100 h-100 shadowimg cursor-pointer rounded-1"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

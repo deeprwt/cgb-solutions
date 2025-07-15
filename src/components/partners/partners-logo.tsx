@@ -12,27 +12,6 @@ import img4 from "@/assets/images/logo/clints/partners/Servicenow.png"
 import img5 from "@/assets/images/logo/clints/partners/Microsoft.png"
 import img6 from "@/assets/images/logo/clints/partners/IBM.png"
 import img7 from "@/assets/images/logo/clints/partners/Lenovo.png"
-import img8 from "@/assets/images/logo/clints/virtusa.png"
-import img9 from "@/assets/images/logo/clints/accenture.png"
-import img10 from "@/assets/images/logo/clints/Capgemini.png"
-import img11 from "@/assets/images/logo/clints/crestron.png"
-import img12 from "@/assets/images/logo/clints/dxc.png"
-import img13 from "@/assets/images/logo/clints/grant_thronton.png"
-import img14 from "@/assets/images/logo/clints/hcl_tech.png"
-import img15 from "@/assets/images/logo/clints/hdfc.png"
-import img16 from "@/assets/images/logo/clints/intuit.png"
-import img17 from "@/assets/images/logo/clints/jio.png"
-import img18 from "@/assets/images/logo/clints/lt_infotech.png"
-import img19 from "@/assets/images/logo/clints/mphasis.png"
-import img20 from "@/assets/images/logo/clints/pwc.png"
-import img21 from "@/assets/images/logo/clints/quicken.png"
-import img22 from "@/assets/images/logo/clints/samsung.png"
-import img23 from "@/assets/images/logo/clints/sbm_bank.png"
-import logo_1 from "@/assets/images/logo/media_01.png";
-import logo_2 from "@/assets/images/logo/media_02.png";
-import logo_3 from "@/assets/images/logo/media_03.png";
-import logo_4 from "@/assets/images/logo/media_04.png";
-import logo_5 from "@/assets/images/logo/media_05.png";
 
 // slider setting
 const slider_setting = {

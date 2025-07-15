@@ -101,6 +101,7 @@ const menu_data: IMenu[] = [
     title: "Services",
     sub_dropdown: true,
     dropdown_submenus: [
+      { link: "/solutions/infrastructure-management", title: "Infrastructure Management" },
       { link: "/solutions/oracle", title: "Oracle" },
       { link: "/solutions/finacle", title: "Finacle Core Banking" },
       { link: "/solutions/servicenow", title: "Service Now" },

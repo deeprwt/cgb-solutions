@@ -14,6 +14,47 @@ import vision from "@/assets/images/icon/vision.svg";
 import shape from "@/assets/images/shape/shape_05.svg";
 import ContactForm from "@/components/forms/contact-form";
 import icon_4 from "@/assets/images/assets/ils_07.svg";
+import HeroVideoOne from "@/components/hero-banner/hero-video-one";
+import TabsData from "@/components/tabs/tabs";
+import TabsTwoData from "@/components/tabs/tabstwo";
+import TextFeatureHome from "@/components/text-feature/text-feature-home";
+import CounterUp from "@/components/common/counter-up";
+import WhatsNew from "@/components/home-data/whats-new";
+import PartnerLogo from "@/components/partners/partners-logo";
+import PartnersLogosTwo from "@/components/partners/partners-logo-2";
+import PartnersSliderOne from "@/components/partners/partners-slider-one";
+
+// counter block
+function CounterBlock({
+  num,
+  text,
+  title,
+  prev_text,
+  delay,
+  decimal = false,
+}: {
+  num: number;
+  text: string;
+  title: string;
+  delay?: string;
+  prev_text?: string;
+  decimal?: boolean;
+}) {
+  return (
+    <div
+      className="counter-block-two text-center mt-35 mb-35 wow fadeInUp"
+      data-wow-delay={`0.${delay}s`}
+    >
+      <div className="main-count fw-500 text-dark d-flex justify-content-center">
+        {prev_text && prev_text}
+        <span className="counter">
+          <CounterUp number={num} text={text} decimal={decimal} />
+        </span>
+      </div>
+      <p className="m0 text-md">{title}</p>
+    </div>
+  );
+}
 
 export const metadata: Metadata = {
   title: "Infrastructure Management",
@@ -58,15 +99,60 @@ const AboutUsPage = () => {
         {/* header end */}
         <main>
           {/* breadcrumb start */}
-          <BreadcrumbOne
-            title="Infrastructure Management"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
-            page="Infrastructure Management"
-            bg_img={about_bg}
-            // // shape={shape}
-            style_2={true}
-          />
-          {/* breadcrumb end */}
+          <HeroVideoOne />
+
+          <WhatsNew />
+
+          {/* tabs are for solutions start */}
+          <TabsTwoData />
+          {/* tabs are for solutions start */}
+          {/* number counter start  */}
+          <div className="text-feature-one service-details">
+            <div className="container">
+              <div className="counter-wrapper pt-80 lg-pt-40 pb-80 lg-pb-40 service-details">
+                <div className="row">
+                  {/* <div className="title-one details-meta text-center">
+                    <h3>Your search ends here.</h3>
+                    <div className="upper-title">
+                      Learn why businesses trust CGB Solutions to power growth
+                    </div>
+                  </div> */}
+                  <div className="col-md-3 col-6">
+                    <CounterBlock num={160} text="+" title="Clients" />
+                  </div>
+                  <div className="col-md-3 col-6">
+                    <CounterBlock
+                      num={12}
+                      text="+"
+                      title="Years of Establishment"
+                      // prev_text="$"
+                      delay="1"
+                      // decimal={true}
+                    />
+                  </div>
+                  <div className="col-md-3 col-6">
+                    <CounterBlock
+                      num={250}
+                      text="+"
+                      title="Skilled Experts"
+                      delay="2"
+                    />
+                  </div>
+                  <div className="col-md-3 col-6">
+                    <CounterBlock
+                      num={6}
+                      text="+"
+                      title="Global Delivery Center"
+                      // prev_text="$"
+                      delay="3"
+                      // decimal={true}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* number counter end */}
 
           <div className="text-feature-one mt-80 lg-mt-80 mb-80 lg-mb-80 service-details">
             <div className="container">
@@ -124,6 +210,8 @@ const AboutUsPage = () => {
             </div> */}
             </div>
           </div>
+
+          <PartnersSliderOne />
           <div className="contact-us-section pt-80 pb-80 lg-pt-80" id="contact">
             <div className="container">
               <div className="position-relative">
