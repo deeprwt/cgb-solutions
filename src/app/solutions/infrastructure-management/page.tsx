@@ -23,6 +23,18 @@ import WhatsNew from "@/components/home-data/whats-new";
 import PartnerLogo from "@/components/partners/partners-logo";
 import PartnersLogosTwo from "@/components/partners/partners-logo-2";
 import PartnersSliderOne from "@/components/partners/partners-slider-one";
+import img1 from "@/assets/images/solutions/Finacle/icon/API-connect.webp";
+import img2 from "@/assets/images/solutions/Finacle/icon/Alerts-Solution-icon.svg";
+import img3 from "@/assets/images/solutions/Finacle/icon/Analytics-Solution-icon.svg";
+import bg_image from "@/assets/images/background/bg-1.jpeg";
+import LogoGrid from "@/components/clint-logo/logogrid";
+
+const backImg = {
+  backgroundImage: `linear-gradient(rgba(52,55,65,0.68), rgba(52,55,65,0.68)), url('${bg_image.src}')`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundAttachment: "scroll",
+};
 
 // counter block
 function CounterBlock({
@@ -42,7 +54,7 @@ function CounterBlock({
 }) {
   return (
     <div
-      className="counter-block-two text-center mt-35 mb-35 wow fadeInUp"
+      className="counter-block-two text-center mt-20 mb-20 wow fadeInUp"
       data-wow-delay={`0.${delay}s`}
     >
       <div className="main-count fw-500 text-dark d-flex justify-content-center">
@@ -93,6 +105,15 @@ function CardItem({
 const AboutUsPage = () => {
   return (
     <Wrapper>
+      <style>
+        {`
+          .counter-block-two span,
+          .counter-block-two p {
+            color: #fff;
+          }
+        `}
+      </style>
+
       <div className="main-page-wrapper">
         {/* header start */}
         <HeaderTwo />
@@ -106,8 +127,137 @@ const AboutUsPage = () => {
           {/* tabs are for solutions start */}
           <TabsTwoData />
           {/* tabs are for solutions start */}
+          <div className="full position-relative service-details">
+            <div className="overlayStyle"></div>
+            <div
+              className="container position-relative"
+              style={{ zIndex: "1" }}
+            >
+              <div className="counter-wrapper pt-40 pb-40">
+                <div className="row details-meta">
+                  <div className="title-one">
+                    {/* <div className="upper-title"></div> */}
+                    {/* <h3 className="text-center">What&apos;s New</h3> */}
+                  </div>
+                  <div
+                    className="col-md-8 mb-20 mt-20  wow fadeInUp transition delay-150 duration-300 ease-in-out"
+                    data-wow-delay="0.0s"
+                  >
+                    <div className="title-one">
+                      <div className="upper-title">Our Solutions</div>
+                      <h3 className="">
+                        Transform Your Business With Our Solution
+                      </h3>
+                      <div className="section-btn sm-mt-40">
+                        <Link href="/contact" className="btn-five icon-link">
+                          <span className="text">Contact Us</span>
+                          <div className="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
+                            <i className="bi bi-arrow-up-right"></i>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="col-md-4 mb-20 mt-20  wow fadeInUp "
+                    data-wow-delay="0.2s"
+                  >
+                    <div
+                      className="card-style-eight rounded-5 vstack card-shadow-one shadowimg tran3s w-100 mb-30"
+                      style={{ padding: "20px 15px 10px;" }}
+                    >
+                      <div className="icon d-flex align-self-center">
+                        <Image src={img3} alt="icon" className="lazy-img" />
+                      </div>
+                      <h4
+                        className="fw-bold mt-30 mb-30 text-center text-capitalize"
+                        style={{ color: "#012d50" }}
+                      >
+                        Cloud Security
+                      </h4>
+                      <p className="text-center">
+                        Elevate your business with cloud solutions. Harness the
+                        power of remote data storage and processing for enhanced
+                        efficiency and accessibility.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className="col-md-4 mb-20 mt-20  wow fadeInUp"
+                    data-wow-delay="0.1s"
+                  >
+                    <div
+                      className="card-style-eight rounded-5 vstack card-shadow-one shadowimg tran3s w-100 mb-30"
+                      style={{ padding: "20px 15px 10px;" }}
+                    >
+                      <div className="icon d-flex align-self-center">
+                        <Image src={img2} alt="icon" className="lazy-img" />
+                      </div>
+                      <h4
+                        className="fw-bold mt-30 mb-30 text-center text-capitalize"
+                        style={{ color: "#012d50" }}
+                      >
+                        Cyber Security
+                      </h4>
+                      <p className="text-center">
+                        Advanced cybersecurity solutions to protect your
+                        organization from evolving cyber threats.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    className="col-md-4 mb-20 mt-20  wow fadeInUp "
+                    data-wow-delay="0.2s"
+                  >
+                    <div
+                      className="card-style-eight rounded-5 vstack card-shadow-one shadowimg tran3s w-100 mb-30"
+                      style={{ padding: "20px 15px 10px;" }}
+                    >
+                      <div className="icon d-flex align-self-center">
+                        <Image src={img3} alt="icon" className="lazy-img" />
+                      </div>
+                      <h4
+                        className="fw-bold mt-30 mb-30 text-center text-capitalize"
+                        style={{ color: "#012d50" }}
+                      >
+                        Network Infrastructure
+                      </h4>
+                      <p className="text-center">
+                        Secure infrastructure services that ensure the
+                        reliability and availability of your critical systems.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className="col-md-4 mb-20 mt-20  wow fadeInUp "
+                    data-wow-delay="0.2s"
+                  >
+                    <div
+                      className="card-style-eight rounded-5 vstack card-shadow-one shadowimg tran3s w-100 mb-30"
+                      style={{ padding: "20px 15px 10px;" }}
+                    >
+                      <div className="icon d-flex align-self-center">
+                        <Image src={img3} alt="icon" className="lazy-img" />
+                      </div>
+                      <h4
+                        className="fw-bold mt-30 mb-30 text-center text-capitalize"
+                        style={{ color: "#012d50" }}
+                      >
+                        Data Management
+                      </h4>
+                      <p className="text-center">
+                        Secure and reliable data center services to ensure the
+                        protection and availability of your data.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           {/* number counter start  */}
-          <div className="text-feature-one service-details">
+          <div className="text-feature-one service-details" style={backImg}>
             <div className="container">
               <div className="counter-wrapper pt-80 lg-pt-40 pb-80 lg-pb-40 service-details">
                 <div className="row">
@@ -154,64 +304,8 @@ const AboutUsPage = () => {
           </div>
           {/* number counter end */}
 
-          <div className="text-feature-one mt-80 lg-mt-80 mb-80 lg-mb-80 service-details">
-            <div className="container">
-              <div className="line-wrapper position-relative">
-                <div className="row align-items-center">
-                  <div className="col-lg-6 wow fadeInLeft">
-                    <div className="title-one details-meta">
-                      {/* <div className="upper-title">About us</div> */}
-                      <h3>Automation Anywhere</h3>
-                    </div>
-                    <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-30">
-                      CGB Solution is a preferred Automation Anywhere consulting
-                      partner for small and large enterprises. We specialize in
-                      helping businesses build and manage complete RPA
-                      ecosystems, ensuring success every step of the way. Our
-                      team of Automation Anywhere experts work with businesses
-                      to determine where automation is feasible, and then take
-                      care of the hard work so you don&apos;t have to. This way,
-                      you can focus on what you&apos;re good at and leave the
-                      tedious tasks to the Bots.
-                    </p>
-                    {/* <Link href="/contact" className="btn-three icon-link mt-15 md-mb-40">
-                    <span>Request a Callback</span>
-                    <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
-                  </Link> */}
-                  </div>
-                  <div className="col-lg-6 ms-auto wow fadeInRight">
-                    <CardItem
-                      icon={vision}
-                      link="/solutions/outsystems"
-                      title="Our Vision"
-                      desc="We aspire to be the visionary of a future where the seamless integration of unparalleled talent and cutting-edge technology not only redefines success for businesses but sets an entirely new standard for global excellence"
-                    />
-                    <CardItem
-                      icon={mission}
-                      link="/solutions/mendix"
-                      title="Mendix"
-                      desc="
-                      Mendix is a low-code application development platform that allows users to create custom software without needing extensive coding knowledge. With its intuitive visual interface, users can easily drag and drop components to build and deploy applications quickly. Mendix is ideal for businesses that want to rapidly create software solutions to meet their specific needs, without the time and expense of traditional software development.
-                    "
-                    />
-                  </div>
-                </div>
-                <Image
-                  src={shape}
-                  alt="shape"
-                  className="lazy-img shapes shape_01"
-                />
-              </div>
-
-              {/* <div className="counter-wrapper mt-80 lg-mt-20">
-              <div className="row">
-
-              </div>
-            </div> */}
-            </div>
-          </div>
-
-          <PartnersSliderOne />
+          {/* <PartnersSliderOne /> */}
+          <LogoGrid />
           <div className="contact-us-section pt-80 pb-80 lg-pt-80" id="contact">
             <div className="container">
               <div className="position-relative">
