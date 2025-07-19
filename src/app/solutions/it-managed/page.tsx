@@ -69,7 +69,7 @@ function CounterBlock({
 }
 
 export const metadata: Metadata = {
-  title: "Infrastructure Management",
+  title: "IT Managed Services",
   description:
     "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
   keywords: "IT consulting, financial growth, insightful solutions",
