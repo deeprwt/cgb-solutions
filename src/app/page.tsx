@@ -27,6 +27,7 @@ import Image from "next/image";
 import clogo from "@/assets/images/cgbhome/testlogo.png";
 import ContactForm from "@/components/forms/contact-form";
 import icon_4 from "@/assets/images/assets/ils_07.svg";
+import HeroVideoOne from "@/components/hero-banner/hero-video-one";
 
 export const metadata: Metadata = {
   title:
@@ -46,7 +47,8 @@ export default function HomePage() {
         {/* header end */}
         <main>
           {/* hero banner start */}
-          <HeroBannerTwo />
+          {/* <HeroBannerTwo /> */}
+          <HeroVideoOne />
           {/* hero banner end */}
 
           {/* number counter start  */}
