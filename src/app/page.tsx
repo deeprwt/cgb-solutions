@@ -43,7 +43,7 @@ export default function HomePage() {
     <Wrapper>
       <div className="main-page-wrapper">
         {/* header start */}
-        <Header />
+        <Header cls="fixed-header" />
         {/* header end */}
         <main>
           {/* hero banner start */}

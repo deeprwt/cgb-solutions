@@ -10,7 +10,7 @@ import icon from "@/assets/images/icon/icon_94.svg";
 import useSticky from "@/hooks/use-sticky";
 import LoginModal from "@/components/common/login-modal";
 
-const HeaderTwo = () => {
+const HeaderTwo = ({cls}: {cls?: string}) => {
   const { sticky } = useSticky();
   // Access the current page URL
   const pathrouter = usePathname();
@@ -19,7 +19,7 @@ const HeaderTwo = () => {
       <header
         className={`${
           pathrouter === "/solutions/digital-marketing" ? "header-change " : ""
-        } theme-main-menu menu-overlay menu-style-one white-vr sticky-menu ${
+        } ${cls} theme-main-menu menu-overlay menu-style-one white-vr sticky-menu ${
           sticky ? "fixed" : ""
         }`}
       >
