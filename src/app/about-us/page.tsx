@@ -22,11 +22,15 @@ import BlockFeatureAbout from "@/components/block-feature/block-feature-about";
 import DottedMap from "@/components/map/maps";
 import HowWeDo from "@/components/home-data/how-we-do";
 import logo_2 from "@/assets/images/logo/logome.png";
+import RecognitionSection from "@/components/company/recognition-section";
 
 export const metadata: Metadata = {
-  title: "About CGB Solutions | Leading IT Consulting and Business Solutions Provider",
-  description : "At CGB Solutions, we specialize in innovative IT consulting, staffing, and business solutions. Our mission is to empower businesses with cutting-edge technology, ensuring exceptional service and success.",
-  keywords : "IT consulting, business solutions, IT services provider, technology consulting, digital transformation, staff augmentation, custom IT solutions, IT staffing services, innovation in IT, IT strategy consulting, IT consulting for businesses, IT solutions for small businesses, enterprise IT services, technology consulting firms, professional IT consulting, digital business solutions, managed IT services, IT infrastructure solutions, business technology solutions, IT support services, IT consulting firm",
+  title:
+    "About CGB Solutions | Leading IT Consulting and Business Solutions Provider",
+  description:
+    "At CGB Solutions, we specialize in innovative IT consulting, staffing, and business solutions. Our mission is to empower businesses with cutting-edge technology, ensuring exceptional service and success.",
+  keywords:
+    "IT consulting, business solutions, IT services provider, technology consulting, digital transformation, staff augmentation, custom IT solutions, IT staffing services, innovation in IT, IT strategy consulting, IT consulting for businesses, IT solutions for small businesses, enterprise IT services, technology consulting firms, professional IT consulting, digital business solutions, managed IT services, IT infrastructure solutions, business technology solutions, IT support services, IT consulting firm",
 };
 
 const AboutUsPage = () => {
@@ -86,6 +90,8 @@ const AboutUsPage = () => {
           <TeamSectionThree />
           {/* team three end */}
 
+          <RecognitionSection />
+
           {/* <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
             <div className="container">
               <DottedMap />
@@ -110,9 +116,12 @@ const AboutUsPage = () => {
         <FooterOne />
         {/* footer end */}
       </div>
-                    {/* add tidio scritp for chat bot */}
-                    <script src="//code.tidio.co/ohsdb1pchgfjw1yfgmpk8nx3haysxugt.js" async></script>
-        {/* add tidio scritp for chat bot */}
+      {/* add tidio scritp for chat bot */}
+      <script
+        src="//code.tidio.co/ohsdb1pchgfjw1yfgmpk8nx3haysxugt.js"
+        async
+      ></script>
+      {/* add tidio scritp for chat bot */}
     </Wrapper>
   );
 };

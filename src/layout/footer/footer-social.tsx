@@ -10,7 +10,7 @@ const FooterSocial = () => {
         </Link>
       </li>
       <li>
-        <Link href="https://www.instagram.com/cgbsolutions_/" target="_blank">
+        <Link href="https://www.instagram.com/cgbsolution/" target="_blank">
           <i className="bi bi-instagram"></i>
         </Link>
       </li>
