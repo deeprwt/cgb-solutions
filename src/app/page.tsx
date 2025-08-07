@@ -117,6 +117,7 @@ export default function HomePage() {
 
           {/* blog item start */}
           <HomeTwoBlogs />
+          
           {/* blog item end */}
 
           <div className="contact-us-section pt-80 pb-80 lg-pt-80" id="contact">
