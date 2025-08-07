@@ -9,7 +9,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import Link from "next/link";
 import BlogItemTwo from "./blog-item/blog-item-two";
 
-type Article = {
+type Blog = {
   id?: string;
   image: string;
   imageUrl?: string;
@@ -24,25 +24,25 @@ type Article = {
   draft: boolean; // Add this line
 };
 
-const ArticleList = () => {
-  const [articles, setArticles] = useState<Article[]>([]);
+const HomeBlogSection = () => {
+  const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const fetchArticles = async () => {
+    const fetchBlogs = async () => {
       try {
-        const articlesSnapshot = await getDocs(collection(db, "articles"));
-        const articlesData = articlesSnapshot.docs.map(
-          (doc) => ({ id: doc.id, ...doc.data() } as Article)
+        const blogsSnapshot = await getDocs(collection(db, "blogs"));
+        const blogsData = blogsSnapshot.docs.map(
+          (doc) => ({ id: doc.id, ...doc.data() } as Blog)
         );
-        setArticles(articlesData);
+        setBlogs(blogsData);
         setLoading(false); // Set loading to false after data is fetched
       } catch (error) {
-        console.error("Error fetching articles:", error);
+        console.error("Error fetching blogs:", error);
       }
     };
 
-    fetchArticles();
+    fetchBlogs();
   }, []);
 
   const parseDate = (dateString: string): Date => {
@@ -50,26 +50,26 @@ const ArticleList = () => {
   };
 
   // Filter out draft articles and sort the remaining articles
-  const filteredArticles = articles.filter((article) => !article.draft);
+  const filteredBlogs = blogs.filter((blog) => !blog.draft);
 
-  const sortedArticles = filteredArticles.sort((a, b) => {
+  const sortedBlogs = filteredBlogs.sort((a, b) => {
     const dateA = parseDate(a.date);
     const dateB = parseDate(b.date);
     return dateB.getTime() - dateA.getTime();
   });
 
   // Limit to 3 articles
-  const limitedArticles = sortedArticles.slice(0, 3);
+  const limitedBlogs = sortedBlogs.slice(0, 3);
 
   return (
     <div className="blog-section-one service-details position-relative lg-mt-80 pt-120 lg-pt-80">
       <div className="container">
         <div className="position-relative">
         <div className="title-one details-meta mb-20 lg-mb-10">
-            <h3>Latest Article.</h3>
+            <h3>Latest Blogs.</h3>
           </div>
           <p className="text-lg mb-40 lg-mb-10">
-          Unlock fresh perspectives and stay informed with our newest Article posts.
+          Unlock fresh perspectives and stay informed with our newest Blogs posts.
           </p>
           <div className="row gx-xxl-5">
             {loading ? (
@@ -80,17 +80,17 @@ const ArticleList = () => {
                 </div>
               ))
             ) : (
-              limitedArticles.map((article) => (
-                <div key={article.id} className="col-md-4">
-                  <BlogItemTwo article={article} linkvalue="article" />
+              limitedBlogs.map((blog) => (
+                <div key={blog.id} className="col-md-4">
+                  <BlogItemTwo article={blog} linkvalue="blog" />
                   {/* <ArticleWebsiteCard article={article} /> */}
                 </div>
               ))
             )}
           </div>
           <div className="section-btn sm-mt-40">
-            <Link href="/article" className="btn-five icon-link">
-              <span className="text">See all Article</span>
+            <Link href="/blog" className="btn-five icon-link">
+              <span className="text">See all Blogs</span>
               <div className="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
                 <i className="bi bi-arrow-up-right"></i>
               </div>
@@ -102,4 +102,4 @@ const ArticleList = () => {
   );
 };
 
-export default ArticleList;
+export default HomeBlogSection;

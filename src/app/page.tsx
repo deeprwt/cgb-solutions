@@ -28,6 +28,7 @@ import clogo from "@/assets/images/cgbhome/testlogo.png";
 import ContactForm from "@/components/forms/contact-form";
 import icon_4 from "@/assets/images/assets/ils_07.svg";
 import HeroVideoOne from "@/components/hero-banner/hero-video-one";
+import HomeBlogSection from "@/components/blogs/homeblogsection";
 
 export const metadata: Metadata = {
   title:
@@ -116,7 +117,8 @@ export default function HomePage() {
           {/* faq section end */}
 
           {/* blog item start */}
-          <HomeTwoBlogs />
+          {/* <HomeTwoBlogs /> */}
+          <HomeBlogSection />
           
           {/* blog item end */}
 

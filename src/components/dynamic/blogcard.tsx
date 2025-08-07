@@ -10,6 +10,7 @@ type Blog = {
   author: string;
   post_info: string;
   category: string;
+    metaTitle: string;
   metaKeywords: string;
   metaDescription: string;
   link: string;
@@ -32,13 +33,13 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog, onDelete, onEdit }) => {
         className="post-img position-relative d-flex align-items-end m0"
         style={{ backgroundImage: `url(${blog.imageUrl || blog.image})`, height: "252px" }}
       >
-        <Link href={`/article/${blog.link}`} className="stretched-link date tran3s">
+        <Link href={`/blog/${blog.link}`} className="stretched-link date tran3s">
           {blog.date.split(" ")[0]} {blog.date.split(" ")[1]}
         </Link>
       </figure>
       <div className="post-data">
         <div className="d-flex justify-content-between align-items-center flex-wrap">
-          <Link href={`/article/${blog.link}`} className="blog-title">
+          <Link href={`/blog/${blog.link}`} className="blog-title">
             <h4 style={{ fontSize: "23px" }}>{blog.title}</h4>
           </Link>
           <div className="d-flex align-items-center">
