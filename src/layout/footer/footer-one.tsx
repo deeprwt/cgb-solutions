@@ -39,28 +39,28 @@ const FooterOne = () => {
               {/* social link */}
             </div>
             <div className="col-xl-3 col-md-2 col-sm-4 mb-20">
-              <h5 className="footer-title">Tech Solutions</h5>
+              <h5 className="footer-title">Services</h5>
               <ul className="footer-nav-link style-none">
                 <li>
-                  <Link href="/solutions/oracle">Oracle</Link>
+                  <Link href="/services/oracle">Oracle</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/finacle">Finacle</Link>
+                  <Link href="/services/finacle">Finacle</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/outsystems">Outsystems</Link>
+                  <Link href="/services/outsystems">Outsystems</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/mendix">Mendix</Link>
+                  <Link href="/services/mendix">Mendix</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/servicenow">ServiceNow</Link>
+                  <Link href="/services/servicenow">ServiceNow</Link>
                 </li>
                 <li>
-                  <Link href="solutions/power-platform-dynamic-365">Microsoft Power Platform</Link>
+                  <Link href="/services/power-platform-dynamic-365">Microsoft Power Platform</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/automation-anywhere">Automation Anywhere</Link>
+                  <Link href="/services/automation-anywhere">Automation Anywhere</Link>
                 </li>
               </ul>
             </div>

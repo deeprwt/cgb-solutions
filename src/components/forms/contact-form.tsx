@@ -47,25 +47,50 @@ const ContactForm = () => {
   //   reset();
   // });
 
-  // Define form submission handler
+// Define form submission handler
+//  const onSubmit = async (data: FormData) => {
+//    try {
+//      // Add data to Firestore collection (conditionally executed only in the client-side)
+//      if (typeof window !== "undefined") {
+//        // Check if window is defined (browser environment)
+//        const { db } = await import("@/database/firebase");
+//        const contactRef = collection(db, "newcontact");
+//        await addDoc(contactRef, data);
+//        reset(); // Clear the form
+//        // Redirect after successful submission
+//        router.push("/thank-you");
+//        notifySuccess("Message sent successfully!"); // Use notifySuccess
+//      }
+//    } catch (error) {
+//      console.error("Error adding document: ", error);
+//      notifyError("Error sending message, please try again."); // Use notifyError
+//    }
+//  };
+
   const onSubmit = async (data: FormData) => {
     try {
-      // Add data to Firestore collection (conditionally executed only in the client-side)
-      if (typeof window !== "undefined") {
-        // Check if window is defined (browser environment)
-        const { db } = await import("@/database/firebase");
-        const contactRef = collection(db, "newcontact");
-        await addDoc(contactRef, data);
-        reset(); // Clear the form
-        // Redirect after successful submission
-        router.push("/thank-you");
-        notifySuccess("Message sent successfully!"); // Use notifySuccess
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (response.ok) {
+        notifySuccess("Message sent successfully!"); // Show success notification
+        reset(); // Clear the form after submission
+         // Redirect after successful submission
+         router.push("/thank-you");
+      } else {
+        notifyError("Error sending message, please try again."); // Handle error response
       }
     } catch (error) {
-      console.error("Error adding document: ", error);
-      notifyError("Error sending message, please try again."); // Use notifyError
+      console.error("Error submitting form:", error);
+      notifyError("Error submitting form, please try again."); // Handle network or unexpected errors
     }
   };
+  
 
   return (
     <>
