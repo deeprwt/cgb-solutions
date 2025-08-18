@@ -93,7 +93,7 @@ const LocationTabsData = () => {
               >
                 United States
               </button>
-              {/* <button
+              <button
                 className="nav-link"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-lowcode"
@@ -102,8 +102,8 @@ const LocationTabsData = () => {
                 aria-selected="false"
                 tabIndex={-1}
               >
-                Japan
-              </button> */}
+                Middle East
+              </button>
               {/* <button
                 className="nav-link"
                 data-bs-toggle="tab"
@@ -219,15 +219,17 @@ Kent County, USA"
               tabIndex={0}
             >
               <div className="accordion accordion-style-one" id="accordionFour">
-                <div className="row align-items-center">
-                  {/*----------------------------------------Adding address form here --------------------------------*/}
-
-                  <div className="col-xl-6 col-lg-6">
-                    <div className="title-one pt-4">
-                      {/* <div className="upper-title">Services</div> */}
-                      <h2>Low Code</h2>
-                    </div>
+                <div className="row justify-content-center">
+                  {/*----------------------------------------Adding address IND div staring--------------------------------*/}
+                  <div className="col-md-4 pt-30">
+                    <AddressBlock
+                      icon={icon_1}
+                      title="Saudi Arabia"
+                      subtitle="KSA 6329 Alyah 2742 Riyadh 12281 Saudi Arabia"
+                    />
                   </div>
+
+                  {/*-------------------------------------------Adding address IND div End-------------------------- */}
                 </div>
               </div>
             </div>

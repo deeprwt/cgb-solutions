@@ -2,54 +2,61 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // internal
-import screen_1 from '@/assets/images/assets/screen_22.svg';
-import screen_2 from '@/assets/images/assets/screen_23.png';
-import shape_1 from '@/assets/images/shape/shape_43.svg';
-import shape_2 from '@/assets/images/shape/shape_42.svg';
+import screen_1 from "@/assets/images/assets/screen_22.svg";
+import screen_2 from "@/assets/images/assets/screen_23.png";
+import shape_1 from "@/assets/images/shape/shape_43.svg";
+import shape_2 from "@/assets/images/shape/shape_42.svg";
 import PartnersSliderOne from "../partners/partners-slider-one";
+import ContactForm from "../forms/contact-form";
 
-// img style 
+// img style
 const imgStyle = {
-  height:'auto'
-}
+  height: "auto",
+};
 
 const HeroBannerSix = () => {
   return (
-    <div className="hero-banner-six service-details pt-170 position-relative">
+    <div className="hero-banner-six service-details pt-170 pb-40 position-relative lp-hero-bg bottom-curve">
       <div className="container position-relative">
         <div className="row justify-content-between details-meta">
           <div className="col-md-6 wow fadeInLeft">
             <div className="pt-20 pb-50">
-              {/* <h1 className="hero-heading fw-bold">
-                Delivers more, not just marketing.
-              </h1> */}
-              <h3 className="hero-heading fw-bold">
+              <h1 className="hero-heading fw-bold text-white">
+                <span className="gradient-text">ServiceNow Consulting</span> &
+                Development Services
+              </h1>
+              {/* <h3 className="hero-heading fw-bold">
                 Our Digital Marketing Company Goes Beyond Just Promises.
-              </h3>
-              <p className="text-lg pt-35 lg-pt-30 pb-35 lg-pb-20">
-                Unlock your business growth potential with a marketing agency
-                expertise.
+              </h3> */}
+              <p className="text-lg pt-35 lg-pt-30 pb-35 lg-pb-20 text-white">
+                Streamline IT Operations, Automate Workflows, and Elevate
+                Service Delivery with Certified ServiceNow Experts from CGB
+                Solutions
               </p>
               <div className="d-flex flex-wrap">
-                <Link href="/contact"
-                  className="btn-eighteen tran3s me-4 mt-10"
+                <Link
+                  href="/contact"
+                  className="btn-eighteen tran3s me-4 mt-10 heartbeat-animation"
                 >
-                  Contact
-                </Link>
-                <Link href="/contact" className="btn-nineteen tran3s mt-10">
-                  Let’s Get Started
+                  Contact Us
                 </Link>
               </div>
             </div>
           </div>
           <div className="col-md-6 d-md-flex justify-content-end wow fadeInRight">
-            <div className="media-wrapper position-relative ms-lg-5">
-              {/* <Image
+            <div className="form-style-one ps-xl-5 extra-form-style">
+              {/* form start */}
+
+              <ContactForm />
+              {/* form end */}
+            </div>
+            {/* <div className="media-wrapper position-relative ms-lg-5">
+              <Image
                 src={screen_1}
                 alt="screen"
                 className="lazy-img shapes screen_01"
                 style={imgStyle}
-              /> */}
+              />
               <Image
                 src={screen_2}
                 alt="screen"
@@ -62,21 +69,21 @@ const HeroBannerSix = () => {
                 className="lazy-img shapes bg-shape"
                 style={imgStyle}
               />
-            </div>
+            </div> */}
           </div>
         </div>
 
-        <div className="row">
+        {/* <div className="row">
           <div className="col-12">
             <div className="partner-logo-one pt-60 md-pt-50">
               <p className="fw-500 text-dark mb-4">
                 <span className="text-decoration-underline">Join 27,000+</span>{" "}
                 companies who’ve reached{" "}
               </p>
-              {/* <PartnersSliderOne /> */}
+              <PartnersSliderOne />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Image
         src={shape_2}

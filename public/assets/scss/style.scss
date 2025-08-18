@@ -202,6 +202,10 @@
     background: #012d50 !important;
 }
 
+.dark-header{
+    background: #012d50 !important;
+}
+
 .round-btn {
     font-size: 25px;
     width: 55px;
@@ -215,6 +219,105 @@
 .hblog-img{
         border-radius: 0px 0px 30px 30px;   
 }
+.lp-hero-bg{
+  background: linear-gradient(rgb(7, 6, 36) -17.19%, rgba(7, 6, 36, 0) 111.4%), linear-gradient(86.97deg, rgba(255, 168, 0, 0.4) -0.67%, rgba(25, 187, 125, 0.4) 24.91%, rgba(0, 82, 204, 0.4) 48.82%, rgba(69, 164, 236, 0.4) 72.18%, rgba(184, 95, 255, 0.4) 88.31%), rgb(7, 6, 36);
+}
+
+.gradient-text{
+ background: linear-gradient(90.05deg, rgb(181, 255, 211) 0.02%, rgb(209, 164, 255) 39.16%, rgb(255, 165, 175) 75.82%, rgb(255, 220, 164) 112%) text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottom-curve{
+    border-radius: 0px 0px 50px 50px;
+}
+
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1)
+    }
+
+    3% {
+        transform: scale(1.1)
+    }
+
+    7% {
+        transform: scale(1)
+    }
+
+    10% {
+        transform: scale(1.1)
+    }
+
+    15% {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.heartbeat-animation {
+    animation: heartbeat 5s ease-in-out infinite;
+    transform-origin: center;
+        background: rgb(133, 18, 224);
+}
+
+.heartbeat-animation svg {
+    fill: #fff
+}
+
+.heartbeat-animation:hover {
+    transition: transform .2s ease;
+    animation-play-state: paused;
+    transform: scale(1.02)
+}
+
+.extra-form-style{
+    label{
+        color: white !important;
+    }
+    button{
+        background-color: rgb(133, 18, 224);
+    }
+}
+.industry-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  transition: all 0.3s ease;
+  height: 100%;
+    align-items: center;
+}
+
+.industry-card:hover {
+  background: #e8f9f1; /* light green hover */
+  border-color: #00b140; /* ServiceNow green */
+  cursor: pointer;
+}
+
+.industry-icon {
+  background: #f5f5f5;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.industry-name {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
 //-----Manish----
 
 .bgnew{

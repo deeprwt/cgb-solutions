@@ -35,6 +35,8 @@ const slider_setting = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1500,
+  pauseOnHover: false,   // 👈 this makes autoplay continue even on hover
+  pauseOnFocus: false,
   responsive: [
     {
       breakpoint: 992,
