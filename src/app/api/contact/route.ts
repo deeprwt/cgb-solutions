@@ -36,6 +36,8 @@ export async function POST(request: Request) {
       text: `Hello ${name},\n\nThank you for contacting us! We have received your message:\n\n"${message}"\n\nWe will get back to you shortly.\n\nBest regards,\nCGBIZ SOLUTIONS PRIVATE LIMITED`,
       html: `<p>Hello <strong>${name}</strong>,</p>
              <p>Thank you for contacting us! We have received your message:</p>
+             <p>Your Phone Number : ${number}</p>
+             <p>Your Email Id : ${email}</p>
              <blockquote>${message}</blockquote>
              <p>We will get back to you shortly.</p>
              <p>Best regards,<br>CGBIZ SOLUTIONS PRIVATE LIMITED</p>`,

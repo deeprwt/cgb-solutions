@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -34,6 +34,7 @@ const schema = yup.object().shape({
 
 const ContactForm = () => {
   const router = useRouter();
+   const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -68,6 +69,7 @@ const ContactForm = () => {
 //  };
 
   const onSubmit = async (data: FormData) => {
+    setLoading(true); // start loader
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -88,6 +90,9 @@ const ContactForm = () => {
     } catch (error) {
       console.error("Error submitting form:", error);
       notifyError("Error submitting form, please try again."); // Handle network or unexpected errors
+    }
+     finally {
+      setLoading(false); // stop loader
     }
   };
   
@@ -192,9 +197,24 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="col-12">
-            <button type="submit" className="btn-four tran3s w-100 d-block">
-              Send Message
-            </button>
+            <button
+            type="submit"
+            className="btn-four tran3s w-100 d-block d-flex align-items-center justify-content-center"
+            disabled={loading}
+          >
+            {loading ? (
+              <>
+                <span
+                  className="spinner-border spinner-border-sm me-2"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Sending...
+              </>
+            ) : (
+              "Send Message"
+            )}
+          </button>
           </div>
         </div>
       </form>

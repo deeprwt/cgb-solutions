@@ -116,47 +116,91 @@ export default function ServiceNow() {
           {/* blog item start */}
           {/* <HomeThreeBlogs /> */}
           {/* blog item end */}
-          <div className="contact-us-section pt-80 pb-80 lg-pt-80" id="contact">
+          <div className="contact-us-section pt-80 pb-80 lg-pt-80" id="contact"  style={{background:"#E3F0FF"}}> 
             <div className="container">
               <div className="position-relative">
-                <div className="bg-wrapper light-bg mt-80 lg-mt-40">
+                <div className="bg-wrapper light-bg mt-80 lg-mt-40 service-details" style={{padding:"0px"}}>
                   <div className="row">
                     <div className="col-lg-5">
-                      <div className="d-flex flex-column flex-lg-column-reverse">
-                        <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
-                          <h2>Let&apos;s Start</h2>
-                          <p>Initiating Your Journey to Success and Growth.</p>
+                      <div className="d-flex flex-column flex-lg-column-reverse form-section-style">
+                        <div className="title-one text-center text-lg-start  details-meta">
+                          <h3>Let&apos;s Transform Your Business Together</h3>
+                          <p>
+                            Your Trusted IT Solutions & Business Consulting
+                            Partner
+                          </p>
                           <ul className="list-none">
-                            <li><span className="px-3"><i className="bi dark-green bi-bookmarks-fill"></i></span><span>Book a Free Consultation</span></li>
-                            <li><span className="px-3"><i className="bi dark-green bi-telephone-forward-fill"></i></span><span>Request a Call Back</span></li>
-                            <li><span className="px-3"><i className="bi dark-green bi-calendar-check-fill"></i></span><span>Schedule a Demo</span></li>
+                            <li>
+                              <h4
+                                className="fw-bold mt-2 mb-2 text-capitalize"
+                                style={{ color: "#012d50" }}
+                              >
+                                <span className="pr-3">
+                                  <i className="bi icon-color bi-trophy"></i>
+                                </span>
+                                15+ Years of Expertise
+                              </h4>
+                              <p>
+                                We specialize in delivering complex IT and
+                                business solutions with precision and speed.
+                              </p>
+                            </li>
+                            <li>
+                              <h4
+                                className="fw-bold mt-2 mb-2 text-capitalize"
+                                style={{ color: "#012d50" }}
+                              >
+                                <span className="pr-3">
+                                  <i className="bi icon-color bi-globe-americas"></i>
+                                </span>
+                                200+ Clients Across Industries
+                              </h4>
+                              <p>
+                                From high-growth startups to global enterprises
+                                — we’ve powered every stage of digital growth.
+                              </p>
+                            </li>
+                            <li>
+                              <h4
+                                className="fw-bold mt-2 mb-2 text-capitalize"
+                                style={{ color: "#012d50" }}
+                              >
+                                <span className="pr-3">
+                                  <i className="bi icon-color bi-person-workspace"></i>
+                                </span>
+                                75+ Certified Experts In-House
+                              </h4>
+                              <p>
+                                Top 1% talent delivering Microsoft Power
+                                Platform, Dynamics 365, ServiceNow, OutSystems,
+                                and more.
+                              </p>
+                            </li>
+                            <li>
+                              <h4
+                                className="fw-bold mt-2 mb-2 text-capitalize"
+                                style={{ color: "#012d50" }}
+                              >
+                                <span className="pr-3">
+                                  <i className="bi icon-color bi-rocket-takeoff"></i>
+                                </span>
+                                End-to-End Business & IT Consulting
+                              </h4>
+                              <p>
+                                We don’t just deliver tech — we build scalable
+                                strategies that drive measurable results.
+                              </p>
+                            </li>
                           </ul>
-
-                          <div className="address-block-one mb-40">
-                            {/* <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto">
-                              <Image
-                                src={icon_1}
-                                alt="icon"
-                                className="lazy-img"
-                              />
-                            </div> */}
-                            <h5 className="title">CGB Solutions</h5>
-                            <p>
-                              {" "}
-                              2nd Floor, No.112, AKR Tech Park, 7th Mile Hosur
-                              Rd, Bengaluru, Karnataka – 560068
-                            </p>
-                            <ul className="list-none">
-                            <li><span className="px-3"><i className="bi dark-green bi-envelope-open-fill"></i></span><span>info@cgbsolution.com</span></li>
-                            <li><span className="px-3"><i className="bi dark-green bi-telephone-forward-fill"></i></span><span>+91 9844494599</span></li>
-                            <li><span className="px-3"><i className="bi dark-green bi-browser-chrome"></i></span><span>www.cgbsolution.com</span></li>
-                          </ul>
-                          </div>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-7">
-                      <div className="form-style-one ps-xl-5">
+                      <div className="form-style-one ps-xl-5 p-4">
+                        <h3 className="font-weight-bolder" style={{fontWeight:"700"}}>Book Your Free Consultation</h3>
+                        <p>
+                          Get a Response Within 24 Business Hours — Guaranteed
+                        </p>
                         {/* form start */}
 
                         <ContactForm />

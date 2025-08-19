@@ -287,20 +287,21 @@
   border: 1px solid #e5e7eb;
   border-radius: 50px;
   display: flex;
-  flex-direction: row;
+//   flex-direction: row;
   padding-bottom: 10px;
   padding-top: 10px;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #4beddb;
   transition: all 0.3s ease;
   height: 100%;
     align-items: center;
 }
 
 .industry-card:hover {
-  background: #e8f9f1; /* light green hover */
-  border-color: #00b140; /* ServiceNow green */
+     background: #012d50;
+    border-color: #012d50;
+    color: white;
   cursor: pointer;
 }
 
@@ -322,8 +323,21 @@
     list-style: none;
     padding-left: 0rem;
 }
-.dark-green{
-        color: #0f4400;
+.icon-color{
+        background: #012d50;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white;
+    font-size: 10px;
+}
+.text-justify{
+    text-align: justify;
+}
+.form-section-style{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
 }
 //-----Manish----
 

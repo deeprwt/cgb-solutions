@@ -14,7 +14,7 @@ const FaqSolutions = ({cls,title,img,page}:{cls?:string,title:string,img:StaticI
     <>
       <div className={`faq-section-one service-details ${cls?cls:'mt-150 mb-120 lg-mt-120 md-mt-80'}`}>
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-lg-5 wow fadeInLeft">
             <Image
               src={img}

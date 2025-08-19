@@ -16,19 +16,19 @@ const imgStyle = {
 
 const HeroBannerSix = () => {
   return (
-    <div className="hero-banner-six service-details pt-170 pb-40 position-relative lp-hero-bg bottom-curve">
+    <div className="hero-banner-six service-details pt-170 sm-pt-80 pb-40 position-relative lp-hero-bg bottom-curve">
       <div className="container position-relative">
         <div className="row justify-content-between details-meta">
           <div className="col-md-6 wow fadeInLeft">
             <div className="pt-20 pb-50">
-              <h1 className="hero-heading fw-bold text-white">
+              <h1 className="hero-heading fw-bold text-white text-center text-md-start">
                 <span className="gradient-text">ServiceNow Consulting</span> &
                 Development Services
               </h1>
               {/* <h3 className="hero-heading fw-bold">
                 Our Digital Marketing Company Goes Beyond Just Promises.
               </h3> */}
-              <p className="text-lg pt-35 lg-pt-30 pb-35 lg-pb-20 text-white">
+              <p className="text-lg pt-35 lg-pt-30 pb-35 lg-pb-20 text-white text-center text-md-start">
                 Streamline IT Operations, Automate Workflows, and Elevate
                 Service Delivery with Certified ServiceNow Experts from CGB
                 Solutions

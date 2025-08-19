@@ -61,7 +61,6 @@ import FeedbackThree from "@/components/feedback/feedback-three";
 const industries = [
   { name: "Automotive", icon: auto },
   { name: "Banking", icon: bank },
-  { name: "Consumer Packaged Goods", icon: consumer },
   { name: "Government", icon: govt },
   { name: "Healthcare", icon: health },
   { name: "Insurance", icon: insurance },
@@ -70,6 +69,7 @@ const industries = [
   { name: "Retail", icon: retail },
   { name: "Technology", icon: tech },
   { name: "Telecom", icon: tele },
+  { name: "Consumer Packaged Goods", icon: consumer },
 ];
 
 const backImg = {
@@ -214,11 +214,11 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
               </div>
             </div>
             <div className="col-md-6 wow fadeInRight order--first ">
-              <div className="title-one details-meta pb-10 wow fadeInLeft ps-xxl-5 ps-xl-3">
+              <div className="title-one details-meta pb-10 wow fadeInLeft ">
                 <h3>Why CGB Solutions — Your Trusted ServiceNow Partner</h3>
               </div>
-              <div className="details-meta ps-xxl-5 ps-xl-3">
-                <p className="text-lg mb-35 md-mb-30">
+              <div className="details-meta ">
+                <p className="text-lg mb-35 md-mb-30 text-justify">
                   At CGB Solutions, we help global enterprises unlock the full
                   potential of ServiceNow. Our certified consultants,
                   developers, and architects bring deep domain expertise in
@@ -533,11 +533,11 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
 
       <section className="py-5 text-center service-details">
         <div className="container details-meta">
-          <h3 className="fw-bold mb-4 pb-4">One platform, any industry</h3>
+          <h3 className="fw-bold mb-4 pb-4">One Platform, Any Industry</h3>
           <div className="row g-4 justify-content-center">
             {industries.map((industry, index) => (
               <div className="col-6 col-md-4 col-lg-3" key={index}>
-                <div className="industry-card">
+                <div className="industry-card flex-md-row flex-column">
                   <div className="industry-icon">
                     <Image
                       src={industry.icon}
