@@ -39,15 +39,15 @@ const FeedbackFour = ({spacing}:{spacing?:string}) => {
   };
   return (
     <div className={`feedback-section-four ${spacing?spacing:'mt-180 lg-mt-80'}`}>
-      <div className="container">
+      <div className="container service-details">
         <div className="position-relative">
-          <div className="title-two">
-            <h2>You are in a good hand</h2>
+          <div className="title-two details-meta">
+            <h3>Client Testimonials</h3>
           </div>
-          <p className="text-lg mt-30 lg-mt-20 mb-70 lg-mb-40">
+          {/* <p className="text-lg mt-30 lg-mt-20 mb-70 lg-mb-40">
             Optimize expense tracking across platforms, & product lines using
             multiple cards.
-          </p>
+          </p> */}
           <Slider {...slider_setting} ref={sliderRef} className="feedback-slider-four">
             {feedback_four.map((item, i) => (
               <div key={i} className="item">
@@ -80,18 +80,18 @@ const FeedbackFour = ({spacing}:{spacing?:string}) => {
                       <div className="name fw-500 text-dark">{item.name},</div>
                       <p className="m0 opacity-75">{item.location}</p>
                     </div>
-                    <Image
+                    {/* <Image
                       src={item.user!}
                       alt="user"
                       className="avatar rounded-circle"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
             ))}
           </Slider>
 
-          <ul className="slider-arrows slick-arrow-one d-flex justify-content-center style-none">
+          {/* <ul className="slider-arrows slick-arrow-one d-flex justify-content-center style-none">
             <li onClick={sliderPrev} className="prev_a slick-arrow">
               <i className="bi bi-chevron-left"></i>
             </li>
@@ -101,10 +101,8 @@ const FeedbackFour = ({spacing}:{spacing?:string}) => {
           </ul>
 
           <div className="partner-logo-one pt-80 lg-pt-50 pb-80 lg-pb-50">
-            {/* partner slider start */}
             <PartnersSliderOne />
-            {/* partner slider end */}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

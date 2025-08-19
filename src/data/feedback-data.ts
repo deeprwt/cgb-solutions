@@ -95,27 +95,35 @@ export const feedback_three:{id: number;desc: string}[] = [
 export const feedback_four:ITestimonial[] = [
   {
     id:1,
-    desc:'Game-changer! Boosted efficiency, simplified tasks, and saved time. Highly recommended!',
-    name:'John Smith',
-    location:'Claifornia',
+    desc:'CGB Solutions redefined our IT operations with ServiceNow. Their team is fast, focused, and always available for support.',
+    name:'Michael Carter, CTO',
+    location:'SwiftLogistics Inc. (USA)',
     user:user_1,
     rating:5
   },
   {
     id:2,
-    desc:'Game-changer! Boosted efficiency, simplified tasks, and saved time. Highly recommended!',
-    name:'Zephyrlyn',
-    location:'Valeria',
+    desc:'Our HR services became 100% digital thanks to CGB’s HRSD solution. A very reliable and knowledgeable team.',
+    name:'Ananya Mehra, VP-HR',
+    location:'Pharma Enterprise (India)',
     user:user_3,
     rating:4
   },
   {
     id:3,
-    desc:'Game-changer! Boosted efficiency, simplified tasks, and saved time. Highly recommended!',
-    name:'Quinvera',
-    location:'Aqualuna',
+    desc:'CGB Solutions guided us through a seamless ITSM implementation. Our incident response time dropped by 40% within the first quarter.',
+    name:'David Thompson, Head of IT',
+    location:'GreenWave Energy Corp. (UK)',
     user:user_4,
     rating:4.5
+  },
+    {
+    id:4,
+    desc:'Working with CGB Solutions has been a game-changer. Their automation strategies cut down repetitive tasks and boosted overall efficiency.',
+    name:'Robert Hayes, CIO',
+    location:'TechNova Systems (USA)',
+    user:user_4,
+    rating:5
   },
 ]
 

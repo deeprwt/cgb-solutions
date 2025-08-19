@@ -24,13 +24,22 @@ import icon from "@/assets/images/icon/icon_27.svg";
 // import shape_1 from "@/assets/images/shape/shape_11.svg";
 // import shape_2 from "@/assets/images/shape/shape_05.svg";
 import img2 from "@/assets/images/solutions/Finacle/icon/API-connect.webp";
+import itsm from "@/assets/images/lp/servicenow/IT Service Management (ITSM).svg";
+import itom from "@/assets/images/lp/servicenow/IT Operations Management (ITOM).svg";
+import itam from "@/assets/images/lp/servicenow/IT Asset Management (ITAM).svg";
+import csm from "@/assets/images/lp/servicenow/Customer Service Management.svg";
+import hr from "@/assets/images/lp/servicenow/HR Service Delivery (HRSD).svg";
+import workflows from "@/assets/images/lp/servicenow/Creator Workflows (Low-Code Apps).svg";
+import Inte from "@/assets/images/lp/servicenow/ServiceNow Implementation & Integration.svg";
+import support from "@/assets/images/lp/servicenow/Managed Services & Support.svg";
 import icon_3 from "@/assets/images/icon/icon_64.svg";
 import icon_4 from "@/assets/images/icon/icon_65.svg";
 import icon_5 from "@/assets/images/icon/icon_66.svg";
 import icon_6 from "@/assets/images/icon/icon_67.svg";
 import shape from "@/assets/images/shape/shape_05.svg";
 import bulb from "@/assets/images/solutions/servicenow/bulb.png";
-import digital from "@/assets/images/solutions/servicenow/digital-journey.png";
+import digital from "@/assets/images/lp/servicenow/an_outline.png";
+import digital2 from "@/assets/images/lp/servicenow/service-capability.svg";
 import bg_image from "@/assets/images/background/new-wave.webp";
 import auto from "@/assets/images/lp/servicenow/automotive.svg";
 import bank from "@/assets/images/lp/servicenow/banking.svg";
@@ -43,11 +52,16 @@ import retail from "@/assets/images/lp/servicenow/retail.svg";
 import health from "@/assets/images/lp/servicenow/healthcare.svg";
 import tech from "@/assets/images/lp/servicenow/technology.svg";
 import tele from "@/assets/images/lp/servicenow/telecom.svg";
+import TestimonialPage from "@/app/testimonial/page";
+import FeedbackFour from "@/components/feedback/feedback-four";
+import FeedbackOne from "@/components/feedback/feedback-one";
+import FeedbackFive from "@/components/feedback/feedback-five";
+import FeedbackThree from "@/components/feedback/feedback-three";
 
 const industries = [
   { name: "Automotive", icon: auto },
   { name: "Banking", icon: bank },
-  { name: "Consumer Packaged Goods", icon: consumer},
+  { name: "Consumer Packaged Goods", icon: consumer },
   { name: "Government", icon: govt },
   { name: "Healthcare", icon: health },
   { name: "Insurance", icon: insurance },
@@ -120,51 +134,88 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
       >
         <div className="container">
           <div className="row align-items-center details-meta">
-            <div className="col-xxl-5 col-md-5 wow fadeInLeft order-last order-md-first">
-              <Image
-                src={servicenow1}
-                alt="screen"
-                className="lazy-img w-full h-auto rounded"
-              />
-            </div>
-            <div className="col-xxl-7 col-md-7 wow fadeInRight order-first order-md-last">
-              <div className="title-one details-meta pb-10 wow fadeInLeft ps-xxl-5 ps-xl-3">
-                <h3>Why ServiceNow?</h3>
-              </div>
-              <div className="details-meta ps-xxl-5 ps-xl-3">
-                <p className="text-lg mb-35 md-mb-30">
-                  ServiceNow is the leading cloud-based platform that transforms
-                  enterprise workflows through automation, AI, and low-code
-                  development. It enables businesses to replace outdated
-                  processes with smart, scalable solutions across IT, HR,
-                  Customer Service, and more.
-                </p>
-                <div className="d-flex flex-wrap pb-4">
-                  <Link
-                    href="/contact"
-                    className="btn-eighteen tran3s me-4 mt-10 heartbeat-animation"
+            <div className="col-md-6 wow fadeInLeft order-last">
+              <div className="row d-flex flex-column">
+                <div
+                  className="col-md-12 d-flex wow fadeInUp"
+                  data-wow-delay={`0.1s`}
+                >
+                  <div
+                    className="card-style-eight rounded-5 vstack tran3s w-100 mb-30"
+                    style={{ padding: "20px 15px 10px;" }}
                   >
-                    Contact Us
-                  </Link>
+                    <div className="icon d-flex align-self-start align-items-center mt-2 mb-2">
+                      <Image src={itam} alt="icon" className="lazy-img" layout="responsive" />
+                      <h4
+                        className="fw-bold text-center text-capitalize px-4 mb-0"
+                        style={{ color: "#012d50" }}
+                      >
+                        Smart
+                      </h4>
+                    </div>
+                    <p className="">
+                      Automate and enhance repetitive and time-consuming
+                      processes and reduce errors across your organization. Run
+                      multiple application consistently with the same custom
+                      data source.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className="col-md-12 d-flex wow fadeInUp"
+                  data-wow-delay={`0.1s`}
+                >
+                  <div
+                    className="card-style-eight rounded-5 vstack tran3s w-100 mb-30"
+                    style={{ padding: "20px 15px 10px;" }}
+                  >
+                   <div className="icon d-flex align-self-start align-items-center mt-2 mb-2">
+                      <Image src={itam} alt="icon" className="lazy-img" layout="responsive" />
+                      <h4
+                        className="fw-bold text-center text-capitalize px-4 mb-0"
+                        style={{ color: "#012d50" }}
+                      >
+                        Scale
+                      </h4>
+                    </div>
+                    <p className="">
+                      See productivity, agility and resource utilization gains
+                      of a robust low-code backend development platform in
+                      addition to low-code front-end development that helps you
+                      scale and run thousands of applications of any complexity
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className="col-md-12 d-flex wow fadeInUp"
+                  data-wow-delay={`0.1s`}
+                >
+                  <div
+                    className="card-style-eight rounded-5 vstack tran3s w-100 mb-30"
+                    style={{ padding: "20px 15px 10px;" }}
+                  >
+                    <div className="icon d-flex align-self-start align-items-center mt-2 mb-2">
+                      <Image src={itam} alt="icon" className="lazy-img" layout="responsive" />
+                      <h4
+                        className="fw-bold text-center text-capitalize px-4 mb-0"
+                        style={{ color: "#012d50" }}
+                      >
+                        Secure
+                      </h4>
+                    </div>
+                    <p className="">
+                      GDPR compliance and built in enterprise grade security. No
+                      compromises on governance and security. One centralized
+                      view and management of all your 1 & 3rd party apps,
+                      eliminating shadow IT.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="text-feature-one service-details pt-80 lg-pt-80 pb-80 lg-pb-80">
-        <div className="container">
-          <div className="row align-items-center details-meta">
-            <div className="col-xxl-5 col-md-5 wow fadeInLeft order-last">
-              <Image
-                src={servicenow1}
-                alt="screen"
-                className="lazy-img w-full h-auto rounded"
-              />
-            </div>
-            <div className="col-xxl-7 col-md-7 wow fadeInRight order--first ">
+            <div className="col-md-6 wow fadeInRight order--first ">
               <div className="title-one details-meta pb-10 wow fadeInLeft ps-xxl-5 ps-xl-3">
-                <h3>CGB Solutions — Your Trusted ServiceNow Partner</h3>
+                <h3>Why CGB Solutions — Your Trusted ServiceNow Partner</h3>
               </div>
               <div className="details-meta ps-xxl-5 ps-xl-3">
                 <p className="text-lg mb-35 md-mb-30">
@@ -174,6 +225,19 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                   designing, implementing, and optimizing ServiceNow solutions
                   that drive measurable business outcomes.
                 </p>
+                <ul>
+                  <li>
+                    Our ServiceNow Practice covers every aspect of the
+                    ServiceNow Platform with Solutions Architects , Developers
+                    and Consultants
+                  </li>
+                  <li>
+                    5 Delivery Centers Globally acting as COE for ServiceNow
+                    Capability 100+ Members across different stacks of
+                    ServiceNow
+                  </li>
+                  <li>Implementation , Consulting & Support Capability</li>
+                </ul>
                 <div className="d-flex flex-wrap pb-4">
                   <Link
                     href="/contact"
@@ -228,7 +292,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 style={{ padding: "20px 15px 10px;" }}
               >
                 <div className="icon d-flex align-self-center">
-                  <Image src={img2} alt="icon" className="lazy-img" />
+                  <Image src={itsm} alt="icon" className="lazy-img" />
                 </div>
                 <h4
                   className="fw-bold mt-30 mb-30 text-center text-capitalize"
@@ -254,7 +318,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 style={{ padding: "20px 15px 10px;" }}
               >
                 <div className="icon d-flex align-self-center">
-                  <Image src={img2} alt="icon" className="lazy-img" />
+                  <Image src={itom} alt="icon" className="lazy-img" />
                 </div>
                 <h4
                   className="fw-bold mt-30 mb-30 text-center text-capitalize"
@@ -280,7 +344,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 style={{ padding: "20px 15px 10px;" }}
               >
                 <div className="icon d-flex align-self-center">
-                  <Image src={img2} alt="icon" className="lazy-img" />
+                  <Image src={itam} alt="icon" className="lazy-img" />
                 </div>
                 <h4
                   className="fw-bold mt-30 mb-30 text-center text-capitalize"
@@ -305,7 +369,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 style={{ padding: "20px 15px 10px;" }}
               >
                 <div className="icon d-flex align-self-center">
-                  <Image src={img2} alt="icon" className="lazy-img" />
+                  <Image src={csm} alt="icon" className="lazy-img" />
                 </div>
                 <h4
                   className="fw-bold mt-30 mb-30 text-center text-capitalize"
@@ -331,7 +395,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 style={{ padding: "20px 15px 10px;" }}
               >
                 <div className="icon d-flex align-self-center">
-                  <Image src={img2} alt="icon" className="lazy-img" />
+                  <Image src={hr} alt="icon" className="lazy-img" />
                 </div>
                 <h4
                   className="fw-bold mt-30 mb-30 text-center text-capitalize"
@@ -360,7 +424,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 style={{ padding: "20px 15px 10px;" }}
               >
                 <div className="icon d-flex align-self-center">
-                  <Image src={img2} alt="icon" className="lazy-img" />
+                  <Image src={workflows} alt="icon" className="lazy-img" />
                 </div>
                 <h4
                   className="fw-bold mt-30 mb-30 text-center text-capitalize"
@@ -388,20 +452,22 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 style={{ padding: "20px 15px 10px;" }}
               >
                 <div className="icon d-flex align-self-center">
-                  <Image src={img2} alt="icon" className="lazy-img" />
+                  <Image src={Inte} alt="icon" className="lazy-img" />
                 </div>
                 <h4
                   className="fw-bold mt-30 mb-30 text-center text-capitalize"
                   style={{ color: "#012d50" }}
                 >
-                 ServiceNow Implementation & Integration
+                  ServiceNow Implementation & Integration
                 </h4>
                 <ul>
                   <li>
-                   From blueprint to go-live, we ensure successful delivery.
+                    From blueprint to go-live, we ensure successful delivery.
                   </li>
                   <li>End-to-end deployment</li>
-                  <li>Integration with tools like Microsoft Teams, Jira, SAP</li>
+                  <li>
+                    Integration with tools like Microsoft Teams, Jira, SAP
+                  </li>
                   <li>Migration from legacy systems</li>
                 </ul>
                 {/* <p className="text-center">{item.desc}</p> */}
@@ -416,7 +482,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 style={{ padding: "20px 15px 10px;" }}
               >
                 <div className="icon d-flex align-self-center">
-                  <Image src={img2} alt="icon" className="lazy-img" />
+                  <Image src={support} alt="icon" className="lazy-img" />
                 </div>
                 <h4
                   className="fw-bold mt-30 mb-30 text-center text-capitalize"
@@ -425,8 +491,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                   Managed Services & Support
                 </h4>
                 <ul>
-                  <li>
-                    24x7 support, upgrades, and continuous optimization.</li>
+                  <li>24x7 support, upgrades, and continuous optimization.</li>
                   <li>Dedicated support teams</li>
                   <li>Governance & compliance monitoring</li>
                   <li>SLA-based managed services</li>
@@ -434,76 +499,60 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 {/* <p className="text-center">{item.desc}</p> */}
               </div>
             </div>
-
+                        <div
+              className="col-md-4 d-flex wow fadeInUp"
+              data-wow-delay={`0.1s`}
+            >
+              <div
+                className="card-style-eight rounded-5 vstack tran3s w-100 mb-30"
+                style={{ padding: "20px 15px 10px;" }}
+              >
+                <div className="icon d-flex align-self-center">
+                  <Image src={support} alt="icon" className="lazy-img" />
+                </div>
+                <h4
+                  className="fw-bold mt-30 mb-30 text-center text-capitalize"
+                  style={{ color: "#012d50" }}
+                >
+             Custom Integrations
+                </h4>
+                <ul>
+                  <li>Connect ServiceNow with ERP, CRM, and enterprise apps</li>
+                  <li>Automate workflows across multiple business systems</li>
+                  <li>Ensure real-time, secure data exchange</li>
+                  <li>Build scalable integrations tailored to your needs</li>
+                </ul>
+                {/* <p className="text-center">{item.desc}</p> */}
+              </div>
+            </div>
           </div>
         </div>
         <Image src={shape_1} alt="shape" className="lazy-img shapes shape_01" />
         <Image src={shape_2} alt="shape" className="lazy-img shapes shape_02" />
       </div>
 
-      <section className="py-5 text-center">
-      <div className="container">
-        <h2 className="fw-bold mb-4">One platform, any industry</h2>
-        <div className="row g-4 justify-content-center">
-          {industries.map((industry, index) => (
-            <div className="col-6 col-md-4 col-lg-3" key={index}>
-              <div className="industry-card">
-                <div className="industry-icon">
-                  <Image
-                    src={industry.icon}
-                    alt={industry.name}
-                    width={30}
-                    height={30}
-                  />
+      <section className="py-5 text-center service-details">
+        <div className="container details-meta">
+          <h3 className="fw-bold mb-4 pb-4">One platform, any industry</h3>
+          <div className="row g-4 justify-content-center">
+            {industries.map((industry, index) => (
+              <div className="col-6 col-md-4 col-lg-3" key={index}>
+                <div className="industry-card">
+                  <div className="industry-icon">
+                    <Image
+                      src={industry.icon}
+                      alt={industry.name}
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <p className="industry-name">{industry.name}</p>
                 </div>
-                <p className="industry-name">{industry.name}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-
-      {/*--------------------Img and orderList tag Staring------------------ */}
-      <ImgTextOne
-        /* Main Heading   */
-        title="Expertise and Focused Area"
-        para="Our Deep Expertise and Focused Area"
-        img={ITSM}
-        subtitle="ITSM & CSM"
-        subpara="CGB Solutions specializes in providing comprehensive ITSM and CSM services on the ServiceNow platform, with a dedicated focus on optimizing service delivery and customer satisfaction in these key areas.
-        "
-        filter_data="servicenow-1"
-      />
-      {/*--------------------Img and orderList tag End------------------ */}
-
-      {/*--------------------Img and orderList tag Staring------------------ */}
-      <ImgTextOne
-        img={aot}
-        subtitle="TOM & ITAM"
-        subpara="CGB Solutions specializes in TOM and ITAM services on ServiceNow, ensuring efficient technical operations and optimized IT asset management. With our expertise, we streamline processes, maximize performance, and enhance value for our clients"
-        filter_data="servicenow-2"
-        style_2={true}
-      />
-      {/*--------------------Img and orderList tag Staring------------------ */}
-      {/*--------------------Img and orderList tag End------------------ */}
-      <ImgTextOne
-        img={UI_UX}
-        subtitle="UI/UX"
-        subpara="CGB Solutions prioritizes UI/UX design to ensure our solutions deliver intuitive interfaces and exceptional user experiences. Our focus on UI/UX enhances user satisfaction and boosts efficiency for our clients' platforms and applications."
-        filter_data="servicenow-3"
-        cls="d-none"
-      />
-      {/*--------------------Img and orderList tag End------------------ */}
-      {/*--------------------Img and orderList tag Staring------------------ */}
-      <ImgTextOne
-        img={Integration}
-        subtitle="INTEGRATION"
-        subpara="CGB Solutions specializes in seamless integration services, ensuring that diverse systems and applications work together harmoniously. Our integration solutions streamline processes, enhance efficiency, and optimize data flow for our clients, ultimately driving business success."
-        filter_data="servicenow-4"
-        style_2={true}
-      />
-      {/*--------------------Img and orderList tag Staring------------------ */}
+      </section>
 
       {/* card starts from here  */}
       <div className="block-feature-six service-details bg-two position-relative pt-50 lg-pt-60 pb-80 lg-pb-40">
@@ -535,6 +584,39 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
         <Image src={shape_2} alt="shape" className="lazy-img shapes shape_02" />
       </div>
       {/* card end */}
+
+      {/* card starts from here  */}
+      <div className="block-feature-six service-details bg-white position-relative pt-50 lg-pt-40 pb-20 lg-pb-20">
+        <div className="container details-meta">
+          <div className="row gx-lg-5">
+            <div className="col-lg-12">
+              <div className="row">
+                <div className="title-one">
+                  {/* <div className="upper-title">Core aspects of</div> */}
+                  <h3 className="text-center pb-4">
+                    ServiceNow Capability by the Numbers
+                  </h3>
+                </div>
+                {/* <p className="text-lg text-dark mb-35 py-3 md-mb-30">
+                  Right here what you need
+                </p> */}
+              </div>
+            </div>
+            <div className="col-md-12 m-auto md-mt-50">
+              <Image
+                src={digital2}
+                alt="screen"
+                className="lazy-img w-full h-auto m-auto rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* card end */}
+
+      {/* testimonial four area start */}
+      <FeedbackFour spacing="mt-80 lg-mt-40" />
+      {/* testimonial four area end */}
     </>
   );
 };

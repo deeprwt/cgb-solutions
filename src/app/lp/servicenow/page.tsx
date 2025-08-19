@@ -30,6 +30,7 @@ import HeroBannerSix from "@/components/hero-banner/hero-banner-six";
 import Header from "@/layout/header/Header";
 import ServicenNowlpsection from "@/components/ladingpage/servicenow-page";
 import PartnersSliderOne from "@/components/partners/partners-slider-one";
+import icon_1 from "@/assets/images/icon/icon_90.svg";
 
 export const metadata: Metadata = {
   title:
@@ -84,6 +85,7 @@ export default function ServiceNow() {
             title="Why use ServiceNow for businesses?"
             img={screen}
             page="serviceNow"
+            cls="mt-150 mb-40 lg-mt-120 md-mt-80"
           />
           {/* end */}
 
@@ -121,17 +123,30 @@ export default function ServiceNow() {
                   <div className="row">
                     <div className="col-lg-5">
                       <div className="d-flex flex-column flex-lg-column-reverse">
-                        <div className="row">
-                          <div className="col-md-8 col-6 me-auto ms-auto">
-                            <Image
-                              src={icon_4}
-                              alt="icon"
-                              className="lazy-img me-auto ms-auto"
-                            />
-                          </div>
-                        </div>
                         <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
-                          <h2>Have inquiry? Reach to out us via message...</h2>
+                          <h2>Let's Start</h2>
+                          <p>Initiating Your Journey to Success and Growth.</p>
+                          <ul>
+                            <li><span><i className="bi bi-book"></i></span>Book a Free Consultation</li>
+                            <li><span><i className="bi bi-phone"></i></span>Request a Call Back</li>
+                            <li><span><i className="bi bi-book"></i></span>Schedule a Demo</li>
+                          </ul>
+
+                          <div className="address-block-one mb-40">
+                            {/* <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto">
+                              <Image
+                                src={icon_1}
+                                alt="icon"
+                                className="lazy-img"
+                              />
+                            </div> */}
+                            <h5 className="title">CGB Solutions</h5>
+                            <p>
+                              {" "}
+                              2nd Floor, No.112, AKR Tech Park, 7th Mile Hosur
+                              Rd, Bengaluru, Karnataka – 560068
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
