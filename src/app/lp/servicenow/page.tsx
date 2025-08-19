@@ -124,12 +124,12 @@ export default function ServiceNow() {
                     <div className="col-lg-5">
                       <div className="d-flex flex-column flex-lg-column-reverse">
                         <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
-                          <h2>Let's Start</h2>
+                          <h2>Let&apos;s Start</h2>
                           <p>Initiating Your Journey to Success and Growth.</p>
-                          <ul>
-                            <li><span><i className="bi bi-book"></i></span>Book a Free Consultation</li>
-                            <li><span><i className="bi bi-phone"></i></span>Request a Call Back</li>
-                            <li><span><i className="bi bi-book"></i></span>Schedule a Demo</li>
+                          <ul className="list-none">
+                            <li><span className="px-3"><i className="bi dark-green bi-bookmarks-fill"></i></span><span>Book a Free Consultation</span></li>
+                            <li><span className="px-3"><i className="bi dark-green bi-telephone-forward-fill"></i></span><span>Request a Call Back</span></li>
+                            <li><span className="px-3"><i className="bi dark-green bi-calendar-check-fill"></i></span><span>Schedule a Demo</span></li>
                           </ul>
 
                           <div className="address-block-one mb-40">
@@ -146,6 +146,11 @@ export default function ServiceNow() {
                               2nd Floor, No.112, AKR Tech Park, 7th Mile Hosur
                               Rd, Bengaluru, Karnataka – 560068
                             </p>
+                            <ul className="list-none">
+                            <li><span className="px-3"><i className="bi dark-green bi-envelope-open-fill"></i></span><span>info@cgbsolution.com</span></li>
+                            <li><span className="px-3"><i className="bi dark-green bi-telephone-forward-fill"></i></span><span>+91 9844494599</span></li>
+                            <li><span className="px-3"><i className="bi dark-green bi-browser-chrome"></i></span><span>www.cgbsolution.com</span></li>
+                          </ul>
                           </div>
                         </div>
                       </div>
