@@ -34,11 +34,11 @@ import icon_1 from "@/assets/images/icon/icon_90.svg";
 
 export const metadata: Metadata = {
   title:
-    "ServiceNow Consulting | IT Service Management Simplified with CGB Solutions",
+    "ServiceNow Consulting & Implementation | CGB Solutions",
   description:
-    "Optimize workflows and IT operations with CGB Solutions' ServiceNow consulting services, from implementation to customization for seamless efficiency.",
+    "Boost IT efficiency with CGB Solutions’ ServiceNow consulting, implementation, and managed services. Trusted partner for ITSM, ITOM, HRSD & automation.",
   keywords:
-    "ServiceNow solutions, IT automation,ServiceNow consulting services, IT process optimization, ServiceNow ITSM implementation, workflow automation experts, customized IT solutions, IT service management software, ServiceNow cloud solutions, automated IT processes, ServiceNow module customization, digital service optimization,ServiceNow consulting, ServiceNow implementation, IT service management, ITSM consulting, ServiceNow solutions, workflow automation, ServiceNow customization, ServiceNow optimization, IT workflows, IT operations, enterprise IT management, ServiceNow integrations, ServiceNow platform solutions, process efficiency tools, IT workflow automation, IT service solutions, advanced ITSM, business automation tools, scalable ServiceNow solutions, enterprise ServiceNow services, ServiceNow implementation strategy, process optimization tools, IT efficiency solutions, ServiceNow enterprise tools, ServiceNow workflow management, streamlined IT operations.",
+    "ServiceNow Partner, ServiceNow Consulting, ServiceNow Implementation, ServiceNow Integration, ServiceNow Managed Services, ServiceNow ITSM, ServiceNow ITOM, ServiceNow HR Service Delivery, ServiceNow CSM, ServiceNow GRC, ServiceNow Automation, ServiceNow Cloud Migration, ServiceNow Low-Code Apps, ServiceNow AI Workflows, ServiceNow Workflow Automation, ServiceNow Support Services, ServiceNow Digital Transformation, ServiceNow Platform Solutions, ServiceNow Enterprise Solutions, ServiceNow Process Optimization.",
 };
 
 export default function ServiceNow() {
