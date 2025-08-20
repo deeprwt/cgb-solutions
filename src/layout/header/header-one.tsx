@@ -10,6 +10,7 @@ import icon_2 from '@/assets/images/icon/icon_15.svg';
 import icon_3 from '@/assets/images/icon/icon_16.svg';
 import LoginModal from '@/components/common/login-modal';
 import useSticky from '@/hooks/use-sticky';
+import PopFormModal from '@/components/common/pop-form-modal';
 
 const HeaderOne = () => {
   const {sticky} = useSticky();
@@ -73,6 +74,7 @@ const HeaderOne = () => {
 
       {/* login modal start */}
       <LoginModal/>
+      <PopFormModal />
       {/* login modal end */}
     </>
   );

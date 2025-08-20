@@ -35,7 +35,9 @@ const HeroBannerSix = () => {
               </p>
               <div className="d-flex flex-wrap">
                 <Link
-                  href="/contact"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#PopModal"
                   className="btn-eighteen tran3s me-4 mt-10 heartbeat-animation"
                 >
                   Contact Us
@@ -46,7 +48,6 @@ const HeroBannerSix = () => {
           <div className="col-md-6 d-md-flex justify-content-end wow fadeInRight">
             <div className="form-style-one ps-xl-5 extra-form-style">
               {/* form start */}
-
               <ContactForm />
               {/* form end */}
             </div>

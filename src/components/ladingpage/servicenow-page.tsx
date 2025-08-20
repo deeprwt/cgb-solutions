@@ -145,7 +145,12 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                     style={{ padding: "20px 15px 10px;" }}
                   >
                     <div className="icon d-flex align-self-start align-items-center mt-2 mb-2">
-                      <Image src={itam} alt="icon" className="lazy-img" layout="responsive" />
+                      <Image
+                        src={itam}
+                        alt="icon"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
                       <h4
                         className="fw-bold text-center text-capitalize px-4 mb-0"
                         style={{ color: "#012d50" }}
@@ -169,8 +174,13 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                     className="card-style-eight rounded-5 vstack tran3s w-100 mb-30"
                     style={{ padding: "20px 15px 10px;" }}
                   >
-                   <div className="icon d-flex align-self-start align-items-center mt-2 mb-2">
-                      <Image src={itam} alt="icon" className="lazy-img" layout="responsive" />
+                    <div className="icon d-flex align-self-start align-items-center mt-2 mb-2">
+                      <Image
+                        src={itam}
+                        alt="icon"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
                       <h4
                         className="fw-bold text-center text-capitalize px-4 mb-0"
                         style={{ color: "#012d50" }}
@@ -195,7 +205,12 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                     style={{ padding: "20px 15px 10px;" }}
                   >
                     <div className="icon d-flex align-self-start align-items-center mt-2 mb-2">
-                      <Image src={itam} alt="icon" className="lazy-img" layout="responsive" />
+                      <Image
+                        src={itam}
+                        alt="icon"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
                       <h4
                         className="fw-bold text-center text-capitalize px-4 mb-0"
                         style={{ color: "#012d50" }}
@@ -240,7 +255,9 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 </ul>
                 <div className="d-flex flex-wrap pb-4">
                   <Link
-                    href="/contact"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#PopModal"
                     className="btn-eighteen tran3s me-4 mt-10 heartbeat-animation"
                   >
                     Contact Us
@@ -499,7 +516,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                 {/* <p className="text-center">{item.desc}</p> */}
               </div>
             </div>
-                        <div
+            <div
               className="col-md-4 d-flex wow fadeInUp"
               data-wow-delay={`0.1s`}
             >
@@ -514,7 +531,7 @@ const ServicenNowlpsection = ({ cls }: { cls?: string }) => {
                   className="fw-bold mt-30 mb-30 text-center text-capitalize"
                   style={{ color: "#012d50" }}
                 >
-             Custom Integrations
+                  Custom Integrations
                 </h4>
                 <ul>
                   <li>Connect ServiceNow with ERP, CRM, and enterprise apps</li>
