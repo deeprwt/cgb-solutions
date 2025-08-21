@@ -40,7 +40,7 @@ const HeroBannerSix = () => {
                   data-bs-target="#PopModal"
                   className="btn-eighteen tran3s me-4 mt-10 heartbeat-animation"
                 >
-                  Contact Us
+                  Book a Demo
                 </Link>
               </div>
             </div>
