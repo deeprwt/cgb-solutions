@@ -154,7 +154,7 @@ export default function HomePage() {
               </div>
             </div>
           </div> */}
-                    <div className="contact-us-section pt-80 pb-80 lg-pt-80" id="contact"  style={{background:"#E3F0FF"}}> 
+                    <div className="contact-us-section pt-80 pb-80 lg-pt-80 mt-60" id="contact"  style={{background:"#E3F0FF"}}> 
             <div className="container">
               <div className="position-relative">
                 <div className="bg-wrapper light-bg mt-80 lg-mt-40 service-details" style={{padding:"0px"}}>
