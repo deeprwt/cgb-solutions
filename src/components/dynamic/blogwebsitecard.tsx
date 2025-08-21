@@ -48,6 +48,7 @@ const BlogWebsiteCard: React.FC<BlogCardProps> = ({ blog }) => {
           </Link>
           <Link
             href={`/blog/${blog.link}`}
+            style={{position: "relative"}}
             className="round-btn rounded-circle d-flex align-items-center justify-content-center tran3s"
           >
             <i className="bi bi-arrow-up-right"></i>
