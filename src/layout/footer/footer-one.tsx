@@ -31,7 +31,10 @@ const FooterOne = () => {
               {/* map end  */}
               {/* <p className="text-white lh-sm mb-35">Top-rated <span className="opacity-50">business <br/> consultancy for your success</span></p> */}
               {/* <p className="text-white lh-sm mb-35">Head office <br /> <span className="opacity-50">46/1, NH 44, Near Krishan Reddy Industrial Area, Kudlu Gate, Hosapalaya, Garvebhavi Palya Bengaluru, Karnataka, 560068</span></p> */}
-              <p className="text-white lh-sm mb-35 d-flex flex-wrap"><Link href="mailto:info@cgbindia.com" className="d-flex align-items-center"><Image src={icon_1} alt="icon" className="lazy-img icon me-3"/>info@cgbindia.com | &nbsp;</Link> <span className=""> <Link href="tel:+919844494599" className="d-flex"> <Image src={icon_2} alt="icon" className="lazy-img icon me-3"/>+91 9844494599</Link> </span></p>
+              <p className="text-white lh-sm mb-35 d-flex flex-wrap"><Link href="mailto:info@cgbindia.com" className="d-flex align-items-center"><Image src={icon_1} alt="icon" className="lazy-img icon me-3"/>info@cgbindia.com | &nbsp;</Link> <span className="">
+                 {/* <Link href="tel:+919844494599" className="d-flex"> 
+                 <Image src={icon_2} alt="icon" className="lazy-img icon me-3"/>+91 9844494599</Link>  */}
+                 </span></p>
               {/* social link */}
               <ul className="style-none d-flex align-items-center social-icon">
                 <FooterSocial />

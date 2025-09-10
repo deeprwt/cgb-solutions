@@ -25,10 +25,10 @@ const HeaderOne = () => {
                 <Image src={icon_1} alt="icon" className="lazy-img icon me-2" /> 
                 <Link href="mailto:babuninc@company.com" className="fw-500">babuninc@company.com</Link>
                 </li>
-              <li className="d-flex align-items-center">
+              {/* <li className="d-flex align-items-center">
                 <Image src={icon_2} alt="icon" className="lazy-img icon me-2" /> 
                 <Link href="tel:9844494599" className="fw-500">9844494599</Link>
-                </li>
+                </li> */}
             </ul>
           </div>
         </div>

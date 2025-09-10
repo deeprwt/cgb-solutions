@@ -200,12 +200,12 @@ const NavbarAdmin = ({ logo_white = false }: { logo_white?: boolean }) => {
               info@cgbindia.com
             </Link>
           </li>
-          <li className="d-flex align-items-center p0 mt-15">
+          {/* <li className="d-flex align-items-center p0 mt-15">
             <Image src={icon_2} alt="icon" className="lazy-img icon me-2" />
             <Link href="tel:9844494599" className="fw-500 text-white">
               9844494599
             </Link>
-          </li>
+          </li> */}
         </ul>
       </li>
     </ul>
