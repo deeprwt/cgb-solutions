@@ -55,7 +55,7 @@ export default function RootLayout({
         {/* <FacebookPixelEvents /> */}
       </body>
       {/* staring here gtag */}
-      <GoogleAnalytics gaId="G-NYNVJH0DG6" />
+      <GoogleAnalytics gaId="G-VXNJZJ6WFN" />
       {/* End here gtag */}
     </html>
   );
