@@ -25,7 +25,7 @@ export default function RootLayout({
         {/* Add Google site verification meta tag */}
         <meta
           name="google-site-verification"
-          content="fBBPFxWRPec7_HGzyMQf4QHLqalNQO_NJUmDbK23SM4"
+          content="4nlvg0U5S4kHckdXeKJ3ZZ9PmDNPvdYS1WnLsglM6fo"
         />
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
@@ -38,7 +38,6 @@ export default function RootLayout({
           `}
         </Script>
         {/* End Google Tag Manager */}
-        
       </head>
       <body>
         {/* Google Tag Manager (noscript) */}
