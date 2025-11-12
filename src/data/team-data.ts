@@ -88,15 +88,15 @@ const team_data: ITeam[] = [
     link: "",
     gif: gif1,
   },
-  {
-    id: 7,
-    img: Anurag,
-    name: "Anurag Gupta",
-    designation: "Marketing",
-    page: "team-three",
-    link: "https://www.linkedin.com/in/anurag-r-gupta/",
-    gif: gif1,
-  },
+  // {
+  //   id: 7,
+  //   img: Anurag,
+  //   name: "Anurag Gupta",
+  //   designation: "Marketing",
+  //   page: "team-three",
+  //   link: "https://www.linkedin.com/in/anurag-r-gupta/",
+  //   gif: gif1,
+  // },
   // {
   //   id: 8,
   //   img: Rawan,
@@ -113,7 +113,7 @@ const team_data: ITeam[] = [
     name: "Rahul Sharma",
     designation: "Finance Manager",
     page: "team-three",
-    link: "https://www.linkedin.com/in/rahul-sharma-802153111/",
+    link: "#",
     gif: gif2,
   },
   // {
