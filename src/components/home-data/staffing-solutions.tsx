@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import Link from "next/link";
 // internal
 import staffing_data from "@/data/staffing-data";
-import shape from '@/assets/images/shape/shape_44.svg';
+import shape from "@/assets/images/shape/shape_44.svg";
 
 // slider setting
 const slider_setting = {
@@ -33,17 +33,26 @@ const slider_setting = {
 };
 
 const StaffingSolutions = () => {
-  const service_items = staffing_data.filter((s) => s.page === "staffing-1").slice(0,4);
+  const service_items = staffing_data
+    .filter((s) => s.page === "staffing-1")
+    .slice(0, 4);
   return (
     <div className="block-feature-eleven service-details overflow-hidden position-relative mt-80 lg-mt-100 pb-80 lg-pb-100 md-pb-80">
       <div className="container">
         <div className="row gx-lg-5 align-items-center">
           <div className="col-lg-5 wow fadeInLeft">
             <div className="title-one details-meta">
-              <h3 className="">Workforce Solutions: Leading IT Solutions and Services in India</h3>
+              <h3 className="">
+                Workforce Solutions: Leading IT Solutions and Services in India
+              </h3>
             </div>
             <p className="text-lg text-dark mt-30 md-mt-20 mb-45 md-mb-30">
-            We offer a combination of these services tailored to the specific needs of our clients, aiming to streamline their staffing processes and optimize workforce management
+              We provide flexible global hiring models to support both
+              enterprise and high-growth organizations. With our <b>offshore IT
+              staff augmentation India</b> offerings, businesses can <b>hire remote
+              developers India for US</b> projects or engage <b>contract developers
+              India for US projects</b> to scale faster without compromising
+              quality.
             </p>
             {/* <Link href="/contact" className="btn-eighteen tran3s">
               Explore All
@@ -56,15 +65,11 @@ const StaffingSolutions = () => {
                   <div key={s.id} className="item">
                     <div className="card-style-seventeen d-lg-flex tran3s w-100">
                       <div className="tran3s rounded-circle d-flex justify-content-center">
-                        <Image src={s.icon} alt="icon" width={70} height={70}/>
+                        <Image src={s.icon} alt="icon" width={70} height={70} />
                       </div>
                       <div className="text">
-                        <h4 className="fw-bold mb-25 md-mb-20">
-                          {s.title}
-                        </h4>
-                        <p className="mb-25">
-                          {s.desc}
-                        </p>
+                        <h4 className="fw-bold mb-25 md-mb-20">{s.title}</h4>
+                        <p className="mb-25">{s.desc}</p>
                         <Link href={s.link} className="btn-three">
                           <span>Learn More</span>{" "}
                           <i className="bi bi-chevron-right"></i>
@@ -78,7 +83,7 @@ const StaffingSolutions = () => {
           </div>
         </div>
       </div>
-      <Image src={shape} alt="shape" className="lazy-img shapes shape_01"/>
+      <Image src={shape} alt="shape" className="lazy-img shapes shape_01" />
     </div>
   );
 };

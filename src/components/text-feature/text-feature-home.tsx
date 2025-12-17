@@ -51,23 +51,32 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                   </h3>
                 </div>
                 <p className="text-lg">
-                  Experience the extraordinary with CGB Solutions, your trusted
-                  partner for <b>IT Business Services in India</b>. We innovate
-                  relentlessly, transforming challenges into seamless solutions
-                  for unparalleled client excellence.
+                  Experience extraordinary with CGB Solutions, your trusted
+                  partner for <b>IT Business Services in India</b> and a leading
+                  provider of <b>offshore IT staff augmentation India.</b> We
+                  innovate relentlessly, transforming challenges into seamless
+                  solutions for unparalleled client excellence by enabling
+                  global organizations to{" "}
+                  <b>hire remote developers India for US</b> projects and build
+                  strong technology teams.
                 </p>
                 <p className="text-lg">
                   CGB Solutions, a trusted name in the industry, excels in
-                  offering cutting-edge{" "}
-                  <b>IT solutions and services in India</b>, tailored to empower
-                  businesses with innovative technologies and strategic
-                  expertise. As a premier <b>IT solutions company</b>, we
-                  specialize in delivering comprehensive services that drive
-                  digital transformation, optimize operations, and ensure
-                  seamless business growth. Our client-centric approach and
-                  commitment to excellence make us the preferred partner for
-                  organizations looking to achieve technological and operational
-                  excellence in today&apos;s dynamic market.
+                  offering cutting-edge <b>IT solutions and services in India,</b>
+                  tailored to empower businesses with innovative technologies
+                  and strategic expertise. As a premier <b>enterprise IT
+                  outsourcing company</b>, we help clients access <b>certified
+                  developers from India</b> through flexible engagement models like
+                  <b>on-demand remote IT developers</b> and <b>contract developers India
+                  for US projects</b>. With proven experience as an <b>IT outsourcing
+                  partner for US companies</b>, we deliver <b>digital transformation
+                  services India</b> and scalable <b>global technology staffing
+                  solutions</b>, enabling organizations to establish a dedicated
+                  <b>offshore development team India</b> for faster delivery and
+                  optimized cost. Our client-centric approach and commitment to
+                  excellence make us the preferred partner for organizations
+                  aiming to achieve digital transformation and operational
+                  agility in today&apos;s dynamic market.
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
                   <Link href="/about-us" className="btn-four mt-15 me-4">
@@ -99,7 +108,9 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
             <div className="row">
               <div className="title-one details-meta text-center">
                 <h3>Your search ends here.</h3>
-                <div className="upper-title">Learn why businesses trust CGB Solutions to power growth</div>
+                <div className="upper-title">
+                  Learn why businesses trust CGB Solutions to power growth
+                </div>
               </div>
               <div className="col-md-3 col-6">
                 <CounterBlock num={160} text="+" title="Clients" />
