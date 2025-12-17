@@ -29,10 +29,11 @@ import ContactForm from "@/components/forms/contact-form";
 import icon_4 from "@/assets/images/assets/ils_07.svg";
 import HeroVideoOne from "@/components/hero-banner/hero-video-one";
 import HomeBlogSection from "@/components/blogs/homeblogsection";
+import airecruiter from "@/assets/images/cgbhome/AI Recruiter — Supercharge Hiring with AI.jpg";
+import expanse from "@/assets/images/cgbhome/AI-Powered Expense Management.jpg";
 
 export const metadata: Metadata = {
-  title:
-    "IT Solutions & Business Management Consulting | CGB Solutions",
+  title: "IT Solutions & Business Management Consulting | CGB Solutions",
   description:
     "CGB Solutions delivers IT solutions and business management consulting, specializing in Oracle services, digital transformation, and enterprise process optimization.",
   keywords:
@@ -71,6 +72,117 @@ export default function HomePage() {
           {/* tabs are for solutions start */}
 
           <StaffingSolutions />
+
+          <div className="service-details pt-40 pb-40">
+            <div className="container">
+              <div className={`row`}>
+                <div className="title-one details-meta pb-40 ps-xxl-5 ps-xl-3">
+                  <h3 className="text-center pb-5">
+                    AI Innovation Suite — Built for Global Scalability
+                  </h3>
+                  <p className=" text-center">
+                    At CGB Solutions, we are not only delivering top-tier IT
+                    solutions and services in India — we are building
+                    intelligent AI products designed to disrupt business
+                    operations worldwide. Powered by our certified developers
+                    from India, these innovations support both digital
+                    transformation and offshore IT staff augmentation India for
+                    US-based organizations.
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-xxl-7 col-lg-7 d-flex align-items-center order-lg-last wow fadeInRight">
+                  <div className="details-meta ps-xxl-5 ps-xl-3">
+                    <h4>AI Recruiter — Supercharge Hiring with AI</h4>
+                    <p className="">
+                      The traditional hiring process is slow. AI Recruiter
+                      changes that. It automates candidate discovery, evaluates
+                      skills, and recommends top matches instantly — helping
+                      companies hire remote developers India for US projects
+                      faster than ever.
+                    </p>
+                    <h4>Key Capabilities:</h4>
+                    <ul className="style-none list-item pb-20">
+                      <li className="m-0 pb-2 lh-base">
+                        AI-powered candidate sourcing & resume parsing
+                      </li>
+                      <li className="m-0 pb-2 lh-base">
+                        Automated skill evaluation & shortlisting
+                      </li>
+                      <li className="m-0 pb-2 lh-base">
+                        Faster decisions with predictive hiring insights
+                      </li>
+                      <li className="m-0 pb-2 lh-base">
+                        Supports on-demand remote IT developers hiring worldwide
+                      </li>
+                    </ul>
+                    <div>
+                      <h4>Ideal for companies leveraging:</h4>
+                      <ul>
+                        <li>Contract developers India for US projects</li>
+                        <li>Global technology staffing solutions</li>
+                        <li>A dedicated offshore development team India</li>
+                      </ul>
+                      <h4>Modern hiring engineered for speed and accuracy.</h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xxl-5 col-lg-5 order-lg-first wow fadeInLeft">
+                  <Image
+                    src={airecruiter}
+                    alt="screen"
+                    className="lazy-img w-full h-auto rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="service-details pt-40 pb-40">
+            <div className="container">
+              <div className={`row`}>
+                <div className="title-one details-meta pb-40 ps-xxl-5 ps-xl-3">
+                  <h3 className="text-center pb-5">
+                  AI-Powered Expense Management
+                  </h3>
+                  <p className=" text-center">
+                    Our in-house AI Expense Management Platform helps organizations automate and simplify their entire reimbursement workflow. Designed by our certified developers from India, it showcases our strength in delivering cutting-edge IT solutions and services in India.
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-xxl-7 col-lg-7 d-flex align-items-center  wow fadeInRight">
+                  <div className="details-meta ps-xxl-5 ps-xl-3">
+                    <h4>Key Capabilities:</h4>
+                    <ul className="style-none list-item pb-20">
+                      <li className="m-0 pb-2 lh-base">
+                        Upload receipts instantly through mobile or web
+                      </li>
+                      <li className="m-0 pb-2 lh-base">
+                       Smart AI auto-categorizes expenses food, travel, accommodation, misc.
+                      </li>
+                      <li className="m-0 pb-2 lh-base">
+                        Managers approve with one-tap quick actions
+                      </li>
+                      <li className="m-0 pb-2 lh-base">
+                       Built-in AI chatbot for claim status, policy support & data lookup
+                      </li>
+                       <li className="m-0 pb-2 lh-base">Seamless integration with ERP & payroll systems</li>
+                    </ul>
+                      <p>With expertise in digital transformation services India, we make expense compliance effortless — reducing turnaround time and eliminating manual tracking.</p>
+                      <p>Looking to build a similar high-impact business tool with offshore development team India or via offshore IT staff augmentation India? Our global technology staffing solutions ensure rapid delivery and scalability.</p>
+                  </div>
+                </div>
+                <div className="col-xxl-5 col-lg-5 wow fadeInLeft">
+                  <Image
+                    src={airecruiter}
+                    alt="screen"
+                    className="lazy-img w-full h-auto rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* clints logo start  */}
           <ClintLogo />
@@ -119,7 +231,7 @@ export default function HomePage() {
           {/* blog item start */}
           {/* <HomeTwoBlogs /> */}
           <HomeBlogSection />
-          
+
           {/* blog item end */}
 
           {/* <div className="contact-us-section pt-80 pb-80 lg-pt-80" id="contact">
@@ -154,10 +266,17 @@ export default function HomePage() {
               </div>
             </div>
           </div> */}
-                    <div className="contact-us-section pt-80 pb-80 lg-pt-80 mt-60" id="contact"  style={{background:"#E3F0FF"}}> 
+          <div
+            className="contact-us-section pt-80 pb-80 lg-pt-80 mt-60"
+            id="contact"
+            style={{ background: "#E3F0FF" }}
+          >
             <div className="container">
               <div className="position-relative">
-                <div className="bg-wrapper light-bg mt-80 lg-mt-40 service-details" style={{padding:"0px"}}>
+                <div
+                  className="bg-wrapper light-bg mt-80 lg-mt-40 service-details"
+                  style={{ padding: "0px" }}
+                >
                   <div className="row">
                     <div className="col-lg-5">
                       <div className="d-flex flex-column flex-lg-column-reverse form-section-style">
@@ -235,7 +354,12 @@ export default function HomePage() {
                     </div>
                     <div className="col-lg-7">
                       <div className="form-style-one ps-xl-5 p-4">
-                        <h3 className="font-weight-bolder" style={{fontWeight:"700"}}>Book Your Free Consultation</h3>
+                        <h3
+                          className="font-weight-bolder"
+                          style={{ fontWeight: "700" }}
+                        >
+                          Book Your Free Consultation
+                        </h3>
                         <p>
                           Get a Response Within 24 Business Hours — Guaranteed
                         </p>

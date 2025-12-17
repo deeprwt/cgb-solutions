@@ -67,12 +67,12 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                   and strategic expertise. As a premier <b>enterprise IT
                   outsourcing company</b>, we help clients access <b>certified
                   developers from India</b> through flexible engagement models like
-                  <b>on-demand remote IT developers</b> and <b>contract developers India
+                  <b> on-demand remote IT developers</b> and <b>contract developers India
                   for US projects</b>. With proven experience as an <b>IT outsourcing
                   partner for US companies</b>, we deliver <b>digital transformation
                   services India</b> and scalable <b>global technology staffing
                   solutions</b>, enabling organizations to establish a dedicated
-                  <b>offshore development team India</b> for faster delivery and
+                   <b> offshore development team India</b> for faster delivery and
                   optimized cost. Our client-centric approach and commitment to
                   excellence make us the preferred partner for organizations
                   aiming to achieve digital transformation and operational
