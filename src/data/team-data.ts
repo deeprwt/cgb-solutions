@@ -111,7 +111,7 @@ const team_data: ITeam[] = [
     id: 9,
     img: Rahul,
     name: "Rahul Sharma",
-    designation: "Finance Manager",
+    designation: "Head of Finance",
     page: "team-three",
     link: "#",
     gif: gif2,
